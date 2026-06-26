@@ -1,0 +1,51 @@
+from music_wiki.core.models import SourceFile, TrackRecord
+from music_wiki.core.store import Store
+
+
+def _rec(path, hash_, artist="IU", album="Lilac", title="Lilac", track_no=1):
+    return TrackRecord(
+        artist_name=artist, album_title=album, track_title=title,
+        track_no=track_no, disc_no=None, year=2021, label="EDAM",
+        genres=["K-Pop"], duration_s=180.0, cover_path="/x/cover.jpg",
+        source=SourceFile(abs_path=path, content_hash=hash_, mtime=1.0, fmt="mp3"),
+    )
+
+
+def _store():
+    s = Store.open(":memory:")
+    s.init_schema()
+    return s
+
+
+def test_upsert_creates_artist_album_track():
+    s = _store()
+    s.upsert(_rec("/x/1.mp3", "h1"))
+    artists = s.iter_artists()
+    assert [a.name for a in artists] == ["IU"]
+    albums = s.albums_for_artist(artists[0].id)
+    assert albums[0].title == "Lilac"
+    assert albums[0].has_digital is True and albums[0].has_vinyl is False
+    assert albums[0].genres == ["K-Pop"]
+    tracks = s.tracks_for_album(albums[0].id)
+    assert [t.title for t in tracks] == ["Lilac"]
+
+
+def test_upsert_is_idempotent_on_content_hash():
+    s = _store()
+    s.upsert(_rec("/x/1.mp3", "h1"))
+    s.upsert(_rec("/x/1.mp3", "h1"))  # same file, second run
+    assert len(s.tracks_for_album(s.albums_for_artist(s.iter_artists()[0].id)[0].id)) == 1
+
+
+def test_dedup_artist_by_case_insensitive_key():
+    s = _store()
+    s.upsert(_rec("/x/1.mp3", "h1", artist="The Beatles"))
+    s.upsert(_rec("/x/2.mp3", "h2", artist="the beatles", title="B", track_no=2))
+    assert len(s.iter_artists()) == 1
+
+
+def test_record_drm():
+    s = _store()
+    s.record_drm(SourceFile(abs_path="/x/a.enc", content_hash="d1", mtime=1.0,
+                            fmt="enc", is_drm=True))
+    assert s.drm_count() == 1
