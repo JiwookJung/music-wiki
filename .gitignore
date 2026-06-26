@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# 데이터/산출물 (원본·대용량·생성물은 git에 넣지 않음)
+data/
+output/
+thumbnails/
+*.sqlite
+*.db
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
