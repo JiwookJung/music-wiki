@@ -21,4 +21,9 @@ def recover_text(s: str | None) -> str | None:
         candidate = s.encode("latin-1").decode("cp949")
     except (UnicodeEncodeError, UnicodeDecodeError):
         return s
-    return candidate if _cjk_score(candidate) > _cjk_score(s) else s
+    if _cjk_score(candidate) <= _cjk_score(s):
+        return s
+    # Real CP949 mojibake recovers to Korean-dominant text; an accented Latin
+    # word (señor, café) would yield a mostly-Latin string — reject those.
+    latin_alpha = sum(1 for ch in candidate if ch.isascii() and ch.isalpha())
+    return candidate if _cjk_score(candidate) >= latin_alpha else s

@@ -22,3 +22,9 @@ def test_leaves_clean_korean_untouched():
 def test_handles_none_and_empty():
     assert recover_text(None) is None
     assert recover_text("") == ""
+
+
+def test_leaves_accented_latin_untouched():
+    assert recover_text("señor") == "señor"
+    assert recover_text("café") == "café"
+    assert recover_text("Antonín Dvořák") == "Antonín Dvořák"
