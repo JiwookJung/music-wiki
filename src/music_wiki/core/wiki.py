@@ -41,12 +41,13 @@ class WikiGenerator:
             lines.append("## 앨범")
             for a in albums:
                 year = f" ({a.year})" if a.year else ""
-                lines.append(f"- [[{artist.name} - {a.title}]]{year}")
+                link = safe_filename(f"{artist.name} - {a.title}")
+                lines.append(f"- [[{link}]]{year}")
         path = out / "artists" / f"{safe_filename(artist.name)}.md"
         path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     def _write_album(self, out: Path, artist, album) -> None:
-        lines = [f"# {album.title}", "", f"아티스트: [[{artist.name}]]"]
+        lines = [f"# {album.title}", "", f"아티스트: [[{safe_filename(artist.name)}]]"]
         if album.year:
             lines.append(f"연도: {album.year}")
         if album.label:
