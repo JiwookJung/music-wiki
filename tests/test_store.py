@@ -85,3 +85,16 @@ def test_drm_files_lists_paths():
     s.record_drm(SourceFile(abs_path="/x/a.enc", content_hash="d1", mtime=1.0,
                             fmt="enc", is_drm=True))
     assert s.drm_files() == ["/x/a.enc"]
+
+
+def test_prune_keeps_album_shared_with_another_file():
+    s = _store()
+    # two tracks of the same album, from different files
+    s.upsert(_rec("/x/t1.mp3", "h1", artist="A", album="Alb", title="T1", track_no=1))
+    s.upsert(_rec("/x/t2.mp3", "h2", artist="A", album="Alb", title="T2", track_no=2))
+    # re-ingest t1 as a CHANGED file (new hash) with different metadata
+    s.upsert(_rec("/x/t1.mp3", "h1b", artist="A", album="Alb", title="T1 remastered", track_no=1))
+    albums = s.albums_for_artist(s.iter_artists()[0].id)
+    assert len(albums) == 1  # "Alb" survives (t2 still references it)
+    titles = sorted(t.title for t in s.tracks_for_album(albums[0].id))
+    assert titles == ["T1 remastered", "T2"]  # old "T1" pruned; t2 intact; new title added
