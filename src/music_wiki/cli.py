@@ -21,7 +21,7 @@ def _cmd_scan(args) -> int:
     store = _store_at(args.db)
     stats = scan_library(args.source, store, MutagenTagReader())
     print(f"scanned={stats.scanned} ingested={stats.ingested} "
-          f"drm={stats.drm} skipped={stats.skipped}")
+          f"drm={stats.drm} skipped={stats.skipped} errors={stats.errors}")
     return 0
 
 

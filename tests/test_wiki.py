@@ -44,3 +44,13 @@ def test_wiki_links_resolve_for_special_char_names(tmp_path):
     assert "[[AC_DC - Live_ At Wembley]]" in artist_md
     album_md = (tmp_path / "albums" / "AC_DC - Live_ At Wembley.md").read_text(encoding="utf-8")
     assert "[[AC_DC]]" in album_md
+
+
+def test_generate_writes_drm_page(tmp_path):
+    s = Store.open(":memory:")
+    s.init_schema()
+    s.record_drm(SourceFile(abs_path="/lib/locked.enc", content_hash="d1",
+                            mtime=1.0, fmt="enc", is_drm=True))
+    WikiGenerator(s).generate(str(tmp_path))
+    drm_md = (tmp_path / "DRM.md").read_text(encoding="utf-8")
+    assert "재생불가" in drm_md and "/lib/locked.enc" in drm_md

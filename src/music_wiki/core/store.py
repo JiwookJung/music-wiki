@@ -128,16 +128,14 @@ class Store:
     def upsert(self, rec: TrackRecord) -> None:
         if self.has_signature(rec.source.content_hash):
             return  # already ingested — idempotent on content_hash
+        self._prune_path(rec.source.abs_path)  # remove rows from a prior version of this file
         artist_id = self._artist_id(rec.artist_name)
         album_id = self._album_id(artist_id, rec)
         track_id = self._track_id(album_id, rec)
         src = rec.source
         self.conn.execute(
             "INSERT INTO source_file(track_id, abs_path, content_hash, mtime, fmt,"
-            " decode_status, is_drm) VALUES(?,?,?,?,?,?,0)"
-            " ON CONFLICT(content_hash) DO UPDATE SET track_id=excluded.track_id,"
-            " abs_path=excluded.abs_path, mtime=excluded.mtime,"
-            " decode_status=excluded.decode_status",
+            " decode_status, is_drm) VALUES(?,?,?,?,?,?,0)",
             (track_id, src.abs_path, src.content_hash, src.mtime, src.fmt,
              src.decode_status),
         )
@@ -182,3 +180,43 @@ class Store:
     def drm_count(self) -> int:
         cur = self.conn.execute("SELECT COUNT(*) FROM source_file WHERE is_drm=1")
         return cur.fetchone()[0]
+
+    def _prune_path(self, abs_path: str) -> None:
+        """Remove rows left by a previous version of this file (a changed file
+        gets a new content_hash). Deletes stale source_file rows for the path
+        and garbage-collects any track/album/artist they orphan."""
+        cur = self.conn.execute(
+            "SELECT DISTINCT track_id FROM source_file WHERE abs_path=?", (abs_path,)
+        )
+        track_ids = [r[0] for r in cur.fetchall() if r[0] is not None]
+        self.conn.execute("DELETE FROM source_file WHERE abs_path=?", (abs_path,))
+        for track_id in track_ids:
+            if self.conn.execute(
+                "SELECT 1 FROM source_file WHERE track_id=? LIMIT 1", (track_id,)
+            ).fetchone():
+                continue
+            row = self.conn.execute(
+                "SELECT album_id FROM track WHERE id=?", (track_id,)
+            ).fetchone()
+            if not row:
+                continue
+            album_id = row[0]
+            self.conn.execute("DELETE FROM track WHERE id=?", (track_id,))
+            if self.conn.execute(
+                "SELECT 1 FROM track WHERE album_id=? LIMIT 1", (album_id,)
+            ).fetchone():
+                continue
+            arow = self.conn.execute(
+                "SELECT artist_id FROM album WHERE id=?", (album_id,)
+            ).fetchone()
+            self.conn.execute("DELETE FROM album WHERE id=?", (album_id,))
+            if arow and not self.conn.execute(
+                "SELECT 1 FROM album WHERE artist_id=? LIMIT 1", (arow[0],)
+            ).fetchone():
+                self.conn.execute("DELETE FROM artist WHERE id=?", (arow[0],))
+
+    def drm_files(self) -> list[str]:
+        cur = self.conn.execute(
+            "SELECT abs_path FROM source_file WHERE is_drm=1 ORDER BY abs_path"
+        )
+        return [r[0] for r in cur.fetchall()]

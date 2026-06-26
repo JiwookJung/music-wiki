@@ -66,3 +66,18 @@ def test_skip_unchanged_false_bypasses_skip_gate(tmp_path):
     scan_library(str(tmp_path), s, FakeReader())
     stats2 = scan_library(str(tmp_path), s, FakeReader(), skip_unchanged=False)
     assert stats2.skipped == 0 and stats2.ingested == 1
+
+
+def test_scan_counts_errors_and_continues(tmp_path):
+    (tmp_path / "iu.mp3").write_bytes(b"a")
+    (tmp_path / "boom.mp3").write_bytes(b"a")
+
+    class BoomReader:
+        def read(self, path):
+            if "boom" in path.lower():
+                raise ValueError("malformed")
+            return RawTags(artist="IU", album="Lilac", title="Lilac", track_no=1)
+
+    s = _store()
+    stats = scan_library(str(tmp_path), s, BoomReader())
+    assert stats.errors == 1 and stats.ingested == 1

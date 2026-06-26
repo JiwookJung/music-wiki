@@ -66,3 +66,22 @@ def test_upsert_fills_null_year_via_coalesce():
     s.upsert(_rec("/x/2.mp3", "h2", title="B", track_no=2, year=2021))
     album = s.albums_for_artist(s.iter_artists()[0].id)[0]
     assert album.year == 2021
+
+
+def test_changed_file_reupsert_prunes_stale_rows():
+    s = _store()
+    s.upsert(_rec("/x/song.mp3", "h1", artist="Old", album="OldAlbum", title="OldTitle"))
+    # same path, new hash (changed file), different metadata
+    s.upsert(_rec("/x/song.mp3", "h2", artist="New", album="NewAlbum", title="NewTitle"))
+    assert [a.name for a in s.iter_artists()] == ["New"]  # old artist GC'd
+    assert s.conn.execute(
+        "SELECT COUNT(*) FROM source_file WHERE abs_path=?", ("/x/song.mp3",)
+    ).fetchone()[0] == 1
+    assert s.conn.execute("SELECT COUNT(*) FROM track").fetchone()[0] == 1
+
+
+def test_drm_files_lists_paths():
+    s = _store()
+    s.record_drm(SourceFile(abs_path="/x/a.enc", content_hash="d1", mtime=1.0,
+                            fmt="enc", is_drm=True))
+    assert s.drm_files() == ["/x/a.enc"]

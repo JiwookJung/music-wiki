@@ -34,6 +34,7 @@ class WikiGenerator:
             self._write_artist(out, artist, albums)
             for album in albums:
                 self._write_album(out, artist, album)
+        self._write_drm(out)
 
     def _write_artist(self, out: Path, artist, albums) -> None:
         lines = [f"# {artist.name}", ""]
@@ -45,6 +46,17 @@ class WikiGenerator:
                 lines.append(f"- [[{link}]]{year}")
         path = out / "artists" / f"{safe_filename(artist.name)}.md"
         path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    def _write_drm(self, out: Path) -> None:
+        paths = self.store.drm_files()
+        if not paths:
+            return
+        lines = [
+            "# DRM (재생불가)", "",
+            "다음 파일은 DRM으로 보호되어 재생할 수 없습니다.", "",
+        ]
+        lines += [f"- `{p}`" for p in paths]
+        (out / "DRM.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     def _write_album(self, out: Path, artist, album) -> None:
         lines = [f"# {album.title}", "", f"아티스트: [[{safe_filename(artist.name)}]]"]

@@ -21,6 +21,7 @@ class ScanStats:
     ingested: int = 0
     drm: int = 0
     skipped: int = 0
+    errors: int = 0
 
 
 def file_signature(path: str) -> tuple[str, float, int]:
@@ -46,17 +47,19 @@ def scan_library(
                 continue
             if ext not in AUDIO_EXT:
                 continue
-            # scanned counts audio files only; DRM files are tracked in stats.drm
-            stats.scanned += 1
-            sig, mtime, _size = file_signature(full)
-            if skip_unchanged and store.has_signature(sig):
-                stats.skipped += 1
-                continue
-            src = SourceFile(abs_path=full, content_hash=sig, mtime=mtime,
-                             fmt=ext.lstrip("."))
-            tags = tag_reader.read(full)
-            rec = resolver.resolve(tags, full, src)
-            rec.cover_path = find_cover(root)
-            store.upsert(rec)
-            stats.ingested += 1
+            stats.scanned += 1  # scanned counts audio files only; DRM tracked in stats.drm
+            try:
+                sig, mtime, _size = file_signature(full)
+                if skip_unchanged and store.has_signature(sig):
+                    stats.skipped += 1
+                    continue
+                src = SourceFile(abs_path=full, content_hash=sig, mtime=mtime,
+                                 fmt=ext.lstrip("."))
+                tags = tag_reader.read(full)
+                rec = resolver.resolve(tags, full, src)
+                rec.cover_path = find_cover(root)
+                store.upsert(rec)
+                stats.ingested += 1
+            except Exception:
+                stats.errors += 1
     return stats
