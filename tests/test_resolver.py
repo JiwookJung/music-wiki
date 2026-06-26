@@ -29,3 +29,10 @@ def test_melon_flat_pattern():
     assert rec.artist_name == "아이유"
     assert rec.track_title == "좋은 날"
     assert rec.track_no == 1
+    assert rec.album_title == "Unknown Album"
+
+
+def test_album_artist_preferred_over_artist():
+    tags = RawTags(album_artist="Various Artists", artist="IU", album="Comp", title="X")
+    rec = EntityResolver().resolve(tags, "/lib/x.mp3", SRC)
+    assert rec.artist_name == "Various Artists"

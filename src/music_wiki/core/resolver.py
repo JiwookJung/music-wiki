@@ -27,9 +27,14 @@ class EntityResolver:
         track_no = tags.track_no
 
         # melon flat pattern: artist-NN-title.mp3
+        melon_flat = False
         if (not artist or not title):
             m = _MELON.match(stem)
             if m:
+                if not artist:
+                    # artist encoded in the filename → flat collector dir;
+                    # the parent folder is NOT an album.
+                    melon_flat = True
                 artist = artist or clean_name(m.group("artist"))
                 title = title or clean_name(m.group("title"))
                 track_no = track_no or int(m.group("no"))
@@ -40,7 +45,7 @@ class EntityResolver:
             t, n = _strip_leading_no(stem)
             title = t
             track_no = track_no or n
-        if not album and len(parts) >= 2:
+        if not album and len(parts) >= 2 and not melon_flat:
             album = clean_name(parts[-2])
         if not artist and len(parts) >= 3:
             artist = clean_name(parts[-3])
