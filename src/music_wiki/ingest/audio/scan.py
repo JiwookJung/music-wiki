@@ -46,6 +46,7 @@ def scan_library(
                 continue
             if ext not in AUDIO_EXT:
                 continue
+            # scanned counts audio files only; DRM files are tracked in stats.drm
             stats.scanned += 1
             sig, mtime, _size = file_signature(full)
             if skip_unchanged and store.has_signature(sig):
