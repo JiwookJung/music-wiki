@@ -126,6 +126,8 @@ class Store:
         return cur.lastrowid
 
     def upsert(self, rec: TrackRecord) -> None:
+        if self.has_signature(rec.source.content_hash):
+            return  # already ingested — idempotent on content_hash
         artist_id = self._artist_id(rec.artist_name)
         album_id = self._album_id(artist_id, rec)
         track_id = self._track_id(album_id, rec)

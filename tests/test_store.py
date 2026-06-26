@@ -2,10 +2,10 @@ from music_wiki.core.models import SourceFile, TrackRecord
 from music_wiki.core.store import Store
 
 
-def _rec(path, hash_, artist="IU", album="Lilac", title="Lilac", track_no=1):
+def _rec(path, hash_, artist="IU", album="Lilac", title="Lilac", track_no=1, year=2021):
     return TrackRecord(
         artist_name=artist, album_title=album, track_title=title,
-        track_no=track_no, disc_no=None, year=2021, label="EDAM",
+        track_no=track_no, disc_no=None, year=year, label="EDAM",
         genres=["K-Pop"], duration_s=180.0, cover_path="/x/cover.jpg",
         source=SourceFile(abs_path=path, content_hash=hash_, mtime=1.0, fmt="mp3"),
     )
@@ -49,3 +49,20 @@ def test_record_drm():
     s.record_drm(SourceFile(abs_path="/x/a.enc", content_hash="d1", mtime=1.0,
                             fmt="enc", is_drm=True))
     assert s.drm_count() == 1
+
+
+def test_album_and_track_dedup_case_insensitive():
+    s = _store()
+    s.upsert(_rec("/x/1.mp3", "h1", album="Lilac", title="Lilac", track_no=1))
+    s.upsert(_rec("/x/2.mp3", "h2", album="lilac", title="lilac", track_no=1))
+    albums = s.albums_for_artist(s.iter_artists()[0].id)
+    assert len(albums) == 1
+    assert len(s.tracks_for_album(albums[0].id)) == 1
+
+
+def test_upsert_fills_null_year_via_coalesce():
+    s = _store()
+    s.upsert(_rec("/x/1.mp3", "h1", title="A", track_no=1, year=None))
+    s.upsert(_rec("/x/2.mp3", "h2", title="B", track_no=2, year=2021))
+    album = s.albums_for_artist(s.iter_artists()[0].id)[0]
+    assert album.year == 2021
