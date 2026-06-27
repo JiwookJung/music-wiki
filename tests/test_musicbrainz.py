@@ -53,3 +53,15 @@ def test_lookup_caches_to_disk(tmp_path):
     b = client.lookup_genres("Bill Evans", "Waltz for Debby")   # served from cache
     assert a == b == ["jazz", "cool jazz", "piano jazz"]
     assert calls["n"] == 1
+
+
+def test_throttle_sleeps_between_consecutive_fetches():
+    slept = []
+    client = HttpMusicBrainzClient(
+        "ua/1.0", fetch=lambda url: _MB_RESPONSE,
+        sleep=lambda s: slept.append(s), min_interval=1.0,
+    )
+    client.lookup_genres("A", "X")   # first call: _last starts at 0.0 → no sleep
+    client.lookup_genres("B", "Y")   # second call within the interval → must sleep
+    assert len(slept) == 1
+    assert 0 < slept[0] <= 1.0
