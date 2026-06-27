@@ -16,6 +16,9 @@ from music_wiki.organize.enrich import enrich_genres
 from music_wiki.organize.pages import build_library_pages
 from music_wiki.organize.plan import build_plan
 from music_wiki.organize.review import export_review, import_review
+from music_wiki.external.local_llm import OpenAICompatibleLLMClient
+from music_wiki.organize.llm_classify import classify_low_confidence_llm
+from music_wiki.organize.describe import describe_albums
 
 
 def _store_at(db_path: str) -> Store:
@@ -23,6 +26,11 @@ def _store_at(db_path: str) -> Store:
     store = Store.open(db_path)
     store.init_schema()
     return store
+
+
+def _llm_client(cfg: Config) -> OpenAICompatibleLLMClient:
+    return OpenAICompatibleLLMClient(cfg.llm_base_url, cfg.llm_model,
+                                     cache_dir=str(cfg.llm_cache_dir))
 
 
 def _cmd_scan(args) -> int:
@@ -50,6 +58,17 @@ def _cmd_classify(args) -> int:
                                        cache_dir=str(cfg.mb_cache_dir))
         m = enrich_genres(store, client)
         print(f"enriched {m} albums via MusicBrainz")
+    if args.classify_llm:
+        k = classify_low_confidence_llm(store, _llm_client(cfg))
+        print(f"classified {k} low-confidence albums via local LLM")
+    return 0
+
+
+def _cmd_describe(args) -> int:
+    cfg = Config.default()
+    store = _store_at(args.db)
+    n = describe_albums(store, _llm_client(cfg), force=args.force, limit=args.limit)
+    print(f"described {n} albums via local LLM ({cfg.llm_model})")
     return 0
 
 
@@ -110,7 +129,14 @@ def main(argv: list[str] | None = None) -> int:
     p_classify = sub.add_parser("classify", help="앨범 장르 버킷 산출(규칙)")
     p_classify.add_argument("--db", default=str(cfg.db_path))
     p_classify.add_argument("--enrich-genre", action="store_true")
+    p_classify.add_argument("--classify-llm", action="store_true")
     p_classify.set_defaults(func=_cmd_classify)
+
+    p_describe = sub.add_parser("describe", help="앨범 한국어 해설 생성(로컬 LLM) → DB")
+    p_describe.add_argument("--db", default=str(cfg.db_path))
+    p_describe.add_argument("--force", action="store_true")
+    p_describe.add_argument("--limit", type=int, default=None)
+    p_describe.set_defaults(func=_cmd_describe)
 
     p_rexport = sub.add_parser("review-export", help="저신뢰·미분류 앨범 CSV 출력")
     p_rexport.add_argument("--db", default=str(cfg.db_path))
