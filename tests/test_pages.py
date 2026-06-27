@@ -47,3 +47,63 @@ def test_render_none_duration_omits_dur_span():
         tracks=[{"src": "x.mp3", "label": "01 x", "duration_s": None}],
     )
     assert 'class="dur"' not in page
+
+
+from pathlib import Path
+
+from music_wiki.core.models import SourceFile, TrackRecord
+from music_wiki.core.store import Store
+from music_wiki.organize.pages import build_library_pages
+
+
+def _rec(path, hash_, title="소녀", track_no=7):
+    return TrackRecord(
+        artist_name="이문세", album_title="3집", track_title=title, track_no=track_no,
+        disc_no=1, year=1987, label=None, genres=["Ballad"], duration_s=215.0,
+        cover_path=None,
+        source=SourceFile(abs_path=path, content_hash=hash_, mtime=1.0, fmt="mp3"),
+    )
+
+
+def _seed_two_track_album(tmp_path: Path) -> tuple[Store, Path]:
+    folder = tmp_path / "가요" / "이문세" / "3집"
+    folder.mkdir(parents=True)
+    (folder / "1-07 - 소녀.mp3").write_bytes(b"a")
+    (folder / "1-08 - 그늘.mp3").write_bytes(b"b")
+    s = Store.open(":memory:")
+    s.init_schema()
+    s.upsert(_rec("/src/7.mp3", "h1", title="소녀", track_no=7))
+    s.upsert(_rec("/src/8.mp3", "h2", title="그늘", track_no=8))
+    s.set_organized_path("/src/7.mp3", str(folder / "1-07 - 소녀.mp3"))
+    s.set_organized_path("/src/8.mp3", str(folder / "1-08 - 그늘.mp3"))
+    return s, folder
+
+
+def test_build_pages_writes_one_index_per_album(tmp_path):
+    s, folder = _seed_two_track_album(tmp_path)
+    assert build_library_pages(s) == 1
+    page = (folder / "index.html").read_text(encoding="utf-8")
+    assert "이문세 — 3집" in page
+    assert "소녀" in page and "그늘" in page
+
+
+def test_build_pages_dry_run_writes_nothing(tmp_path):
+    s, folder = _seed_two_track_album(tmp_path)
+    assert build_library_pages(s, dry_run=True) == 1
+    assert not (folder / "index.html").exists()
+
+
+def test_build_pages_skips_folder_not_on_disk(tmp_path):
+    s = Store.open(":memory:")
+    s.init_schema()
+    s.upsert(_rec("/src/7.mp3", "h1"))
+    s.set_organized_path("/src/7.mp3", "/nope/가요/이문세/3집/1-07 - 소녀.mp3")
+    assert build_library_pages(s) == 0
+
+
+def test_build_pages_idempotent(tmp_path):
+    s, folder = _seed_two_track_album(tmp_path)
+    build_library_pages(s)
+    first = (folder / "index.html").read_text(encoding="utf-8")
+    assert build_library_pages(s) == 1
+    assert (folder / "index.html").read_text(encoding="utf-8") == first

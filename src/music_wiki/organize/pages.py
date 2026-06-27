@@ -2,6 +2,10 @@ from __future__ import annotations
 
 import html
 import json
+import os
+from pathlib import Path
+
+from music_wiki.core.store import Store
 
 _STYLE = (
     "body{font-family:system-ui,'Apple SD Gothic Neo',sans-serif;max-width:760px;"
@@ -87,3 +91,44 @@ def render_album_html(*, artist: str, album: str, year: int | None,
         f"<script>{script}</script>"
         "</body></html>\n"
     )
+
+
+def _track_label(disc_no: int | None, track_no: int | None, title: str) -> str:
+    if track_no is None:
+        return title
+    num = f"{disc_no}-{track_no:02d}" if disc_no is not None else f"{track_no:02d}"
+    return f"{num} {title}"
+
+
+def build_library_pages(store: Store, *, dry_run: bool = False) -> int:
+    groups: dict[str, list] = {}
+    order: list[str] = []
+    for r in store.iter_organized():
+        folder = os.path.dirname(r.organized_path)
+        if folder not in groups:
+            groups[folder] = []
+            order.append(folder)
+        groups[folder].append(r)
+
+    written = 0
+    for folder in order:
+        if not os.path.isdir(folder):
+            continue  # not materialized (e.g. dry-run organize) → skip, don't count
+        rows = groups[folder]
+        head = rows[0]
+        tracks = [
+            {
+                "src": os.path.basename(r.organized_path),
+                "label": _track_label(r.disc_no, r.track_no, r.track_title),
+                "duration_s": r.duration_s,
+            }
+            for r in rows
+        ]
+        page = render_album_html(
+            artist=head.artist_name, album=head.album_title, year=head.album_year,
+            bucket=head.genre_bucket, description=head.description, tracks=tracks,
+        )
+        if not dry_run:
+            Path(folder, "index.html").write_text(page, encoding="utf-8")
+        written += 1
+    return written
