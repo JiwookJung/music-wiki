@@ -54,7 +54,8 @@ class OpenAICompatibleLLMClient:
 
     def complete(self, system: str, user: str, *,
                  json_schema: dict | None = None) -> str:
-        key_src = f"{self.model}|{self._temperature}|{system}|{user}|{json_schema}"
+        schema_key = json.dumps(json_schema, sort_keys=True) if json_schema is not None else "null"
+        key_src = f"{self.model}|{self._temperature}|{system}|{user}|{schema_key}"
         cache_file = self._cache_path(key_src)
         if cache_file and cache_file.exists():
             return cache_file.read_text(encoding="utf-8")

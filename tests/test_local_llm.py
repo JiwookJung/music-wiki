@@ -72,3 +72,21 @@ def test_complete_does_not_cache_on_fetch_error(tmp_path):
     except RuntimeError:
         pass
     assert list(tmp_path.glob("*.json")) == []   # nothing cached
+
+
+def test_different_schema_is_a_cache_miss(tmp_path):
+    calls = {"n": 0}
+
+    def fake_fetch(url, payload):
+        calls["n"] += 1
+        return {"choices": [{"message": {"role": "assistant", "content": "v"}}]}
+
+    client = OpenAICompatibleLLMClient("http://x/v1", "m", fetch=fake_fetch,
+                                       cache_dir=str(tmp_path))
+    client.complete("S", "U", json_schema={"a": 1})
+    client.complete("S", "U", json_schema={"a": 2})   # different schema → miss
+    assert calls["n"] == 2
+    # reordered keys are the SAME canonical schema → cache hit, no new fetch
+    client.complete("S", "U", json_schema={"b": 1, "a": 1})
+    client.complete("S", "U", json_schema={"a": 1, "b": 1})
+    assert calls["n"] == 3
