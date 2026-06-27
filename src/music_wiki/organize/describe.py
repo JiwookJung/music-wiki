@@ -34,11 +34,11 @@ def describe_albums(store: Store, client: LocalLLMClient, *,
                            album.genres, titles)
             try:
                 text = client.complete(DESCRIBE_SYSTEM, user)
+                text = (text or "").strip()
+                if not text:
+                    continue
+                store.set_album_description(album.id, text, f"llm:{client.model}")
+                n += 1
             except Exception:
                 continue   # per-album isolation: one failure does not abort the rest
-            text = (text or "").strip()
-            if not text:
-                continue
-            store.set_album_description(album.id, text, f"llm:{client.model}")
-            n += 1
     return n

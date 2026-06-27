@@ -1,6 +1,6 @@
 from music_wiki.core.models import SourceFile, TrackRecord
 from music_wiki.core.store import Store
-from music_wiki.organize.describe import describe_albums
+from music_wiki.organize.describe import DESCRIBE_SYSTEM, describe_albums
 
 
 class FakeLLM:
@@ -62,3 +62,17 @@ def test_describe_limit_caps_calls():
     llm = FakeLLM()
     n = describe_albums(s, llm, limit=1)
     assert n == 1 and llm.calls == 1
+
+
+def test_describe_skips_empty_response():
+    s = _store()
+    s.upsert(_rec("/x/1.mp3", "h1"))
+    llm = FakeLLM(content="   ")
+    n = describe_albums(s, llm)
+    assert n == 0
+    album = s.albums_for_artist(s.iter_artists()[0].id)[0]
+    assert album.description is None
+
+
+def test_describe_system_prompt_forbids_fabrication():
+    assert "단정하지 않는다" in DESCRIBE_SYSTEM
