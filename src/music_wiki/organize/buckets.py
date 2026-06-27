@@ -38,9 +38,8 @@ class RuleResult:
 
 def classify_by_rules(genres: list[str], artist: str, titles: list[str]) -> RuleResult:
     raw = " ".join((recover_text(g) or "") for g in genres).lower().strip()
-    hay = " ".join([raw, (artist or "").lower(), " ".join(titles).lower()])
     is_korean = bool(_HANGUL.search(artist or "")) or any(_HANGUL.search(t or "") for t in titles)
-    has_guitar = any(k in hay for k in ("classical guitar", "클래식기타", "guitar", "기타"))
+    has_guitar = any(k in raw for k in ("classical guitar", "클래식기타", "guitar"))
 
     matched: list[str] = []
     signals: list[str] = []

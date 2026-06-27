@@ -38,7 +38,7 @@ def test_junk_genre_nonkorean_is_unclassified():
 def test_multi_match_is_low_confidence():
     r = c(["Jazz(Tango,World Fusion)"], artist="x", titles=["y"])
     assert r.confidence == 0.5
-    assert r.bucket in ("재즈", "제3세계")
+    assert r.bucket == "재즈"
 
 
 def test_buckets_constant():
