@@ -47,6 +47,21 @@ class AlbumRow:
     has_digital: bool
     has_vinyl: bool
     cover_path: str | None
+    genre_bucket: str | None
+    genre_confidence: float | None
+    genre_source: str | None
+
+
+@dataclass
+class OrganizeRow:
+    abs_path: str
+    fmt: str
+    genre_bucket: str | None
+    artist_name: str
+    album_title: str
+    disc_no: int | None
+    track_no: int | None
+    track_title: str
 
 
 @dataclass
@@ -69,7 +84,18 @@ class Store:
 
     def init_schema(self) -> None:
         self.conn.executescript(_SCHEMA)
+        self._migrate()
         self.conn.commit()
+
+    def _migrate(self) -> None:
+        album_cols = {r[1] for r in self.conn.execute("PRAGMA table_info(album)")}
+        for col, decl in (("genre_bucket", "TEXT"), ("genre_confidence", "REAL"),
+                          ("genre_source", "TEXT")):
+            if col not in album_cols:
+                self.conn.execute(f"ALTER TABLE album ADD COLUMN {col} {decl}")
+        sf_cols = {r[1] for r in self.conn.execute("PRAGMA table_info(source_file)")}
+        if "organized_path" not in sf_cols:
+            self.conn.execute("ALTER TABLE source_file ADD COLUMN organized_path TEXT")
 
     # --- writes ---
     def _artist_id(self, name: str) -> int:
@@ -162,11 +188,13 @@ class Store:
 
     def albums_for_artist(self, artist_id: int) -> list[AlbumRow]:
         cur = self.conn.execute(
-            "SELECT id, title, year, label, genres, has_digital, has_vinyl, cover_path"
+            "SELECT id, title, year, label, genres, has_digital, has_vinyl, cover_path,"
+            " genre_bucket, genre_confidence, genre_source"
             " FROM album WHERE artist_id=? ORDER BY year, title", (artist_id,)
         )
         return [
-            AlbumRow(r[0], r[1], r[2], r[3], json.loads(r[4]), bool(r[5]), bool(r[6]), r[7])
+            AlbumRow(r[0], r[1], r[2], r[3], json.loads(r[4]), bool(r[5]), bool(r[6]),
+                     r[7], r[8], r[9], r[10])
             for r in cur.fetchall()
         ]
 
@@ -214,6 +242,34 @@ class Store:
                 "SELECT 1 FROM album WHERE artist_id=? LIMIT 1", (arow[0],)
             ).fetchone():
                 self.conn.execute("DELETE FROM artist WHERE id=?", (arow[0],))
+
+    def set_album_genre(self, album_id: int, bucket: str | None,
+                        confidence: float | None, source: str) -> None:
+        self.conn.execute(
+            "UPDATE album SET genre_bucket=?, genre_confidence=?, genre_source=?"
+            " WHERE id=?", (bucket, confidence, source, album_id)
+        )
+        self.conn.commit()
+
+    def set_organized_path(self, abs_path: str, organized_path: str) -> None:
+        self.conn.execute(
+            "UPDATE source_file SET organized_path=? WHERE abs_path=?",
+            (organized_path, abs_path)
+        )
+        self.conn.commit()
+
+    def iter_organizable(self) -> list[OrganizeRow]:
+        cur = self.conn.execute(
+            "SELECT sf.abs_path, sf.fmt, al.genre_bucket, ar.name, al.title,"
+            " t.disc_no, t.track_no, t.title"
+            " FROM source_file sf"
+            " JOIN track t ON sf.track_id = t.id"
+            " JOIN album al ON t.album_id = al.id"
+            " JOIN artist ar ON al.artist_id = ar.id"
+            " WHERE sf.is_drm = 0 AND sf.track_id IS NOT NULL"
+            " ORDER BY ar.name, al.title, t.disc_no, t.track_no"
+        )
+        return [OrganizeRow(*r) for r in cur.fetchall()]
 
     def drm_files(self) -> list[str]:
         cur = self.conn.execute(
