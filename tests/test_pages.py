@@ -1,4 +1,8 @@
-from music_wiki.organize.pages import render_album_html
+from pathlib import Path
+
+from music_wiki.core.models import SourceFile, TrackRecord
+from music_wiki.core.store import Store
+from music_wiki.organize.pages import build_library_pages, render_album_html
 
 
 def _tracks():
@@ -47,13 +51,6 @@ def test_render_none_duration_omits_dur_span():
         tracks=[{"src": "x.mp3", "label": "01 x", "duration_s": None}],
     )
     assert 'class="dur"' not in page
-
-
-from pathlib import Path
-
-from music_wiki.core.models import SourceFile, TrackRecord
-from music_wiki.core.store import Store
-from music_wiki.organize.pages import build_library_pages
 
 
 def _rec(path, hash_, title="소녀", track_no=7):
