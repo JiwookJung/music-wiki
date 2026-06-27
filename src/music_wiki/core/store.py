@@ -50,6 +50,8 @@ class AlbumRow:
     genre_bucket: str | None
     genre_confidence: float | None
     genre_source: str | None
+    description: str | None
+    description_source: str | None
 
 
 @dataclass
@@ -90,7 +92,8 @@ class Store:
     def _migrate(self) -> None:
         album_cols = {r[1] for r in self.conn.execute("PRAGMA table_info(album)")}
         for col, decl in (("genre_bucket", "TEXT"), ("genre_confidence", "REAL"),
-                          ("genre_source", "TEXT")):
+                          ("genre_source", "TEXT"), ("description", "TEXT"),
+                          ("description_source", "TEXT")):
             if col not in album_cols:
                 self.conn.execute(f"ALTER TABLE album ADD COLUMN {col} {decl}")
         sf_cols = {r[1] for r in self.conn.execute("PRAGMA table_info(source_file)")}
@@ -189,12 +192,13 @@ class Store:
     def albums_for_artist(self, artist_id: int) -> list[AlbumRow]:
         cur = self.conn.execute(
             "SELECT id, title, year, label, genres, has_digital, has_vinyl, cover_path,"
-            " genre_bucket, genre_confidence, genre_source"
+            " genre_bucket, genre_confidence, genre_source, description,"
+            " description_source"
             " FROM album WHERE artist_id=? ORDER BY year, title", (artist_id,)
         )
         return [
             AlbumRow(r[0], r[1], r[2], r[3], json.loads(r[4]), bool(r[5]), bool(r[6]),
-                     r[7], r[8], r[9], r[10])
+                     r[7], r[8], r[9], r[10], r[11], r[12])
             for r in cur.fetchall()
         ]
 
@@ -248,6 +252,14 @@ class Store:
         self.conn.execute(
             "UPDATE album SET genre_bucket=?, genre_confidence=?, genre_source=?"
             " WHERE id=?", (bucket, confidence, source, album_id)
+        )
+        self.conn.commit()
+
+    def set_album_description(self, album_id: int, description: str,
+                              source: str) -> None:
+        self.conn.execute(
+            "UPDATE album SET description=?, description_source=? WHERE id=?",
+            (description, source, album_id)
         )
         self.conn.commit()
 
