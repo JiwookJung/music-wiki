@@ -29,6 +29,15 @@ _RULES: list[tuple[str, list[str]]] = [
 _PRIORITY = ["클래식기타", "클래식", "재즈", "제3세계", "가요", "경음악_OST", "팝"]
 
 
+def _kw_matches(kw: str, raw: str) -> bool:
+    """Bare ASCII-alphanumeric keywords match on word boundaries (so 'ost'
+    doesn't fire inside 'Post-Punk' and 'latin' not inside 'Platinum').
+    Phrases, punctuated, and non-ASCII keywords match as substrings."""
+    if kw.isascii() and kw.isalnum():
+        return re.search(rf"\b{kw}\b", raw) is not None
+    return kw in raw
+
+
 @dataclass
 class RuleResult:
     bucket: str
@@ -44,7 +53,7 @@ def classify_by_rules(genres: list[str], artist: str, titles: list[str]) -> Rule
     matched: list[str] = []
     signals: list[str] = []
     for bucket, kws in _RULES:
-        hit = next((kw for kw in kws if kw in raw), None)
+        hit = next((kw for kw in kws if _kw_matches(kw, raw)), None)
         if hit is None:
             continue
         if bucket == "가요" and not is_korean:

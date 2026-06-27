@@ -43,3 +43,11 @@ def test_multi_match_is_low_confidence():
 
 def test_buckets_constant():
     assert set(BUCKETS) == {"클래식", "가요", "재즈", "팝", "제3세계", "클래식기타", "경음악_OST"}
+
+
+def test_substring_keyword_collisions_avoided():
+    assert c(["Post-Punk"]).bucket != "경음악_OST"   # "ost" must not fire inside Post
+    assert c(["Nostalgia"]).bucket != "경음악_OST"
+    assert c(["Platinum"]).bucket != "제3세계"        # "latin" must not fire inside Platinum
+    assert c(["OST"]).bucket == "경음악_OST"          # standalone keyword still works
+    assert c(["Latin"]).bucket == "제3세계"

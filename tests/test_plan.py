@@ -53,3 +53,19 @@ def test_plan_dedups_same_track_multiple_sources():
     classify_albums(s)
     ops = build_plan(s, "/home/lib")
     assert len(ops) == 1  # one target path → one copy
+
+
+def test_plan_suffixes_distinct_tracks_colliding_on_sanitized_path():
+    s = _store()
+    # two DIFFERENT tracks (distinct title_key), same album+track_no, whose titles
+    # sanitize to the same filename → both must be copied (suffix, not dropped)
+    s.upsert(_rec("/src/1.mp3", "h1", "A", "Alb", "Song?", 1, ["Jazz"]))
+    s.upsert(_rec("/src/2.mp3", "h2", "A", "Alb", "Song*", 1, ["Jazz"]))
+    classify_albums(s)
+    ops = build_plan(s, "/home/lib")
+    assert len(ops) == 2
+    assert {o.src for o in ops} == {"/src/1.mp3", "/src/2.mp3"}
+    assert {o.dst for o in ops} == {
+        "/home/lib/재즈/A/Alb/01 - Song_.mp3",
+        "/home/lib/재즈/A/Alb/01 - Song_ (2).mp3",
+    }
