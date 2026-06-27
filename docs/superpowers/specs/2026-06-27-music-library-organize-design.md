@@ -78,7 +78,7 @@ M1 scan → 엔티티 DB → **classify**(genre_bucket 기록) → **review**(CS
 `MusicBrainzClient`(기본, 무료, ~1req/s 레이트리밋, 응답 캐시 디렉토리)로 아티스트+앨범 → genres/tags. 선택적 `DiscogsClient`(토큰 제공 시, style 정밀). 외부 장르를 다시 규칙표로 7버킷 매핑. **기본 off(`--enrich-genre`)**.
 
 ### L3 — LLM (그래도 애매)
-`ClassifierLLM`(Claude): 아티스트·앨범·복구태그·트랙명 일부를 주고 7버킷 중 택1 + 신뢰도 + 근거. 모델은 config 노브, 기본 `claude-opus-4-8`(대량 비용 절감 시 `claude-haiku-4-5`/`claude-sonnet-4-6`; Batch+프롬프트캐싱). **기본 off(`--classify-llm`)**.
+`LocalLLMClient`(**로컬 LLM** — LM Studio OpenAI 호환 API, 기본 `http://localhost:1234/v1`, 기본 모델 Qwen3-14B): 아티스트·앨범·복구태그·트랙명 일부를 주고 7버킷 중 택1 + 신뢰도 + 근거. base_url·model은 config 노브(Qwen3/Gemma3 교체). **기본 off(`--classify-llm`)**. 상세: `2026-06-27-library-pages-and-local-llm-design.md`.
 
 출력: `album.genre_bucket / genre_confidence(0~1) / genre_source(rule|musicbrainz|discogs|llm|manual)`. 미변경 앨범은 재실행 시 스킵(멱등).
 
@@ -125,7 +125,7 @@ music-wiki organize        [--target ~/music-library] [--apply]  # plan(+복사)
 ## 11. 외부 의존
 
 - MusicBrainz(기본, 무료, User-Agent 필수, ~1req/s, 디스크 캐시). Discogs(선택, 토큰). 둘 다 `--enrich-genre`에서만 호출, off 시 미접속.
-- Claude(선택, `--classify-llm`). 인터페이스 뒤로 감싸 단위테스트는 외부 호출 없음.
+- 로컬 LLM(선택, `--classify-llm`; LM Studio OpenAI 호환, 클라우드 비노출). 인터페이스 뒤로 감싸 단위테스트는 외부 호출 없음.
 
 ## 12. 엣지 · 안전 · 멱등
 
