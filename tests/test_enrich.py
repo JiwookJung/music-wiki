@@ -52,6 +52,7 @@ def test_enrich_skips_high_confidence_and_manual():
     n = enrich_genres(s, mb)
     assert n == 0                                  # high-conf + manual both skipped
     assert ("Bill Evans", "Waltz") not in mb.calls
+    assert ("VA", "Comp") not in mb.calls   # manual album must not be looked up
 
 
 def test_enrich_no_genres_leaves_unchanged():
