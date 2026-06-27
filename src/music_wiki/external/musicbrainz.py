@@ -12,17 +12,21 @@ class MusicBrainzClient(Protocol):
     def lookup_genres(self, artist: str, album: str) -> list[str]: ...
 
 
-def parse_genres(data: dict) -> list[str]:
-    """Genres + folksonomy tags of the first (best) release-group match."""
-    groups = data.get("release-groups") or []
+def first_release_group_mbid(search_data: dict) -> str | None:
+    groups = search_data.get("release-groups") or []
     if not groups:
-        return []
-    rg = groups[0]
+        return None
+    return groups[0].get("id")
+
+
+def parse_genres(lookup_data: dict) -> list[str]:
+    """genres[].name + tags[].name from a release-group LOOKUP response
+    (inc=genres+tags). The search endpoint does NOT include these."""
     names: list[str] = []
-    for g in rg.get("genres") or []:
+    for g in lookup_data.get("genres") or []:
         if g.get("name"):
             names.append(g["name"])
-    for t in rg.get("tags") or []:
+    for t in lookup_data.get("tags") or []:
         if t.get("name"):
             names.append(t["name"])
     return names
@@ -58,21 +62,38 @@ class HttpMusicBrainzClient:
             self._sleep(self._min_interval - elapsed)
         self._last = time.monotonic()
 
+    def _write_cache(self, cache_file: Path | None, genres: list[str]) -> None:
+        if cache_file:
+            cache_file.parent.mkdir(parents=True, exist_ok=True)
+            cache_file.write_text(json.dumps(genres, ensure_ascii=False), encoding="utf-8")
+
     def lookup_genres(self, artist: str, album: str) -> list[str]:
         if not artist or not album:
             return []
         cache_file = self._cache_path(artist, album)
         if cache_file and cache_file.exists():
             return json.loads(cache_file.read_text(encoding="utf-8"))
-        self._throttle()
+
         query = urllib.parse.quote(f'artist:"{artist}" AND releasegroup:"{album}"')
-        url = f"https://musicbrainz.org/ws/2/release-group?query={query}&fmt=json&limit=1"
+        search_url = (f"https://musicbrainz.org/ws/2/release-group"
+                      f"?query={query}&fmt=json&limit=1")
+        self._throttle()
         try:
-            data = self._fetch(url)
+            search = self._fetch(search_url)
         except Exception:
+            return []   # transient search failure → do not cache
+
+        mbid = first_release_group_mbid(search)
+        if mbid is None:
+            self._write_cache(cache_file, [])   # genuinely not found in MB
             return []
-        genres = parse_genres(data)
-        if cache_file:
-            cache_file.parent.mkdir(parents=True, exist_ok=True)
-            cache_file.write_text(json.dumps(genres, ensure_ascii=False), encoding="utf-8")
+
+        lookup_url = (f"https://musicbrainz.org/ws/2/release-group/{mbid}"
+                      f"?inc=genres+tags&fmt=json")
+        self._throttle()
+        try:
+            genres = parse_genres(self._fetch(lookup_url))
+        except Exception:
+            return []   # transient lookup failure → do not cache
+        self._write_cache(cache_file, genres)
         return genres
