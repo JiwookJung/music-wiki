@@ -37,7 +37,7 @@ _SCRIPT = (
 
 
 def _fmt_dur(seconds: float | None) -> str:
-    if not seconds:
+    if seconds is None:
         return ""
     m, s = divmod(int(seconds), 60)
     return f"{m}:{s:02d}"

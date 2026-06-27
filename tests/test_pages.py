@@ -31,3 +31,19 @@ def test_render_omits_description_section_when_absent():
     page = render_album_html(artist="이문세", album="3집", year=1987, bucket="가요",
                              description=None, tracks=_tracks())
     assert "해설" not in page
+
+
+def test_render_zero_duration_is_shown_not_dropped():
+    page = render_album_html(
+        artist="A", album="B", year=None, bucket=None, description=None,
+        tracks=[{"src": "x.mp3", "label": "01 x", "duration_s": 0.0}],
+    )
+    assert "0:00" in page          # 0.0 is a real duration, not "missing"
+
+
+def test_render_none_duration_omits_dur_span():
+    page = render_album_html(
+        artist="A", album="B", year=None, bucket=None, description=None,
+        tracks=[{"src": "x.mp3", "label": "01 x", "duration_s": None}],
+    )
+    assert 'class="dur"' not in page
