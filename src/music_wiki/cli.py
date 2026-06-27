@@ -13,6 +13,7 @@ from music_wiki.organize.apply import run_plan
 from music_wiki.external.musicbrainz import HttpMusicBrainzClient
 from music_wiki.organize.classify import classify_albums
 from music_wiki.organize.enrich import enrich_genres
+from music_wiki.organize.pages import build_library_pages
 from music_wiki.organize.plan import build_plan
 from music_wiki.organize.review import export_review, import_review
 
@@ -71,12 +72,23 @@ def _cmd_organize(args) -> int:
     ops = build_plan(store, args.target)
     stats = run_plan(ops, store, dry_run=not args.apply)
     if args.apply:
+        pages = build_library_pages(store)
         print(f"[APPLIED] planned={stats.planned} copied={stats.copied} "
-              f"skipped={stats.skipped} errors={stats.errors}")
+              f"skipped={stats.skipped} errors={stats.errors} pages={pages}")
     else:
         would = stats.planned - stats.skipped - stats.errors
         print(f"[DRY-RUN] planned={stats.planned} would_copy={would} "
               f"already={stats.skipped} target={args.target}  (use --apply to copy)")
+    return 0
+
+
+def _cmd_build_pages(args) -> int:
+    store = _store_at(args.db)
+    n = build_library_pages(store, dry_run=args.dry_run)
+    if args.dry_run:
+        print(f"[DRY-RUN] would write {n} album pages")
+    else:
+        print(f"wrote {n} album index.html pages")
     return 0
 
 
@@ -116,6 +128,11 @@ def main(argv: list[str] | None = None) -> int:
     p_org.add_argument("--target", default=os.path.expanduser("~/music-library"))
     p_org.add_argument("--apply", action="store_true")
     p_org.set_defaults(func=_cmd_organize)
+
+    p_pages = sub.add_parser("build-pages", help="앨범 폴더에 index.html (재)생성")
+    p_pages.add_argument("--db", default=str(cfg.db_path))
+    p_pages.add_argument("--dry-run", action="store_true")
+    p_pages.set_defaults(func=_cmd_build_pages)
 
     args = parser.parse_args(argv)
     return args.func(args)
