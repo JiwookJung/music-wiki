@@ -19,7 +19,7 @@ def export_review(store: Store, out_path: str, threshold: float = 0.8) -> int:
             if conf >= threshold and album.genre_bucket not in (None, UNCLASSIFIED):
                 continue
             titles = [t.title for t in store.tracks_for_album(album.id)]
-            res = classify_by_rules(album.genres, artist.name, titles)
+            res = classify_by_rules(album.genres, artist.name, titles, album=album.title)
             rows.append({
                 "album_id": album.id, "artist": artist.name, "album": album.title,
                 "proposed_bucket": album.genre_bucket or UNCLASSIFIED,

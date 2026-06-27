@@ -15,7 +15,7 @@ def classify_albums(store: Store) -> int:
             if album.genre_source == "manual":
                 continue
             titles = [t.title for t in store.tracks_for_album(album.id)]
-            res = classify_by_rules(album.genres, artist.name, titles)
+            res = classify_by_rules(album.genres, artist.name, titles, album=album.title)
             store.set_album_genre(album.id, res.bucket, res.confidence, "rule")
             n += 1
     return n
