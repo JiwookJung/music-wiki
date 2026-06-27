@@ -67,6 +67,21 @@ class OrganizeRow:
 
 
 @dataclass
+class OrganizedRow:
+    organized_path: str
+    artist_name: str
+    album_title: str
+    album_year: int | None
+    genre_bucket: str | None
+    description: str | None
+    description_source: str | None
+    disc_no: int | None
+    track_no: int | None
+    track_title: str
+    duration_s: float | None
+
+
+@dataclass
 class TrackRow:
     id: int
     title: str
@@ -282,6 +297,20 @@ class Store:
             " ORDER BY ar.name, al.title, t.disc_no, t.track_no"
         )
         return [OrganizeRow(*r) for r in cur.fetchall()]
+
+    def iter_organized(self) -> list[OrganizedRow]:
+        cur = self.conn.execute(
+            "SELECT sf.organized_path, ar.name, al.title, al.year, al.genre_bucket,"
+            " al.description, al.description_source,"
+            " t.disc_no, t.track_no, t.title, t.duration_s"
+            " FROM source_file sf"
+            " JOIN track t ON sf.track_id = t.id"
+            " JOIN album al ON t.album_id = al.id"
+            " JOIN artist ar ON al.artist_id = ar.id"
+            " WHERE sf.organized_path IS NOT NULL AND sf.is_drm = 0"
+            " ORDER BY ar.name, al.title, t.disc_no, t.track_no"
+        )
+        return [OrganizedRow(*r) for r in cur.fetchall()]
 
     def drm_files(self) -> list[str]:
         cur = self.conn.execute(
