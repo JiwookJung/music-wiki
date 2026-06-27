@@ -66,6 +66,9 @@ def test_album_title_ost_signal():
 def test_hiphop_and_rap_map_to_pop():
     assert c(["rap / hip-hop"]).bucket == "팝"   # was 미분류 before (hyphen miss)
     assert c(["Hip-Hop"]).bucket == "팝"
+    # "rap" is word-boundary matched: must NOT fire inside "trap"/"rapper"
+    assert c(["trap"]).bucket != "팝"
+    assert c(["rapper music"]).bucket != "팝"
 
 
 def test_korean_popular_routes_to_가요():
