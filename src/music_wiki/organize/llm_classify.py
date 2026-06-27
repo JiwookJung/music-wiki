@@ -8,7 +8,7 @@ from music_wiki.external.local_llm import LocalLLMClient
 
 from .buckets import BUCKETS, UNCLASSIFIED
 
-_VALID = set(BUCKETS) | {UNCLASSIFIED}
+_VALID = set(BUCKETS)   # the 7 real buckets only
 
 _SYSTEM = (
     "너는 음악 장르 분류기다. 아래 7개 버킷 중 정확히 하나를 고른다: "
@@ -51,10 +51,10 @@ def classify_low_confidence_llm(store: Store, client: LocalLLMClient, *,
                 raw = client.complete(_SYSTEM, user, json_schema=_SCHEMA)
                 data = json.loads(raw)
                 bucket = data["bucket"]
-                new_conf = float(data.get("confidence", 0.0))
+                new_conf = float(data["confidence"])
             except Exception:
                 continue   # parse/network failure on one album must not abort the rest
-            if bucket not in _VALID or bucket == UNCLASSIFIED:
+            if bucket not in _VALID:
                 continue
             if new_conf > conf:
                 store.set_album_genre(album.id, bucket, new_conf, "llm")

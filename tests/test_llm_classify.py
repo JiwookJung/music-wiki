@@ -77,3 +77,15 @@ def test_llm_ignores_bucket_not_in_taxonomy():
     llm = FakeLLM('{"bucket": "Heavy Metal", "confidence": 0.9, "reasoning": "x"}')
     n = classify_low_confidence_llm(s, llm)
     assert n == 0   # bucket outside the 7 buckets → ignored
+
+
+def test_llm_missing_confidence_is_isolated():
+    s = _store()
+    s.upsert(_rec("/x/1.mp3", "h1", "A", "Alb", "t", ["#JUNK"]))
+    album = s.albums_for_artist(s.iter_artists()[0].id)[0]
+    s.set_album_genre(album.id, "미분류", 0.0, "rule")
+    llm = FakeLLM('{"bucket": "재즈"}')          # no confidence key
+    n = classify_low_confidence_llm(s, llm)      # must not raise
+    assert n == 0
+    album = s.albums_for_artist(s.iter_artists()[0].id)[0]
+    assert album.genre_bucket == "미분류"        # unchanged
