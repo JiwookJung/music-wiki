@@ -11,10 +11,16 @@ class Config:
     db_path: Path
     summary_model: str = "claude-opus-4-8"
     musicbrainz_user_agent: str = "music-wiki/0.1 (https://github.com/JiwookJung/music-wiki)"
+    llm_base_url: str = "http://localhost:1234/v1"
+    llm_model: str = "qwen3-14b"
 
     @property
     def mb_cache_dir(self) -> Path:
         return self.vault_dir / "mb-cache"
+
+    @property
+    def llm_cache_dir(self) -> Path:
+        return self.vault_dir / "llm-cache"
 
     @classmethod
     def default(cls) -> "Config":
