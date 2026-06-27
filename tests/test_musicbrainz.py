@@ -79,3 +79,15 @@ def test_throttle_sleeps_between_search_and_lookup():
     client.lookup_genres("Bill Evans", "Waltz for Debby")
     assert len(slept) == 1
     assert 0 < slept[0] <= 1.0
+
+
+def test_lookup_error_after_search_returns_empty_and_not_cached(tmp_path):
+    def fetch(url):
+        if "/release-group/rg-123" in url:   # the lookup leg fails
+            raise RuntimeError("lookup down")
+        return _SEARCH                         # search leg succeeds
+
+    client = HttpMusicBrainzClient("ua/1.0", fetch=fetch, sleep=lambda s: None,
+                                   cache_dir=str(tmp_path))
+    assert client.lookup_genres("Bill Evans", "Waltz for Debby") == []
+    assert list(tmp_path.glob("mb-*.json")) == []   # transient error → no cache poisoning
