@@ -55,3 +55,22 @@ def test_import_skips_invalid_bucket(tmp_path: Path):
     out.write_text(out.read_text(encoding="utf-8").replace("미분류", "NOTABUCKET"),
                    encoding="utf-8")
     assert import_review(s, str(out)) == 0
+
+
+def test_import_skips_malformed_album_id(tmp_path):
+    s = _seeded()
+    out = tmp_path / "review.csv"
+    export_review(s, str(out), threshold=0.8)
+    text = out.read_text(encoding="utf-8").replace("미분류", "제3세계")
+    text += "notanumber,X,Y,재즈,0.10,rule,\n"   # junk row, invalid album_id
+    out.write_text(text, encoding="utf-8")
+    assert import_review(s, str(out)) == 1   # valid row applied, junk row skipped
+
+
+def test_export_skips_manual_even_if_low_conf(tmp_path):
+    s = _seeded()
+    comp = next(a for ar in s.iter_artists() for a in s.albums_for_artist(ar.id)
+                if a.title == "Comp")
+    s.set_album_genre(comp.id, "제3세계", 1.0, "manual")
+    out = tmp_path / "review.csv"
+    assert export_review(s, str(out), threshold=0.8) == 0   # nothing left to review

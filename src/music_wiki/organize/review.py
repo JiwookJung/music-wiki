@@ -40,6 +40,10 @@ def import_review(store: Store, in_path: str) -> int:
             bucket = (row.get("proposed_bucket") or "").strip()
             if bucket not in BUCKETS and bucket != UNCLASSIFIED:
                 continue
-            store.set_album_genre(int(row["album_id"]), bucket, 1.0, "manual")
+            try:
+                album_id = int(row["album_id"])
+            except (ValueError, KeyError, TypeError):
+                continue
+            store.set_album_genre(album_id, bucket, 1.0, "manual")
             n += 1
     return n
