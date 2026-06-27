@@ -10,6 +10,11 @@ class Config:
     vault_dir: Path
     db_path: Path
     summary_model: str = "claude-opus-4-8"
+    musicbrainz_user_agent: str = "music-wiki/0.1 (https://github.com/JiwookJung/music-wiki)"
+
+    @property
+    def mb_cache_dir(self) -> Path:
+        return self.vault_dir / "mb-cache"
 
     @classmethod
     def default(cls) -> "Config":

@@ -10,7 +10,9 @@ from music_wiki.core.tags import MutagenTagReader
 from music_wiki.core.wiki import WikiGenerator
 from music_wiki.ingest.audio.scan import scan_library
 from music_wiki.organize.apply import run_plan
+from music_wiki.external.musicbrainz import HttpMusicBrainzClient
 from music_wiki.organize.classify import classify_albums
+from music_wiki.organize.enrich import enrich_genres
 from music_wiki.organize.plan import build_plan
 from music_wiki.organize.review import export_review, import_review
 
@@ -38,9 +40,15 @@ def _cmd_build_wiki(args) -> int:
 
 
 def _cmd_classify(args) -> int:
+    cfg = Config.default()
     store = _store_at(args.db)
     n = classify_albums(store)
     print(f"classified {n} albums (rules)")
+    if args.enrich_genre:
+        client = HttpMusicBrainzClient(cfg.musicbrainz_user_agent,
+                                       cache_dir=str(cfg.mb_cache_dir))
+        m = enrich_genres(store, client)
+        print(f"enriched {m} albums via MusicBrainz")
     return 0
 
 
@@ -89,6 +97,7 @@ def main(argv: list[str] | None = None) -> int:
 
     p_classify = sub.add_parser("classify", help="앨범 장르 버킷 산출(규칙)")
     p_classify.add_argument("--db", default=str(cfg.db_path))
+    p_classify.add_argument("--enrich-genre", action="store_true")
     p_classify.set_defaults(func=_cmd_classify)
 
     p_rexport = sub.add_parser("review-export", help="저신뢰·미분류 앨범 CSV 출력")
