@@ -64,11 +64,16 @@ class WikiGenerator:
             lines.append(f"연도: {album.year}")
         if album.label:
             lines.append(f"레이블: {album.label}")
+        if album.genre_bucket:
+            lines.append(f"분류: {album.genre_bucket}")
         if album.genres:
             lines.append("장르: " + ", ".join(album.genres))
         lines.append(_badges(album))
         if album.cover_path:
             lines.append(f"![cover]({album.cover_path})")
+        if album.description:
+            lines += ["", "## 해설", "", album.description,
+                      "", "> 🤖 AI 생성 — 장르·분위기 기준(사실 미검증)"]
         lines += ["", "## 트랙", "", "| # | 제목 | 길이 |", "|---|------|------|"]
         for t in self.store.tracks_for_album(album.id):
             dur = f"{int(t.duration_s) // 60}:{int(t.duration_s) % 60:02d}" if t.duration_s else ""
