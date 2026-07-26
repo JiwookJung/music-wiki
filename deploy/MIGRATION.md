@@ -46,6 +46,7 @@ docker compose ps                 # 둘 다 Up / neo4j healthy 확인
 # 그래프 적재(최초 1회 + 데이터 갱신 시)
 docker compose exec web python /app/scripts/build_catalog.py
 docker compose exec web python /app/scripts/load_neo4j.py --wipe
+docker compose exec web python /app/scripts/build_embeddings.py   # 유사검색(CPU 1분)
 ```
 
 접속: `http://<ser8-IP>:8765` (Neo4j 브라우저는 `http://<ser8-IP>:7474`)
@@ -86,7 +87,7 @@ wakeonlan <ubuntu-MAC>
 |---|---|
 | mp3 추가·태그 변경 | **Ubuntu**: `music-wiki update` → `git push` / **ser8**: `git pull` + vault rsync |
 | 음반 구매(분류번호 발급) | **ser8**: 엑셀에 행 추가 → `pipeline.py` (E2에서 웹 UI로 대체 예정) |
-| 카탈로그·그래프 갱신 | **ser8**: `docker compose exec web python /app/scripts/build_catalog.py && ... load_neo4j.py` |
+| 카탈로그·그래프 갱신 | **ser8**: `build_catalog.py` → `load_neo4j.py` → `build_embeddings.py` |
 | YouTube 링크 보강 | **Ubuntu**(대량) 또는 ser8: `python scripts/resolve_youtube.py` |
 | 스택 업데이트 | **ser8**: `git pull && docker compose build web && docker compose up -d` |
 

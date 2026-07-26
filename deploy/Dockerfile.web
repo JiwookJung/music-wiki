@@ -1,7 +1,8 @@
 FROM python:3.12-slim
 WORKDIR /app
 RUN pip install --no-cache-dir \
-      fastapi "uvicorn[standard]" markdown neo4j openpyxl jinja2
+      fastapi "uvicorn[standard]" markdown neo4j openpyxl jinja2 \
+      sentence-transformers --extra-index-url https://download.pytorch.org/whl/cpu
 COPY webapp/ /app/webapp/
 COPY src/ /app/src/
 COPY scripts/ /app/scripts/

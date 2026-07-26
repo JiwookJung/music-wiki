@@ -185,6 +185,19 @@ def album(key: str):
                      + "".join(f'<div><span class="muted">{html.escape(x["code"] or "")}</span> '
                                f'<a href="/album/{quote(x["key"])}">{html.escape(x["title"] or "")}</a></div>'
                                for x in shelf) + "</div>")
+    sim = cypher(
+        "MATCH (a:Album {key:$k}) WHERE a.embedding IS NOT NULL "
+        "CALL db.index.vector.queryNodes('album_embedding', 9, a.embedding) "
+        "YIELD node, score WHERE node.key <> $k "
+        "MATCH (node)-[:BY]->(ar:Artist) "
+        "RETURN node.key AS key, ar.name AS artist, node.title AS title, "
+        "round(score,3) AS score ORDER BY score DESC LIMIT 8", k=key)
+    if sim:
+        parts.append("<div class='card'><h2>비슷한 앨범 <span class='muted'>(임베딩)</span></h2>"
+                     + "".join(
+            f'<div><a href="/album/{quote(x["key"])}">{html.escape(x["artist"] or "")} — '
+            f'{html.escape(x["title"] or "")}</a> <span class="muted">{x["score"]}</span></div>'
+            for x in sim) + "</div>")
     return page(f"{r['artist']} — {r['album']}", "".join(parts))
 
 
