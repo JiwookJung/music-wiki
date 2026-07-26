@@ -505,6 +505,25 @@ def main():
         return
     wb, nlabels = build(rows, albums, album_code, digital)
     wb.save(XLSX)
+    # 실물 위키(md) 생성용 구조화 데이터 내보내기
+    out = []
+    for key, code in album_code.items():
+        idxs = albums[key]
+        r = rows[idxs[0]]
+        out.append({
+            "code": code, "genre": r.get("genre", ""), "artist": r.get("artist", ""),
+            "album": r.get("album", ""), "rep": r.get("rep", ""),
+            "composer": r.get("composer", ""), "performer": r.get("performer", ""),
+            "desc": r.get("desc", ""), "discogs_id": str(r.get("discogs_id", "")),
+            "db_url": r.get("db_url", ""), "label_cat": r.get("label_cat", ""),
+            "media": sorted({rows[j].get("medium", "") for j in idxs if rows[j].get("medium")}),
+            "locations": sorted({rows[j]["sheet"] for j in idxs}),
+            "copies": len(idxs), "digital": key in digital,
+        })
+    pj = os.path.join(INV, "data", "physical_albums.json")
+    json.dump(sorted(out, key=lambda x: x["code"]),
+              open(pj, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"· physical_albums.json {len(out)}건 내보냄")
     json.dump(reg, open(REGISTRY, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"· 저장: {XLSX} (라벨 {nlabels}개) / 레지스트리 갱신")
 

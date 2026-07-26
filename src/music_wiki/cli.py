@@ -14,6 +14,7 @@ from music_wiki.external.musicbrainz import HttpMusicBrainzClient
 from music_wiki.organize.classify import classify_albums
 from music_wiki.organize.enrich import enrich_genres
 from music_wiki.organize.pages import build_library_pages
+from music_wiki.core.physical_wiki import generate_physical_wiki, write_home_index
 from music_wiki.organize.plan import build_plan
 from music_wiki.organize.review import export_review, import_review
 from music_wiki.external.local_llm import OpenAICompatibleLLMClient
@@ -111,6 +112,82 @@ def _cmd_build_pages(args) -> int:
     return 0
 
 
+def _cmd_update(args) -> int:
+    """원커맨드 갱신: 변경분 스캔 → 신규만 분류 → (실물 파이프라인) → md 위키."""
+    import subprocess
+    import sys as _sys
+    from collections import Counter
+    from pathlib import Path as _P
+
+    from music_wiki.organize.buckets import classify_by_rules
+
+    store = _store_at(args.db)
+    report: list[str] = []
+
+    # ① 스캔(멱등: 신규/변경 파일만)
+    if not args.no_scan:
+        stats = scan_library(args.source, store, MutagenTagReader())
+        report.append(f"스캔: {stats.scanned}개 중 신규/변경 {stats.ingested}개 반영"
+                      f" (DRM {stats.drm}, 오류 {stats.errors})")
+
+    # ② 신규 앨범만 규칙 분류(기존 manual/claude 분류는 보존)
+    n_new = 0
+    for artist in store.iter_artists():
+        for album in store.albums_for_artist(artist.id):
+            if album.genre_bucket is not None:
+                continue
+            titles = [tr.title for tr in store.tracks_for_album(album.id)]
+            res = classify_by_rules(album.genres, artist.name, titles, album=album.title)
+            store.set_album_genre(album.id, res.bucket, res.confidence, "rule")
+            n_new += 1
+    report.append(f"신규 분류: {n_new}개 앨범(규칙)")
+
+    # ③ 실물 인벤토리 파이프라인 + 디지털 연동 (있을 때만)
+    inv = _P(__file__).resolve().parents[2] / "inventory" / "scripts"
+    phys_json = inv.parent / "data" / "physical_albums.json"
+    if not args.no_physical and (inv / "pipeline.py").exists():
+        for script in ("pipeline.py", "link_digital.py"):
+            r = subprocess.run([_sys.executable, str(inv / script)],
+                               capture_output=True, text=True)
+            tail = (r.stdout or r.stderr).strip().splitlines()
+            report.append(f"{script}: " + (tail[-1] if tail else f"exit {r.returncode}"))
+
+    # ④ md 위키 재생성 (디지털 + 실물 통합 + 홈)
+    WikiGenerator(store).generate(args.out)
+    counts = Counter()
+    need_desc: list[str] = []
+    for artist in store.iter_artists():
+        for album in store.albums_for_artist(artist.id):
+            counts[album.genre_bucket or "미분류"] += 1
+            if not album.description:
+                need_desc.append(f"- [디지털] {artist.name} — {album.title}")
+    if phys_json.exists():
+        pstats = generate_physical_wiki(args.out, str(phys_json))
+        report.append(f"실물 위키: 앨범 md {pstats['albums_created']}개, "
+                      f"아티스트 {pstats['artists_touched']}명 반영")
+        import json as _json
+        for a in _json.load(open(phys_json, encoding="utf-8")):
+            if not str(a.get("desc") or "").strip():
+                need_desc.append(f"- [실물 {a['code']}] {a['artist']} — {a['album']}")
+    write_home_index(args.out, dict(counts), str(phys_json) if phys_json.exists() else None)
+
+    # ⑤ 해설 필요 목록(Claude에게 요청용)
+    todo = _P(args.out) / "작업목록-해설필요.md"
+    if need_desc:
+        todo.write_text("# 해설 필요 앨범 (" + str(len(need_desc)) + "건)\n\n"
+                        "Claude에게 '이 목록 해설 채워줘'라고 요청하세요.\n\n"
+                        + "\n".join(need_desc) + "\n", encoding="utf-8")
+        report.append(f"해설 필요: {len(need_desc)}건 → {todo}")
+    elif todo.exists():
+        todo.unlink()
+        report.append("해설 필요: 0건")
+
+    print("[update]")
+    for line in report:
+        print(" ·", line)
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     cfg = Config.default()
     parser = argparse.ArgumentParser(prog="music-wiki")
@@ -159,6 +236,14 @@ def main(argv: list[str] | None = None) -> int:
     p_pages.add_argument("--db", default=str(cfg.db_path))
     p_pages.add_argument("--dry-run", action="store_true")
     p_pages.set_defaults(func=_cmd_build_pages)
+
+    p_upd = sub.add_parser("update", help="원커맨드 갱신: 변경분 스캔→분류→실물 연동→md 위키")
+    p_upd.add_argument("--db", default=str(cfg.db_path))
+    p_upd.add_argument("--source", default=str(cfg.source_dir))
+    p_upd.add_argument("--out", default=str(cfg.vault_dir))
+    p_upd.add_argument("--no-scan", action="store_true")
+    p_upd.add_argument("--no-physical", action="store_true")
+    p_upd.set_defaults(func=_cmd_update)
 
     args = parser.parse_args(argv)
     return args.func(args)
