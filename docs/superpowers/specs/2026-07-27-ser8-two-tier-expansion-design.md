@@ -14,7 +14,7 @@
 
 ### 비목표
 - mp3의 ser8 이전(사용자 결정: Ubuntu 유지). → 로컬 재생은 Ubuntu 가동 시에만, 상시 재생은 YouTube가 담당.
-- 외부(인터넷) 공개 서비스. LAN 내 사용 전제(외부 접근은 추후 Tailscale류로 별도 검토).
+- 외부 **공개** 서비스(불특정 다수 접근). 단, **본인 외부 접속은 Tailscale로 지원**(compose profile `remote`) — 포트 개방·도메인 불필요.
 - 원본 음악 파일 수정(기존 원칙 유지).
 
 ## 2. 시스템 구성
@@ -50,7 +50,7 @@
 ### 3.3 Neo4j + 임베딩 (선택 계층)
 - 그래프: `(장르)-[:HAS]->(아티스트)-[:MADE]->(앨범)-[:CONTAINS]->(곡)` + `(앨범)-[:PHYSICAL {code}]`, `(앨범)-[:SIMILAR]`(임베딩 kNN에서 유도).
 - 임베딩: 해설+메타 텍스트를 다국어 모델(예: `BAAI/bge-m3` 또는 `paraphrase-multilingual-MiniLM`)로 벡터화 → **Neo4j 5 vector index** 또는 경량 대안 **sqlite-vec/FAISS**.
-- **YAGNI 판단**: 규모(앨범 ~2천, 곡 ~2.1만)가 작아 SQLite+FAISS로도 충분. Neo4j는 *그래프 탐색 UI·Cypher 질의*가 실사용 가치를 보일 때 도입(Phase E3). 문서는 두 경로 모두 설계해 두되 기본 경로는 경량안.
+- **채택(2026-07-27, 사용자 결정)**: 다른 프로젝트와 구성을 통일하기 위해 **Neo4j를 기본 채택**. E0에서 이미 적재·검증 완료(Album 1,950 / Artist 1,048 / Genre 13 / Track 5,875 / Location 16). 임베딩(유사검색)은 E3에서 Neo4j vector index 로 추가.
 
 ## 4. ser8 웹앱 (프론트) 설계
 
@@ -95,7 +95,7 @@ FastAPI + 정적 SPA(경량 Vanilla/HTMX 우선, 필요시 React) 단일 Docker 
 
 ## 8. 단계별 로드맵 (각 단계 = 독립 spec→plan→구현 사이클)
 
-- **E0 (사전 검증, 즉시)**: ser8 없이 현 Ubuntu에서 feasibility 실증 — `claude -p` 헤드리스 데모, vault git화, catalog 통합 테이블, 웹앱 프로토(뷰어+YouTube 플레이어)를 로컬 기동. → *이번 feasibility 단계의 산출물*
+- **E0 (완료, 2026-07-27)**: `claude -p` 헤드리스 실증, vault git화(3,046파일), **catalog 통합 테이블 1,950건**, 웹앱 프로토(뷰어·검색·YouTube 임베드·정리장/그래프 탐색), **Docker 스택**(`deploy/docker-compose.yml`: web+neo4j+tailscale), **Neo4j 적재**, **마이그레이션 가이드**(`deploy/MIGRATION.md`). 전부 컨테이너로 기동 검증.
 - **E1 (ser8 가동)**: ser8 Ubuntu 설치→Docker→웹앱 배포→vault/DB pull→YouTube 플레이어 상시화. WoL 확인.
 - **E2 (추가·발급·LLM)**: 앨범 구매 등록+**분류번호 발급 API**(codelib 분리), mp3 동기화 요청 큐, `claude -p` LLM 패널.
 - **E3 (그래프·검색)**: 임베딩 유사검색(경량안 우선) → 가치 확인 후 Neo4j 그래프 탐색 UI.

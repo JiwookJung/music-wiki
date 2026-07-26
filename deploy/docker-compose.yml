@@ -1,0 +1,76 @@
+# music-wiki 스택 — ser8(24h 프론트) 및 개발 PC 공통.
+#
+#   cp .env.example .env   # 비밀번호/경로 조정
+#   docker compose up -d   # web(8765) + neo4j(7474/7687)
+#   docker compose --profile remote up -d   # + Tailscale 원격 접속
+#
+# 데이터는 모두 볼륨 마운트(컨테이너는 무상태) → ser8 이관 시 vault/inventory만 복사.
+services:
+  neo4j:
+    image: neo4j:5.26-community
+    container_name: mw-neo4j
+    restart: unless-stopped
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-musicwiki}
+      NEO4J_server_memory_heap_max__size: ${NEO4J_HEAP:-1G}
+      NEO4J_server_memory_pagecache_size: ${NEO4J_PAGECACHE:-512M}
+      NEO4J_PLUGINS: '["apoc"]'
+    ports:
+      - "${NEO4J_HTTP_PORT:-7474}:7474"    # 브라우저 UI
+      - "${NEO4J_BOLT_PORT:-7687}:7687"    # Bolt
+    volumes:
+      - neo4j-data:/data
+      - neo4j-logs:/logs
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:7474 >/dev/null || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+  web:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.web
+    container_name: mw-web
+    restart: unless-stopped
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    environment:
+      MW_VAULT: /data/vault
+      MW_INVENTORY: /data/inventory
+      NEO4J_URI: bolt://neo4j:7687
+      NEO4J_USER: neo4j
+      NEO4J_PASSWORD: ${NEO4J_PASSWORD:-musicwiki}
+    ports:
+      - "${WEB_PORT:-8765}:8765"
+    volumes:
+      - ${VAULT_DIR:-${HOME}/music-wiki-vault}:/data/vault
+      - ${INVENTORY_DIR:-../inventory}:/data/inventory:ro
+      # 로컬 mp3 원본(백엔드 온라인 시에만 유효; ser8에선 NFS 마운트 지점 지정)
+      - ${MUSIC_DIR:-/mnt/win/memory/음악}:/data/music:ro
+
+  # 외부(휴대폰/외부망)에서 접속하려면: docker compose --profile remote up -d
+  # TS_AUTHKEY 는 https://login.tailscale.com/admin/settings/keys 에서 발급
+  tailscale:
+    image: tailscale/tailscale:stable
+    container_name: mw-tailscale
+    profiles: ["remote"]
+    restart: unless-stopped
+    hostname: ${TS_HOSTNAME:-musicwiki}
+    environment:
+      TS_AUTHKEY: ${TS_AUTHKEY:-}
+      TS_STATE_DIR: /var/lib/tailscale
+      TS_EXTRA_ARGS: --advertise-tags=tag:musicwiki
+      # 웹앱을 tailnet 에 노출 (https://<hostname>.<tailnet>.ts.net)
+      TS_SERVE_CONFIG: /config/serve.json
+    volumes:
+      - tailscale-state:/var/lib/tailscale
+      - ./tailscale-serve.json:/config/serve.json:ro
+    network_mode: service:web       # web 과 네트워크 공유 → localhost:8765 프록시
+    cap_add: [NET_ADMIN, SYS_MODULE]
+
+volumes:
+  neo4j-data:
+  neo4j-logs:
+  tailscale-state:

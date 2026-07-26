@@ -19,8 +19,30 @@ import markdown
 from fastapi import FastAPI, Request
 from fastapi.responses import FileResponse, HTMLResponse
 
-VAULT = Path(os.path.expanduser("~/music-wiki-vault"))
+VAULT = Path(os.environ.get("MW_VAULT", os.path.expanduser("~/music-wiki-vault")))
 DB = VAULT / "music-wiki.db"
+
+# Neo4j (있으면 그래프 탐색 활성화, 없으면 자동 비활성)
+_drv = None
+try:
+    from neo4j import GraphDatabase
+    _drv = GraphDatabase.driver(
+        os.environ.get("NEO4J_URI", "bolt://localhost:7687"),
+        auth=(os.environ.get("NEO4J_USER", "neo4j"),
+              os.environ.get("NEO4J_PASSWORD", "musicwiki")))
+    _drv.verify_connectivity()
+except Exception:
+    _drv = None
+
+
+def cypher(query, **params):
+    if not _drv:
+        return []
+    try:
+        with _drv.session() as s:
+            return [r.data() for r in s.run(query, **params)]
+    except Exception:
+        return []
 
 app = FastAPI(title="music-wiki")
 
@@ -54,7 +76,7 @@ iframe{{width:100%;aspect-ratio:16/9;border:0;border-radius:.6rem}}
 blockquote{{color:#888;border-left:3px solid #ddd;margin:0;padding-left:.8rem}}
 h1{{font-size:1.5rem}} .muted{{color:#888;font-size:.85rem}}
 </style></head><body>
-<nav><b><a href="/">🎵 music-wiki</a></b>
+<nav><b><a href="/">🎵 music-wiki</a></b><a href="/shelf">📚 정리장</a>
 <form action="/search"><input name="q" placeholder="아티스트·앨범·해설 검색" value="{qv}"></form>
 </nav>{body}</body></html>"""
 
@@ -146,7 +168,50 @@ def album(key: str):
                      + markdown.markdown(txt, extensions=["tables"]) + "</div>")
     elif r["description"]:
         parts.append(f"<div class='card'><h2>해설</h2><p>{html.escape(r['description'])}</p></div>")
+    # 그래프 탐색: 같은 아티스트의 다른 앨범 / 같은 선반의 이웃
+    rel = cypher(
+        "MATCH (a:Album {key:$k})-[:BY]->(ar:Artist)<-[:BY]-(o:Album) "
+        "RETURN o.key AS key, ar.name AS artist, o.title AS title LIMIT 12", k=key)
+    if rel:
+        parts.append("<div class='card'><h2>같은 아티스트</h2>" + "".join(
+            f'<div><a href="/album/{quote(x["key"])}">{html.escape(x["title"] or "")}</a></div>'
+            for x in rel) + "</div>")
+    shelf = cypher(
+        "MATCH (a:Album {key:$k})-[:SHELVED_IN]->(l:Location)<-[:SHELVED_IN]-(o:Album) "
+        "WHERE o.key <> $k RETURN l.name AS loc, o.key AS key, o.title AS title, "
+        "o.physical_code AS code ORDER BY o.physical_code LIMIT 10", k=key)
+    if shelf:
+        parts.append(f"<div class='card'><h2>같은 선반 ({html.escape(shelf[0]['loc'])})</h2>"
+                     + "".join(f'<div><span class="muted">{html.escape(x["code"] or "")}</span> '
+                               f'<a href="/album/{quote(x["key"])}">{html.escape(x["title"] or "")}</a></div>'
+                               for x in shelf) + "</div>")
     return page(f"{r['artist']} — {r['album']}", "".join(parts))
+
+
+@app.get("/shelf", response_class=HTMLResponse)
+def shelves():
+    """실물 정리장 지도(그래프 기반)."""
+    rows = cypher("MATCH (l:Location)<-[:SHELVED_IN]-(a:Album) "
+                  "RETURN l.name AS loc, count(a) AS n ORDER BY loc")
+    if not rows:
+        return page("정리장", "<p>Neo4j 미연결 — 그래프 기능 비활성.</p>")
+    body = ["<h1>실물 정리장</h1><div class='grid'>"]
+    for r in rows:
+        body.append(f'<div class="card"><a href="/shelf/{quote(r["loc"])}">'
+                    f'{html.escape(r["loc"])}</a><br><span class="muted">{r["n"]}종</span></div>')
+    return page("정리장", "".join(body) + "</div>")
+
+
+@app.get("/shelf/{loc}", response_class=HTMLResponse)
+def shelf(loc: str):
+    rows = cypher("MATCH (l:Location {name:$l})<-[:SHELVED_IN]-(a:Album) "
+                  "RETURN a.key AS key, a.title AS title, a.physical_code AS code "
+                  "ORDER BY a.physical_code", l=loc)
+    body = [f"<h1>{html.escape(loc)} <span class='muted'>{len(rows)}종</span></h1>"]
+    for r in rows:
+        body.append(f'<div class="card"><span class="muted">{html.escape(r["code"] or "")}</span> '
+                    f'<a href="/album/{quote(r["key"])}">{html.escape(r["title"] or "")}</a></div>')
+    return page(loc, "".join(body))
 
 
 @app.get("/audio/{key}/{fname}")
