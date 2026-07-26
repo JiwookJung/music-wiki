@@ -97,7 +97,7 @@ FastAPI + 정적 SPA(경량 Vanilla/HTMX 우선, 필요시 React) 단일 Docker 
 
 - **E0 (완료, 2026-07-27)**: `claude -p` 헤드리스 실증, vault git화(3,046파일), **catalog 통합 테이블 1,950건**, 웹앱 프로토(뷰어·검색·YouTube 임베드·정리장/그래프 탐색), **Docker 스택**(`deploy/docker-compose.yml`: web+neo4j+tailscale), **Neo4j 적재**, **마이그레이션 가이드**(`deploy/MIGRATION.md`). 전부 컨테이너로 기동 검증.
 - **E1 (ser8 가동)**: ser8 Ubuntu 설치→Docker→웹앱 배포→vault/DB pull→YouTube 플레이어 상시화. WoL 확인.
-- **E2 (추가·발급·LLM)**: 앨범 구매 등록+**분류번호 발급 API**(codelib 분리), mp3 동기화 요청 큐, `claude -p` LLM 패널.
+- **E2 (완료, 2026-07-27)**: `/add` 웹UI + `POST /api/issue` 분류번호 발급(레지스트리 재사용, 빈 번호 삽입 검증: 신규 아티스트 J-E06 삽입 시 기존 코드 불변), `pending_albums.json` 대기목록, `/ask` LLM 패널(`claude -p`). 테스트 2건 추가(131 통과).
 - **E3 (완료, 2026-07-27)**: Neo4j vector index(384d, multilingual-MiniLM) + 앨범 유사검색 UI. CPU 33초로 1,950건 임베딩 — ser8에서도 동일.
 
 ## 9. 리스크 & 완화

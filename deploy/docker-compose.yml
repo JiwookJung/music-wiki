@@ -46,7 +46,7 @@ services:
       - "${WEB_PORT:-8765}:8765"
     volumes:
       - ${VAULT_DIR:-${HOME}/music-wiki-vault}:/data/vault
-      - ${INVENTORY_DIR:-../inventory}:/data/inventory:ro
+      - ${INVENTORY_DIR:-../inventory}:/data/inventory   # rw: 분류번호 발급(레지스트리 쓰기)은 ser8 단독 원칙
       # 로컬 mp3 원본(백엔드 온라인 시에만 유효; ser8에선 NFS 마운트 지점 지정)
       - ${MUSIC_DIR:-/mnt/win/memory/음악}:/data/music:ro
 

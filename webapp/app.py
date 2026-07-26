@@ -17,7 +17,12 @@ from urllib.parse import quote
 
 import markdown
 from fastapi import FastAPI, Request
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
+
+try:
+    from acquire import ask_claude, issue_code
+except ImportError:  # 컨테이너 경로
+    from webapp.acquire import ask_claude, issue_code
 
 VAULT = Path(os.environ.get("MW_VAULT", os.path.expanduser("~/music-wiki-vault")))
 DB = VAULT / "music-wiki.db"
@@ -76,7 +81,7 @@ iframe{{width:100%;aspect-ratio:16/9;border:0;border-radius:.6rem}}
 blockquote{{color:#888;border-left:3px solid #ddd;margin:0;padding-left:.8rem}}
 h1{{font-size:1.5rem}} .muted{{color:#888;font-size:.85rem}}
 </style></head><body>
-<nav><b><a href="/">🎵 music-wiki</a></b><a href="/shelf">📚 정리장</a>
+<nav><b><a href="/">🎵 music-wiki</a></b><a href="/shelf">📚 정리장</a><a href="/add">➕ 등록</a><a href="/ask">💬 질의</a>
 <form action="/search"><input name="q" placeholder="아티스트·앨범·해설 검색" value="{qv}"></form>
 </nav>{body}</body></html>"""
 
@@ -225,6 +230,96 @@ def shelf(loc: str):
         body.append(f'<div class="card"><span class="muted">{html.escape(r["code"] or "")}</span> '
                     f'<a href="/album/{quote(r["key"])}">{html.escape(r["title"] or "")}</a></div>')
     return page(loc, "".join(body))
+
+
+GENRES = ["클래식", "클래식기타", "재즈", "탱고", "월드", "팝", "가요", "OST·경음악"]
+LOCS = ["LP중앙선반2열1층", "LP중앙선반1열1층", "LP중앙선반1열2층", "LP중앙선반1열3층",
+        "LP중앙선반2열2층", "LP중앙선반2열3층", "LP좌측선반1층", "LP좌측선반2층",
+        "LP좌측선반3층", "LP우측선반1층", "LP우측선반2층", "LP보관박스1", "LP침대옆",
+        "CD윗층", "CD아래층"]
+
+
+@app.get("/add", response_class=HTMLResponse)
+def add_form():
+    opts = "".join(f"<option>{g}</option>" for g in GENRES)
+    locs = "".join(f"<option>{loc}</option>" for loc in LOCS)
+    body = f"""<h1>음반 등록 · 분류번호 발급</h1>
+<div class="card"><form id="f" onsubmit="return go(event)">
+<p><input name="artist" placeholder="아티스트 *" required style="width:100%"></p>
+<p><input name="album" placeholder="앨범 제목 *" required style="width:100%"></p>
+<p><select name="genre">{opts}</select>
+   <select name="medium"><option>LP</option><option>CD</option></select>
+   <select name="location">{locs}</select></p>
+<p><input name="composer" placeholder="작곡가(클래식)" >
+   <input name="performer" placeholder="연주자(클래식)"></p>
+<p><input name="label_cat" placeholder="레이블/카탈로그번호" style="width:100%"></p>
+<p><button type="submit">분류번호 발급</button>
+   <button type="button" onclick="go(event,true)">미리보기</button></p>
+</form></div>
+<div id="out"></div>
+<script>
+async function go(e, dry) {{
+  e.preventDefault();
+  const fd = new FormData(document.getElementById('f'));
+  fd.append('dry_run', dry ? '1' : '');
+  const r = await fetch('/api/issue', {{method:'POST', body:fd}});
+  const j = await r.json();
+  document.getElementById('out').innerHTML = j.code
+    ? `<div class="card"><h2>분류번호</h2><p style="font-size:2rem"><b>${{j.code}}</b></p>`
+      + (j.dry_run ? '<p class="muted">미리보기 — 저장되지 않음</p>'
+                   : `<p class="muted">발급 완료 · 대기목록 ${{j.pending_total}}건 (백엔드에서 엑셀 반영)</p>`)
+      + (j.warnings.length ? '<p>⚠ '+j.warnings.join('<br>⚠ ')+'</p>' : '') + '</div>'
+    : '<div class="card">발급 실패 — 입력을 확인하세요</div>';
+  return false;
+}}
+</script>"""
+    return page("음반 등록", body)
+
+
+@app.post("/api/issue")
+async def api_issue(request: Request):
+    f = await request.form()
+    res = issue_code(artist=f.get("artist", ""), album=f.get("album", ""),
+                     genre=f.get("genre", ""), medium=f.get("medium", "LP"),
+                     composer=f.get("composer", ""), performer=f.get("performer", ""),
+                     location=f.get("location", ""), label_cat=f.get("label_cat", ""),
+                     dry_run=bool(f.get("dry_run")))
+    return JSONResponse(res)
+
+
+@app.get("/ask", response_class=HTMLResponse)
+def ask_form():
+    body = """<h1>LLM 질의 <span class='muted'>(Claude 구독)</span></h1>
+<div class="card"><form onsubmit="return q(event)">
+<p><textarea id="p" rows="3" style="width:100%"
+   placeholder="예: 비 오는 날 들을 재즈 앨범 3개 추천해줘"></textarea></p>
+<p><button>질의</button></p></form></div><div id="a"></div>
+<script>
+async function q(e){e.preventDefault();
+  document.getElementById('a').innerHTML='<div class="card">생각 중…</div>';
+  const r=await fetch('/api/ask',{method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({prompt:document.getElementById('p').value})});
+  const j=await r.json();
+  document.getElementById('a').innerHTML='<div class="card"><pre style="white-space:pre-wrap">'
+    +j.answer.replace(/</g,'&lt;')+'</pre></div>'; return false;}
+</script>"""
+    return page("LLM 질의", body)
+
+
+@app.post("/api/ask")
+async def api_ask(request: Request):
+    data = await request.json()
+    prompt = str(data.get("prompt", ""))[:2000]
+    ctx = q("SELECT artist, album, genre, physical_code FROM catalog"
+            " WHERE description IS NOT NULL ORDER BY RANDOM() LIMIT 40")
+    lines = [f"- {r['artist']} — {r['album']} ({r['genre']}"
+             + (f", 실물 {r['physical_code']}" if r["physical_code"] else "") + ")"
+             for r in ctx]
+    full = ("아래는 사용자의 음악 컬렉션 일부입니다(무작위 표본).\n"
+            + "\n".join(lines) + "\n\n질문: " + prompt
+            + "\n\n한국어로 간결히 답하세요.")
+    return JSONResponse({"answer": ask_claude(full)})
 
 
 @app.get("/audio/{key}/{fname}")

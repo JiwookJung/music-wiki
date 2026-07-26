@@ -86,10 +86,20 @@ wakeonlan <ubuntu-MAC>
 | 상황 | 명령 (실행 위치) |
 |---|---|
 | mp3 추가·태그 변경 | **Ubuntu**: `music-wiki update` → `git push` / **ser8**: `git pull` + vault rsync |
-| 음반 구매(분류번호 발급) | **ser8**: 엑셀에 행 추가 → `pipeline.py` (E2에서 웹 UI로 대체 예정) |
+| 음반 구매(분류번호 발급) | **ser8 웹UI**: `/add` 에서 입력 → 즉시 코드 발급(레지스트리 자동 갱신, `pending_albums.json` 대기목록) → 백엔드가 엑셀 반영 |
 | 카탈로그·그래프 갱신 | **ser8**: `build_catalog.py` → `load_neo4j.py` → `build_embeddings.py` |
 | YouTube 링크 보강 | **Ubuntu**(대량) 또는 ser8: `python scripts/resolve_youtube.py` |
 | 스택 업데이트 | **ser8**: `git pull && docker compose build web && docker compose up -d` |
+
+## 6-1. LLM 패널 (선택)
+
+ser8에 Claude Code CLI 설치 + 로그인하면 `/ask` 에서 구독 계정으로 질의 가능:
+```bash
+curl -fsSL https://claude.ai/install.sh | sh   # 또는 npm i -g @anthropic-ai/claude-code
+claude login
+# compose 에서 CLAUDE_BIN 이 컨테이너 내 경로를 가리키도록 하거나,
+# 호스트에서 `claude -p` 를 쓰는 경량 프록시를 두는 방식 중 택1 (E2 후속)
+```
 
 ## 7. 역할 분담 요약
 

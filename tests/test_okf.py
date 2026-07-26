@@ -53,3 +53,18 @@ def test_physical_album_frontmatter_fields(tmp_path: Path):
     assert 'type: "Album"' in fm
     assert 'code: "J-B01-02"' in fm
     assert "generated:" in fm and "status: stable" in fm
+
+
+def test_exact_youtube_link_used_when_cached(tmp_path: Path):
+    (tmp_path / "youtube_links.json").write_text(
+        json.dumps({"billevans|waltz": {"url": "https://www.youtube.com/watch?v=abc123"}}),
+        encoding="utf-8")
+    pj = tmp_path / "p.json"
+    pj.write_text(json.dumps([{"code": "J-B01-02", "genre": "재즈", "artist": "Bill Evans",
+                               "album": "Waltz", "rep": "", "composer": "", "performer": "",
+                               "desc": "", "discogs_id": "", "db_url": "", "label_cat": "",
+                               "media": ["LP"], "locations": ["LP침대옆"], "copies": 1,
+                               "digital": False}], ensure_ascii=False), encoding="utf-8")
+    generate_physical_wiki(str(tmp_path), str(pj))
+    md = (tmp_path / "albums" / "Bill Evans - Waltz.md").read_text(encoding="utf-8")
+    assert "watch?v=abc123" in md and "앨범 재생" in md
