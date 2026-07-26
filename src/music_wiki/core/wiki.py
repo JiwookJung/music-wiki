@@ -66,6 +66,8 @@ class WikiGenerator:
             lines.append(f"레이블: {album.label}")
         if album.genre_bucket:
             lines.append(f"분류: {album.genre_bucket}")
+        if album.physical_code:
+            lines.append(f"실물 음반: {album.physical_code}")
         if album.genres:
             lines.append("장르: " + ", ".join(album.genres))
         lines.append(_badges(album))
