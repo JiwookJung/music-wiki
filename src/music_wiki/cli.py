@@ -15,6 +15,7 @@ from music_wiki.organize.classify import classify_albums
 from music_wiki.organize.enrich import enrich_genres
 from music_wiki.organize.pages import build_library_pages
 from music_wiki.core.physical_wiki import generate_physical_wiki, write_home_index
+from music_wiki.core.wiki import okf_frontmatter
 from music_wiki.organize.plan import build_plan
 from music_wiki.organize.review import export_review, import_review
 from music_wiki.external.local_llm import OpenAICompatibleLLMClient
@@ -174,7 +175,9 @@ def _cmd_update(args) -> int:
     # ⑤ 해설 필요 목록(Claude에게 요청용)
     todo = _P(args.out) / "작업목록-해설필요.md"
     if need_desc:
-        todo.write_text("# 해설 필요 앨범 (" + str(len(need_desc)) + "건)\n\n"
+        todo.write_text(okf_frontmatter("Task List", "해설 필요 앨범",
+                        description=f"{len(need_desc)}건 — Claude에게 요청용")
+                        + "# 해설 필요 앨범 (" + str(len(need_desc)) + "건)\n\n"
                         "Claude에게 '이 목록 해설 채워줘'라고 요청하세요.\n\n"
                         + "\n".join(need_desc) + "\n", encoding="utf-8")
         report.append(f"해설 필요: {len(need_desc)}건 → {todo}")
