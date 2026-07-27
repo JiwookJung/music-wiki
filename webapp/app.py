@@ -9,6 +9,7 @@
 from __future__ import annotations
 
 import html
+import json
 import os
 import re
 import sqlite3
@@ -80,6 +81,10 @@ margin:.4rem 0}}
 iframe{{width:100%;aspect-ratio:16/9;border:0;border-radius:.6rem}}
 blockquote{{color:#888;border-left:3px solid #ddd;margin:0;padding-left:.8rem}}
 h1{{font-size:1.5rem}} .muted{{color:#888;font-size:.85rem}}
+ol.tracks{{list-style:none;padding:0;margin:.5rem 0 0}}
+.trk{{padding:.35rem .5rem;border-radius:.35rem;cursor:pointer}}
+.trk:hover{{background:#eef}} .trk.on{{background:#dde7ff;font-weight:600}}
+.trk.off{{color:#bbb;cursor:default}} .trk.off:hover{{background:none}}
 </style></head><body>
 <nav><b><a href="/">🎵 music-wiki</a></b><a href="/shelf">📚 정리장</a><a href="/add">➕ 등록</a><a href="/ask">💬 질의</a>
 <form action="/search"><input name="q" placeholder="아티스트·앨범·해설 검색" value="{qv}"></form>
@@ -162,6 +167,36 @@ def album(key: str):
         s = quote(f"{r['artist']} {r['album']}")
         parts.append(f'<p>▶ <a target="_blank" '
                      f'href="https://www.youtube.com/results?search_query={s}">YouTube 검색</a></p>')
+    # 로컬 mp3 플레이어 + 트랙 목록
+    trks = album_tracks(r["album_id"])
+    if trks:
+        playable = [x for x in trks if x["online"]]
+        items = []
+        for i, x in enumerate(trks):
+            num = (f"{x['disc']}-{x['no']:02d}" if x["disc"] and x["no"]
+                   else (f"{x['no']:02d}" if x["no"] else "–"))
+            dur = (f"{int(x['dur'])//60}:{int(x['dur'])%60:02d}" if x["dur"] else "")
+            cls = "trk" if x["online"] else "trk off"
+            onclick = f"play({i})" if x["online"] else ""
+            items.append(f'<li class="{cls}" data-i="{i}" onclick="{onclick}">'
+                         f'<span class="muted">{num}</span> {html.escape(x["title"])}'
+                         f'<span class="muted"> {dur}</span>'
+                         + ("" if x["online"] else '<span class="muted"> (오프라인)</span>')
+                         + "</li>")
+        srcs = json.dumps([{"id": x["id"], "t": x["title"]} for x in trks])
+        parts.append(
+            '<div class="card"><h2>수록곡 <span class="muted">'
+            f'{len(playable)}/{len(trks)} 재생 가능</span></h2>'
+            '<audio id="au" controls style="width:100%"></audio>'
+            f'<ol class="tracks">{"".join(items)}</ol></div>'
+            f'<script>const TR={srcs};const au=document.getElementById("au");'
+            'function play(i){au.src="/audio/"+TR[i].id;au.play();'
+            'document.querySelectorAll(".trk").forEach(e=>e.classList.remove("on"));'
+            'document.querySelector(`.trk[data-i="${i}"]`)?.classList.add("on");}'
+            'au.addEventListener("ended",()=>{const c=document.querySelector(".trk.on");'
+            'const n=c&&c.nextElementSibling;if(n&&!n.classList.contains("off"))'
+            'play(+n.dataset.i);});</script>')
+
     # vault md 렌더(frontmatter 제거)
     md_path = VAULT / "albums" / (safe_filename(f"{r['artist']} - {r['album']}") + ".md")
     if md_path.exists():
@@ -322,11 +357,53 @@ async def api_ask(request: Request):
     return JSONResponse({"answer": ask_claude(full)})
 
 
-@app.get("/audio/{key}/{fname}")
-def audio(key: str, fname: str):
-    """로컬 mp3 스트리밍(vault library 심볼릭 경유; 백엔드 온라인 시에만 성공)."""
-    base = VAULT / "library"
-    for p in base.rglob(fname):
-        if p.is_file() or p.is_symlink():
-            return FileResponse(str(p))
-    return HTMLResponse("원본 오프라인(백엔드 꺼짐) — YouTube로 재생하세요", status_code=404)
+MUSIC_SRC = os.environ.get("MW_MUSIC_SRC", "/mnt/win/memory/음악")  # DB에 기록된 원본 루트
+MUSIC_MNT = os.environ.get("MW_MUSIC_MNT", "/data/music")          # 이 프로세스에서 보이는 경로
+
+
+def _local_path(abs_path: str) -> Path | None:
+    """DB의 abs_path를 현재 환경에서 접근 가능한 실제 경로로 변환."""
+    if not abs_path:
+        return None
+    for cand in (Path(abs_path.replace(MUSIC_SRC, MUSIC_MNT, 1)), Path(abs_path)):
+        if cand.exists():
+            return cand
+    return None
+
+
+def album_tracks(album_id: int | None):
+    """앨범의 재생 가능한 트랙 목록(로컬 파일 존재 여부 포함)."""
+    if not album_id:
+        return []
+    rows = q("SELECT t.id, t.disc_no, t.track_no, t.title, t.duration_s, sf.abs_path"
+             " FROM track t JOIN source_file sf ON sf.track_id = t.id"
+             " WHERE t.album_id = ? AND sf.is_drm = 0"
+             " GROUP BY t.id ORDER BY t.disc_no, t.track_no, t.title", album_id)
+    out = []
+    for r in rows:
+        out.append({"id": r["id"], "no": r["track_no"], "disc": r["disc_no"],
+                    "title": r["title"], "dur": r["duration_s"],
+                    "online": _local_path(r["abs_path"]) is not None})
+    return out
+
+
+@app.get("/audio/{track_id}")
+def audio(track_id: int):
+    """트랙 스트리밍. 원본(마운트)이 없으면 404 → UI가 YouTube로 폴백."""
+    rows = q("SELECT sf.abs_path FROM source_file sf WHERE sf.track_id = ?"
+             " AND sf.is_drm = 0 LIMIT 1", track_id)
+    if not rows:
+        return HTMLResponse("트랙 없음", status_code=404)
+    p = _local_path(rows[0]["abs_path"])
+    if not p:
+        return HTMLResponse("원본 오프라인(백엔드 꺼짐) — YouTube로 재생하세요",
+                            status_code=404)
+    return FileResponse(str(p), media_type="audio/mpeg", filename=p.name)
+
+
+@app.get("/api/status")
+def status():
+    """백엔드(mp3 원본) 온라인 여부 — UI 배지용."""
+    online = Path(MUSIC_MNT).is_dir() and any(Path(MUSIC_MNT).iterdir())
+    n = q("SELECT COUNT(*) c FROM source_file WHERE is_drm=0 AND track_id IS NOT NULL")[0]["c"]
+    return JSONResponse({"music_online": bool(online), "tracks": n})

@@ -51,6 +51,26 @@ docker compose exec web python /app/scripts/build_embeddings.py   # 유사검색
 
 접속: `http://<ser8-IP>:8765` (Neo4j 브라우저는 `http://<ser8-IP>:7474`)
 
+## 3-1. mp3 스트리밍 (ser8에서 Ubuntu 원본 재생)
+
+앨범 페이지의 **수록곡 목록**을 클릭하면 원본 mp3가 스트리밍된다(Range 지원, 연속재생).
+ser8에서는 Ubuntu의 원본을 NFS 등으로 마운트하고 `.env` 에 경로만 맞추면 된다:
+
+```bash
+# Ubuntu(백엔드)에서 export
+sudo apt install nfs-kernel-server
+echo '/mnt/win/memory/음악 <ser8-IP>(ro,sync,no_subtree_check)' | sudo tee -a /etc/exports
+sudo exportfs -ra
+
+# ser8에서 마운트 + .env
+sudo mkdir -p /mnt/music && sudo mount -t nfs <ubuntu-IP>:/mnt/win/memory/음악 /mnt/music
+echo 'MUSIC_DIR=/mnt/music' >> deploy/.env      # 컨테이너 /data/music 로 마운트됨
+```
+
+- `MW_MUSIC_SRC`(DB에 기록된 원본 루트) → `MW_MUSIC_MNT`(/data/music)로 자동 치환해 재생.
+- **Ubuntu가 꺼져 있으면** 트랙이 "(오프라인)"으로 표시되고 YouTube 임베드로 계속 감상 가능.
+- 백엔드 온라인 여부는 `GET /api/status` 로 확인(`music_online`).
+
 ## 4. 외부(휴대폰/외부망) 접속 — Tailscale
 
 ```bash
