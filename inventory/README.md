@@ -9,7 +9,9 @@
 - `scripts/` — 보강(enrich_mb/discogs_enrich/discogs_loose/enrich_v2)·조립(build_v3_xlsx) 스크립트
   - 재생성: `data/lpcd_v3.json` 경로를 맞춘 뒤 `python scripts/build_v3_xlsx.py`
 
-분류코드 체계: 장르문자(C/CG/G/J/T/W/P/K/KN/O/X)-아티스트초성+번호(간격3~4)-앨범번호.
+분류코드 체계: **매체접두(LP-/CD-)** + 장르문자(C/CG/G/J/T/W/P/K/KN/O/X) + 아티스트초성·번호(간격3~4) + 앨범번호.
+예) `LP-J-B01-02`(재즈 Bill Evans 2번째), `CD-C-B0-G01-01`(클래식 Bach·Gould).
+라벨은 매체별로 분리 인쇄: 시트 `라벨인쇄-LP`(724), `라벨인쇄-CD`(200).
 클래식은 `C-작곡가성1자리-연주자성2자리-앨범2자리`(예: C-B0-G01-01 = Bach·Gould·Goldberg).
 CG = DG 옐로우 게이트폴드 2864 시리즈(좌측선반3층 전용), KN = 한국 비매품.
 

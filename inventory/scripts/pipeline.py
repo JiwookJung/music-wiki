@@ -32,6 +32,18 @@ DIGITAL = os.path.join(INV, "data", "digital_links.json")
 
 GENRE_LETTER = {"클래식": "C", "클래식기타": "G", "재즈": "J", "탱고": "T",
                 "월드": "W", "팝": "P", "가요": "K", "OST·경음악": "O"}
+# 엑셀 표기 흔들림 흡수 → 정규 장르명 (X 코드 방지)
+GENRE_ALIAS = {"OST": "OST·경음악", "경음악": "OST·경음악", "OST/경음악": "OST·경음악",
+               "OST,경음악": "OST·경음악", "사운드트랙": "OST·경음악",
+               "클래식 기타": "클래식기타", "월드뮤직": "월드", "제3세계": "월드",
+               "가요(한국)": "가요", "케이팝": "가요", "팝송": "팝"}
+
+
+def canon_genre(g: str) -> str:
+    g = str(g or "").strip()
+    return GENRE_ALIAS.get(g, g)
+
+
 SHEET_ORDER = ["CD윗층", "CD아래층",
                "LP중앙선반1열1층", "LP중앙선반1열2층", "LP중앙선반1열3층",
                "LP중앙선반2열1층", "LP중앙선반2열2층", "LP중앙선반2열3층",
@@ -42,7 +54,8 @@ MAIN = {"LP중앙선반1열1층", "LP중앙선반1열2층", "LP중앙선반1열3
 CAPACITY = {"LP중앙선반1열1층": 79, "LP중앙선반1열2층": 55, "LP중앙선반1열3층": 59,
             "LP중앙선반2열1층": 80, "LP중앙선반2열2층": 58, "LP중앙선반2열3층": 86,
             "LP좌측선반1층": 46, "LP좌측선반2층": 61, "LP좌측선반3층": 65}
-SUMMARY_SHEETS = {"분류코드표", "중복목록", "미식별목록", "정리계획", "라벨인쇄"}
+SUMMARY_SHEETS = {"분류코드표", "중복목록", "미식별목록", "정리계획",
+                  "라벨인쇄", "라벨인쇄-LP", "라벨인쇄-CD"}
 
 CHO = "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ"
 CHO_BASE = {"ㄲ": "ㄱ", "ㄸ": "ㄷ", "ㅃ": "ㅂ", "ㅆ": "ㅅ", "ㅉ": "ㅈ"}
@@ -150,6 +163,16 @@ def insert_number(existing: dict, sort_key: str, all_sorted: list) -> tuple[int,
     return n, False
 
 
+def media_prefix(idxs, rows) -> str:
+    """같은 앨범의 매체로 접두 결정. LP 보유 시 'LP-', 아니면 'CD-'(그 외 '')."""
+    media = {str(rows[j].get("medium") or "").strip().upper() for j in idxs}
+    if "LP" in media:
+        return "LP-"
+    if "CD" in media:
+        return "CD-"
+    return ""
+
+
 def assign_codes(rows, reg, warnings):
     albums = defaultdict(list)
     for i, r in enumerate(rows):
@@ -161,7 +184,7 @@ def assign_codes(rows, reg, warnings):
     meta = {}          # key -> ("N", letter, artist_norm, disp) | ("C", pref, ck, perf_norm, ...)
     for key, idxs in albums.items():
         r = rows[idxs[0]]
-        g = str(r.get("genre") or "").strip()
+        g = canon_genre(r.get("genre"))
         letter = GENRE_LETTER.get(g, "X")
         if letter == "C" and (r.get("composer") or r.get("performer")):
             pref = "CG" if any("2864" in str(rows[j].get("label_cat") or "")
@@ -203,7 +226,9 @@ def assign_codes(rows, reg, warnings):
         stored_albums = reg["albums"].setdefault(akey, {})
         if key[1] not in stored_albums:
             stored_albums[key[1]] = max(stored_albums.values(), default=0) + 1
-        album_code[key] = f"{letter}-{initial(artist_key(disp))}{ano:02d}-{stored_albums[key[1]]:02d}"
+        album_code[key] = (f"{media_prefix(albums[key], rows)}{letter}-"
+                           f"{initial(artist_key(disp))}{ano:02d}-"
+                           f"{stored_albums[key[1]]:02d}")
 
     # 클래식
     cgroups = defaultdict(dict)  # (pref, cinit) -> {ck: comp_disp}
@@ -245,7 +270,8 @@ def assign_codes(rows, reg, warnings):
         stored_albums = reg["perf_albums"].setdefault(pakey, {})
         if key[1] not in stored_albums:
             stored_albums[key[1]] = max(stored_albums.values(), default=0) + 1
-        album_code[key] = f"{pref}-{cinit}{cno}-{pinit}{pno:02d}-{stored_albums[key[1]]:02d}"
+        album_code[key] = (f"{media_prefix(albums[key], rows)}{pref}-{cinit}{cno}-"
+                           f"{pinit}{pno:02d}-{stored_albums[key[1]]:02d}")
 
     return albums, album_code, meta
 
@@ -253,8 +279,8 @@ def assign_codes(rows, reg, warnings):
 def seed_registry_from_existing(rows, reg):
     """기존 엑셀의 분류코드를 레지스트리에 1회 이식(라벨 유효성 보존)."""
     wb = openpyxl.load_workbook(XLSX)
-    pat_n = re.compile(r"^([A-Z]{1,2})-(.)(\d{2})-(\d{2})$")
-    pat_c = re.compile(r"^(C|CG)-(.)(\d)-(.)(\d{2})-(\d{2})$")
+    pat_n = re.compile(r"^(?:(?:LP|CD)-)?([A-Z]{1,2})-(.)(\d{2})-(\d{2})$")
+    pat_c = re.compile(r"^(?:(?:LP|CD)-)?(C|CG)-(.)(\d)-(.)(\d{2})-(\d{2})$")
     for name in wb.sheetnames:
         if name in SUMMARY_SHEETS:
             continue
@@ -431,29 +457,35 @@ def build(rows, albums, album_code, digital):
     ws.append(["※ 용량=현재 적재량 기준(중앙2열1층만 80). 좌측선반3층=DG 2864(CG) 전용. "
                "중복 대표본만 메인, 나머지는 보조로."])
 
-    ws = wb.create_sheet("라벨인쇄")
-    codes = []
+    # 라벨인쇄: 매체별 시트 분리(LP 먼저 작업 예정) — 열당 136행, 위치 순서
+    ROWS = 136
+    label_sets = {"라벨인쇄-LP": [], "라벨인쇄-CD": []}
     for name in SHEET_ORDER:
         for i, r in by_sheet.get(name, []):
             c = album_code.get((norm(r.get("artist")), norm(r.get("album"))), "")
-            if c:
-                codes.append(c)
-    ROWS = 136
-    for idx, code in enumerate(codes):
-        cell = ws.cell(row=idx % ROWS + 1, column=idx // ROWS + 1, value=code)
-        cell.alignment = Alignment(horizontal="center", vertical="center")
-    for c in range(1, (len(codes) + ROWS - 1) // ROWS + 1):
-        ws.column_dimensions[get_column_letter(c)].width = 13
+            if not c:
+                continue
+            med = str(r.get("medium") or "").strip().upper()
+            tab = "라벨인쇄-LP" if med == "LP" else ("라벨인쇄-CD" if med == "CD" else None)
+            if tab:
+                label_sets[tab].append(c)
+    for tab, codes in label_sets.items():
+        ws = wb.create_sheet(tab)
+        for idx, code in enumerate(codes):
+            cell = ws.cell(row=idx % ROWS + 1, column=idx // ROWS + 1, value=code)
+            cell.alignment = Alignment(horizontal="center", vertical="center")
+        for c in range(1, max(1, (len(codes) + ROWS - 1) // ROWS) + 1):
+            ws.column_dimensions[get_column_letter(c)].width = 16
 
     for w in wb.worksheets:
-        if w.title == "라벨인쇄":
+        if w.title.startswith("라벨인쇄"):
             continue
         hdr = [c.value for c in w[1]]
         for ci, h in enumerate(hdr, start=1):
             horiz = "center" if h in CENTER else "left"
             for (cell,) in w.iter_rows(min_row=2, min_col=ci, max_col=ci):
                 cell.alignment = Alignment(horizontal=horiz, vertical="top", wrap_text=True)
-    return wb, len(codes)
+    return wb, (len(label_sets["라벨인쇄-LP"]), len(label_sets["라벨인쇄-CD"]))
 
 
 def main():
@@ -525,7 +557,7 @@ def main():
               open(pj, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"· physical_albums.json {len(out)}건 내보냄")
     json.dump(reg, open(REGISTRY, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(f"· 저장: {XLSX} (라벨 {nlabels}개) / 레지스트리 갱신")
+    print(f"· 저장: {XLSX} (라벨 LP {nlabels[0]} / CD {nlabels[1]}) / 레지스트리 갱신")
 
 
 if __name__ == "__main__":
