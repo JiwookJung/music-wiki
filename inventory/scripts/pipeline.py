@@ -55,7 +55,7 @@ CAPACITY = {"LP중앙선반1열1층": 79, "LP중앙선반1열2층": 55, "LP중�
             "LP중앙선반2열1층": 80, "LP중앙선반2열2층": 58, "LP중앙선반2열3층": 86,
             "LP좌측선반1층": 46, "LP좌측선반2층": 61, "LP좌측선반3층": 65}
 SUMMARY_SHEETS = {"분류코드표", "중복목록", "미식별목록", "정리계획",
-                  "라벨인쇄", "라벨인쇄-LP", "라벨인쇄-CD"}
+                  "라벨인쇄", "라벨인쇄-LP", "라벨인쇄-CD", "라벨인쇄-전체"}
 
 CHO = "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ"
 CHO_BASE = {"ㄲ": "ㄱ", "ㄸ": "ㄷ", "ㅃ": "ㅂ", "ㅆ": "ㅅ", "ㅉ": "ㅈ"}
@@ -366,6 +366,11 @@ def build(rows, albums, album_code, digital):
         for seq, (i, r) in enumerate(by_sheet[name], start=1):
             key = (norm(r.get("artist")), norm(r.get("album")))
             code = album_code.get(key, "")
+            # 같은 앨범을 LP·CD 둘 다 소장하면 실물(행)의 매체로 접두를 맞춘다
+            med = str(r.get("medium") or "").strip().upper()
+            if code and med in ("LP", "CD"):
+                code = re.sub(r"^(?:LP|CD)-", "", code)
+                code = f"{med}-{code}"
             vals = []
             for k in KEYS:
                 if k == "order":
@@ -468,7 +473,9 @@ def build(rows, albums, album_code, digital):
             med = str(r.get("medium") or "").strip().upper()
             tab = "라벨인쇄-LP" if med == "LP" else ("라벨인쇄-CD" if med == "CD" else None)
             if tab:
-                label_sets[tab].append(c)
+                label_sets[tab].append(f"{med}-" + re.sub(r"^(?:LP|CD)-", "", c))
+    label_sets["라벨인쇄-전체"] = (label_sets["라벨인쇄-LP"]
+                                 + label_sets["라벨인쇄-CD"])   # LP 먼저, 이어서 CD
     for tab, codes in label_sets.items():
         ws = wb.create_sheet(tab)
         for idx, code in enumerate(codes):
@@ -557,7 +564,7 @@ def main():
               open(pj, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"· physical_albums.json {len(out)}건 내보냄")
     json.dump(reg, open(REGISTRY, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(f"· 저장: {XLSX} (라벨 LP {nlabels[0]} / CD {nlabels[1]}) / 레지스트리 갱신")
+    print(f"· 저장: {XLSX} (라벨 LP {nlabels[0]} / CD {nlabels[1]} / 전체 {nlabels[0] + nlabels[1]}) / 레지스트리 갱신")
 
 
 if __name__ == "__main__":
