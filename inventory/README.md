@@ -26,3 +26,15 @@ CG = DG 옐로우 게이트폴드 2864 시리즈(좌측선반3층 전용), KN = 
 `python scripts/link_digital.py --wiki`
 - 디지털 라이브러리(~/music-wiki-vault/music-wiki.db)와 아티스트+앨범 정규화 매칭
 - 엑셀 `디지털` 열 ✓ / 위키 앨범 페이지에 `실물 음반: LP J-B01-02` + 🟤 바이닐 배지
+
+## 웹UI 발급분 반영 (ser8 → 백엔드)
+
+ser8 `/add` 에서 발급하면 `data/pending_albums.json` 에 쌓인다. 백엔드에서:
+
+```bash
+python inventory/scripts/apply_pending.py --dry-run   # 무엇이 들어갈지 확인
+music-wiki update                                     # 엑셀 반영 + 코드 재생성 + md/그래프까지
+```
+
+- 멱등: 이미 엑셀에 있는 앨범은 건너뛰고 큐에서 제거, 실패분만 남아 재시도.
+- 엑셀 저장 전 `.bak` 백업, 반영 이력은 `data/applied_albums.json` 에 축적.

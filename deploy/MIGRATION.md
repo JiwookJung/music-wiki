@@ -106,7 +106,7 @@ wakeonlan <ubuntu-MAC>
 | 상황 | 명령 (실행 위치) |
 |---|---|
 | mp3 추가·태그 변경 | **Ubuntu**: `music-wiki update` → `git push` / **ser8**: `git pull` + vault rsync |
-| 음반 구매(분류번호 발급) | **ser8 웹UI**: `/add` 에서 입력 → 즉시 코드 발급(레지스트리 자동 갱신, `pending_albums.json` 대기목록) → 백엔드가 엑셀 반영 |
+| 음반 구매(분류번호 발급) | **ser8 웹UI** `/add` → 즉시 코드 발급 + 대기큐 적재 → **Ubuntu에서 `music-wiki update`** 실행 시 엑셀·md·그래프까지 자동 반영(`apply_pending.py`가 큐를 소진) |
 | 카탈로그·그래프 갱신 | **ser8**: `build_catalog.py` → `load_neo4j.py` → `build_embeddings.py` |
 | YouTube 링크 보강 | **Ubuntu**(대량) 또는 ser8: `python scripts/resolve_youtube.py` |
 | 스택 업데이트 | **ser8**: `git pull && docker compose build web && docker compose up -d` |

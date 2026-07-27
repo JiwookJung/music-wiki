@@ -50,6 +50,10 @@ class WikiGenerator:
 
     def generate(self, out_dir: str) -> None:
         out = Path(out_dir)
+        self._yt_links = {}
+        yl = out / "youtube_links.json"
+        if yl.exists():
+            self._yt_links = json.loads(yl.read_text(encoding="utf-8"))
         (out / "artists").mkdir(parents=True, exist_ok=True)
         (out / "albums").mkdir(parents=True, exist_ok=True)
         for artist in self.store.iter_artists():
@@ -100,8 +104,14 @@ class WikiGenerator:
             lines.append(f"분류: {album.genre_bucket}")
         if album.physical_code:
             lines.append(f"실물 음반: {album.physical_code}")
-        yt = quote_plus(f"{artist.name} {album.title}")
-        lines.append(f"▶ [YouTube 검색](https://www.youtube.com/results?search_query={yt})")
+        ytkey = re.sub(r"[^a-z0-9가-힣]", "", artist.name.lower()) + "|" + \
+            re.sub(r"[^a-z0-9가-힣]", "", album.title.lower())
+        exact = (getattr(self, "_yt_links", {}).get(ytkey) or {}).get("url")
+        if exact:
+            lines.append(f"▶ [YouTube]({exact})")
+        else:
+            yt = quote_plus(f"{artist.name} {album.title}")
+            lines.append(f"▶ [YouTube 검색](https://www.youtube.com/results?search_query={yt})")
         if album.genres:
             lines.append("장르: " + ", ".join(album.genres))
         lines.append(_badges(album))

@@ -147,7 +147,7 @@ def _cmd_update(args) -> int:
     inv = _P(__file__).resolve().parents[2] / "inventory" / "scripts"
     phys_json = inv.parent / "data" / "physical_albums.json"
     if not args.no_physical and (inv / "pipeline.py").exists():
-        for script in ("pipeline.py", "link_digital.py"):
+        for script in ("apply_pending.py", "pipeline.py", "link_digital.py"):
             r = subprocess.run([_sys.executable, str(inv / script)],
                                capture_output=True, text=True)
             tail = (r.stdout or r.stderr).strip().splitlines()

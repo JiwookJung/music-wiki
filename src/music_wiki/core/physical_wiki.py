@@ -13,7 +13,12 @@ def _yt(query: str) -> str:
     return f"https://www.youtube.com/results?search_query={quote_plus(query)}"
 
 
-def _album_md(a: dict) -> str:
+def _norm(s):
+    import re as _re
+    return _re.sub(r"[^a-z0-9가-힣]", "", str(s or "").lower())
+
+
+def _album_md(a: dict, yt_links: dict | None = None) -> str:
     artist, album = a["artist"], a["album"]
     tags = ["실물"] + (a.get("media") or []) + ([a["genre"]] if a.get("genre") else [])
     if a.get("digital"):
@@ -36,10 +41,12 @@ def _album_md(a: dict) -> str:
         lines.append("💿 디지털 보유")
     if a.get("rep"):
         lines.append(f"대표곡: {a['rep']}")
-    yt_links = [f"[앨범 검색]({_yt(f'{artist} {album}')})"]
+    exact = ((yt_links or {}).get(f"{_norm(artist)}|{_norm(album)}") or {}).get("url")
+    links = ([f"[앨범 재생]({exact})"] if exact
+             else [f"[앨범 검색]({_yt(f'{artist} {album}')})"])
     for tr in [t.strip() for t in str(a.get("rep") or "").split(",") if t.strip()][:2]:
-        yt_links.append(f"[{tr}]({_yt(f'{artist} {tr}')})")
-    lines.append("▶ YouTube: " + " · ".join(yt_links))
+        links.append(f"[{tr}]({_yt(f'{artist} {tr}')})")
+    lines.append("▶ YouTube: " + " · ".join(links))
     if a.get("db_url"):
         lines.append(f"DB: {a['db_url']}")
     if a.get("desc"):
@@ -60,6 +67,8 @@ def generate_physical_wiki(out_dir: str, physical_json: str) -> dict:
     (out / "albums").mkdir(parents=True, exist_ok=True)
     (out / "artists").mkdir(parents=True, exist_ok=True)
     data = json.load(open(physical_json, encoding="utf-8"))
+    ylp = out / "youtube_links.json"
+    yt_links = json.loads(ylp.read_text(encoding="utf-8")) if ylp.exists() else {}
     by_artist: dict[str, list[dict]] = {}
     created = skipped = 0
     for a in data:
@@ -71,7 +80,7 @@ def generate_physical_wiki(out_dir: str, physical_json: str) -> dict:
         if path.exists() and "분류코드:" not in path.read_text(encoding="utf-8"):
             skipped += 1          # 디지털 앨범 md 존재 → 유지(실물 줄은 build-wiki가 표시)
             continue
-        path.write_text(_album_md(a), encoding="utf-8")
+        path.write_text(_album_md(a, yt_links), encoding="utf-8")
         created += 1
 
     touched = 0

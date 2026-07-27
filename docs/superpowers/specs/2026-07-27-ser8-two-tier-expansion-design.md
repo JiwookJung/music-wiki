@@ -99,6 +99,7 @@ FastAPI + 정적 SPA(경량 Vanilla/HTMX 우선, 필요시 React) 단일 Docker 
 - **E1 (ser8 가동)**: ser8 Ubuntu 설치→Docker→웹앱 배포→vault/DB pull→YouTube 플레이어 상시화. WoL 확인.
 - **E2 (완료, 2026-07-27)**: `/add` 웹UI + `POST /api/issue` 분류번호 발급(레지스트리 재사용, 빈 번호 삽입 검증: 신규 아티스트 J-E06 삽입 시 기존 코드 불변), `pending_albums.json` 대기목록, `/ask` LLM 패널(`claude -p`). 테스트 2건 추가(131 통과).
 - **E1-a (완료, 2026-07-27)**: 로컬 mp3 스트리밍 UI — 앨범 페이지 수록곡 목록·클릭 재생·연속재생, Range(206) 지원, 원본 오프라인 시 자동 '(오프라인)' 표기 + YouTube 폴백, `/api/status`.
+- **E2-a (완료, 2026-07-27)**: `apply_pending.py` — ser8 발급 큐를 백엔드 엑셀에 자동 반영(멱등·백업·이력), `music-wiki update` 1단계로 편입. E2E 검증(J-E06-01 발급→42행 추가→롤백).
 - **E3 (완료, 2026-07-27)**: Neo4j vector index(384d, multilingual-MiniLM) + 앨범 유사검색 UI. CPU 33초로 1,950건 임베딩 — ser8에서도 동일.
 
 ## 9. 리스크 & 완화
