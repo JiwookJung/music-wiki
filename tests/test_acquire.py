@@ -12,7 +12,7 @@ def test_issue_code_dry_run_is_stable(tmp_path, monkeypatch):
     res = acquire.issue_code(artist="Keith Jarrett", album="The Köln Concert",
                              genre="재즈", medium="LP", dry_run=True)
     after = json.loads(Path(acquire.REGISTRY).read_text(encoding="utf-8"))
-    assert res["code"].startswith("J-K")     # 재즈 + K 초성
+    assert res["code"].startswith("LP-J-K")   # 매체접두 + 재즈 + K 초성
     assert res["dry_run"] is True
     assert before == after                   # dry-run은 레지스트리 불변
 
@@ -26,4 +26,4 @@ def test_existing_codes_never_shift(tmp_path):
                              genre="재즈", medium="LP", dry_run=True)
     reg2 = json.loads(Path(acquire.REGISTRY).read_text(encoding="utf-8"))
     assert reg2["artists"].get("J|E", {}) == je_before   # 저장 안 됨(dry-run)
-    assert res["code"].startswith("J-E")                  # 신규도 같은 그룹
+    assert res["code"].startswith("LP-J-E")                # 신규도 같은 그룹
