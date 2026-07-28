@@ -498,6 +498,9 @@ def build(rows, albums, album_code, digital):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="코드 미리보기만, 파일 미변경")
+    ap.add_argument("--export-only", action="store_true",
+                    help="엑셀·라벨 재작성 없이 data/ 산출물(code_registry·physical_albums)만 생성. "
+                         "새 기계 부트스트랩용 — 엑셀 정본을 건드리지 않는다")
     args = ap.parse_args()
 
     rows = extract(XLSX)
@@ -542,8 +545,10 @@ def main():
     if args.dry_run:
         print("· dry-run — 파일 미변경")
         return
-    wb, nlabels = build(rows, albums, album_code, digital)
-    wb.save(XLSX)
+    nlabels = None
+    if not args.export_only:
+        wb, nlabels = build(rows, albums, album_code, digital)
+        wb.save(XLSX)
     # 실물 위키(md) 생성용 구조화 데이터 내보내기
     out = []
     for key, code in album_code.items():
@@ -560,11 +565,15 @@ def main():
             "copies": len(idxs), "digital": key in digital,
         })
     pj = os.path.join(INV, "data", "physical_albums.json")
+    os.makedirs(os.path.dirname(pj), exist_ok=True)
     json.dump(sorted(out, key=lambda x: x["code"]),
               open(pj, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"· physical_albums.json {len(out)}건 내보냄")
     json.dump(reg, open(REGISTRY, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(f"· 저장: {XLSX} (라벨 LP {nlabels[0]} / CD {nlabels[1]} / 전체 {nlabels[0] + nlabels[1]}) / 레지스트리 갱신")
+    if nlabels is None:
+        print("· 레지스트리 갱신 (--export-only: 엑셀·라벨 미변경)")
+    else:
+        print(f"· 저장: {XLSX} (라벨 LP {nlabels[0]} / CD {nlabels[1]} / 전체 {nlabels[0] + nlabels[1]}) / 레지스트리 갱신")
 
 
 if __name__ == "__main__":

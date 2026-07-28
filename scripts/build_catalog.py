@@ -11,10 +11,15 @@ import os
 import re
 import sqlite3
 
-DB = os.path.expanduser("~/music-wiki-vault/music-wiki.db")
-PHYS = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                    "inventory", "data", "physical_albums.json")
-YT = os.path.expanduser("~/music-wiki-vault/youtube_links.json")
+# 경로는 webapp/app.py 와 같은 규약(MW_VAULT·MW_INVENTORY)을 따른다.
+# 컨테이너에서는 HOME=/root 라 ~ 확장이 통하지 않으므로 env 가 유일한 정답.
+VAULT = os.path.expanduser(os.environ.get("MW_VAULT", "~/music-wiki-vault"))
+DB = os.path.expanduser(os.environ.get("MW_DB", os.path.join(VAULT, "music-wiki.db")))
+INV = os.path.expanduser(os.environ.get(
+    "MW_INVENTORY",
+    os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "inventory")))
+PHYS = os.path.join(INV, "data", "physical_albums.json")
+YT = os.path.join(VAULT, "youtube_links.json")
 
 
 def norm(s):

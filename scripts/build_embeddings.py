@@ -14,7 +14,8 @@ import sqlite3
 
 from neo4j import GraphDatabase
 
-DB = os.path.expanduser(os.environ.get("MW_DB", "~/music-wiki-vault/music-wiki.db"))
+VAULT = os.path.expanduser(os.environ.get("MW_VAULT", "~/music-wiki-vault"))
+DB = os.path.expanduser(os.environ.get("MW_DB", os.path.join(VAULT, "music-wiki.db")))
 URI = os.environ.get("NEO4J_URI", "bolt://localhost:7687")
 AUTH = (os.environ.get("NEO4J_USER", "neo4j"),
         os.environ.get("NEO4J_PASSWORD", "musicwiki"))
