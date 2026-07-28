@@ -39,7 +39,8 @@ services:
     environment:
       MW_VAULT: /data/vault
       MW_INVENTORY: /data/inventory
-      MW_MUSIC_SRC: ${MUSIC_DIR:-/mnt/win/memory/음악}   # DB abs_path 의 원본 루트
+      # DB의 abs_path 에 기록된 원본 루트(고정값 — 스캔 당시 경로). 재스캔 전엔 바꾸지 말 것
+      MW_MUSIC_SRC: ${MUSIC_SRC:-/mnt/win/memory/음악}
       MW_MUSIC_MNT: /data/music                          # 컨테이너 내 마운트 지점
       NEO4J_URI: bolt://neo4j:7687
       NEO4J_USER: neo4j
