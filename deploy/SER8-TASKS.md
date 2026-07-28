@@ -67,7 +67,9 @@ ssh -T git@github.com                # "successfully authenticated" 확인
 
 ### A3. 외장 SSD 연결 (mp3 170GB)
 
-> SSD 포맷·복사는 **이 PC에서 이미 완료**. ser8에서는 꽂고 마운트만 하면 된다.
+> SSD 포맷·복사는 **이 PC에서 완료됨(2026-07-28 검증)**: ext4 `LABEL=MUSIC`, 916G 중
+> `media/` 에 170G·18,784파일(원본과 용량·파일수 일치). ser8에서는 꽂고 마운트만 하면 된다.
+> 이 PC에서 `MUSIC_DIR=/mnt/ssd/media` 로 스트리밍(HTTP 206) 실동작까지 확인했다.
 
 ```bash
 lsblk -f | grep MUSIC                 # LABEL=MUSIC 보이면 인식됨
