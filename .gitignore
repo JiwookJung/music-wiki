@@ -12,6 +12,10 @@ env/
 
 # 데이터/산출물 (원본·대용량·생성물은 git에 넣지 않음)
 data/
+# 예외: 분류코드 레지스트리는 산출물이 아니라 '기록'이다. 발급 이력을 커밋 로그로
+# 남기는 것이 설계(§5)의 감사 추적이고, 새 기계는 clone만으로 코드가 복원돼야 한다.
+!inventory/data/
+!inventory/data/**
 output/
 thumbnails/
 *.sqlite

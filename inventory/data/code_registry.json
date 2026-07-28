@@ -1,0 +1,3093 @@
+{
+ "artists": {
+  "J|M": {
+   "madeleinepeyroux": 1,
+   "moonsang": 37,
+   "milesdavis": 29,
+   "michaelbubl": 17,
+   "michealfranks": 25,
+   "manhattanjazzquintet": 5,
+   "michaelfranks": 21,
+   "melodygardot": 9,
+   "morlenbaumsakamoto": 41,
+   "milesdavisquintet": 33,
+   "melodygardotphilippepowell": 13
+  },
+  "G|R": {
+   "robertoaussel": 1,
+   "rolanddyens": 5,
+   "rolanddyensguitare": 9
+  },
+  "J|J": {
+   "jacquesloussier": 1,
+   "johncoltranequartet": 17,
+   "juliancannonballadderley": 21,
+   "joehenderson": 9,
+   "johncoltrane": 13,
+   "jeanpierrerampalclaudebolling": 5
+  },
+  "K|L": {
+   "leviparty": 1
+  },
+  "T|ㄱ": {
+   "고마쓰료타": 1
+  },
+  "P|J": {
+   "jackieevancho": 1,
+   "johnlennon": 5
+  },
+  "O|J": {
+   "johnnyharris": 9,
+   "joehisaishi": 5,
+   "justinhurwitz": 17,
+   "jeanclaudepetit": 1,
+   "johnwilliamsisaacstern": 13
+  },
+  "O|Y": {
+   "yiruma": 1,
+   "yokotakahashimegumihayashibara": 5,
+   "yoyoma": 9
+  },
+  "G|I": {
+   "isbincoryellalmeida": 1
+  },
+  "K|ㅂ": {
+   "빛과소금": 37,
+   "박학기": 9,
+   "변진섭": 21,
+   "버스커버스커": 17,
+   "봄여름가을겨울bomyeoreumgaeulgyeoul": 29,
+   "블루스카이bluesky": 33,
+   "박주원": 5,
+   "박경환": 1,
+   "봄여름가을겨울": 25,
+   "백예린": 13
+  },
+  "W|P": {
+   "pesadelo": 6,
+   "peperomero": 5,
+   "parismusette": 1,
+   "peterschindler": 9
+  },
+  "K|T": {
+   "toy": 1,
+   "toy토이": 5
+  },
+  "T|G": {
+   "gidonkremer": 1
+  },
+  "T|L": {
+   "lidiabordabrianchambouleyronyestebanmorgado": 1
+  },
+  "T|E": {
+   "estebanmorgadocuarteto": 5,
+   "estebanmorgado": 1
+  },
+  "T|P": {
+   "piazzolla": 1
+  },
+  "T|B": {
+   "baltazarbenitez": 5,
+   "barenboim": 9,
+   "bajofondo": 1
+  },
+  "T|A": {
+   "astorpiazzolla": 9,
+   "apiazzolla": 5,
+   "astorpiazzollamauriciofonseca": 13,
+   "astorpiazzollaysuquintetonuevotiempo": 17,
+   "anibaltroilo": 1
+  },
+  "T|M": {
+   "marikumamoto": 1,
+   "mondelcimoscowchamberorchestraorbelian": 9,
+   "milvaastorpiazzolla": 5
+  },
+  "O|V": {
+   "various": 1,
+   "vinceguaralditrio": 5
+  },
+  "T|I": {
+   "isolistiaquilanivittorioantonellini": 1
+  },
+  "T|J": {
+   "joscarliorquestaestabledelteatrocoln": 1,
+   "juliamigenesalbertguinovart": 5
+  },
+  "T|R": {
+   "ryotakomatsu": 1
+  },
+  "W|ㅇ": {
+   "윤상yoonsang외": 1
+  },
+  "T|Q": {
+   "quintetobuenosaires": 1
+  },
+  "W|T": {
+   "tigranhamasyan": 1,
+   "tunadecienciasdelauniversidaddegranada": 5
+  },
+  "W|R": {
+   "robylakatosandhisensemble": 5,
+   "robylakatosensemble": 9,
+   "robylakatos": 1,
+   "romeros": 13
+  },
+  "T|T": {
+   "trioassai": 1
+  },
+  "W|B": {
+   "buenavistasocialclub": 5,
+   "badenpowell": 1
+  },
+  "W|E": {
+   "eduloboetomjobim": 5,
+   "enricomacias": 9,
+   "edithpiaf": 1
+  },
+  "W|M": {
+   "mercedessosa": 5,
+   "marcosvalle": 1,
+   "michelpolnareff": 9
+  },
+  "O|T": {
+   "tarohakase": 1
+  },
+  "W|L": {
+   "lakatos": 1,
+   "lisaono": 5,
+   "luismariano": 9
+  },
+  "C|V": {
+   "various": 1
+  },
+  "G|J": {
+   "johnwilliams": 1,
+   "johnwilliamsdanielbarenboimenglishchamberorchestra": 5,
+   "julianjohn": 21,
+   "julianbream": 13,
+   "juianjohn": 9,
+   "julianbreamjohnwilliams": 17
+  },
+  "G|A": {
+   "antigonigoni": 21,
+   "andrssegovia": 17,
+   "albnizfallagranadosrodrigosorvillalobos": 5,
+   "amsterdamguitartrio": 13,
+   "agustnbarriosmangor": 1,
+   "aliriodiaz": 9,
+   "assad": 25
+  },
+  "G|D": {
+   "davidrussell": 1
+  },
+  "G|L": {
+   "losangelesguitarquartetlagq": 9,
+   "laurindoalmeidajohnwilliams": 5,
+   "laurindoalmeida": 1
+  },
+  "W|J": {
+   "joobosco": 1
+  },
+  "W|K": {
+   "ketama": 1
+  },
+  "O|A": {
+   "alaindelon": 1,
+   "andregagnon": 5
+  },
+  "T|N": {
+   "newtangoduo": 1
+  },
+  "O|C": {
+   "cirquedusoleil": 1
+  },
+  "G|G": {
+   "gransllschernarcisoyepes": 1
+  },
+  "P|A": {
+   "alphaville": 5,
+   "abba": 1
+  },
+  "K|ㄱ": {
+   "김현철이소라김상훈김현식": 61,
+   "김동률": 25,
+   "김광석": 17,
+   "김현철": 53,
+   "김광민": 13,
+   "강수지": 1,
+   "김민우": 33,
+   "김현식권인하신형원강인원": 49,
+   "김현철kimhyunchul": 57,
+   "김현식과봄여름가을겨울kimhyunsikbomyeoreumgaeulgyeoul": 45,
+   "김현식": 37,
+   "김동률kimdongryul": 29,
+   "공일오비": 5,
+   "김현식kimhyunsik": 41,
+   "김건모": 9,
+   "김광석kimkwangseok": 21
+  },
+  "K|ㅇ": {
+   "이문세": 34,
+   "윤상": 25,
+   "이규호": 31,
+   "유재하": 16,
+   "앨리스인네버랜드": 1,
+   "이적김동률": 67,
+   "양희은": 4,
+   "어떤날": 7,
+   "유재하가요제": 22,
+   "이병우": 40,
+   "이소라": 46,
+   "윤종신": 28,
+   "이승환": 52,
+   "여행스케치": 10,
+   "이승환leeseunghwan": 55,
+   "임재범": 70,
+   "이영훈leeyounghoon": 58,
+   "이적": 64,
+   "이소라leesora": 49,
+   "이문세leemoonse": 37,
+   "이상순": 43,
+   "오석준": 13,
+   "이은미": 61,
+   "임재범yimjaebeum": 73,
+   "유재하yoojaeha": 19
+  },
+  "K|ㅈ": {
+   "장혜진": 9,
+   "전람회": 13,
+   "전람회exhibition": 17,
+   "조규찬": 37,
+   "정원영": 29,
+   "조용필choyongpil": 41,
+   "자우림": 1,
+   "전제덕": 21,
+   "조관우": 33,
+   "정미조": 25,
+   "장필순": 5
+  },
+  "P|V": {
+   "various": 1
+  },
+  "O|R": {
+   "richardgoldorchestra": 5,
+   "ryuichisakamoto": 17,
+   "risstevensbriansullivanandthecolumbusboychoirwiththefirestoneorchestraandchorus": 9,
+   "rodgersandhammerstein": 13,
+   "remedios": 1,
+   "ryuichisakamotodavidbyrnecongsu": 21
+  },
+  "O|N": {
+   "ninorota": 5,
+   "nevillemarrineracademyofstmartininthefields": 1
+  },
+  "O|E": {
+   "enniomorricone": 1,
+   "ericserra": 5
+  },
+  "P|C": {
+   "carpenters": 9,
+   "cardigans": 5,
+   "camel": 1
+  },
+  "P|W": {
+   "wham": 1
+  },
+  "J|P": {
+   "patmethenygroup": 5,
+   "patmetheny": 1
+  },
+  "J|C": {
+   "claudebolling": 41,
+   "chuckmangione": 37,
+   "casiopea": 13,
+   "carlabley": 5,
+   "carnegiehalljazzband": 9,
+   "chickcorea": 33,
+   "charliehadenpatmetheny": 25,
+   "chetbaker": 29,
+   "cliffordbrown": 45,
+   "chaliebyrd": 17,
+   "cannonballadderley": 1,
+   "charliebyrd": 21
+  },
+  "J|S": {
+   "stangetz": 17,
+   "sarahlundback": 26,
+   "stangetzjoaogilberto": 21,
+   "sarahvaughan": 1,
+   "sonnyrollins": 9,
+   "stangetzjoogilberto": 25,
+   "staceykent": 13,
+   "scottjoplin": 5
+  },
+  "C|M": {
+   "minkim김민": 4
+  },
+  "J|O": {
+   "oats": 2,
+   "oscarpetersontrio": 1
+  },
+  "K|V": {
+   "various": 1
+  },
+  "O|ㄱ": {
+   "고상지": 1,
+   "그대안의블루": 5,
+   "그해우리는": 9
+  },
+  "K|C": {
+   "casker": 1,
+   "clazziquaiproject": 5
+  },
+  "K|Y": {
+   "yunsang": 5,
+   "yashacollection": 1
+  },
+  "P|G": {
+   "gilbertosullivan": 9,
+   "garymoore": 1,
+   "georgemichael": 5
+  },
+  "K|ㅁ": {
+   "문희준": 9,
+   "모노": 1,
+   "모자이크": 5
+  },
+  "J|D": {
+   "davidbenoit": 13,
+   "davebrubeck": 1,
+   "davegrusin": 9,
+   "duskogoykovich": 17,
+   "davebrubeckquartet": 5
+  },
+  "J|E": {
+   "earlklugh": 1,
+   "europeanjazztrio": 9,
+   "eddiehigginstrio": 5
+  },
+  "J|B": {
+   "bobbymcferrin": 5,
+   "billevanstrio": 1,
+   "bolling": 9
+  },
+  "O|G": {
+   "georgewinston": 1
+  },
+  "P|E": {
+   "earthwindfire": 5,
+   "earthwindandfire": 1,
+   "extreme": 9
+  },
+  "O|H": {
+   "henrymancini": 5,
+   "hanszimmereltonjohn": 1
+  },
+  "J|R": {
+   "richardstoltzman": 5,
+   "rampalflutelagoyaguitar": 1
+  },
+  "O|B": {
+   "branfordmarsalisquartetfeaturingterenceblanchard": 5,
+   "burtbacharach": 9,
+   "billleebranfordmarsalisquartet": 1
+  },
+  "P|B": {
+   "burtbacharach": 13,
+   "bingcrosby": 9,
+   "beatles": 5,
+   "barrymanilow": 1
+  },
+  "J|K": {
+   "kennydrewtrio": 5,
+   "keithjarrett": 1
+  },
+  "J|G": {
+   "gatobarbieri": 1,
+   "gerrymulligan": 5,
+   "glennmiller": 9
+  },
+  "J|H": {
+   "harryconnickjr": 5,
+   "hankmobley": 1
+  },
+  "J|F": {
+   "fourplay": 1
+  },
+  "W|V": {
+   "viniciuscantuaria": 5,
+   "various": 1
+  },
+  "W|A": {
+   "antoniocarlosjobim": 9,
+   "andremanoukian": 5,
+   "amaliarodrigues": 1
+  },
+  "O|ㅇ": {
+   "오장박": 2,
+   "이주원": 9,
+   "여명의눈동자": 1,
+   "왕가위": 5
+  },
+  "K|S": {
+   "solid솔리드": 5,
+   "seotaijiandboys서태지와아이들": 1
+  },
+  "KN|ㅇ": {
+   "윤종신": 5,
+   "윤상": 1
+  },
+  "KN|ㅍ": {
+   "포지션": 1
+  },
+  "KN|ㅅ": {
+   "신승훈": 1
+  },
+  "KN|ㅈ": {
+   "전람회": 1,
+   "조규만김부용": 5
+  },
+  "K|ㄹ": {
+   "롤러코스터": 1
+  },
+  "K|ㄷ": {
+   "동물원": 9,
+   "들국화": 13,
+   "다섯손가락": 1,
+   "다섯손가락dasotsongarak": 5
+  },
+  "K|N": {
+   "next": 1
+  },
+  "K|M": {
+   "mr2미스터투": 1
+  },
+  "K|0": {
+   "015b": 1
+  },
+  "K|ㅎ": {
+   "한동준": 1
+  },
+  "K|ㄴ": {
+   "노래를찾는사람들": 5,
+   "노이즈": 9,
+   "나얼": 1
+  },
+  "K|ㅅ": {
+   "신해철": 21,
+   "서태지와아이들seotaijiandboys": 9,
+   "신승훈shinseunghun": 17,
+   "신승훈": 13,
+   "서지원": 5,
+   "신해철shinhaechul": 25,
+   "새바람이오는그늘": 1
+  },
+  "O|ㄴ": {
+   "느낌": 1
+  },
+  "O|ㅈ": {
+   "질투": 9,
+   "조성우": 5,
+   "장동건": 1
+  },
+  "K|J": {
+   "jangphilsoon": 1,
+   "jaurim": 5
+  },
+  "K|ㅋ": {
+   "카니발": 1,
+   "클래지콰이": 5
+  },
+  "O|ㅅ": {
+   "스물다섯스물하나": 1
+  },
+  "K|ㅍ": {
+   "파일럿": 1,
+   "푸른하늘": 9,
+   "푸딩": 5
+  },
+  "K|ㅊ": {
+   "최백호": 1
+  },
+  "K|I": {
+   "iu": 1
+  },
+  "O|ㅍ": {
+   "푸딩": 5,
+   "폴리스": 1
+  },
+  "K|K": {
+   "kimgwangjin": 5,
+   "kangsoojee": 1
+  },
+  "J|V": {
+   "various": 1
+  },
+  "P|R": {
+   "robbiewilliams": 1
+  },
+  "P|M": {
+   "michaeljackson": 1
+  },
+  "P|Q": {
+   "queen": 1
+  },
+  "J|L": {
+   "laufey": 1,
+   "lisaono": 9,
+   "laurindoalmeida": 5
+  },
+  "P|S": {
+   "simonandgarfunkel": 1
+  },
+  "J|T": {
+   "tsquare": 5,
+   "theloniousmonk": 1
+  },
+  "J|A": {
+   "antoniocarlosjobim": 9,
+   "andrprevinandhispals": 5,
+   "andrmanoukian": 1
+  },
+  "J|N": {
+   "nataliecole": 1,
+   "norahjones": 5
+  },
+  "T|V": {
+   "various": 1
+  },
+  "T|D": {
+   "danielbarenboimpiazzollagardelsalganginasterarestaperfdanielbarenboimrodolfomederoshectorconsolesergeitrofanov": 5,
+   "danielbarenboim": 1
+  },
+  "T|ㅅ": {
+   "송영훈": 1
+  },
+  "W|S": {
+   "sergeitrofanov": 5,
+   "sergegainsbourg": 1,
+   "silviarodrigues": 9
+  },
+  "G|B": {
+   "badenpowell": 1,
+   "badenpowelljanine": 5
+  },
+  "G|Y": {
+   "yamashita": 1
+  },
+  "G|S": {
+   "sharonisbin": 1,
+   "sharonisbincarlosbarbosalima": 5
+  },
+  "G|P": {
+   "peperomero": 1
+  },
+  "O|S": {
+   "simonandgarfunkel": 1,
+   "stanleymyers": 5
+  },
+  "O|L": {
+   "luizbonfa": 1
+  },
+  "O|M": {
+   "markknopfler": 1
+  },
+  "O|F": {
+   "francislai": 1
+  },
+  "O|K": {
+   "kristenandersonlopezrobertlopez": 1
+  },
+  "O|P": {
+   "paulmauriat": 1,
+   "petemoorepopsorchestra": 5
+  },
+  "J|ㅈ": {
+   "장기호": 1
+  },
+  "T|K": {
+   "kohsangji고상지": 1
+  },
+  "K|D": {
+   "deux듀스": 1,
+   "dzit": 5
+  },
+  "W|ㄷ": {
+   "두번째달": 1
+  },
+  "G|H": {
+   "harp": 1
+  },
+  "W|G": {
+   "georgemoustaki": 1
+  },
+  "K|B": {
+   "bts": 1
+  },
+  "K|P": {
+   "peppertones": 1
+  }
+ },
+ "albums": {
+  "J|M|madeleinepeyroux": {
+   "halftheperfectworld": 1
+  },
+  "G|R|robertoaussel": {
+   "robertoausselplays20thcenturymusic": 1
+  },
+  "J|J|jacquesloussier": {
+   "thebestofplaybach": 1
+  },
+  "K|L|leviparty": {
+   "vessel": 2,
+   "kosmos": 1,
+   "zhun": 3
+  },
+  "T|ㄱ|고마쓰료타": {
+   "thebest": 1
+  },
+  "P|J|jackieevancho": {
+   "heavenlychristmas": 3,
+   "songsfromthesilverscreen": 4,
+   "dreamwithme": 2,
+   "awakening": 1
+  },
+  "O|J|johnnyharris": {
+   "steppingstones": 1
+  },
+  "O|Y|yiruma": {
+   "atmosferaspecialalbum": 1,
+   "firstlove": 2
+  },
+  "G|I|isbincoryellalmeida": {
+   "3guitars3": 1
+  },
+  "K|ㅂ|빛과소금": {
+   "5th": 5,
+   "2집추정": 2,
+   "3집": 3,
+   "2집": 1,
+   "4집": 4,
+   "5집": 6,
+   "vol6": 8,
+   "thecompletestudioalbums": 7,
+   "오래된친구4집": 9
+  },
+  "W|P|pesadelo": {
+   "newnatureofsoundspudding": 1
+  },
+  "J|M|moonsang": {
+   "theduetspart1": 1
+  },
+  "K|T|toy": {
+   "다카포dacapo": 2,
+   "presenttoy": 1
+  },
+  "T|G|gidonkremer": {
+   "astorpiazzollaeltango": 1,
+   "hommagepiazzolla": 2
+  },
+  "T|L|lidiabordabrianchambouleyronyestebanmorgado": {
+   "patiodetango": 1
+  },
+  "T|E|estebanmorgadocuarteto": {
+   "vamosquevenimos": 1
+  },
+  "T|P|piazzolla": {
+   "piazzollamusicforfluteandguitar": 1
+  },
+  "T|B|baltazarbenitez": {
+   "musicofastorpiazzolla": 1
+  },
+  "T|A|astorpiazzolla": {
+   "thetangowaytheclassicway": 18,
+   "aosdesoledad": 2,
+   "masterofthebandoneon": 12,
+   "astorpiazzolla": 3,
+   "piazzolla1960": 13,
+   "buenosairesorazero": 4,
+   "live": 10,
+   "theroughdancerandthecyclicalnight": 17,
+   "adiosnonino": 1,
+   "libertango": 9,
+   "lumiere": 11,
+   "conciertoparabandoneontrestangos": 5,
+   "tangozerohour": 16,
+   "conciertoparaquinteto": 6,
+   "tangoargentino": 14,
+   "lacamorralasoledaddelaprovocacionapasionadathesolitudeofpassionateprovocation": 8,
+   "enricoiv": 7,
+   "tangofutur": 15
+  },
+  "O|J|joehisaishi": {
+   "mylostcity": 1,
+   "천공의성라퓨타": 3,
+   "studioghibli": 2
+  },
+  "T|M|marikumamoto": {
+   "tango": 1
+  },
+  "O|V|various": {
+   "thetangolessonafilmbysallypotter": 11,
+   "jazzoncinemaii": 7,
+   "jazzoncinemai": 6,
+   "응답하라1988": 14,
+   "hospitalplaylistseason2슬기로운의사생활시즌2originalsoundtrack": 4,
+   "hospitalplaylist슬기로운의사생활originalsoundtrack": 5,
+   "disneypicturediscpinocchio": 1,
+   "lovestoryoriginalmotionpicturesoundtrack": 9,
+   "happytogetheroriginalmotionpicturesoundtrack": 3,
+   "theessentialdisneycollection": 10,
+   "갯마을차차차ost": 12,
+   "알고있지만ost": 13,
+   "journeytheclassicsoffilmtelevision": 8,
+   "greatscreenmusicvol3": 2
+  },
+  "T|I|isolistiaquilanivittorioantonellini": {
+   "isolistiaquilanidirettidavittorioantonellini": 1
+  },
+  "T|A|apiazzolla": {
+   "maradebuenosaires": 1
+  },
+  "T|J|joscarliorquestaestabledelteatrocoln": {
+   "piazzollaclassictracksfromargentina": 1
+  },
+  "T|M|mondelcimoscowchamberorchestraorbelian": {
+   "piazzollatangosarrangedforsaxophoneandorchestra": 1
+  },
+  "T|R|ryotakomatsu": {
+   "blauerhimmel": 1,
+   "tangowithme": 2
+  },
+  "T|E|estebanmorgado": {
+   "esloquehay": 2,
+   "milongueros": 3,
+   "endemoniado": 1
+  },
+  "W|ㅇ|윤상yoonsang외": {
+   "운상의월드뮤직selectedbyyoonsang": 2,
+   "운상의월드뮤직": 1
+  },
+  "T|B|barenboim": {
+   "tangosamongfriends": 1
+  },
+  "T|J|juliamigenesalbertguinovart": {
+   "infamiatangosdebarcelona": 1
+  },
+  "T|Q|quintetobuenosaires": {
+   "symphonictango": 1
+  },
+  "W|T|tigranhamasyan": {
+   "worldpassion": 1
+  },
+  "W|R|robylakatosandhisensemble": {
+   "livefrombudapest": 1
+  },
+  "T|T|trioassai": {
+   "milongadelngel": 1
+  },
+  "W|B|buenavistasocialclub": {
+   "buenavistasocialclub": 1
+  },
+  "W|E|eduloboetomjobim": {
+   "edutom": 1
+  },
+  "W|M|mercedessosa": {
+   "siempre": 2,
+   "liveinargentina": 1
+  },
+  "O|T|tarohakase": {
+   "thebestoftarohakase": 1
+  },
+  "W|R|robylakatosensemble": {
+   "firedance": 1
+  },
+  "W|R|robylakatos": {
+   "tuttoilmegliodei": 1
+  },
+  "W|L|lakatos": {
+   "lakatos": 1
+  },
+  "C|V|various": {
+   "anamaudiodemonstrationcompactdisc": 3,
+   "theheritageofmusic1": 1,
+   "theheritageofmusic2": 2
+  },
+  "G|J|johnwilliams": {
+   "latinamericanguitarmusicbybarriosandponce": 11,
+   "classicwilliamsromanceoftheguitar": 4,
+   "albnizechoesofspain": 1,
+   "spanishguitarmusic": 16,
+   "bachhandelmarcelloconcertos": 2,
+   "portraitofjohnwilliams": 13,
+   "johnwilliamscollection": 8,
+   "harmony": 7,
+   "greatesthits": 5,
+   "bridges": 3,
+   "johnwilliamsplaysbach": 9,
+   "johnwilliamsplaysmusicofbarrios": 10,
+   "guitarrecital": 6,
+   "virtuosomusicforguitarvol1": 18,
+   "virtuosomusicforguitar": 17,
+   "recuerdosdelaalhambra": 14,
+   "virtuosovariationsforguitar": 19,
+   "playsbach": 12,
+   "rodrigoguitarconcerto": 15
+  },
+  "G|A|antigonigoni": {
+   "laureateseriesguitar": 1
+  },
+  "W|P|peperomero": {
+   "flamenco": 1
+  },
+  "W|T|tunadecienciasdelauniversidaddegranada": {
+   "tunadecienciasuniversidaddegranada": 1
+  },
+  "G|D|davidrussell": {
+   "airelatinolatinamericanmusicforguitar": 1,
+   "musicofbarrios": 2,
+   "playsantoniolauro": 3
+  },
+  "G|A|andrssegovia": {
+   "thegeniusofandrssegoviaabachrecital": 1
+  },
+  "G|L|losangelesguitarquartetlagq": {
+   "airground": 1
+  },
+  "W|J|joobosco": {
+   "oroncodacuca": 1
+  },
+  "W|K|ketama": {
+   "ketama": 1
+  },
+  "O|A|alaindelon": {
+   "chansonaucinma": 1
+  },
+  "W|P|parismusette": {
+   "parismusette": 1
+  },
+  "T|N|newtangoduo": {
+   "newtangoduobajocero": 1
+  },
+  "O|C|cirquedusoleil": {
+   "lebestofcirquedusoleil": 1
+  },
+  "G|R|rolanddyens": {
+   "nightandday": 1
+  },
+  "G|R|rolanddyensguitare": {
+   "chantsdaura": 1
+  },
+  "G|A|albnizfallagranadosrodrigosorvillalobos": {
+   "lecharmedelaguitare": 1
+  },
+  "G|G|gransllschernarcisoyepes": {
+   "guitarencores": 1
+  },
+  "P|A|alphaville": {
+   "foreverbest003": 1
+  },
+  "K|ㄱ|김현철이소라김상훈김현식": {
+   "foreverbest002": 1
+  },
+  "K|ㅇ|이문세": {
+   "newdirection": 2,
+   "화무": 6,
+   "난아직모르잖아요": 3,
+   "미완성7집추정": 4,
+   "4집추정": 1,
+   "운수좋은날비되어내려다오오마니아빠의마음": 5
+  },
+  "K|ㅈ|장혜진": {
+   "beforetheparty": 1
+  },
+  "K|ㅇ|윤상": {
+   "4th": 4,
+   "the3rdclich": 9,
+   "playwithhimyoonsangsongbook": 7,
+   "renacimiento": 8,
+   "1집": 2,
+   "2집": 3,
+   "part": 6,
+   "1": 1,
+   "nohys": 5
+  },
+  "K|ㅇ|이규호": {
+   "alterego": 1
+  },
+  "P|V|various": {
+   "christmasgreetings": 1,
+   "rockinwhitenights90isovietrockseries3": 2
+  },
+  "O|R|richardgoldorchestra": {
+   "goldenscreenmusiccollection": 1
+  },
+  "O|N|ninorota": {
+   "thegodfatheroriginalmotionpicturesoundtrack": 1
+  },
+  "O|E|enniomorricone": {
+   "cinemaparadiso": 1,
+   "onceuponatimeinamericaoriginalmotionpicturesoundtrack": 4,
+   "themissionoriginalsoundtrack": 5,
+   "cinemaparadisooriginalsoundtrackrecording": 2,
+   "filmmusic19661987": 3
+  },
+  "P|C|carpenters": {
+   "vol2": 1
+  },
+  "P|W|wham": {
+   "thebestofwham": 2,
+   "makeitbig": 1
+  },
+  "G|A|amsterdamguitartrio": {
+   "classicalmelody": 1
+  },
+  "J|M|milesdavis": {
+   "kindofblue": 1,
+   "sketchesofspain": 3,
+   "milesahead": 2
+  },
+  "J|P|patmethenygroup": {
+   "firstcircle": 1,
+   "letterfromhome": 2
+  },
+  "J|C|claudebolling": {
+   "vintagebolling": 1
+  },
+  "J|S|stangetz": {
+   "thelyricalstangetz": 1
+  },
+  "J|C|chuckmangione": {
+   "amgoldseries": 1,
+   "thebestofchuckmagione": 3,
+   "feelssogood": 2
+  },
+  "C|M|minkim김민": {
+   "letterfromtheearth": 1
+  },
+  "J|O|oats": {
+   "minusone": 1
+  },
+  "K|ㅈ|전람회": {
+   "졸업": 3,
+   "exhibition": 1,
+   "exhibition2": 2
+  },
+  "K|ㅈ|전람회exhibition": {
+   "exhibition": 1,
+   "exhibition2졸업": 2,
+   "졸업graduation": 3
+  },
+  "K|V|various": {
+   "다시돌아온그대와함께1987": 2,
+   "fm음악도시유희열입니다": 1,
+   "제17회93mbc대학가요제": 3
+  },
+  "K|ㄱ|김동률": {
+   "동행": 3,
+   "희망": 4,
+   "5th": 2,
+   "1집": 1
+  },
+  "K|ㅇ|유재하": {
+   "사랑하기때문에": 1
+  },
+  "O|ㄱ|고상지": {
+   "maycgre10": 1
+  },
+  "K|C|casker": {
+   "skylab": 4,
+   "tender": 5,
+   "polyesterheart": 3,
+   "casker4": 1,
+   "newedition신곡모음집": 2
+  },
+  "K|ㅈ|조규찬": {
+   "best감사해": 2,
+   "1집": 1
+  },
+  "K|ㅇ|앨리스인네버랜드": {
+   "festainneverland": 1
+  },
+  "K|ㅇ|이적김동률": {
+   "카니발": 1
+  },
+  "K|Y|yunsang": {
+   "2집part1": 1,
+   "part2": 2
+  },
+  "P|G|gilbertosullivan": {
+   "aloneagainnaturally": 1
+  },
+  "K|ㅁ|문희준": {
+   "returns19965thconcert": 1
+  },
+  "J|C|casiopea": {
+   "answers": 1
+  },
+  "J|D|davidbenoit": {
+   "waitingforspring": 1
+  },
+  "J|C|carlabley": {
+   "sextet": 1
+  },
+  "J|C|carnegiehalljazzband": {
+   "carnegiehallsalutesthejazzmasters": 1
+  },
+  "J|D|davebrubeck": {
+   "thegeniusofdavebrubeck": 1
+  },
+  "J|E|earlklugh": {
+   "sodafountainshuffle": 1
+  },
+  "J|B|bobbymcferrin": {
+   "thebestofbobbymcferrin": 1
+  },
+  "J|J|johncoltranequartet": {
+   "ballads": 1
+  },
+  "O|G|georgewinston": {
+   "december": 1
+  },
+  "P|E|earthwindfire": {
+   "theultimatecollection": 1,
+   "theverybestof": 2
+  },
+  "O|H|henrymancini": {
+   "romantic": 1
+  },
+  "J|D|davegrusin": {
+   "nightlines": 1
+  },
+  "J|R|richardstoltzman": {
+   "causeiloveyou": 1
+  },
+  "J|S|sarahlundback": {
+   "inyourarms": 1
+  },
+  "P|G|garymoore": {
+   "outinthefieldstheverybestof": 1
+  },
+  "J|C|chickcorea": {
+   "myspanishheart": 1
+  },
+  "J|S|stangetzjoaogilberto": {
+   "stangetzjoaogilberto": 1,
+   "stangetzjoaogilberto2": 2
+  },
+  "O|B|branfordmarsalisquartetfeaturingterenceblanchard": {
+   "musicfrommobetterblues": 1
+  },
+  "J|C|charliehadenpatmetheny": {
+   "charliehadenpatmethenybeyondthemissourisky": 2,
+   "beyondthemissouriskyshortstories": 1
+  },
+  "J|J|juliancannonballadderley": {
+   "somethinelse": 1
+  },
+  "W|L|lisaono": {
+   "alegria": 1
+  },
+  "P|B|burtbacharach": {
+   "burtbacharach": 1
+  },
+  "J|O|oscarpetersontrio": {
+   "wegetrequests": 1
+  },
+  "J|K|kennydrewtrio": {
+   "recollections": 1
+  },
+  "W|M|marcosvalle": {
+   "bossanovaonbluenote": 1
+  },
+  "J|S|sarahvaughan": {
+   "sarahvaughan": 1,
+   "sarahvaughanwithcliffordbrown": 2
+  },
+  "J|E|europeanjazztrio": {
+   "europeanjazztrioclassics": 1,
+   "europeanjazztrioimmortalbeloved": 2
+  },
+  "J|G|gatobarbieri": {
+   "passionfire": 1
+  },
+  "W|P|peterschindler": {
+   "saltacelloontheway": 1
+  },
+  "J|H|harryconnickjr": {
+   "weareinlove": 1
+  },
+  "J|C|chetbaker": {
+   "thebestofchetbakersings": 2,
+   "chetbakersings": 1
+  },
+  "J|C|cliffordbrown": {
+   "withstrings": 2,
+   "studyinbrown": 1
+  },
+  "J|S|sonnyrollins": {
+   "saxophonecolossus": 1
+  },
+  "J|B|billevanstrio": {
+   "portraitinjazz": 1,
+   "waltzfordebby": 2
+  },
+  "J|F|fourplay": {
+   "thebestoffourplay": 1
+  },
+  "J|D|duskogoykovich": {
+   "sambatzigane": 2,
+   "sambadomar": 1
+  },
+  "W|V|viniciuscantuaria": {
+   "sambacarioca": 1
+  },
+  "J|K|keithjarrett": {
+   "mysong": 1
+  },
+  "W|A|antoniocarlosjobim": {
+   "wave": 1
+  },
+  "O|ㅇ|오장박": {
+   "굿모닝대통령": 1
+  },
+  "K|T|toy토이": {
+   "내마음속에": 1
+  },
+  "K|S|solid솔리드": {
+   "19951997": 1,
+   "1집": 2
+  },
+  "K|ㅇ|양희은": {
+   "1991": 1,
+   "양희은의새노래모음": 4,
+   "보고싶은마음": 3,
+   "1991그해겨울우리에게": 2
+  },
+  "KN|ㅇ|윤종신": {
+   "길비매품": 1,
+   "환생비매품": 2
+  },
+  "KN|ㅍ|포지션": {
+   "너에게비매품": 1
+  },
+  "KN|ㅅ|신승훈": {
+   "6집나보다조금더높은곳에니가있을뿐비매품": 1
+  },
+  "KN|ㅈ|전람회": {
+   "2집비매품": 1
+  },
+  "KN|ㅈ|조규만김부용": {
+   "감기풍요속빈곤비매품": 1
+  },
+  "KN|ㅇ|윤상": {
+   "renacimento벽비매품": 1
+  },
+  "K|ㄱ|김광석": {
+   "김광석다시부르기iii": 5,
+   "2집": 2,
+   "김광석네번째": 4,
+   "실황음반": 7,
+   "못다한이야기": 6,
+   "1집": 1,
+   "best": 3
+  },
+  "K|ㄹ|롤러코스터": {
+   "absolute": 1
+  },
+  "K|ㄱ|김현철": {
+   "vol1오랜만에": 9,
+   "1": 1,
+   "2": 2,
+   "3": 3,
+   "4": 4,
+   "5": 6,
+   "best": 7,
+   "4집": 5,
+   "brush": 8
+  },
+  "K|S|seotaijiandboys서태지와아이들": {
+   "ii": 2,
+   "iii": 3,
+   "93마지막축제": 1
+  },
+  "K|ㅇ|어떤날": {
+   "1집": 1,
+   "2집": 2,
+   "어떤날ii": 3
+  },
+  "K|ㅇ|유재하가요제": {
+   "제1회유재하가요제기념음반": 1,
+   "제2회유재하가요제기념음반": 2
+  },
+  "K|ㅈ|정원영": {
+   "1집가버린날들": 1
+  },
+  "K|ㄷ|동물원": {
+   "1집": 1,
+   "3집": 2
+  },
+  "K|N|next": {
+   "thereturnofnextpart1": 2,
+   "home": 1
+  },
+  "K|ㅇ|이병우": {
+   "내가그린기린그림은": 1
+  },
+  "K|ㄱ|김광민": {
+   "지구에서온편지": 1
+  },
+  "K|ㄱ|강수지": {
+   "강수지2": 2,
+   "1집보라빛향기": 1
+  },
+  "K|ㅇ|이소라": {
+   "이소라best": 5,
+   "꽃": 4,
+   "6": 2,
+   "4": 1,
+   "best": 3
+  },
+  "K|ㅇ|윤종신": {
+   "1집": 1,
+   "sorrow": 3,
+   "3집": 2
+  },
+  "K|ㄷ|들국화": {
+   "행진": 3,
+   "2집": 1,
+   "best": 2
+  },
+  "K|ㅇ|이승환": {
+   "bc603": 1
+  },
+  "K|ㅇ|여행스케치": {
+   "2집추억여행": 1,
+   "다큰애들이야기": 2,
+   "세가지소원": 4,
+   "별이진다네": 3
+  },
+  "K|ㄷ|다섯손가락": {
+   "새벽기차": 1
+  },
+  "K|Y|yashacollection": {
+   "yashacollection": 1
+  },
+  "K|M|mr2미스터투": {
+   "그리고시작나의토요일": 1
+  },
+  "K|0|015b": {
+   "thethirdwaveiii": 2,
+   "4집": 1,
+   "너에게들려주고싶은이야기": 3
+  },
+  "K|ㅎ|한동준": {
+   "2집": 1
+  },
+  "K|ㄴ|노래를찾는사람들": {
+   "노래를찾는사람들2": 3,
+   "4집": 2,
+   "2집": 1
+  },
+  "K|ㅅ|신해철": {
+   "슬픈표정하지말아요": 2,
+   "myself": 1
+  },
+  "K|ㅇ|이승환leeseunghwan": {
+   "이승환2집always": 1
+  },
+  "K|ㅂ|박학기": {
+   "향기로운추억": 1
+  },
+  "K|ㅂ|변진섭": {
+   "5집": 2,
+   "홀로된다는것": 4,
+   "변진섭2집": 3,
+   "3집": 1
+  },
+  "K|ㄱ|김민우": {
+   "타버린나무": 2,
+   "사랑일뿐야": 1
+  },
+  "K|ㅇ|임재범": {
+   "이밤이지나면": 1
+  },
+  "K|ㅈ|조용필choyongpil": {
+   "12집sailingsound": 1,
+   "돌아와요부산항에": 2
+  },
+  "K|ㄱ|김현식권인하신형원강인원": {
+   "비오는날의수채화": 1
+  },
+  "K|ㄱ|김현철kimhyunchul": {
+   "10": 1,
+   "네온속으로노을지다판이없음": 2
+  },
+  "K|ㅇ|이영훈leeyounghoon": {
+   "theoriginparti": 1,
+   "theoriginpartii": 2
+  },
+  "K|ㄴ|노이즈": {
+   "너에게원한건": 1
+  },
+  "K|ㄱ|김현식과봄여름가을겨울kimhyunsikbomyeoreumgaeulgyeoul": {
+   "비처럼음악처럼": 1,
+   "빗속의연가비처럼음악처럼": 2
+  },
+  "K|ㄱ|김현식": {
+   "4집언제나그대내곁에사랑할수없어": 1,
+   "베스트vol2": 3,
+   "베스트vol1": 2
+  },
+  "K|ㄱ|김동률kimdongryul": {
+   "monologue5thremastered": 3,
+   "theshadowofforgetfulness": 4,
+   "live2019오래된노래": 2,
+   "yule": 5,
+   "답장": 6,
+   "동행lpcd": 7,
+   "동행lponly": 8,
+   "5th": 1
+  },
+  "K|ㅂ|버스커버스커": {
+   "봄바람": 1
+  },
+  "K|ㅂ|봄여름가을겨울bomyeoreumgaeulgyeoul": {
+   "live": 1
+  },
+  "K|ㅅ|서태지와아이들seotaijiandboys": {
+   "서태지와아이들": 1
+  },
+  "K|ㅂ|블루스카이bluesky": {
+   "vol5": 2,
+   "theblueskyfinalsound": 1
+  },
+  "O|ㄴ|느낌": {
+   "느낌": 1
+  },
+  "O|ㅈ|질투": {
+   "질투": 1
+  },
+  "K|ㅇ|이적": {
+   "2집": 1,
+   "3집": 2
+  },
+  "K|J|jangphilsoon": {
+   "best": 1
+  },
+  "O|ㄱ|그대안의블루": {
+   "그대안의불루": 1
+  },
+  "K|ㅈ|자우림": {
+   "10집": 1
+  },
+  "K|ㅂ|박주원": {
+   "집시의시간": 2,
+   "2nd슬픔의피에스타": 1
+  },
+  "K|ㅇ|이소라leesora": {
+   "best": 3,
+   "2": 1,
+   "vol1": 5,
+   "눈썹달": 6,
+   "2remastered": 2,
+   "myoneandonlylove": 4
+  },
+  "K|ㅅ|신승훈shinseunghun": {
+   "2집": 2,
+   "1집": 1,
+   "3집": 3,
+   "theshinseunghunibelieve": 4
+  },
+  "K|ㄱ|공일오비": {
+   "텅빈거리에서": 2,
+   "너에게들려주고싶은이야기": 1
+  },
+  "K|ㄱ|김현식kimhyunsik": {
+   "kimhyunsikvol6": 1
+  },
+  "O|ㅇ|이주원": {
+   "우리들의천국": 1
+  },
+  "K|ㄷ|다섯손가락dasotsongarak": {
+   "2집": 1
+  },
+  "K|ㅁ|모노": {
+   "넌언제나": 1
+  },
+  "K|ㅈ|전제덕": {
+   "1집": 1
+  },
+  "K|ㅂ|박경환": {
+   "다시겨울": 1
+  },
+  "K|ㅇ|이문세leemoonse": {
+   "newdirection": 1
+  },
+  "K|ㅋ|카니발": {
+   "이적김동률프로젝트앨범카니발": 1
+  },
+  "O|ㅅ|스물다섯스물하나": {
+   "스물다섯스물하나osttwentyfivetwentyoneoriginalsoundtrack": 1
+  },
+  "K|ㅇ|이상순": {
+   "1집": 1
+  },
+  "K|ㅍ|파일럿": {
+   "takeoff": 1
+  },
+  "K|ㅂ|봄여름가을겨울": {
+   "어떤이의꿈": 1
+  },
+  "K|ㅇ|오석준": {
+   "내일일기": 2,
+   "꿈을찾아서": 1
+  },
+  "K|ㅅ|신승훈": {
+   "1": 1,
+   "2": 2,
+   "3": 3,
+   "4": 4
+  },
+  "K|ㅍ|푸른하늘": {
+   "오렌지나라의앨리스": 2,
+   "4집": 1
+  },
+  "K|ㅈ|조관우": {
+   "memory": 1
+  },
+  "K|ㅊ|최백호": {
+   "불혹": 2,
+   "다시길위에서": 1,
+   "찰나": 3
+  },
+  "K|ㅈ|정미조": {
+   "37년": 1
+  },
+  "O|ㄱ|그해우리는": {
+   "그해우리는": 1
+  },
+  "K|I|iu": {
+   "remakealbum": 1,
+   "꽃갈피이야기remakealbum": 2
+  },
+  "K|ㅋ|클래지콰이": {
+   "instantpig": 1
+  },
+  "O|ㅍ|푸딩": {
+   "pudding": 1
+  },
+  "O|ㅇ|여명의눈동자": {
+   "여명의눈동자": 1
+  },
+  "K|ㅁ|모자이크": {
+   "모자이크vol1": 2,
+   "15": 1
+  },
+  "K|K|kimgwangjin": {
+   "itsme": 1
+  },
+  "O|R|ryuichisakamoto": {
+   "musicforfilm": 1
+  },
+  "J|V|various": {
+   "aboutjazz": 1
+  },
+  "O|A|andregagnon": {
+   "lesaint": 1,
+   "neiges": 2
+  },
+  "J|B|bolling": {
+   "bollingsuiteforcelloandjazzpianotrio": 1
+  },
+  "P|B|bingcrosby": {
+   "merrychristmas": 1
+  },
+  "W|V|various": {
+   "theessentialclassicsoftheworld": 2,
+   "goldencanzonedoubledeluxe": 1
+  },
+  "P|E|earthwindandfire": {
+   "theverybestofearthwindandfire": 1
+  },
+  "P|C|cardigans": {
+   "life": 2,
+   "firstbandonthemoon": 1
+  },
+  "P|R|robbiewilliams": {
+   "swingwhenyourewinning": 1
+  },
+  "P|J|johnlennon": {
+   "imagine": 1
+  },
+  "P|G|georgemichael": {
+   "faith": 1
+  },
+  "P|B|beatles": {
+   "abbeyroad": 2,
+   "help": 3,
+   "thebeatlesballads": 6,
+   "white": 7,
+   "rubbersoul": 5,
+   "pleasepleaseme": 4,
+   "20greateshits": 1
+  },
+  "P|B|barrymanilow": {
+   "200amparadisecafe": 1
+  },
+  "P|M|michaeljackson": {
+   "thriller": 1,
+   "xscape": 2
+  },
+  "O|R|risstevensbriansullivanandthecolumbusboychoirwiththefirestoneorchestraandchorus": {
+   "firestonepresentsyourfavoritechristmascarolsvolume5": 1
+  },
+  "P|E|extreme": {
+   "pornograffitti": 1
+  },
+  "P|Q|queen": {
+   "bohemianrhapsody": 1
+  },
+  "J|L|laufey": {
+   "bewitchedthegoddessedition": 1
+  },
+  "P|S|simonandgarfunkel": {
+   "bestofsimonandgarfunkel": 1
+  },
+  "P|C|camel": {
+   "stationarytraveller": 1
+  },
+  "J|M|michaelbubl": {
+   "itstime": 2,
+   "christmas": 1,
+   "tobeloved": 3
+  },
+  "J|T|tsquare": {
+   "truth": 1
+  },
+  "J|C|chaliebyrd": {
+   "bossanovapelospassaros": 1
+  },
+  "J|D|davebrubeckquartet": {
+   "timeout": 1
+  },
+  "O|B|burtbacharach": {
+   "burtbacharachsgreatesthits": 1
+  },
+  "J|L|lisaono": {
+   "catupiry": 1,
+   "nana": 2
+  },
+  "J|M|michealfranks": {
+   "burchfieldnines": 1
+  },
+  "J|M|manhattanjazzquintet": {
+   "autumnleaves": 1
+  },
+  "J|C|cannonballadderley": {
+   "somethinelse": 1
+  },
+  "J|S|stangetzjoogilberto": {
+   "getzgilberto2": 2,
+   "getzgilberto": 1
+  },
+  "J|H|hankmobley": {
+   "dippin": 1
+  },
+  "J|M|michaelfranks": {
+   "sleepinggypsy": 1
+  },
+  "J|A|antoniocarlosjobim": {
+   "stoneflower": 4,
+   "aartedetomjobim": 1,
+   "edutom": 2,
+   "lovestringsandjobim": 3,
+   "thecomposerofdesafinado": 5
+  },
+  "J|G|gerrymulligan": {
+   "nightlights": 1
+  },
+  "J|M|melodygardot": {
+   "myoneandonlythrill": 1,
+   "theessentialmelodygardot": 2
+  },
+  "J|E|eddiehigginstrio": {
+   "ballad": 1,
+   "standard": 2
+  },
+  "J|N|nataliecole": {
+   "unforgettablewithlove": 1
+  },
+  "J|J|joehenderson": {
+   "pageone": 1
+  },
+  "J|M|morlenbaumsakamoto": {
+   "adayinnewyork": 1
+  },
+  "J|M|milesdavisquintet": {
+   "roundaboutmidnight": 1
+  },
+  "J|N|norahjones": {
+   "comeawaywithme": 1
+  },
+  "J|J|johncoltrane": {
+   "alovesupreme": 1,
+   "myfavoritethings": 2
+  },
+  "J|P|patmetheny": {
+   "thefirstcircle": 1
+  },
+  "J|S|staceykent": {
+   "thechanginglights": 1
+  },
+  "J|M|melodygardotphilippepowell": {
+   "entreeuxdeux": 1
+  },
+  "J|T|theloniousmonk": {
+   "theloniousmonkhimself": 1
+  },
+  "T|V|various": {
+   "thetangoproject": 1
+  },
+  "T|M|milvaastorpiazzolla": {
+   "live": 1
+  },
+  "T|A|astorpiazzollamauriciofonseca": {
+   "liveatthebouffesdunord": 1
+  },
+  "T|B|bajofondo": {
+   "mardulce": 1,
+   "pabailar": 2
+  },
+  "T|A|astorpiazzollaysuquintetonuevotiempo": {
+   "nuestrotiempo": 1
+  },
+  "T|D|danielbarenboimpiazzollagardelsalganginasterarestaperfdanielbarenboimrodolfomederoshectorconsolesergeitrofanov": {
+   "tangosfromargentina": 1
+  },
+  "T|D|danielbarenboim": {
+   "mibuenosairesquerido": 1
+  },
+  "T|ㅅ|송영훈": {
+   "youngsongplayspiazzolla": 1
+  },
+  "T|A|anibaltroilo": {
+   "bienmilonga": 1
+  },
+  "W|S|sergeitrofanov": {
+   "thebestofmypassions": 1
+  },
+  "W|A|andremanoukian": {
+   "lespianosdegainsbourg": 1
+  },
+  "W|S|sergegainsbourg": {
+   "sergegainsbourg": 1
+  },
+  "W|M|michelpolnareff": {
+   "polnareffs": 1
+  },
+  "W|L|luismariano": {
+   "lavozdeluismariano": 1
+  },
+  "W|E|enricomacias": {
+   "enricomaciascollection": 1
+  },
+  "W|A|amaliarodrigues": {
+   "omelhordeamaliavolume4tudoistoefado": 1
+  },
+  "W|S|silviarodrigues": {
+   "rabodenube": 1
+  },
+  "W|E|edithpiaf": {
+   "olympia61": 3,
+   "recital1962": 4,
+   "disquedor": 2,
+   "theplatinumcollection": 5,
+   "23classiquesinoubliables23unforgettablesongs": 1
+  },
+  "G|L|laurindoalmeidajohnwilliams": {
+   "bachisbeautifulthetwinguitarsoflaurindoalmeida": 1
+  },
+  "W|B|badenpowell": {
+   "avontade": 2,
+   "apaixonado": 1,
+   "cantoonguitar": 3,
+   "estudos": 4,
+   "omelhordebadenpowell": 5
+  },
+  "G|B|badenpowell": {
+   "lovemewithguitars": 1,
+   "solitudeonguitarcantoonguitar": 4,
+   "tristezaonguitar": 5,
+   "poemaonguitar": 2,
+   "portrait": 3
+  },
+  "G|B|badenpowelljanine": {
+   "imagesonguitar": 1
+  },
+  "G|Y|yamashita": {
+   "guitarconcertos": 1,
+   "romanticguitarcollection": 2
+  },
+  "G|L|laurindoalmeida": {
+   "clairdelune": 1,
+   "guitarmusicfromtheromanticera": 2,
+   "theartoflaurindoalmeida": 3
+  },
+  "G|J|johnwilliamsdanielbarenboimenglishchamberorchestra": {
+   "rodrigoconciertodearanjuezvillalobosguitarconcerto": 1
+  },
+  "G|J|julianjohn": {
+   "duoguitar": 1
+  },
+  "G|J|julianbream": {
+   "romanticguitar": 2,
+   "playsvillalobos": 1
+  },
+  "G|A|agustnbarriosmangor": {
+   "agustinbarriosmangore18851944": 1
+  },
+  "G|A|aliriodiaz": {
+   "guitarmusicofspainandlatinamericajohnwilliamsplaysbach": 1
+  },
+  "G|S|sharonisbin": {
+   "brazilwithlove": 1
+  },
+  "G|S|sharonisbincarlosbarbosalima": {
+   "classicalguitar": 1
+  },
+  "G|P|peperomero": {
+   "famousguitarmusic": 2,
+   "doritaypepe": 1
+  },
+  "J|A|andrprevinandhispals": {
+   "westsidestory": 1
+  },
+  "O|S|simonandgarfunkel": {
+   "thegraduateoriginalsoundtrackrecording": 1
+  },
+  "O|N|nevillemarrineracademyofstmartininthefields": {
+   "amadeusoriginalsoundtrack": 1
+  },
+  "O|L|luizbonfa": {
+   "thegentlerain": 1
+  },
+  "O|Y|yokotakahashimegumihayashibara": {
+   "evangelionfinally": 1
+  },
+  "O|Y|yoyoma": {
+   "yoyomaplaysenniomorricone": 1
+  },
+  "O|M|markknopfler": {
+   "lastexittobrooklynoriginalsoundtrack": 1
+  },
+  "O|R|rodgersandhammerstein": {
+   "thesoundofmusicoriginalsoundtrackrecording": 1
+  },
+  "O|E|ericserra": {
+   "legrandbleuthebigblueoriginalsoundtrack": 1
+  },
+  "O|F|francislai": {
+   "lovestoryoriginalmotionpicturesoundtrack": 2,
+   "amanandawomanoriginalmotionpicturesoundtrack": 1
+  },
+  "O|R|remedios": {
+   "loveletteroriginalsoundtrack": 1
+  },
+  "O|J|justinhurwitz": {
+   "whiplash": 2,
+   "lalalandoriginalmotionpicturesoundtrack": 1
+  },
+  "O|V|vinceguaralditrio": {
+   "acharliebrownchristmas": 1
+  },
+  "O|B|billleebranfordmarsalisquartet": {
+   "mobetterblues": 1
+  },
+  "O|S|stanleymyers": {
+   "deerhunter": 1
+  },
+  "O|J|jeanclaudepetit": {
+   "jeandeflorettemanondessourcesoriginalsoundtrack": 1
+  },
+  "O|H|hanszimmereltonjohn": {
+   "lionking": 1
+  },
+  "O|K|kristenandersonlopezrobertlopez": {
+   "frozen": 1
+  },
+  "O|P|paulmauriat": {
+   "legrandorchestredepaulmauriat": 1,
+   "feelings": 2
+  },
+  "O|R|ryuichisakamotodavidbyrnecongsu": {
+   "thelastemperoromps": 1
+  },
+  "O|ㅈ|조성우": {
+   "봄날은간다ost": 1
+  },
+  "J|ㅈ|장기호": {
+   "chagalloutoftown": 1
+  },
+  "O|ㅍ|폴리스": {
+   "폴리스": 1
+  },
+  "K|ㄱ|김건모": {
+   "1집": 1,
+   "3집": 2
+  },
+  "K|ㅇ|이은미": {
+   "portrait": 1
+  },
+  "O|ㅇ|왕가위": {
+   "happytogether": 1
+  },
+  "K|C|clazziquaiproject": {
+   "instantpig": 1
+  },
+  "T|K|kohsangji고상지": {
+   "elgranastorpiazzolla": 1
+  },
+  "K|K|kangsoojee": {
+   "2": 1
+  },
+  "O|ㅈ|장동건": {
+   "우리들의천국": 1
+  },
+  "K|ㅍ|푸딩": {
+   "pudditorium": 1
+  },
+  "K|ㅂ|백예린": {
+   "선물": 1
+  },
+  "K|D|deux듀스": {
+   "듀스포에버": 1
+  },
+  "K|ㅅ|서지원": {
+   "2tears": 1
+  },
+  "W|ㄷ|두번째달": {
+   "2ndmoon": 1
+  },
+  "K|ㅇ|임재범yimjaebeum": {
+   "30주년기념30thanniversary": 1
+  },
+  "K|ㅅ|신해철shinhaechul": {
+   "1": 1,
+   "myself": 2
+  },
+  "G|J|juianjohn": {
+   "live": 1,
+   "together": 2
+  },
+  "G|H|harp": {
+   "rodrigoguitarconcerto": 1
+  },
+  "W|G|georgemoustaki": {
+   "liveaudejazet": 1
+  },
+  "O|P|petemoorepopsorchestra": {
+   "greatscreenmusicvoli": 1
+  },
+  "K|ㅇ|유재하yoojaeha": {
+   "사랑하기때문에becauseiloveyou": 1
+  },
+  "J|G|glennmiller": {
+   "glennmillerlive": 1
+  },
+  "J|L|laurindoalmeida": {
+   "theguitaroflaurindoalmeida": 1
+  },
+  "O|J|johnwilliamsisaacstern": {
+   "fiddlerontherooforiginalmotionpicturesoundtrack": 1
+  },
+  "G|J|julianbreamjohnwilliams": {
+   "togetheragain": 1
+  },
+  "J|A|andrmanoukian": {
+   "lespianosdegainsbourg": 1
+  },
+  "K|ㄱ|김광석kimkwangseok": {
+   "1": 1,
+   "2": 2,
+   "다시부르기1": 3
+  },
+  "P|A|abba": {
+   "supertrouper": 1
+  },
+  "K|ㅅ|새바람이오는그늘": {
+   "새바람이오는그늘프롤로그언제나그렇듯": 1
+  },
+  "W|R|romeros": {
+   "aflamencoweddingparty": 1
+  },
+  "K|ㅈ|장필순": {
+   "best": 1
+  },
+  "G|A|assad": {
+   "musicfortwoguitarspiazzollabrouwerpascoalginastera": 1
+  },
+  "J|C|charliebyrd": {
+   "brazilianbyrd": 1
+  },
+  "K|J|jaurim": {
+   "goodbyegrief": 1
+  },
+  "K|B|bts": {
+   "loveyourselfher": 1
+  },
+  "K|D|dzit": {
+   "the3rdclich": 1
+  },
+  "K|ㄴ|나얼": {
+   "principleofsoul": 1
+  },
+  "K|P|peppertones": {
+   "soundsgood": 1
+  },
+  "J|R|rampalflutelagoyaguitar": {
+   "bollingpicnicsuite": 1
+  },
+  "J|J|jeanpierrerampalclaudebolling": {
+   "suiteforfluteandjazzpiano": 1
+  },
+  "J|S|scottjoplin": {
+   "thescottjoplincollection": 1
+  }
+ },
+ "composers": {
+  "C|R": {
+   "rachmaninoff": 0,
+   "ravel": 1
+  },
+  "C|B": {
+   "beethoven": 1,
+   "brahms": 3,
+   "bach": 0,
+   "bizet": 2
+  },
+  "C|M": {
+   "mozart": 2,
+   "marcello": 1,
+   "mahler": 0
+  },
+  "C|E": {
+   "elgar": 0
+  },
+  "C|V": {
+   "va": 0,
+   "vivaldi": 2,
+   "verdi": 1
+  },
+  "C|K": {
+   "kreisler": 1,
+   "khachaturian": 0
+  },
+  "C|S": {
+   "shchedrin": 3,
+   "shostakovich": 4,
+   "satie": 1,
+   "sarasate": 0,
+   "schubert": 2,
+   "sibelius": 5
+  },
+  "CG|C": {
+   "chopin": 0
+  },
+  "C|A": {
+   "albinoni": 0
+  },
+  "C|C": {
+   "chopin": 0
+  },
+  "C|I": {
+   "ii": 0
+  },
+  "C|T": {
+   "tchaikovsky": 0
+  },
+  "C|N": {
+   "niz": 0
+  },
+  "C|L": {
+   "liszt": 0
+  },
+  "CG|S": {
+   "schubert": 0,
+   "supp": 3,
+   "stravinsky": 2,
+   "schumann": 1
+  },
+  "C|D": {
+   "darzewska": 0
+  },
+  "CG|T": {
+   "tchaikovsky": 0
+  },
+  "CG|B": {
+   "beethoven": 1,
+   "bach": 0,
+   "brahms": 3,
+   "berlioz": 2
+  },
+  "CG|V": {
+   "va": 0,
+   "vivaldi": 2,
+   "verdi": 1
+  },
+  "CG|G": {
+   "grieg": 0
+  },
+  "CG|M": {
+   "mozart": 0
+  },
+  "CG|H": {
+   "haydn": 1,
+   "handel": 0
+  },
+  "CG|R": {
+   "rachmaninoff": 0
+  },
+  "CG|K": {
+   "k": 0
+  },
+  "CG|P": {
+   "paganini": 0
+  },
+  "CG|L": {
+   "liszt": 0
+  },
+  "C|G": {
+   "glinka": 0
+  }
+ },
+ "performers": {
+  "C|rachmaninoff|S": {
+   "rachmaninoffleopoldstokowski": 1
+  },
+  "C|beethoven|L": {
+   "johnlill": 1
+  },
+  "C|mozart|L": {
+   "svetlanastancevaalbertolizzio": 1
+  },
+  "C|elgar|M": {
+   "royalphilharmonicorchestranormandelmar": 1
+  },
+  "C|va|M": {
+   "marthaargerichmischamaisky": 9,
+   "yoyoma": 13,
+   "avemaria": 5,
+   "annesophiemutter": 1
+  },
+  "C|vivaldi|P": {
+   "theenglishconcerttrevorpinnock": 5,
+   "nigelkennedyberlinerphilharmoniker": 1,
+   "trevorpinnock": 9
+  },
+  "C|kreisler|N": {
+   "leonidaskavakospternagy": 1
+  },
+  "C|shchedrin|D": {
+   "orchestrephilharmoniquedemontecarlojamesdepreist": 1
+  },
+  "C|brahms|S": {
+   "alfredscholz": 1
+  },
+  "CG|chopin|L": {
+   "yunchanlim": 1,
+   "yunchanlim임윤찬": 1
+  },
+  "C|albinoni|K": {
+   "garykarr": 1
+  },
+  "C|bach|M": {
+   "christopherhogwoodtheacademyofancientmusic": 1,
+   "yoyoma": 9,
+   "nevillemarriner": 5
+  },
+  "C|va|K": {
+   "nigelkennedy": 5,
+   "herbertvonkarajan": 1,
+   "simonekermes": 9
+  },
+  "C|va|G": {
+   "mischamaiskypavelgililov": 1
+  },
+  "C|chopin|A": {
+   "vladimirashkenazy": 5,
+   "marthaargerich": 1
+  },
+  "C|ii|O": {
+   "eugeneormandyphiladelphiaorchestra": 1
+  },
+  "C|tchaikovsky|L": {
+   "olegkaganvasilylobanov": 1
+  },
+  "C|mozart|M": {
+   "nevillemarriner": 1
+  },
+  "C|tchaikovsky|P": {
+   "leonardbernsteinnewyorkphilharmonic": 1
+  },
+  "C|va|S": {
+   "masatsugushinozaki": 5,
+   "barbrastreisand": 1
+  },
+  "C|verdi|P": {
+   "giuseppesinopoliwienerphilharmoniker": 1
+  },
+  "C|bizet|B": {
+   "slovakphilharmonicanthonybramall": 1
+  },
+  "C|niz|B": {
+   "newphilharmoniaorchestrarafaelfrhbeckdeburgos": 1
+  },
+  "C|chopin|C": {
+   "chopin": 5,
+   "alfredcortot": 1
+  },
+  "C|liszt|B": {
+   "jorgebolet": 1
+  },
+  "C|ii|J": {
+   "johannstraussjr": 1
+  },
+  "C|mozart|O": {
+   "wienermozartorchester": 1
+  },
+  "C|chopin|L": {
+   "langlang": 5,
+   "dinulipatti": 1
+  },
+  "C|shostakovich|O": {
+   "riccardochaillyroyalconcertgebouworchestra": 1
+  },
+  "C|va|V": {
+   "various": 1
+  },
+  "C|satie|L": {
+   "annequefflec": 1
+  },
+  "C|va|L": {
+   "langlang": 5,
+   "englishchamberorchestraraymondleppard": 1
+  },
+  "C|bach|W": {
+   "nikolausharnoncourtconcentusmusicuswien": 1
+  },
+  "C|sarasate|M": {
+   "annesophiemutter": 1
+  },
+  "C|va|B": {
+   "mstislavrostropovichbenjaminbritten": 9,
+   "khatiabuniatishvili": 5,
+   "danielbarenboim": 1
+  },
+  "C|va|O": {
+   "herbertvonkarajanphilharmoniaorchestra": 9,
+   "londonphilharmonicorchestra": 13,
+   "fredricoberschelp": 5,
+   "eugeneormandy": 1
+  },
+  "C|rachmaninoff|ㅇ": {
+   "임윤찬yunchanlimmarinalsopfortworthsymphonyorchestra": 1
+  },
+  "C|rachmaninoff|H": {
+   "vladimirhorowitz": 1
+  },
+  "C|rachmaninoff|A": {
+   "vladimirashkenazy": 1
+  },
+  "C|rachmaninoff|R": {
+   "sviatoslavrichter": 1
+  },
+  "C|liszt|R": {
+   "sviatoslavrichter": 1
+  },
+  "C|chopin|ㅈ": {
+   "조성진seongjincho": 1
+  },
+  "C|kreisler|S": {
+   "henrykszeryng": 1
+  },
+  "C|vivaldi|K": {
+   "nigelkennedy": 1
+  },
+  "C|vivaldi|M": {
+   "imusici": 1
+  },
+  "C|chopin|H": {
+   "vladimirhorowitz": 5,
+   "adamharasiewicz": 1
+  },
+  "C|va|H": {
+   "vladimirhorowitz": 1
+  },
+  "C|liszt|M": {
+   "kurtmasur": 1
+  },
+  "C|liszt|C": {
+   "gyrgycziffra": 1
+  },
+  "C|ravel|M": {
+   "lorinmaazel": 1
+  },
+  "C|chopin|K": {
+   "cypriankatsaris": 1
+  },
+  "C|brahms|B": {
+   "brahmsginocioffisamuelmayesralphberkowitz": 1
+  },
+  "C|kreisler|K": {
+   "fritzkreisler": 1
+  },
+  "C|beethoven|C": {
+   "vancliburn": 1
+  },
+  "C|beethoven|R": {
+   "arturrubinstein": 1
+  },
+  "C|va|R": {
+   "arturrubinstein": 1,
+   "sviatoslavrichter": 5
+  },
+  "C|schubert|I": {
+   "schuberteugeneistomin": 1
+  },
+  "C|vivaldi|B": {
+   "leonardbernstein": 1
+  },
+  "C|schubert|B": {
+   "paulbadura": 1
+  },
+  "CG|schubert|D": {
+   "dietrichfischerdieskau": 1,
+   "jrgdemus": 5
+  },
+  "C|va|P": {
+   "lucianopavarotti": 13,
+   "herbertvonkarajanwienerphilharmoniker": 5,
+   "pianopieces": 17,
+   "itzhakperlman": 9,
+   "andrprevin": 1
+  },
+  "C|ravel|F": {
+   "leonardbernsteinorchestrenationaldefrance": 1
+  },
+  "C|chopin|R": {
+   "arturrubinstein": 1,
+   "tamsvsry": 5
+  },
+  "C|tchaikovsky|M": {
+   "lorinmaazel": 5,
+   "ericamorini": 1
+  },
+  "C|marcello|H": {
+   "heinzholliger": 1
+  },
+  "C|liszt|A": {
+   "revedamour": 1
+  },
+  "C|darzewska|P": {
+   "maidensprayer": 1
+  },
+  "C|va|J": {
+   "indulcijubilo": 1
+  },
+  "C|bach|G": {
+   "glenngould": 1
+  },
+  "CG|tchaikovsky|P": {
+   "herbertvonkarajanberlinerphilharmoniker": 5,
+   "berlinerphilharmoniker": 1
+  },
+  "CG|beethoven|H": {
+   "karlbhm": 1
+  },
+  "CG|va|K": {
+   "karajan": 1
+  },
+  "CG|vivaldi|K": {
+   "karajan": 1
+  },
+  "CG|grieg|K": {
+   "karajan": 5,
+   "herbertvonkarajan": 1
+  },
+  "CG|mozart|H": {
+   "karlbhm": 1
+  },
+  "CG|va|Q": {
+   "amadeusquartet": 1
+  },
+  "CG|haydn|R": {
+   "karlrichter": 1
+  },
+  "CG|bach|B": {
+   "bach": 1
+  },
+  "CG|schubert|P": {
+   "mauriziopollini": 1
+  },
+  "CG|va|B": {
+   "bach": 1,
+   "herbertvonkarajanorchestrephilharmoniquedeberlin": 5
+  },
+  "CG|brahms|Q": {
+   "amadeusquartet": 1
+  },
+  "CG|beethoven|L": {
+   "wilhelmkempffferdinandleitner": 1
+  },
+  "CG|verdi|V": {
+   "antoniovotto": 1
+  },
+  "CG|rachmaninoff|R": {
+   "tamsvsry": 1
+  },
+  "CG|supp|K": {
+   "herbertvonkarajan": 1
+  },
+  "CG|stravinsky|K": {
+   "karajan": 1
+  },
+  "CG|k|S": {
+   "pierrefourniergeorgeszell": 1
+  },
+  "CG|k|K": {
+   "herbertvonkarajan": 1
+  },
+  "CG|berlioz|K": {
+   "herbertvonkarajan": 1
+  },
+  "CG|brahms|K": {
+   "herbertvonkarajan": 5,
+   "christianferraskarajan": 1
+  },
+  "CG|va|O": {
+   "beethovenschubertherbertvonkarajanberlinphilharmonicorchestra": 1
+  },
+  "CG|beethoven|K": {
+   "karajan": 5,
+   "christianferraskarajan": 1
+  },
+  "CG|mozart|M": {
+   "mozart": 1
+  },
+  "CG|tchaikovsky|K": {
+   "tchaikovskyyehudimenuhinphilharmoniaorchestraefremkurtz": 13,
+   "sviatoslavrichterkarajan": 9,
+   "karajan": 5,
+   "herbertvonkarajan": 1
+  },
+  "CG|handel|R": {
+   "karlrichter": 1
+  },
+  "CG|bach|R": {
+   "karlrichter": 1
+  },
+  "CG|beethoven|B": {
+   "beethoven": 1
+  },
+  "CG|va|S": {
+   "mozartschumann": 1
+  },
+  "CG|mozart|K": {
+   "karlbhmkarajan": 5,
+   "wilhelmkempff": 9,
+   "karajan": 1
+  },
+  "CG|va|E": {
+   "christopheschenbach": 1
+  },
+  "CG|mozart|P": {
+   "berlinerphilharmoniker": 1
+  },
+  "CG|chopin|P": {
+   "mauriziopollini": 1
+  },
+  "CG|chopin|R": {
+   "tamsvsry": 1
+  },
+  "CG|chopin|Z": {
+   "krystianzimerman": 1
+  },
+  "CG|paganini|A": {
+   "salvatoreaccardo": 1
+  },
+  "CG|schubert|K": {
+   "herbertvonkarajan": 1
+  },
+  "CG|liszt|K": {
+   "herbertvonkarajan": 1
+  },
+  "CG|chopin|M": {
+   "arturobenedettimichelangeli": 1
+  },
+  "CG|tchaikovsky|M": {
+   "annesophiemutter": 1
+  },
+  "CG|schumann|A": {
+   "marthaargerich": 1
+  },
+  "CG|va|G": {
+   "mischamaiskypavelgililov": 1
+  },
+  "C|tchaikovsky|A": {
+   "marthaargerich": 1
+  },
+  "C|verdi|A": {
+   "claudioabbado": 1
+  },
+  "C|beethoven|A": {
+   "ernestansermet": 1
+  },
+  "C|schubert|S": {
+   "schubert": 1
+  },
+  "C|beethoven|B": {
+   "beethoven": 1,
+   "danielbarenboim": 5
+  },
+  "C|liszt|L": {
+   "franzliszt": 1
+  },
+  "C|bach|K": {
+   "herbertvonkarajan": 1
+  },
+  "C|bach|B": {
+   "johannsebastianbach": 1
+  },
+  "C|bach|R": {
+   "karlrichter": 1,
+   "sviatoslavrichter": 5
+  },
+  "C|bach|L": {
+   "musicaantiquakln": 1,
+   "wandalandowska": 5
+  },
+  "C|mozart|S": {
+   "wolfgangsawallisch": 1
+  },
+  "C|rachmaninoff|O": {
+   "vladimirashkenazyeugeneormandy": 1
+  },
+  "C|bach|T": {
+   "jacquesloussiertrio": 1
+  },
+  "C|bach|Y": {
+   "yunchanlim임윤찬": 1
+  },
+  "C|liszt|Y": {
+   "yunchanlim임윤찬": 1
+  },
+  "C|tchaikovsky|Y": {
+   "yunchanlim임윤찬": 1
+  },
+  "C|va|T": {
+   "daniiltrifonov": 1
+  },
+  "C|va|A": {
+   "marthaargerich": 1
+  },
+  "C|mahler|K": {
+   "karajan": 1
+  },
+  "C|va|C": {
+   "mariacallas": 1
+  },
+  "C|shostakovich|K": {
+   "theodorekuchar": 1
+  },
+  "C|liszt|H": {
+   "vladimirhorowitz": 1
+  },
+  "C|mahler|B": {
+   "johnbarbirolli": 1
+  },
+  "C|sibelius|L": {
+   "ervinlaszlo": 1
+  },
+  "C|rachmaninoff|T": {
+   "daniiltrifonov": 1
+  },
+  "C|glinka|H": {
+   "jaschaheifetz": 1
+  },
+  "C|khachaturian|M": {
+   "landowskamonitor": 1
+  }
+ },
+ "perf_albums": {
+  "C|rachmaninoff|S|rachmaninoffleopoldstokowski": {
+   "concertono2incminorop18": 1
+  },
+  "C|beethoven|L|johnlill": {
+   "beethovenpianosonatas81423152126": 1
+  },
+  "C|mozart|L|svetlanastancevaalbertolizzio": {
+   "mozartdiegroenklavierkonzertegreatpianoconcertos": 1
+  },
+  "C|elgar|M|royalphilharmonicorchestranormandelmar": {
+   "elgarenigmavariationspompcircumstance": 1
+  },
+  "C|va|M|marthaargerichmischamaisky": {
+   "marthaargerichymischamaisky": 1
+  },
+  "C|vivaldi|P|theenglishconcerttrevorpinnock": {
+   "vivaldilestroarmonico": 2,
+   "theenglishconcert": 1
+  },
+  "C|kreisler|N|leonidaskavakospternagy": {
+   "vienneserhapsodymusicbyfritzkreisler": 1
+  },
+  "C|shchedrin|D|orchestrephilharmoniquedemontecarlojamesdepreist": {
+   "carmenbizetshchedrin": 1
+  },
+  "C|brahms|S|alfredscholz": {
+   "brahmsungarischetnzehungariandances": 1
+  },
+  "CG|chopin|L|yunchanlim": {
+   "chopintudesopp1025": 1
+  },
+  "C|albinoni|K|garykarr": {
+   "adagiodalbinoni": 1
+  },
+  "C|bach|M|christopherhogwoodtheacademyofancientmusic": {
+   "jsbachbrandenburgconcertos16": 1
+  },
+  "C|va|K|nigelkennedy": {
+   "theverybestofnigelkennedy": 3,
+   "nigelkennedysgreatesthits": 1,
+   "playsjazz": 2
+  },
+  "C|va|G|mischamaiskypavelgililov": {
+   "meditation": 1
+  },
+  "C|chopin|A|vladimirashkenazy": {
+   "chopinwaltzesnocturnes": 2,
+   "chopinfourballadestroisnouvellesetudes": 1
+  },
+  "C|ii|O|eugeneormandyphiladelphiaorchestra": {
+   "straussviennesewaltzesandpolkas": 1
+  },
+  "C|tchaikovsky|L|olegkaganvasilylobanov": {
+   "tchaikovsky": 1
+  },
+  "C|mozart|M|nevillemarriner": {
+   "mozart마지막5개의교향곡last5symphonies": 1
+  },
+  "C|tchaikovsky|P|leonardbernsteinnewyorkphilharmonic": {
+   "tchaikovskyexcerptsfromnutcrackerswanlake": 1
+  },
+  "C|va|S|masatsugushinozaki": {
+   "yuriviolin": 1
+  },
+  "C|verdi|P|giuseppesinopoliwienerphilharmoniker": {
+   "verdiovertures": 1
+  },
+  "C|bizet|B|slovakphilharmonicanthonybramall": {
+   "bizetcarmenlarlsiennesuites": 1
+  },
+  "C|niz|B|newphilharmoniaorchestrarafaelfrhbeckdeburgos": {
+   "albnizfrhbeckdeburgossuiteespaolaetc": 1
+  },
+  "C|chopin|C|chopin": {
+   "theverybestofchopin": 1
+  },
+  "C|va|K|herbertvonkarajan": {
+   "karajanforeverthegreatestclassicalhits": 4,
+   "herbertvonkarajan8lps": 2,
+   "herbertvonkarajan3lps": 1,
+   "hifikarajan": 3
+  },
+  "C|liszt|B|jorgebolet": {
+   "rediscoveredlisztrecital": 2,
+   "lisztpianoworksvol1": 1
+  },
+  "C|ii|J|johannstraussjr": {
+   "jstraussjr100mostfamousworksvol9": 1
+  },
+  "C|mozart|O|wienermozartorchester": {
+   "20jahrewienermozartorchester": 1
+  },
+  "C|vivaldi|P|nigelkennedyberlinerphilharmoniker": {
+   "vivaldi": 1
+  },
+  "C|chopin|L|langlang": {
+   "thechopinalbum": 1
+  },
+  "C|shostakovich|O|riccardochaillyroyalconcertgebouworchestra": {
+   "thejazzalbum": 2,
+   "shostakovichthejazzalbum": 1
+  },
+  "C|va|V|various": {
+   "thegreatcollectionofclassicalmusic": 1,
+   "실내음악2chambermusic2": 2
+  },
+  "C|satie|L|annequefflec": {
+   "satiegnossiennesgymnopdiesotherpianoworks": 1
+  },
+  "C|va|L|langlang": {
+   "pianobook": 1
+  },
+  "C|va|K|simonekermes": {
+   "dramma": 1
+  },
+  "C|bach|W|nikolausharnoncourtconcentusmusicuswien": {
+   "bachthebrandenburgconcertos": 1
+  },
+  "C|sarasate|M|annesophiemutter": {
+   "carmenfantasie": 1
+  },
+  "C|va|B|mstislavrostropovichbenjaminbritten": {
+   "schubertbridgechambermusic": 1
+  },
+  "C|va|O|herbertvonkarajanphilharmoniaorchestra": {
+   "theessentialkarajan": 2,
+   "balletmusicfromtheoperas": 1
+  },
+  "C|rachmaninoff|ㅇ|임윤찬yunchanlimmarinalsopfortworthsymphonyorchestra": {
+   "rachmaninoffconcertono3": 1
+  },
+  "C|rachmaninoff|H|vladimirhorowitz": {
+   "rachmaninoffconcertono3": 1
+  },
+  "C|rachmaninoff|A|vladimirashkenazy": {
+   "rachmaninoffconcertono12": 1
+  },
+  "C|rachmaninoff|R|sviatoslavrichter": {
+   "rachmaninoffconcertono2": 1
+  },
+  "C|liszt|R|sviatoslavrichter": {
+   "lisztpianoconcertono12": 1
+  },
+  "C|chopin|ㅈ|조성진seongjincho": {
+   "winnerofthe17thinternationalfryderykchopinpianocompetitionwarsaw201510yearsanniversaryedition": 1
+  },
+  "C|va|O|londonphilharmonicorchestra": {
+   "gypsybrahmsczardas": 1
+  },
+  "C|kreisler|S|henrykszeryng": {
+   "szeryngplayskreisler": 1
+  },
+  "C|vivaldi|K|nigelkennedy": {
+   "vivaldithefourseasons": 1
+  },
+  "C|vivaldi|M|imusici": {
+   "vivaldilestroarmonico": 1
+  },
+  "C|chopin|H|vladimirhorowitz": {
+   "chopinvolume1": 1,
+   "newrecordingsofchopinbyvladimirhorowitz": 2
+  },
+  "C|va|H|vladimirhorowitz": {
+   "encoresworksbychopinschumannliszthorowitzandothers": 1
+  },
+  "C|liszt|M|kurtmasur": {
+   "liszt6hungarianrhapsodies": 1
+  },
+  "C|liszt|C|gyrgycziffra": {
+   "atanclisztlacampanella": 1
+  },
+  "C|ravel|M|lorinmaazel": {
+   "ravelbolropavanealboradadelgraciosolavalse": 1
+  },
+  "C|chopin|K|cypriankatsaris": {
+   "chopin19walzer": 1
+  },
+  "C|brahms|B|brahmsginocioffisamuelmayesralphberkowitz": {
+   "brahmsclarinetsonatano2clarinettrio": 1
+  },
+  "C|kreisler|K|fritzkreisler": {
+   "kreislerviolinfavoritesrvedamour": 1
+  },
+  "C|beethoven|C|vancliburn": {
+   "beethovenpianosonata": 1
+  },
+  "C|beethoven|R|arturrubinstein": {
+   "beethovenappassionata": 1
+  },
+  "C|va|R|arturrubinstein": {
+   "threefavoriteromanticconcertos": 1
+  },
+  "C|va|S|barbrastreisand": {
+   "classicalbarbra": 1
+  },
+  "C|schubert|I|schuberteugeneistomin": {
+   "sonataindmajorop53": 1
+  },
+  "C|chopin|A|marthaargerich": {
+   "chopinprludesscherzono2polonaiseno6": 1
+  },
+  "C|vivaldi|B|leonardbernstein": {
+   "vivaldidievierjahreszeitenthefourseasons": 1
+  },
+  "C|va|L|englishchamberorchestraraymondleppard": {
+   "allabarocca": 1
+  },
+  "C|va|O|fredricoberschelp": {
+   "schubertdasweihnachtskonzertotannenbaum": 1
+  },
+  "C|schubert|B|paulbadura": {
+   "schubertthecompletepianosonatas": 1
+  },
+  "CG|schubert|D|dietrichfischerdieskau": {
+   "schubertwinterreiseop89dieforelle": 1,
+   "schubertwinterreiseop89dieforelleerlknig": 2
+  },
+  "C|va|P|lucianopavarotti": {
+   "pavarottisgreatesthits": 2,
+   "passione": 1
+  },
+  "C|ravel|F|leonardbernsteinorchestrenationaldefrance": {
+   "ravelbolro": 1
+  },
+  "C|chopin|H|adamharasiewicz": {
+   "chopinsmtlicheimpromptusundballaden": 1
+  },
+  "C|va|M|yoyoma": {
+   "kreislerpaganini": 1
+  },
+  "C|bach|M|yoyoma": {
+   "bachcellosuites": 1
+  },
+  "C|chopin|R|arturrubinstein": {
+   "thechopinilovevol1": 2,
+   "rubinsteinspieltchopin": 1
+  },
+  "C|chopin|L|dinulipatti": {
+   "chopinvierzehnwalzer": 1
+  },
+  "C|chopin|C|alfredcortot": {
+   "alfredcortotspieltchopinprludesundimpromptus": 1
+  },
+  "C|va|P|herbertvonkarajanwienerphilharmoniker": {
+   "tchaikovskynutcrackersuitegriegpeergyntmusic": 1
+  },
+  "C|tchaikovsky|M|lorinmaazel": {
+   "tchaikovskysymphonyno6": 1
+  },
+  "C|marcello|H|heinzholliger": {
+   "famousoboeconcerto": 1
+  },
+  "C|liszt|A|revedamour": {
+   "revedamour": 1
+  },
+  "C|darzewska|P|maidensprayer": {
+   "maidensprayer": 1
+  },
+  "C|va|P|pianopieces": {
+   "pianopieces": 1
+  },
+  "C|va|J|indulcijubilo": {
+   "abaroqueconcert": 1
+  },
+  "C|va|M|avemaria": {
+   "avemaria": 1
+  },
+  "C|tchaikovsky|M|ericamorini": {
+   "차이코프스키바이올린협주곡에리카모리니tchaikovskyviolinconcertoop35": 1
+  },
+  "C|va|B|khatiabuniatishvili": {
+   "labyrinth": 1
+  },
+  "C|va|M|annesophiemutter": {
+   "ouverturenundintermezzi": 1
+  },
+  "C|va|P|itzhakperlman": {
+   "theperlmansound": 1
+  },
+  "C|bach|G|glenngould": {
+   "thegoldbergvariations": 3,
+   "bachthegoldbergvariations": 1,
+   "jsbachgoldbergvariations": 2
+  },
+  "CG|tchaikovsky|P|herbertvonkarajanberlinerphilharmoniker": {
+   "tchaikovskysymphonyno6pathtique": 1
+  },
+  "CG|beethoven|H|karlbhm": {
+   "beethovensymphonyno6op68pastorale": 1
+  },
+  "CG|va|K|karajan": {
+   "mussorgskypicturesatanexhibitionravelbolro": 3,
+   "straussconcertbizetsuites": 5,
+   "beethovensymphonyno9choralweberderfreischtzoverture": 1,
+   "orchestralconcertmoldaufinlandiahungariandancescompilation": 4,
+   "dancesbybrahmsanddvok": 2
+  },
+  "CG|vivaldi|K|karajan": {
+   "vivaldithefourseasons": 1
+  },
+  "CG|grieg|K|karajan": {
+   "griegpeergyntsuitenos12sigurdjorsalfar": 1
+  },
+  "CG|mozart|H|karlbhm": {
+   "mozartlenozzedifigarok492": 1,
+   "mozartsymphoniesno40k550no41k551jupiter": 3,
+   "mozartrequiemk626": 2
+  },
+  "CG|va|Q|amadeusquartet": {
+   "haydnstringquartetemperormozartstringquartethunting": 1
+  },
+  "CG|haydn|R|karlrichter": {
+   "haydnsymphoniesno94surpriseandno101theclock": 1
+  },
+  "CG|bach|B|bach": {
+   "jsbachviolinconcertos": 1
+  },
+  "CG|schubert|P|mauriziopollini": {
+   "schubertwandererfantasiepianosonatad845": 1
+  },
+  "CG|va|B|bach": {
+   "bachsuitefororchestrano2handelwatermusicsuite": 1
+  },
+  "CG|schubert|D|jrgdemus": {
+   "schuberttroutquintet": 1
+  },
+  "CG|brahms|Q|amadeusquartet": {
+   "brahmsstringsextetno1": 1
+  },
+  "CG|beethoven|L|wilhelmkempffferdinandleitner": {
+   "beethovenpianoconcertono5emperor": 1
+  },
+  "CG|verdi|V|antoniovotto": {
+   "verdilatraviata": 1
+  },
+  "CG|rachmaninoff|R|tamsvsry": {
+   "rachmaninovklavierkonzertenr1undnr2": 1
+  },
+  "CG|supp|K|herbertvonkarajan": {
+   "suppovertures": 1
+  },
+  "CG|stravinsky|K|karajan": {
+   "stravinskyballetmusictheriteofspring": 1
+  },
+  "CG|k|S|pierrefourniergeorgeszell": {
+   "dvokcelloconcertoop104": 1
+  },
+  "CG|k|K|herbertvonkarajan": {
+   "dvoksymphonyno9op95fromthenewworld": 1
+  },
+  "CG|berlioz|K|herbertvonkarajan": {
+   "hectorberliozsymphoniefantastiqueop14": 1
+  },
+  "CG|brahms|K|herbertvonkarajan": {
+   "brahmssymphonyno1op68": 1
+  },
+  "CG|va|O|beethovenschubertherbertvonkarajanberlinphilharmonicorchestra": {
+   "beethovensymphonyno5schubertsymphonyno8unfinished": 1
+  },
+  "CG|beethoven|K|karajan": {
+   "beethovensymphonyno3op55eroica": 1
+  },
+  "CG|mozart|M|mozart": {
+   "mozartdiezauberflteovertureoverturescompilation판없음": 1
+  },
+  "CG|tchaikovsky|K|tchaikovskyyehudimenuhinphilharmoniaorchestraefremkurtz": {
+   "tchaikovskyswanlakeop20thenutcrackerop71ahighlights": 1
+  },
+  "CG|handel|R|karlrichter": {
+   "handelhallelujahchorusmessiahhighlights": 1
+  },
+  "CG|bach|R|karlrichter": {
+   "bachorganrecital": 1
+  },
+  "CG|brahms|K|christianferraskarajan": {
+   "brahmsviolinconcertoop77": 1
+  },
+  "CG|beethoven|B|beethoven": {
+   "beethoven3pianosonataspathtiquemoonlightappassionata": 1
+  },
+  "CG|va|S|mozartschumann": {
+   "mozartpianosonatak331rondok485schumannkinderszenen": 1
+  },
+  "CG|va|B|herbertvonkarajanorchestrephilharmoniquedeberlin": {
+   "debussylamerprludelaprsmididunfauneravelbolro": 1
+  },
+  "CG|mozart|K|karlbhmkarajan": {
+   "mozartclarinetquintetk581oboequartetk370": 1
+  },
+  "CG|va|E|christopheschenbach": {
+   "mozartpianosonatak331rondok485schumannkinderszenen": 1
+  },
+  "CG|mozart|P|berlinerphilharmoniker": {
+   "mozrtclarinetconcertoandharpconcerto": 2,
+   "mozartsymphoniennr4041bdurnr8gmoll": 1
+  },
+  "CG|beethoven|K|christianferraskarajan": {
+   "beethovenviolinconcertoop61": 1
+  },
+  "CG|tchaikovsky|K|sviatoslavrichterkarajan": {
+   "tchaikovskypiancoconcertono1": 1
+  },
+  "CG|tchaikovsky|P|berlinerphilharmoniker": {
+   "tchaikovskyserenadeforstringsop48nutcrackersuite": 1,
+   "tchaikovskysymphonienr6op74pathtique": 2
+  },
+  "CG|tchaikovsky|K|karajan": {
+   "tchaikovskyvarious": 1
+  },
+  "CG|chopin|P|mauriziopollini": {
+   "chopinetudeop10op25": 1,
+   "chopinpolonaise": 2
+  },
+  "CG|chopin|R|tamsvsry": {
+   "chopionocturnenr110": 1
+  },
+  "CG|chopin|Z|krystianzimerman": {
+   "chopin14walzer": 1
+  },
+  "CG|paganini|A|salvatoreaccardo": {
+   "paganiniviolinconcertono2lacampanella": 1
+  },
+  "CG|schubert|K|herbertvonkarajan": {
+   "schubertsymphoniennr5undnr2sigurdjorsalfar": 1
+  },
+  "CG|grieg|K|herbertvonkarajan": {
+   "griegpeergyntsuitennr1undnr2": 1
+  },
+  "CG|mozart|K|wilhelmkempff": {
+   "mozartsonatakv331": 1
+  },
+  "CG|mozart|K|karajan": {
+   "mozarteinekleinenachtmusikdivertimentokv287": 1
+  },
+  "CG|tchaikovsky|K|herbertvonkarajan": {
+   "tchaikovskyschwanseesuitedornrschensuite": 1
+  },
+  "CG|liszt|K|herbertvonkarajan": {
+   "lisztlesprludesungarischerhapsodiennr24mazeppa": 1
+  },
+  "CG|chopin|M|arturobenedettimichelangeli": {
+   "chopinballadestitlepartiallylegible": 1
+  },
+  "CG|tchaikovsky|M|annesophiemutter": {
+   "tchaikovskyviolinkonzert": 1
+  },
+  "CG|schumann|A|marthaargerich": {
+   "schumannkinderszenenkreisleriana": 1
+  },
+  "CG|chopin|L|yunchanlim임윤찬": {
+   "chopintudesopp1025": 1
+  },
+  "CG|va|G|mischamaiskypavelgililov": {
+   "meditation": 1
+  },
+  "C|va|O|eugeneormandy": {
+   "ormandysgreatesthits": 1
+  },
+  "C|tchaikovsky|A|marthaargerich": {
+   "tschaikowskyklavierkonzertnr1bmoll": 1
+  },
+  "C|chopin|R|tamsvsry": {
+   "chopintudesop1025ballades": 1
+  },
+  "C|verdi|A|claudioabbado": {
+   "verdiovertures": 1
+  },
+  "C|beethoven|A|ernestansermet": {
+   "beethovensymphonyno5": 1
+  },
+  "C|schubert|S|schubert": {
+   "schubertsymphonynr5": 1
+  },
+  "C|beethoven|B|beethoven": {
+   "pianoconcertono5emperor": 1,
+   "violinsonaten": 2
+  },
+  "C|liszt|L|franzliszt": {
+   "ungarischerhapsodien": 1
+  },
+  "C|bach|M|nevillemarriner": {
+   "thebrandenburgconcertos": 1
+  },
+  "C|bach|K|herbertvonkarajan": {
+   "6brandenburgischekonzerteorchestersuiten2und3": 1
+  },
+  "C|bach|B|johannsebastianbach": {
+   "6brandenburgischekonzerte": 1
+  },
+  "C|bach|R|karlrichter": {
+   "jsbach6brandenburgischekonzerte": 1
+  },
+  "C|bach|L|musicaantiquakln": {
+   "jsbach4ouvertrenbwv10661069": 1
+  },
+  "C|bach|R|sviatoslavrichter": {
+   "bachthewelltemperedclavier": 1,
+   "jsbachwelltemperedclavieriii": 2
+  },
+  "C|vivaldi|P|trevorpinnock": {
+   "vivaldiconcertiop8nos112": 1
+  },
+  "C|mozart|S|wolfgangsawallisch": {
+   "mozartdiezauberflte": 1
+  },
+  "C|beethoven|B|danielbarenboim": {
+   "pathtiqueappassionatamoonlightsonatas": 1
+  },
+  "C|va|R|sviatoslavrichter": {
+   "sonatas": 1
+  },
+  "C|rachmaninoff|O|vladimirashkenazyeugeneormandy": {
+   "rachmaninoffconcertono3": 1
+  },
+  "C|va|P|andrprevin": {
+   "anandrprevinshowcase": 1
+  },
+  "C|bach|T|jacquesloussiertrio": {
+   "playbach5": 1
+  },
+  "C|bach|Y|yunchanlim임윤찬": {
+   "bachgoldbergvariationsliveatcarnegiehall": 1
+  },
+  "C|liszt|Y|yunchanlim임윤찬": {
+   "liszttranscendentaletudes": 1
+  },
+  "C|tchaikovsky|Y|yunchanlim임윤찬": {
+   "tchaikovskytheseasons": 1
+  },
+  "C|va|T|daniiltrifonov": {
+   "thecarnegierecital": 1
+  },
+  "C|va|A|marthaargerich": {
+   "tchaikovskylisztklavierkonzertepianoconcertos": 1
+  },
+  "C|mahler|K|karajan": {
+   "mahler5symphoniekindertotenlieder": 1
+  },
+  "C|va|C|mariacallas": {
+   "remastered": 1
+  },
+  "C|va|B|danielbarenboim": {
+   "encores": 1
+  },
+  "C|shostakovich|K|theodorekuchar": {
+   "shostakovichjazzsuites": 1
+  },
+  "C|liszt|H|vladimirhorowitz": {
+   "horowitzcollectionvol6liszt": 1
+  },
+  "C|mahler|B|johnbarbirolli": {
+   "mahler5sinfonie": 1
+  },
+  "C|sibelius|L|ervinlaszlo": {
+   "sibeliuspianomusic": 1
+  },
+  "C|rachmaninoff|T|daniiltrifonov": {
+   "destinationrachmaninov": 1
+  },
+  "C|glinka|H|jaschaheifetz": {
+   "thelark": 1
+  },
+  "C|khachaturian|M|landowskamonitor": {
+   "khachaturianspartacus": 1
+  },
+  "C|bach|L|wandalandowska": {
+   "jsbachthewelltemperedclavierbook1preludesandfuguesnos18": 1
+  }
+ }
+}
