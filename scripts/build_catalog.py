@@ -21,6 +21,16 @@ INV = os.path.expanduser(os.environ.get(
 PHYS = os.path.join(INV, "data", "physical_albums.json")
 YT = os.path.join(VAULT, "youtube_links.json")
 
+# 디지털(album.genre_bucket)과 실물(엑셀)이 같은 장르를 다른 이름으로 부른다.
+# 정본은 실물 쪽 이름 — 분류코드 문자(pipeline.GENRE_LETTER)와 묶여 있기 때문.
+# 통일은 파생 테이블인 catalog 에서만 한다. music-wiki.db 의 genre_bucket 은
+# 분류·해설·md 생성 파이프라인이 의존하므로 건드리지 않는다.
+GENRE_CANON = {"경음악_OST": "OST·경음악", "제3세계": "월드"}
+
+
+def canon_genre(g):
+    return GENRE_CANON.get(g, g) or "미분류"
+
 
 def norm(s):
     return re.sub(r"[^a-z0-9가-힣]", "", str(s or "").lower())
@@ -44,7 +54,7 @@ def main():
             "SELECT al.id, ar.name, al.title, al.genre_bucket, al.description"
             " FROM album al JOIN artist ar ON al.artist_id=ar.id"):
         k = f"{norm(ar)}|{norm(ti)}"
-        rows[k] = {"key": k, "artist": ar, "album": ti, "genre": bucket or "미분류",
+        rows[k] = {"key": k, "artist": ar, "album": ti, "genre": canon_genre(bucket),
                    "digital": 1, "album_id": aid, "physical_code": None, "media": None,
                    "locations": None, "copies": 0, "description": desc, "rep": None,
                    "youtube_url": (yt.get(k) or {}).get("url") or None, "db_url": None}
@@ -55,7 +65,7 @@ def main():
             k = f"{norm(a['artist'])}|{norm(a['album'])}"
             r = rows.setdefault(k, {
                 "key": k, "artist": a["artist"], "album": a["album"],
-                "genre": a.get("genre") or "미분류", "digital": 0, "album_id": None,
+                "genre": canon_genre(a.get("genre")), "digital": 0, "album_id": None,
                 "physical_code": None, "media": None, "locations": None, "copies": 0,
                 "description": None, "rep": None,
                 "youtube_url": (yt.get(k) or {}).get("url") or None, "db_url": None})
@@ -67,6 +77,10 @@ def main():
                      db_url=a.get("db_url") or r.get("db_url"))
             if not r.get("description") and a.get("desc"):
                 r["description"] = a["desc"]
+            # 겹치는 앨범은 실물 장르를 따른다 — 라벨에 인쇄된 분류코드와 어긋나지
+            # 않게. (디지털은 탱고를 따로 두지 않아 월드로 뭉뚱그린다)
+            if a.get("genre"):
+                r["genre"] = canon_genre(a["genre"])
 
     c.executemany(
         "INSERT INTO catalog VALUES (:key,:artist,:album,:genre,:digital,:album_id,"
