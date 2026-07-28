@@ -1,0 +1,37 @@
+# 호스트에서 claude -p 를 대신 실행하는 프록시 (deploy/SER8-TASKS.md B2).
+#
+#   sudo cp deploy/mw-claude-proxy.service /etc/systemd/system/
+#   sudo systemctl daemon-reload && sudo systemctl enable --now mw-claude-proxy
+#
+# 소켓 디렉토리는 /run 이 아니라 /var/lib 에 둔다. /run 은 재부팅마다 비워지고
+# RuntimeDirectory= 는 서비스 재시작 시 디렉토리를 지웠다 다시 만드는데, 그러면
+# 컨테이너의 바인드 마운트가 옛 inode 를 붙들어 소켓이 사라져 보인다.
+[Unit]
+Description=music-wiki claude -p proxy (unix socket for the web container)
+After=network.target
+
+[Service]
+Type=simple
+User=neotango
+Group=neotango
+Environment=HOME=/home/neotango
+Environment=CLAUDE_BIN=/home/neotango/.local/bin/claude
+# StateDirectory 는 /var/lib/mw-llm 을 User= 소유로 만들어 주고, RuntimeDirectory 와
+# 달리 재시작 때 지우지 않는다 → 컨테이너 바인드 마운트가 끊기지 않는다.
+StateDirectory=mw-llm
+StateDirectoryMode=0750
+ExecStart=/usr/bin/python3 /home/neotango/personal/music-wiki/scripts/claude_proxy.py \
+          --socket /var/lib/mw-llm/claude.sock
+Restart=on-failure
+RestartSec=5
+
+# claude 는 홈의 구독 자격증명을 읽어야 하므로 홈은 열어두고 나머지를 좁힌다.
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=full
+ProtectControlGroups=yes
+ProtectKernelTunables=yes
+RestrictSUIDSGID=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -10,6 +10,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import os
+import socket
 import subprocess
 import tempfile
 from pathlib import Path
@@ -60,8 +61,41 @@ def issue_code(*, artist: str, album: str, genre: str, medium: str = "LP",
             if PENDING.exists() else 0}
 
 
+def _ask_via_socket(sock_path: str, prompt: str, timeout: int) -> str:
+    """호스트의 claude_proxy 에 유닉스 소켓으로 요청(컨테이너에는 CLI가 없다)."""
+    body = json.dumps({"prompt": prompt, "timeout": timeout}).encode()
+    req = (b"POST /ask HTTP/1.0\r\nHost: localhost\r\n"
+           b"Content-Type: application/json\r\n"
+           b"Content-Length: " + str(len(body)).encode() + b"\r\n\r\n" + body)
+    s = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
+    s.settimeout(timeout + 15)          # 프록시가 claude 타임아웃을 먼저 처리하게
+    try:
+        s.connect(sock_path)
+        s.sendall(req)
+        buf = b""
+        while True:
+            chunk = s.recv(65536)
+            if not chunk:
+                break
+            buf += chunk
+    finally:
+        s.close()
+    payload = buf.partition(b"\r\n\r\n")[2]
+    return json.loads(payload)["answer"]
+
+
 def ask_claude(prompt: str, timeout: int = 120) -> str:
-    """구독 Claude Code 헤드리스 호출. 전용 임시 작업디렉토리에서 최소 권한 실행."""
+    """구독 Claude Code 헤드리스 호출. 전용 임시 작업디렉토리에서 최소 권한 실행.
+
+    MW_LLM_SOCK 이 있으면 호스트 프록시(scripts/claude_proxy.py)를 거친다.
+    컨테이너 안에는 CLI 도 구독 로그인 정보도 없기 때문. 없으면 직접 실행.
+    """
+    sock = os.environ.get("MW_LLM_SOCK")
+    if sock:
+        try:
+            return _ask_via_socket(sock, prompt, timeout)
+        except (OSError, ValueError, KeyError) as e:
+            return f"(LLM 프록시 연결 실패: {e} — 호스트에서 mw-claude-proxy 확인)"
     exe = os.environ.get("CLAUDE_BIN", "claude")
     with tempfile.TemporaryDirectory(prefix="mw-llm-") as wd:
         try:

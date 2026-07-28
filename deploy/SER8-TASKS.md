@@ -174,15 +174,27 @@ sudo reboot
 
 ### B1. 외부·휴대폰 접속 (Tailscale)
 
-- [ ] https://login.tailscale.com/admin/settings/keys 에서 auth key 발급
-- [ ] `deploy/.env` 에 `TS_AUTHKEY=tskey-...` 추가
+> **2026-07-28 실측**: 이 Tailscale 계정은 **TLS 인증서를 지원하지 않는다**
+> (`tailscale cert` → "your Tailscale account does not support getting TLS certs").
+> 그래서 `https://…ts.net` 방식은 쓸 수 없고, 아래처럼 **평문 HTTP 서브**로 붙인다.
+> ser8 호스트에 Tailscale 이 이미 돌고 있으므로 compose 의 `remote` 프로필
+> (별도 컨테이너 + auth key)은 쓰지 않는다 — tailnet 노드만 하나 더 늘 뿐이다.
 
 ```bash
-docker compose --profile remote up -d
+sudo tailscale serve --bg --http=80 http://127.0.0.1:8765
+tailscale serve status
 ```
 
-- [ ] 폰에 Tailscale 앱 설치·같은 계정 로그인 →
-      `https://musicwiki.<tailnet>.ts.net` 접속 (홈 화면에 추가하면 앱처럼 사용)
+- [ ] `http://<호스트명>.<tailnet>.ts.net/` 접속 확인
+      (ser8 기준 `http://neotango-ser8.tail813994.ts.net/`)
+- [ ] 폰에 Tailscale 앱 설치·같은 계정 로그인 → 같은 주소로 접속
+      (홈 화면에 추가하면 앱처럼 사용)
+- [ ] serve 설정은 `tailscaled` 상태에 저장되고 `tailscaled` 는 enabled 이므로
+      재부팅 후에도 유지된다. 끄려면 `sudo tailscale serve --http=80 off`
+
+> 서브를 걸지 않아도 tailnet IP(`http://100.x.y.z:8765`)로는 이미 접속된다.
+> 서브는 외우기 쉬운 이름을 붙여줄 뿐이다. 어느 쪽이든 **tailnet 내부 전용**이며
+> 공개(Funnel)가 아니다.
 
 ### B2. LLM 연결 — 웹 `/ask` + 향후 에이전트
 
@@ -196,11 +208,28 @@ claude -p "테스트: OK 한 단어로"                  # 응답 오면 정상
 ```
 
 - [ ] `claude -p` 응답 확인
-- [ ] 웹앱에서 호출되게 연결 — 둘 중 택1
-      - **간단**: 웹앱을 컨테이너 대신 호스트에서 실행
-        (`cd ~/music-wiki/webapp && uvicorn app:app --host 0.0.0.0 --port 8765`)
-      - **대안**: 로컬 LLM이 꼭 필요하면 이 PC(GPU 2장)에 LM Studio를 띄우고
-        ser8에서 `LLM_BASE_URL=http://192.168.50.112:1234/v1` 로 호출 (이 PC 켜야 함)
+
+컨테이너 안에는 `claude` 도 구독 로그인 정보도 없다. 호스트에 작은 프록시를 두고
+**유닉스 소켓**으로 부른다(포트로 열면 같은 LAN 의 누구나 구독 계정을 쓸 수 있다):
+
+```bash
+sudo cp deploy/mw-claude-proxy.service /etc/systemd/system/
+#   ExecStart 의 레포 경로가 실제 clone 위치와 다르면 수정할 것
+sudo systemctl daemon-reload && sudo systemctl enable --now mw-claude-proxy
+systemctl is-active mw-claude-proxy && ls -l /var/lib/mw-llm/claude.sock
+
+cd ~/music-wiki/deploy && docker compose up -d web    # 소켓 마운트 반영
+curl -s -X POST http://localhost:8765/api/ask -H 'Content-Type: application/json' \
+     -d '{"prompt":"한 단어로: OK"}'
+```
+
+- [ ] `{"answer":"OK"}` 응답 (ser8 실측 왕복 약 4초)
+- [ ] compose 가 `/var/lib/mw-llm` → 컨테이너 `/run/mw-llm` 을 마운트하고
+      `MW_LLM_SOCK` 을 넘긴다. 프록시가 없으면 `/ask` 만 안내 문구를 내고
+      나머지 기능은 정상 동작한다
+
+> 로컬 LLM 이 꼭 필요하면(ser8은 GPU 없음) 예비 PC(GPU 2장)에 LM Studio 를 띄우고
+> `LLM_BASE_URL=http://192.168.50.112:1234/v1` 로 호출 — 그 PC를 켜야 한다.
 
 ### B3. 백업 습관
 
