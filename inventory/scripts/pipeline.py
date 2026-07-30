@@ -16,6 +16,7 @@ import json
 import os
 import re
 from collections import defaultdict
+from copy import copy
 
 import openpyxl
 from openpyxl import Workbook
@@ -483,6 +484,26 @@ def build(rows, albums, album_code, digital):
             cell.alignment = Alignment(horizontal="center", vertical="center")
         for c in range(1, max(1, (len(codes) + ROWS - 1) // ROWS) + 1):
             ws.column_dimensions[get_column_letter(c)].width = 16
+
+    # 파이프라인이 만들지 않는 사용자 시트(정리작업·라벨재발급N 등)는 그대로 옮겨온다.
+    # (워크북을 새로 만들기 때문에 명시적으로 복사하지 않으면 사라진다)
+    generated = set(SHEET_ORDER) | {"분류코드표", "중복목록", "미식별목록", "정리계획",
+                                    "라벨인쇄", "라벨인쇄-LP", "라벨인쇄-CD", "라벨인쇄-전체"}
+    if os.path.exists(XLSX):
+        old = openpyxl.load_workbook(XLSX)
+        for name in old.sheetnames:
+            if name in generated:
+                continue
+            src, dst = old[name], wb.create_sheet(name)
+            for row in src.iter_rows():
+                for cell in row:
+                    nc = dst.cell(row=cell.row, column=cell.column, value=cell.value)
+                    if cell.has_style:
+                        nc.font, nc.fill = copy(cell.font), copy(cell.fill)
+                        nc.alignment = copy(cell.alignment)
+            for k, dim in src.column_dimensions.items():
+                dst.column_dimensions[k].width = dim.width
+            dst.freeze_panes = src.freeze_panes
 
     for w in wb.worksheets:
         if w.title.startswith("라벨인쇄"):
