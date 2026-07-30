@@ -816,7 +816,7 @@
    "CD윗층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-G-D01-02",
@@ -1026,7 +1026,7 @@
    "CD윗층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-G-R09-01",
@@ -1194,7 +1194,7 @@
    "CD아래층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-J-C37-01",
@@ -1614,7 +1614,7 @@
    "CD아래층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-J-P05-01",
@@ -1719,7 +1719,7 @@
    "CD아래층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-J-S21-01",
@@ -1785,216 +1785,6 @@
   "digital": false
  },
  {
-  "code": "CD-K-C01-01",
-  "genre": "가요",
-  "artist": "CASKER",
-  "album": "CASKER4",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "캐스커의 네 번째 음반으로, 성숙해진 사운드와 정교한 편곡이 돋보이는 일렉트로닉 팝 앨범이다.",
-  "discogs_id": "30850881",
-  "db_url": "https://www.discogs.com/release/30850881",
-  "label_cat": "pmcd 9126",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-K-C01-02",
-  "genre": "가요",
-  "artist": "CASKER",
-  "album": "New Edition (신곡모음집)",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "캐스커의 신곡을 모은 음반으로, 기존의 몽환적인 일렉트로닉 팝 색채를 이어간다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-K-C01-03",
-  "genre": "가요",
-  "artist": "CASKER",
-  "album": "Polyester Heart",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "캐스커의 음반 'Polyester Heart'로, 세련된 신스팝 사운드와 몽환적인 무드가 특징이다.",
-  "discogs_id": "30850437",
-  "db_url": "https://musicbrainz.org/release-group/ceb33cdb-2075-4c9f-87a6-1844229baba8",
-  "label_cat": "pmcd 9066",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-K-C01-04",
-  "genre": "가요",
-  "artist": "CASKER",
-  "album": "Skylab",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "일렉트로닉 듀오 캐스커의 음반 'Skylab'으로, 몽환적인 신스 사운드와 감각적인 보컬이 어우러진 앨범이다.",
-  "discogs_id": "19692571",
-  "db_url": "https://musicbrainz.org/release-group/2d1d15e2-72bf-3912-9414-65f6af028220",
-  "label_cat": "TC4B1-01",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-K-C01-05",
-  "genre": "가요",
-  "artist": "CASKER",
-  "album": "ten·der",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "캐스커의 음반 'ten·der'로, 부드럽고 섬세한 일렉트로닉 팝 사운드가 특징이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "PMCD 1077",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-K-L01-01",
-  "genre": "가요",
-  "artist": "Leviparty",
-  "album": "Kosmos",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "레비파티의 또 다른 앨범으로, 은박 엠보싱 커버에서 짐작되듯 몽환적이고 세련된 사운드를 지향한 것으로 보인다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 2,
-  "digital": false
- },
- {
-  "code": "CD-K-L01-02",
-  "genre": "가요",
-  "artist": "Leviparty",
-  "album": "Vessel",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "보컬 중심의 국내 밴드 레비파티의 앨범으로, 서정적인 멜로디와 밴드 사운드가 어우러진 가요풍 음반이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-K-L01-03",
-  "genre": "가요",
-  "artist": "LeviParty",
-  "album": "ZHUN",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "레비파티(레비샤이어 병기)의 앨범으로, 밴드 특유의 서정적이고 세련된 가요 사운드를 담고 있다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-K-T01-01",
-  "genre": "가요",
-  "artist": "Toy",
-  "album": "Present / Toy",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "유희열의 프로젝트 그룹 토이의 음반 'Present'로, 서정적인 가사와 세련된 편곡의 발라드가 특징이다.",
-  "discogs_id": "6340726",
-  "db_url": "https://www.discogs.com/release/6340726",
-  "label_cat": "OKC-0078",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-K-T01-02",
-  "genre": "가요",
-  "artist": "TOY",
-  "album": "다카포 (Da Capo)",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "작곡가 유희열이 이끄는 프로젝트 그룹 토이의 앨범으로, 서정적인 멜로디와 감성적인 가사가 어우러진 발라드/가요풍 명반이다.",
-  "discogs_id": "17028900",
-  "db_url": "https://www.discogs.com/release/17028900",
-  "label_cat": "",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "CD-K-V01-01",
   "genre": "가요",
   "artist": "Various",
@@ -2027,27 +1817,6 @@
   "discogs_id": "17160106",
   "db_url": "https://www.discogs.com/release/17160106",
   "label_cat": "YBM서울음반 SRCD-3480",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-K-Y05-01",
-  "genre": "가요",
-  "artist": "Yunsang",
-  "album": "2집 Part 1",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "윤상의 2집 파트1로, 초기 그의 신스팝/발라드 색채를 확인할 수 있는 음반이다.",
-  "discogs_id": "17124507",
-  "db_url": "https://www.discogs.com/release/17124507",
-  "label_cat": "JCDS-0327",
   "media": [
    "CD"
   ],
@@ -2118,7 +1887,7 @@
    "CD아래층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-K-ㄱ61-01",
@@ -2137,6 +1906,69 @@
   ],
   "locations": [
    "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-K-ㄹ02-01",
+  "genre": "가요",
+  "artist": "레비파티",
+  "album": "Vessel",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "보컬 중심의 국내 밴드 레비파티의 앨범으로, 서정적인 멜로디와 밴드 사운드가 어우러진 가요풍 음반이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-K-ㄹ02-02",
+  "genre": "가요",
+  "artist": "레비파티",
+  "album": "Kosmos",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "레비파티의 또 다른 앨범으로, 은박 엠보싱 커버에서 짐작되듯 몽환적이고 세련된 사운드를 지향한 것으로 보인다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 2,
+  "digital": false
+ },
+ {
+  "code": "CD-K-ㄹ02-03",
+  "genre": "가요",
+  "artist": "레비파티",
+  "album": "ZHUN",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "레비파티(레비샤이어 병기)의 앨범으로, 밴드 특유의 서정적이고 세련된 가요 사운드를 담고 있다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
   ],
   "copies": 1,
   "digital": false
@@ -2265,7 +2097,7 @@
    "CD아래층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-K-ㅇ25-09",
@@ -2289,6 +2121,27 @@
   "digital": false
  },
  {
+  "code": "CD-K-ㅇ25-10",
+  "genre": "가요",
+  "artist": "윤상",
+  "album": "2집 Part 1",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "윤상의 2집 파트1로, 초기 그의 신스팝/발라드 색채를 확인할 수 있는 음반이다.",
+  "discogs_id": "17124507",
+  "db_url": "https://www.discogs.com/release/17124507",
+  "label_cat": "JCDS-0327",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "CD-K-ㅇ31-01",
   "genre": "가요",
   "artist": "이규호",
@@ -2307,7 +2160,7 @@
    "CD아래층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-K-ㅇ34-02",
@@ -2349,7 +2202,7 @@
    "CD아래층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-K-ㅈ37-02",
@@ -2363,6 +2216,153 @@
   "discogs_id": "16961760",
   "db_url": "https://www.discogs.com/release/16961760",
   "label_cat": "DK0328",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-K-ㅋ02-01",
+  "genre": "가요",
+  "artist": "캐스커",
+  "album": "Skylab",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "일렉트로닉 듀오 캐스커의 음반 'Skylab'으로, 몽환적인 신스 사운드와 감각적인 보컬이 어우러진 앨범이다.",
+  "discogs_id": "19692571",
+  "db_url": "https://musicbrainz.org/release-group/2d1d15e2-72bf-3912-9414-65f6af028220",
+  "label_cat": "TC4B1-01",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-K-ㅋ02-02",
+  "genre": "가요",
+  "artist": "캐스커",
+  "album": "ten·der",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "캐스커의 음반 'ten·der'로, 부드럽고 섬세한 일렉트로닉 팝 사운드가 특징이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "PMCD 1077",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-K-ㅋ02-03",
+  "genre": "가요",
+  "artist": "캐스커",
+  "album": "Polyester Heart",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "캐스커의 음반 'Polyester Heart'로, 세련된 신스팝 사운드와 몽환적인 무드가 특징이다.",
+  "discogs_id": "30850437",
+  "db_url": "https://musicbrainz.org/release-group/ceb33cdb-2075-4c9f-87a6-1844229baba8",
+  "label_cat": "pmcd 9066",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-K-ㅋ02-04",
+  "genre": "가요",
+  "artist": "캐스커",
+  "album": "CASKER4",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "캐스커의 네 번째 음반으로, 성숙해진 사운드와 정교한 편곡이 돋보이는 일렉트로닉 팝 앨범이다.",
+  "discogs_id": "30850881",
+  "db_url": "https://www.discogs.com/release/30850881",
+  "label_cat": "pmcd 9126",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-K-ㅋ02-05",
+  "genre": "가요",
+  "artist": "캐스커",
+  "album": "New Edition (신곡모음집)",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "캐스커의 신곡을 모은 음반으로, 기존의 몽환적인 일렉트로닉 팝 색채를 이어간다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-K-ㅌ04-01",
+  "genre": "가요",
+  "artist": "토이",
+  "album": "다카포 (Da Capo)",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "작곡가 유희열이 이끄는 프로젝트 그룹 토이의 앨범으로, 서정적인 멜로디와 감성적인 가사가 어우러진 발라드/가요풍 명반이다.",
+  "discogs_id": "17028900",
+  "db_url": "https://www.discogs.com/release/17028900",
+  "label_cat": "",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-K-ㅌ04-02",
+  "genre": "가요",
+  "artist": "토이",
+  "album": "Present / Toy",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "유희열의 프로젝트 그룹 토이의 음반 'Present'로, 서정적인 가사와 세련된 편곡의 발라드가 특징이다.",
+  "discogs_id": "6340726",
+  "db_url": "https://www.discogs.com/release/6340726",
+  "label_cat": "OKC-0078",
   "media": [
    "CD"
   ],
@@ -2811,7 +2811,7 @@
    "CD아래층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-P-J01-02",
@@ -2832,7 +2832,7 @@
    "CD아래층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-P-J01-03",
@@ -2979,7 +2979,7 @@
    "CD윗층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-T-A09-12",
@@ -3168,7 +3168,7 @@
    "CD윗층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-T-G01-02",
@@ -3546,7 +3546,7 @@
    "CD윗층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-W-L01-01",
@@ -3567,7 +3567,7 @@
    "CD윗층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-W-L05-01",
@@ -3672,7 +3672,7 @@
    "CD윗층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-W-P06-01",
@@ -3756,7 +3756,7 @@
    "CD윗층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-W-R09-01",
@@ -3840,7 +3840,7 @@
    "CD아래층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "CD-W-ㅇ01-01",
@@ -7771,7 +7771,7 @@
    "LP중앙선반2열3층"
   ],
   "copies": 2,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-G-B05-01",
@@ -8254,7 +8254,7 @@
    "LP중앙선반2열3층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-G-J17-01",
@@ -8611,7 +8611,7 @@
    "LP중앙선반2열2층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-J-A09-04",
@@ -8632,7 +8632,7 @@
    "LP중앙선반2열2층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-J-A09-05",
@@ -8697,7 +8697,7 @@
    "LP중앙선반2열2층"
   ],
   "copies": 2,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-J-B09-01",
@@ -8951,7 +8951,7 @@
    "LP중앙선반2열2층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-J-E05-01",
@@ -9203,7 +9203,7 @@
    "LP중앙선반2열2층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-J-L09-02",
@@ -9224,7 +9224,7 @@
    "LP중앙선반2열2층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-J-M01-01",
@@ -9459,7 +9459,7 @@
    "LP중앙선반2열2층"
   ],
   "copies": 2,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-J-M29-02",
@@ -9522,7 +9522,7 @@
    "LP중앙선반2열2층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-J-M41-01",
@@ -9627,7 +9627,7 @@
    "LP중앙선반2열2층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-J-R01-01",
@@ -9711,7 +9711,7 @@
    "LP중앙선반2열2층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-J-S25-01",
@@ -9732,7 +9732,7 @@
    "LP중앙선반2열2층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-J-S25-02",
@@ -9840,132 +9840,6 @@
   "digital": false
  },
  {
-  "code": "LP-K-001-01",
-  "genre": "가요",
-  "artist": "015B",
-  "album": "4집",
-  "rep": "신인류의 사랑",
-  "composer": "",
-  "performer": "",
-  "desc": "015B의 4집으로, 객원보컬과 함께한 세련된 팝 사운드가 이어지는 음반이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-001-02",
-  "genre": "가요",
-  "artist": "015B",
-  "album": "THE THIRD WAVE III",
-  "rep": "이젠 안녕",
-  "composer": "",
-  "performer": "",
-  "desc": "정석원과 장호일이 이끈 프로젝트 그룹 015B의 3집으로, 매 앨범 다른 객원보컬과 함께한 세련된 팝 사운드가 특징이다.",
-  "discogs_id": "11575180",
-  "db_url": "https://www.discogs.com/release/11575180",
-  "label_cat": "DYS-014 / 015B",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-001-03",
-  "genre": "가요",
-  "artist": "015B",
-  "album": "너에게 들려주고 싶은 이야기",
-  "rep": "너에게 들려주고 싶은 이야기",
-  "composer": "",
-  "performer": "",
-  "desc": "015B의 음반으로, 서정적인 가사가 돋보이는 타이틀곡 '너에게 들려주고 싶은 이야기'가 담긴 앨범이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "STEREO/HDDL-1013",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-B01-01",
-  "genre": "가요",
-  "artist": "BTS",
-  "album": "Love Yourself 承 'Her'",
-  "rep": "DNA, Mic Drop",
-  "composer": "",
-  "performer": "",
-  "desc": "방탄소년단의 'Love Yourself' 시리즈 중 한 장으로, 청춘과 자기애를 주제로 한 팝·힙합 사운드가 담긴 음반이다.",
-  "discogs_id": "25393222",
-  "db_url": "https://musicbrainz.org/release-group/ee28c781-09a9-419b-9db5-f3ddf8fe8adb",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP침대옆"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-C05-01",
-  "genre": "가요",
-  "artist": "Clazziquai Project",
-  "album": "Instant Pig",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "클래지콰이 프로젝트의 데뷔작으로, 라운지·일렉트로니카 감성을 국내 가요에 접목한 실험적인 음반이다.",
-  "discogs_id": "22062403",
-  "db_url": "https://www.discogs.com/release/22062403",
-  "label_cat": "MCKL1136",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-D01-01",
-  "genre": "가요",
-  "artist": "DEUX (듀스)",
-  "album": "듀스 포에버",
-  "rep": "여름 안에서, 나를 돌아봐",
-  "composer": "",
-  "performer": "",
-  "desc": "90년대 초 한국 댄스음악의 판도를 바꾼 듀오 듀스의 음반으로, 신선한 랩과 리듬감 있는 사운드가 특징이다.",
-  "discogs_id": "15732805",
-  "db_url": "https://www.discogs.com/release/15732805",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-K-D05-01",
   "genre": "가요",
   "artist": "Dzit",
@@ -9984,342 +9858,6 @@
    "LP침대옆"
   ],
   "copies": 2,
-  "digital": false
- },
- {
-  "code": "LP-K-I01-01",
-  "genre": "가요",
-  "artist": "IU",
-  "album": "REMAKE ALBUM",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "아이유가 옛 가요 명곡들을 재해석한 리메이크 앨범 '꽃갈피'로, 세대를 아우르는 감성이 돋보인다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-I01-02",
-  "genre": "가요",
-  "artist": "IU",
-  "album": "꽃갈피 이야기 (Remake Album)",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "아이유가 세대를 아우르는 한국 명곡들을 자신만의 스타일로 재해석한 리메이크 음반이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "kakao / EDAM",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP침대옆"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-J01-01",
-  "genre": "가요",
-  "artist": "Jang Phil Soon",
-  "album": "Best",
-  "rep": "제비꽃, 나의 외로움이 널 부를 때",
-  "composer": "",
-  "performer": "",
-  "desc": "장필순의 베스트 음반으로, 담백하고 내면적인 포크·어쿠스틱 감성의 곡들을 모았다.",
-  "discogs_id": "17534572",
-  "db_url": "https://www.discogs.com/release/17534572",
-  "label_cat": "SPLP-0033",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-J05-01",
-  "genre": "가요",
-  "artist": "Jaurim",
-  "album": "Goodbye, grief.",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "한국 얼터너티브 록밴드 자우림의 음반으로, 개성 강한 보컬과 감각적인 록 사운드가 특징이다.",
-  "discogs_id": "17821063",
-  "db_url": "https://www.discogs.com/release/17821063",
-  "label_cat": "Interpark / INT0198",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP침대옆"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-K01-01",
-  "genre": "가요",
-  "artist": "Kang Soo Jee",
-  "album": "2",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "강수지의 두 번째 앨범으로, 90년대 초 댄스·발라드 감성을 담은 음반이다.",
-  "discogs_id": "7000436",
-  "db_url": "https://www.discogs.com/release/7000436",
-  "label_cat": "SISW910314 / SIPA0005; With",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-K05-01",
-  "genre": "가요",
-  "artist": "Kim Gwang-jin",
-  "album": "It's Me",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "동물원 출신 김광진의 솔로 음반으로, 부드러운 보이스와 서정적인 멜로디가 특징이다. (동일 음반의 별도 사본)",
-  "discogs_id": "27730011",
-  "db_url": "https://www.discogs.com/release/27730011",
-  "label_cat": "CASTLEMUSIC 004",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-M01-01",
-  "genre": "가요",
-  "artist": "Mr.2(미스터투)",
-  "album": "그리고 시작(나의 토요일)",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "90년대 활동한 듀오 미스터투의 음반으로, 담백한 멜로디와 서정적인 가사가 어우러진 발라드 감성이 돋보인다.",
-  "discogs_id": "21549448",
-  "db_url": "https://www.discogs.com/release/21549448",
-  "label_cat": "STEREO JLS-1202593",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-N01-01",
-  "genre": "가요",
-  "artist": "NEXT",
-  "album": "HOME",
-  "rep": "도시인, 기억을 걷는 여행",
-  "composer": "",
-  "performer": "",
-  "desc": "신해철이 이끈 밴드 N.EX.T의 데뷔 음반 'Home'으로, 도시적 삶을 그린 명곡 '도시인'이 수록된 프로그레시브 록 앨범이다.",
-  "discogs_id": "9553728",
-  "db_url": "https://www.discogs.com/release/9553728",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-N01-02",
-  "genre": "가요",
-  "artist": "NEXT",
-  "album": "The return of NEXT part1",
-  "rep": "Lazenca, Save Us",
-  "composer": "",
-  "performer": "",
-  "desc": "신해철이 이끈 프로그레시브 록 밴드 넥스트의 음반으로, 실험적인 사운드와 개념적인 구성이 돋보이는 작품이다.",
-  "discogs_id": "4930282",
-  "db_url": "https://www.discogs.com/release/4930282",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-P01-01",
-  "genre": "가요",
-  "artist": "Peppertones",
-  "album": "Sounds Good!",
-  "rep": "연애소설",
-  "composer": "",
-  "performer": "",
-  "desc": "발랄하고 경쾌한 사운드로 유명한 인디 팝 듀오 페퍼톤스의 음반으로, 청량하고 유쾌한 팝 감성이 가득하다.",
-  "discogs_id": "37623498",
-  "db_url": "https://musicbrainz.org/release-group/49cdb6e1-8cda-497d-9ef3-2e4f46508c2a",
-  "label_cat": "VLP012-01",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP침대옆"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-S01-01",
-  "genre": "가요",
-  "artist": "Seo Taiji and Boys(서태지와 아이들)",
-  "album": "93 마지막 축제",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "서태지와 아이들의 실황을 담은 음반으로 추정되며, 현장의 열기와 에너지를 느낄 수 있는 라이브 성격의 앨범으로 보인다.",
-  "discogs_id": "16583592",
-  "db_url": "https://www.discogs.com/release/16583592",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-S01-02",
-  "genre": "가요",
-  "artist": "Seo Taiji and Boys(서태지와 아이들)",
-  "album": "II",
-  "rep": "하여가, 너와 함께한 시간 속에서",
-  "composer": "",
-  "performer": "",
-  "desc": "한국 대중음악의 흐름을 바꾼 서태지와 아이들의 2집으로, 랩과 록, 발라드를 넘나드는 파격적인 사운드가 특징이다.",
-  "discogs_id": "6289423",
-  "db_url": "https://www.discogs.com/release/6289423",
-  "label_cat": "SDU-0026",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-S01-03",
-  "genre": "가요",
-  "artist": "Seo Taiji and Boys(서태지와 아이들)",
-  "album": "III",
-  "rep": "발해를 꿈꾸며, 교실 이데아",
-  "composer": "",
-  "performer": "",
-  "desc": "서태지와 아이들의 3집으로, 국악적 색채와 록 사운드를 접목한 실험적인 타이틀곡 '발해를 꿈꾸며'가 담긴 음반이다.",
-  "discogs_id": "11510664",
-  "db_url": "https://www.discogs.com/release/11510664",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-S05-01",
-  "genre": "가요",
-  "artist": "SOLID(솔리드)",
-  "album": "1995-1997",
-  "rep": "천생연분",
-  "composer": "",
-  "performer": "",
-  "desc": "1990년대 R&B·뉴잭스윙 사운드로 가요계에 새 바람을 일으킨 솔리드의 히트곡들을 담은 음반이다.",
-  "discogs_id": "19842451",
-  "db_url": "https://www.discogs.com/release/19842451",
-  "label_cat": "MRCD1817 / MUSIC DESIGN",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-S05-02",
-  "genre": "가요",
-  "artist": "SOLID(솔리드)",
-  "album": "1집",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "한국 R&B의 선구자로 꼽히는 그룹 솔리드의 데뷔 음반으로, 세련된 리듬감과 그루브가 돋보이는 곡들이 담겨 있다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "SPDR-381 / 서울음반",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-T05-01",
-  "genre": "가요",
-  "artist": "TOY(토이)",
-  "album": "내마음속에",
-  "rep": "내 마음 속에",
-  "composer": "",
-  "performer": "",
-  "desc": "유희열이 이끌었던 프로젝트 그룹 토이의 앨범으로, 서정적인 멜로디와 담백한 가사가 돋보이는 발라드 감성의 작품이다.",
-  "discogs_id": "23026895",
-  "db_url": "https://www.discogs.com/release/23026895",
-  "label_cat": "SPLP-0038",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
   "digital": false
  },
  {
@@ -10355,27 +9893,6 @@
   "discogs_id": "10454510",
   "db_url": "https://www.discogs.com/release/10454510",
   "label_cat": "STEREO VIP-20137 / 서라벌레코드사",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-Y05-02",
-  "genre": "가요",
-  "artist": "Yunsang",
-  "album": "Part 2",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "세련된 사운드 프로듀싱으로 유명한 윤상의 음반으로, 감각적인 팝·전자음악 요소가 돋보이는 작품이다.",
-  "discogs_id": "14644935",
-  "db_url": "https://www.discogs.com/release/14644935",
-  "label_cat": "STEREO JLS-1202584",
   "media": [
    "LP"
   ],
@@ -10428,6 +9945,27 @@
   "digital": false
  },
  {
+  "code": "LP-K-ㄱ01-03",
+  "genre": "가요",
+  "artist": "강수지",
+  "album": "2",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "강수지의 두 번째 앨범으로, 90년대 초 댄스·발라드 감성을 담은 음반이다.",
+  "discogs_id": "7000436",
+  "db_url": "https://www.discogs.com/release/7000436",
+  "label_cat": "SISW910314 / SIPA0005; With",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP우측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-K-ㄱ05-01",
   "genre": "가요",
   "artist": "공일오비",
@@ -10443,9 +9981,10 @@
    "LP"
   ],
   "locations": [
-   "LP중앙선반1열2층"
+   "LP중앙선반1열2층",
+   "LP중앙선반1열3층"
   ],
-  "copies": 1,
+  "copies": 2,
   "digital": false
  },
  {
@@ -10465,6 +10004,48 @@
   ],
   "locations": [
    "LP중앙선반1열2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㄱ05-03",
+  "genre": "가요",
+  "artist": "공일오비",
+  "album": "THE THIRD WAVE III",
+  "rep": "이젠 안녕",
+  "composer": "",
+  "performer": "",
+  "desc": "정석원과 장호일이 이끈 프로젝트 그룹 015B의 3집으로, 매 앨범 다른 객원보컬과 함께한 세련된 팝 사운드가 특징이다.",
+  "discogs_id": "11575180",
+  "db_url": "https://www.discogs.com/release/11575180",
+  "label_cat": "DYS-014 / 015B",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㄱ05-04",
+  "genre": "가요",
+  "artist": "공일오비",
+  "album": "4집",
+  "rep": "신인류의 사랑",
+  "composer": "",
+  "performer": "",
+  "desc": "015B의 4집으로, 객원보컬과 함께한 세련된 팝 사운드가 이어지는 음반이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열3층"
   ],
   "copies": 1,
   "digital": false
@@ -10744,6 +10325,27 @@
   "digital": false
  },
  {
+  "code": "LP-K-ㄱ22-01",
+  "genre": "가요",
+  "artist": "김광진",
+  "album": "It's Me",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "동물원 출신 김광진의 솔로 음반으로, 부드러운 보이스와 서정적인 멜로디가 특징이다. (동일 음반의 별도 사본)",
+  "discogs_id": "27730011",
+  "db_url": "https://www.discogs.com/release/27730011",
+  "label_cat": "CASTLEMUSIC 004",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-K-ㄱ25-01",
   "genre": "가요",
   "artist": "김동률",
@@ -10846,7 +10448,7 @@
    "LP중앙선반1열2층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-K-ㄱ29-05",
@@ -11374,6 +10976,48 @@
   "digital": false
  },
  {
+  "code": "LP-K-ㄴ02-01",
+  "genre": "가요",
+  "artist": "넥스트",
+  "album": "The return of NEXT part1",
+  "rep": "Lazenca, Save Us",
+  "composer": "",
+  "performer": "",
+  "desc": "신해철이 이끈 프로그레시브 록 밴드 넥스트의 음반으로, 실험적인 사운드와 개념적인 구성이 돋보이는 작품이다.",
+  "discogs_id": "4930282",
+  "db_url": "https://www.discogs.com/release/4930282",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㄴ02-02",
+  "genre": "가요",
+  "artist": "넥스트",
+  "album": "HOME",
+  "rep": "도시인, 기억을 걷는 여행",
+  "composer": "",
+  "performer": "",
+  "desc": "신해철이 이끈 밴드 N.EX.T의 데뷔 음반 'Home'으로, 도시적 삶을 그린 명곡 '도시인'이 수록된 프로그레시브 록 앨범이다.",
+  "discogs_id": "9553728",
+  "db_url": "https://www.discogs.com/release/9553728",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-K-ㄴ05-01",
   "genre": "가요",
   "artist": "노래를 찾는 사람들",
@@ -11542,6 +11186,27 @@
   "digital": false
  },
  {
+  "code": "LP-K-ㄷ10-01",
+  "genre": "가요",
+  "artist": "듀스",
+  "album": "듀스 포에버",
+  "rep": "여름 안에서, 나를 돌아봐",
+  "composer": "",
+  "performer": "",
+  "desc": "90년대 초 한국 댄스음악의 판도를 바꾼 듀오 듀스의 음반으로, 신선한 랩과 리듬감 있는 사운드가 특징이다.",
+  "discogs_id": "15732805",
+  "db_url": "https://www.discogs.com/release/15732805",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP우측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-K-ㄷ13-01",
   "genre": "가요",
   "artist": "들국화",
@@ -11647,7 +11312,7 @@
    "LP중앙선반1열2층"
   ],
   "copies": 2,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-K-ㅁ05-01",
@@ -11692,6 +11357,27 @@
   "digital": false
  },
  {
+  "code": "LP-K-ㅁ13-01",
+  "genre": "가요",
+  "artist": "미스터투",
+  "album": "그리고 시작(나의 토요일)",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "90년대 활동한 듀오 미스터투의 음반으로, 담백한 멜로디와 서정적인 가사가 어우러진 발라드 감성이 돋보인다.",
+  "discogs_id": "21549448",
+  "db_url": "https://www.discogs.com/release/21549448",
+  "label_cat": "STEREO JLS-1202593",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-K-ㅂ01-01",
   "genre": "가요",
   "artist": "박경환",
@@ -11710,7 +11396,7 @@
    "LP중앙선반1열2층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-K-ㅂ05-01",
@@ -11771,6 +11457,27 @@
   ],
   "locations": [
    "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅂ10-01",
+  "genre": "가요",
+  "artist": "방탄소년단",
+  "album": "Love Yourself 承 'Her'",
+  "rep": "DNA, Mic Drop",
+  "composer": "",
+  "performer": "",
+  "desc": "방탄소년단의 'Love Yourself' 시리즈 중 한 장으로, 청춘과 자기애를 주제로 한 팝·힙합 사운드가 담긴 음반이다.",
+  "discogs_id": "25393222",
+  "db_url": "https://musicbrainz.org/release-group/ee28c781-09a9-419b-9db5-f3ddf8fe8adb",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP침대옆"
   ],
   "copies": 1,
   "digital": false
@@ -12198,6 +11905,69 @@
   "digital": false
  },
  {
+  "code": "LP-K-ㅅ06-01",
+  "genre": "가요",
+  "artist": "서태지와 아이들",
+  "album": "II",
+  "rep": "하여가, 너와 함께한 시간 속에서",
+  "composer": "",
+  "performer": "",
+  "desc": "한국 대중음악의 흐름을 바꾼 서태지와 아이들의 2집으로, 랩과 록, 발라드를 넘나드는 파격적인 사운드가 특징이다.",
+  "discogs_id": "6289423",
+  "db_url": "https://www.discogs.com/release/6289423",
+  "label_cat": "SDU-0026",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅅ06-02",
+  "genre": "가요",
+  "artist": "서태지와 아이들",
+  "album": "III",
+  "rep": "발해를 꿈꾸며, 교실 이데아",
+  "composer": "",
+  "performer": "",
+  "desc": "서태지와 아이들의 3집으로, 국악적 색채와 록 사운드를 접목한 실험적인 타이틀곡 '발해를 꿈꾸며'가 담긴 음반이다.",
+  "discogs_id": "11510664",
+  "db_url": "https://www.discogs.com/release/11510664",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅅ06-03",
+  "genre": "가요",
+  "artist": "서태지와 아이들",
+  "album": "93 마지막 축제",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "서태지와 아이들의 실황을 담은 음반으로 추정되며, 현장의 열기와 에너지를 느낄 수 있는 라이브 성격의 앨범으로 보인다.",
+  "discogs_id": "16583592",
+  "db_url": "https://www.discogs.com/release/16583592",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-K-ㅅ09-01",
   "genre": "가요",
   "artist": "서태지와 아이들 (Seo Taiji and Boys)",
@@ -12214,6 +11984,48 @@
   ],
   "locations": [
    "LP중앙선반1열2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅅ10-01",
+  "genre": "가요",
+  "artist": "솔리드",
+  "album": "1995-1997",
+  "rep": "천생연분",
+  "composer": "",
+  "performer": "",
+  "desc": "1990년대 R&B·뉴잭스윙 사운드로 가요계에 새 바람을 일으킨 솔리드의 히트곡들을 담은 음반이다.",
+  "discogs_id": "19842451",
+  "db_url": "https://www.discogs.com/release/19842451",
+  "label_cat": "MRCD1817 / MUSIC DESIGN",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅅ10-02",
+  "genre": "가요",
+  "artist": "솔리드",
+  "album": "1집",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "한국 R&B의 선구자로 꼽히는 그룹 솔리드의 데뷔 음반으로, 세련된 리듬감과 그루브가 돋보이는 곡들이 담겨 있다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "SPDR-381 / 서울음반",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
   ],
   "copies": 1,
   "digital": false
@@ -12938,6 +12750,27 @@
   "digital": false
  },
  {
+  "code": "LP-K-ㅇ25-11",
+  "genre": "가요",
+  "artist": "윤상",
+  "album": "Part 2",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "세련된 사운드 프로듀싱으로 유명한 윤상의 음반으로, 감각적인 팝·전자음악 요소가 돋보이는 작품이다.",
+  "discogs_id": "14644935",
+  "db_url": "https://www.discogs.com/release/14644935",
+  "label_cat": "STEREO JLS-1202584",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-K-ㅇ28-01",
   "genre": "가요",
   "artist": "윤종신",
@@ -13124,7 +12957,7 @@
    "LP중앙선반1열1층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-K-ㅇ43-01",
@@ -13250,7 +13083,7 @@
    "LP중앙선반1열1층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-K-ㅇ49-01",
@@ -13335,7 +13168,7 @@
    "LP침대옆"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-K-ㅇ49-05",
@@ -13378,7 +13211,7 @@
    "LP보관박스1"
   ],
   "copies": 2,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-K-ㅇ52-01",
@@ -13593,6 +13426,48 @@
   "digital": false
  },
  {
+  "code": "LP-K-ㅇ74-01",
+  "genre": "가요",
+  "artist": "아이유",
+  "album": "REMAKE ALBUM",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "아이유가 옛 가요 명곡들을 재해석한 리메이크 앨범 '꽃갈피'로, 세대를 아우르는 감성이 돋보인다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅇ74-02",
+  "genre": "가요",
+  "artist": "아이유",
+  "album": "꽃갈피 이야기 (Remake Album)",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "아이유가 세대를 아우르는 한국 명곡들을 자신만의 스타일로 재해석한 리메이크 음반이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "kakao / EDAM",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP침대옆"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-K-ㅈ01-01",
   "genre": "가요",
   "artist": "자우림",
@@ -13614,17 +13489,17 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅈ05-01",
+  "code": "LP-K-ㅈ01-02",
   "genre": "가요",
-  "artist": "장필순",
-  "album": "best",
-  "rep": "제비꽃, 나의 외로움이 널 부를때",
+  "artist": "자우림",
+  "album": "Goodbye, grief.",
+  "rep": "",
   "composer": "",
   "performer": "",
-  "desc": "포크 감성의 싱어송라이터 장필순의 베스트 음반으로, 담담하고 온화한 보컬이 돋보인다.",
-  "discogs_id": "29512387",
-  "db_url": "https://www.discogs.com/release/29512387",
-  "label_cat": "",
+  "desc": "한국 얼터너티브 록밴드 자우림의 음반으로, 개성 강한 보컬과 감각적인 록 사운드가 특징이다.",
+  "discogs_id": "17821063",
+  "db_url": "https://www.discogs.com/release/17821063",
+  "label_cat": "Interpark / INT0198",
   "media": [
    "LP"
   ],
@@ -13632,6 +13507,28 @@
    "LP침대옆"
   ],
   "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅈ05-01",
+  "genre": "가요",
+  "artist": "장필순",
+  "album": "Best",
+  "rep": "제비꽃, 나의 외로움이 널 부를 때",
+  "composer": "",
+  "performer": "",
+  "desc": "장필순의 베스트 음반으로, 담백하고 내면적인 포크·어쿠스틱 감성의 곡들을 모았다.",
+  "discogs_id": "17534572",
+  "db_url": "https://www.discogs.com/release/17534572",
+  "label_cat": "SPLP-0033",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열2층",
+   "LP침대옆"
+  ],
+  "copies": 2,
   "digital": false
  },
  {
@@ -14025,7 +13922,7 @@
  {
   "code": "LP-K-ㅋ05-01",
   "genre": "가요",
-  "artist": "클래지 콰이",
+  "artist": "클래지콰이",
   "album": "instant pig",
   "rep": "Love Mode",
   "composer": "",
@@ -14038,7 +13935,29 @@
    "LP"
   ],
   "locations": [
+   "LP우측선반1층",
    "LP중앙선반1열3층"
+  ],
+  "copies": 2,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅌ04-03",
+  "genre": "가요",
+  "artist": "토이",
+  "album": "내마음속에",
+  "rep": "내 마음 속에",
+  "composer": "",
+  "performer": "",
+  "desc": "유희열이 이끌었던 프로젝트 그룹 토이의 앨범으로, 서정적인 멜로디와 담백한 가사가 돋보이는 발라드 감성의 작품이다.",
+  "discogs_id": "23026895",
+  "db_url": "https://www.discogs.com/release/23026895",
+  "label_cat": "SPLP-0038",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
   ],
   "copies": 1,
   "digital": false
@@ -14062,6 +13981,27 @@
    "LP중앙선반1열3층"
   ],
   "copies": 2,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅍ02-01",
+  "genre": "가요",
+  "artist": "페퍼톤스",
+  "album": "Sounds Good!",
+  "rep": "연애소설",
+  "composer": "",
+  "performer": "",
+  "desc": "발랄하고 경쾌한 사운드로 유명한 인디 팝 듀오 페퍼톤스의 음반으로, 청량하고 유쾌한 팝 감성이 가득하다.",
+  "discogs_id": "37623498",
+  "db_url": "https://musicbrainz.org/release-group/49cdb6e1-8cda-497d-9ef3-2e4f46508c2a",
+  "label_cat": "VLP012-01",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP침대옆"
+  ],
+  "copies": 1,
   "digital": false
  },
  {
@@ -15241,7 +15181,7 @@
    "LP좌측선반1층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-O-Y01-02",
@@ -15327,7 +15267,7 @@
    "LP우측선반1층"
   ],
   "copies": 2,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-O-ㄱ05-01",
@@ -15684,7 +15624,7 @@
    "LP중앙선반2열1층"
   ],
   "copies": 3,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-P-B05-03",
@@ -15747,7 +15687,7 @@
    "LP중앙선반2열1층"
   ],
   "copies": 2,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-P-B05-06",
@@ -16021,7 +15961,7 @@
    "LP중앙선반2열1층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-P-Q01-01",
@@ -16063,7 +16003,7 @@
    "LP중앙선반2열1층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-P-S01-01",
@@ -16420,7 +16360,7 @@
    "LP중앙선반2열3층"
   ],
   "copies": 1,
-  "digital": false
+  "digital": true
  },
  {
   "code": "LP-T-A09-17",
