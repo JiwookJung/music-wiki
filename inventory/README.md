@@ -9,6 +9,14 @@
 - `scripts/` — 보강(enrich_mb/discogs_enrich/discogs_loose/enrich_v2)·조립(build_v3_xlsx) 스크립트
   - 재생성: `data/lpcd_v3.json` 경로를 맞춘 뒤 `python scripts/build_v3_xlsx.py`
 
+### 정렬명 열 (OST 대응)
+
+`정렬명` 이 채워져 있으면 **분류코드의 아티스트 자리에 그 이름을 쓴다**. 비어 있으면 아티스트.
+OST는 작곡가가 아니라 **작품(영화·드라마) 제목**으로 찾는 게 자연스러워서 도입했다.
+예) `Ennio Morricone / The Mission - Original Soundtrack` → 정렬명 `The Mission` → `LP-O-M04-01`.
+같은 작품이면 아티스트 표기가 달라도 한 코드로 모인다(Love Story: Various·Francis Lai → `LP-O-L06`).
+경음악(조지 윈스턴·이루마 등)은 비워두면 기존대로 연주자 기준.
+
 분류코드 체계: **매체접두(LP-/CD-)** + 장르문자(C/CG/G/J/T/W/P/K/KN/O/X) + 아티스트초성·번호(간격3~4) + 앨범번호.
 예) `LP-J-B01-02`(재즈 Bill Evans 2번째), `CD-C-B0-G01-01`(클래식 Bach·Gould).
 라벨 시트 3종: `라벨인쇄-LP`(724) · `라벨인쇄-CD`(200) · `라벨인쇄-전체`(924, LP→CD 순).

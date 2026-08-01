@@ -2457,6 +2457,48 @@
   "digital": false
  },
  {
+  "code": "CD-O-G05-01",
+  "genre": "OST·경음악",
+  "artist": "Nino Rota",
+  "album": "The Godfather (Original Motion Picture Soundtrack)",
+  "rep": "대부 왈츠",
+  "composer": "",
+  "performer": "",
+  "desc": "니노 로타가 작곡한 '대부' 오리지널 사운드트랙으로, 웅장하면서도 애수 어린 주제곡이 인상적이다.",
+  "discogs_id": "1536418",
+  "db_url": "https://www.discogs.com/release/1536418",
+  "label_cat": "MCA MCAD-10231",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-O-G09-01",
+  "genre": "OST·경음악",
+  "artist": "Richard Gold Orchestra",
+  "album": "Golden Screen Music Collection",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "영화음악을 오케스트라로 재해석한 경음악 컴필레이션으로, 고전 영화의 정취를 관현악 편곡으로 즐길 수 있다.",
+  "discogs_id": "8629212",
+  "db_url": "https://www.discogs.com/release/8629212",
+  "label_cat": "SIG-14 SEIL",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "CD-O-H05-01",
   "genre": "OST·경음악",
   "artist": "Henry Mancini",
@@ -2473,27 +2515,6 @@
   ],
   "locations": [
    "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-O-J05-01",
-  "genre": "OST·경음악",
-  "artist": "Joe Hisaishi",
-  "album": "My Lost City",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "미야자키 하야오 애니메이션 음악으로 잘 알려진 작곡가 히사이시 조의 음반으로, 서정적이고 영화적인 오케스트레이션이 돋보인다.",
-  "discogs_id": "11710125",
-  "db_url": "https://www.discogs.com/release/11710125",
-  "label_cat": "JVC RJVD-002",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
   ],
   "copies": 1,
   "digital": false
@@ -2520,43 +2541,22 @@
   "digital": false
  },
  {
-  "code": "CD-O-N05-01",
+  "code": "CD-O-M12-01",
   "genre": "OST·경음악",
-  "artist": "Nino Rota",
-  "album": "The Godfather (Original Motion Picture Soundtrack)",
-  "rep": "대부 왈츠",
-  "composer": "",
-  "performer": "",
-  "desc": "니노 로타가 작곡한 '대부' 오리지널 사운드트랙으로, 웅장하면서도 애수 어린 주제곡이 인상적이다.",
-  "discogs_id": "1536418",
-  "db_url": "https://www.discogs.com/release/1536418",
-  "label_cat": "MCA MCAD-10231",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-O-R05-01",
-  "genre": "OST·경음악",
-  "artist": "Richard Gold Orchestra",
-  "album": "Golden Screen Music Collection",
+  "artist": "Joe Hisaishi",
+  "album": "My Lost City",
   "rep": "",
   "composer": "",
   "performer": "",
-  "desc": "영화음악을 오케스트라로 재해석한 경음악 컴필레이션으로, 고전 영화의 정취를 관현악 편곡으로 즐길 수 있다.",
-  "discogs_id": "8629212",
-  "db_url": "https://www.discogs.com/release/8629212",
-  "label_cat": "SIG-14 SEIL",
+  "desc": "미야자키 하야오 애니메이션 음악으로 잘 알려진 작곡가 히사이시 조의 음반으로, 서정적이고 영화적인 오케스트레이션이 돋보인다.",
+  "discogs_id": "11710125",
+  "db_url": "https://www.discogs.com/release/11710125",
+  "label_cat": "JVC RJVD-002",
   "media": [
    "CD"
   ],
   "locations": [
-   "CD아래층"
+   "CD윗층"
   ],
   "copies": 1,
   "digital": false
@@ -14236,6 +14236,48 @@
   "digital": false
  },
  {
+  "code": "LP-O-A02-01",
+  "genre": "OST·경음악",
+  "artist": "Neville Marriner, Academy Of St. Martin-In-the-Fields",
+  "album": "Amadeus - Original Sound Track",
+  "rep": "Requiem in D minor (Lacrimosa)",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 '아마데우스'의 사운드트랙으로, 모차르트 명곡들을 네빌 매리너의 지휘로 담았다.",
+  "discogs_id": "2170959",
+  "db_url": "https://www.discogs.com/release/2170959",
+  "label_cat": "TJIA-10012; WAM 1701",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-A03-01",
+  "genre": "OST·경음악",
+  "artist": "Francis Lai",
+  "album": "A Man and a Woman - Original Motion Picture Soundtrack",
+  "rep": "Un homme et une femme (Theme)",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 '남과 여'의 사운드트랙으로, 프랑시스 레이의 로맨틱한 테마곡이 대표적이다.",
+  "discogs_id": "6560526",
+  "db_url": "https://www.discogs.com/release/6560526",
+  "label_cat": "STEREO/OLE. 271 (UAS.5147)",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-O-A05-01",
   "genre": "OST·경음악",
   "artist": "Andre Gagnon",
@@ -14320,7 +14362,7 @@
   "digital": false
  },
  {
-  "code": "LP-O-E01-02",
+  "code": "LP-O-C02-01",
   "genre": "OST·경음악",
   "artist": "Ennio Morricone",
   "album": "Cinema Paradiso - Original Soundtrack Recording",
@@ -14362,106 +14404,22 @@
   "digital": false
  },
  {
-  "code": "LP-O-E01-04",
+  "code": "LP-O-F04-01",
   "genre": "OST·경음악",
-  "artist": "Ennio Morricone",
-  "album": "Once Upon a Time in America - Original Motion Picture Soundtrack",
-  "rep": "Deborah's Theme",
+  "artist": "John Williams, Isaac Stern",
+  "album": "Fiddler on the Roof (Original Motion Picture Soundtrack)",
+  "rep": "If I Were a Rich Man, Sunrise Sunset",
   "composer": "",
   "performer": "",
-  "desc": "영화 '원스 어폰 어 타임 인 아메리카'의 사운드트랙으로, 엔니오 모리꼬네 특유의 애수 어린 선율이 돋보인다.",
-  "discogs_id": "1414259",
-  "db_url": "https://www.discogs.com/release/1414259",
-  "label_cat": "Mercury 838 697-1",
+  "desc": "뮤지컬 영화 《지붕 위의 바이올린》 오리지널 사운드트랙으로, 유대 민속 선율과 바이올린 연주가 인상적인 스코어를 담고 있다.",
+  "discogs_id": "1621670",
+  "db_url": "https://www.discogs.com/release/1621670",
+  "label_cat": "United Artists / STEREO UAD 00011/2",
   "media": [
    "LP"
   ],
   "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-E01-05",
-  "genre": "OST·경음악",
-  "artist": "Ennio Morricone",
-  "album": "The Mission - Original Soundtrack",
-  "rep": "Gabriel's Oboe",
-  "composer": "",
-  "performer": "",
-  "desc": "영화 '미션'의 사운드트랙으로, 엔니오 모리꼬네의 웅장하고 영적인 오보에 선율이 인상적인 명반이다.",
-  "discogs_id": "1315543",
-  "db_url": "https://www.discogs.com/release/1315543",
-  "label_cat": "YVPL 109/V 2402",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-E05-01",
-  "genre": "OST·경음악",
-  "artist": "Eric Serra",
-  "album": "Le Grand Bleu (The Big Blue) - Original Soundtrack",
-  "rep": "Le Grand Bleu (Main Theme)",
-  "composer": "",
-  "performer": "",
-  "desc": "뤽 베송 영화 '그랑블루'의 사운드트랙으로, 에릭 세라의 몽환적인 신스 음악이 특징이다.",
-  "discogs_id": "11006321",
-  "db_url": "https://www.discogs.com/release/11006321",
-  "label_cat": "Virgin Records Ltd; YRPL-0097/V 2541",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-F01-01",
-  "genre": "OST·경음악",
-  "artist": "Francis Lai",
-  "album": "A Man and a Woman - Original Motion Picture Soundtrack",
-  "rep": "Un homme et une femme (Theme)",
-  "composer": "",
-  "performer": "",
-  "desc": "영화 '남과 여'의 사운드트랙으로, 프랑시스 레이의 로맨틱한 테마곡이 대표적이다.",
-  "discogs_id": "6560526",
-  "db_url": "https://www.discogs.com/release/6560526",
-  "label_cat": "STEREO/OLE. 271 (UAS.5147)",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-F01-02",
-  "genre": "OST·경음악",
-  "artist": "Francis Lai",
-  "album": "Love Story - Original Motion Picture Soundtrack",
-  "rep": "Where Do I Begin (Love Story Theme)",
-  "composer": "",
-  "performer": "",
-  "desc": "영화 '러브 스토리'의 사운드트랙으로, 작곡가 프랑시스 레이가 남긴 애잔한 테마 선율이 유명하다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
+   "LP침대옆"
   ],
   "copies": 1,
   "digital": false
@@ -14490,6 +14448,69 @@
   "digital": false
  },
  {
+  "code": "LP-O-G13-01",
+  "genre": "OST·경음악",
+  "artist": "Simon and Garfunkel",
+  "album": "The Graduate - Original Sound Track Recording",
+  "rep": "The Sound of Silence, Mrs. Robinson",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 '졸업'의 사운드트랙으로, 사이먼 앤 가펑클의 명곡들이 담긴 포크팝 고전이다.",
+  "discogs_id": "1811374",
+  "db_url": "https://www.discogs.com/release/1811374",
+  "label_cat": "SOPM 104",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-G17-01",
+  "genre": "OST·경음악",
+  "artist": "Various",
+  "album": "Great Screen Music Vol. 3",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "영화음악 명곡들을 오케스트라로 편곡해 모은 경음악 컴필레이션이다.",
+  "discogs_id": "10550227",
+  "db_url": "https://www.discogs.com/release/10550227",
+  "label_cat": "STEREO/SEP-30A",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP보관박스1"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-G21-01",
+  "genre": "OST·경음악",
+  "artist": "Pete Moore Pops Orchestra",
+  "album": "Great Screen Music Vol. I",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "영화음악의 명장면들을 오케스트라 연주로 재현한 경음악 컴필레이션 음반이다.",
+  "discogs_id": "11580692",
+  "db_url": "https://www.discogs.com/release/11580692",
+  "label_cat": "STEREO/SEP-303",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP보관박스1"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-O-H01-01",
   "genre": "OST·경음악",
   "artist": "Hans Zimmer / Elton John",
@@ -14511,7 +14532,49 @@
   "digital": false
  },
  {
-  "code": "LP-O-J01-01",
+  "code": "LP-O-H02-01",
+  "genre": "OST·경음악",
+  "artist": "Various",
+  "album": "Happy Together - Original Motion Picture Soundtrack",
+  "rep": "Cucurrucucú Paloma",
+  "composer": "",
+  "performer": "",
+  "desc": "왕가위 감독 영화 '해피 투게더'의 사운드트랙으로, 라틴 재즈풍의 감각적인 곡들이 담겼다.",
+  "discogs_id": "3200911",
+  "db_url": "https://www.discogs.com/release/3200911",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-H02-02",
+  "genre": "OST·경음악",
+  "artist": "왕가위",
+  "album": "Happy Together",
+  "rep": "Cucurrucucu Paloma, Happy Together",
+  "composer": "",
+  "performer": "",
+  "desc": "왕가위 감독 영화 '해피 투게더'의 사운드트랙으로 추정되며, 라틴풍 재즈 선율이 인상적인 음반이다.",
+  "discogs_id": "1745230",
+  "db_url": "https://www.discogs.com/release/1745230",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP우측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-J02-01",
   "genre": "OST·경음악",
   "artist": "Jean-Claude Petit",
   "album": "Jean de Florette / Manon des Sources - Original Soundtrack",
@@ -14574,69 +14637,6 @@
   "digital": false
  },
  {
-  "code": "LP-O-J13-01",
-  "genre": "OST·경음악",
-  "artist": "John Williams, Isaac Stern",
-  "album": "Fiddler on the Roof (Original Motion Picture Soundtrack)",
-  "rep": "If I Were a Rich Man, Sunrise Sunset",
-  "composer": "",
-  "performer": "",
-  "desc": "뮤지컬 영화 《지붕 위의 바이올린》 오리지널 사운드트랙으로, 유대 민속 선율과 바이올린 연주가 인상적인 스코어를 담고 있다.",
-  "discogs_id": "1621670",
-  "db_url": "https://www.discogs.com/release/1621670",
-  "label_cat": "United Artists / STEREO UAD 00011/2",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP침대옆"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-J17-01",
-  "genre": "OST·경음악",
-  "artist": "Justin Hurwitz",
-  "album": "La La Land - Original Motion Picture Soundtrack",
-  "rep": "City of Stars",
-  "composer": "",
-  "performer": "",
-  "desc": "영화 '라라랜드'의 사운드트랙으로, 재즈 감성의 경쾌하고 로맨틱한 멜로디가 돋보인다.",
-  "discogs_id": "9713132",
-  "db_url": "https://www.discogs.com/release/9713132",
-  "label_cat": "Interscope Records; B0026312-01",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-J17-02",
-  "genre": "OST·경음악",
-  "artist": "Justin Hurwitz",
-  "album": "Whiplash",
-  "rep": "Caravan",
-  "composer": "",
-  "performer": "",
-  "desc": "영화 '위플래쉬'의 음악을 맡은 저스틴 허위츠의 사운드트랙으로, 긴장감 넘치는 드럼과 빅밴드 재즈가 극의 몰입도를 높인다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-O-K01-01",
   "genre": "OST·경음악",
   "artist": "Kristen Anderson-Lopez & Robert Lopez",
@@ -14679,7 +14679,28 @@
   "digital": false
  },
  {
-  "code": "LP-O-M01-01",
+  "code": "LP-O-L02-01",
+  "genre": "OST·경음악",
+  "artist": "Justin Hurwitz",
+  "album": "La La Land - Original Motion Picture Soundtrack",
+  "rep": "City of Stars",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 '라라랜드'의 사운드트랙으로, 재즈 감성의 경쾌하고 로맨틱한 멜로디가 돋보인다.",
+  "discogs_id": "9713132",
+  "db_url": "https://www.discogs.com/release/9713132",
+  "label_cat": "Interscope Records; B0026312-01",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-L03-01",
   "genre": "OST·경음악",
   "artist": "Mark Knopfler",
   "album": "Last Exit to Brooklyn - Original Soundtrack",
@@ -14700,17 +14721,144 @@
   "digital": false
  },
  {
-  "code": "LP-O-N01-01",
+  "code": "LP-O-L04-01",
   "genre": "OST·경음악",
-  "artist": "Neville Marriner, Academy Of St. Martin-In-the-Fields",
-  "album": "Amadeus - Original Sound Track",
-  "rep": "Requiem in D minor (Lacrimosa)",
+  "artist": "Eric Serra",
+  "album": "Le Grand Bleu (The Big Blue) - Original Soundtrack",
+  "rep": "Le Grand Bleu (Main Theme)",
   "composer": "",
   "performer": "",
-  "desc": "영화 '아마데우스'의 사운드트랙으로, 모차르트 명곡들을 네빌 매리너의 지휘로 담았다.",
-  "discogs_id": "2170959",
-  "db_url": "https://www.discogs.com/release/2170959",
-  "label_cat": "TJIA-10012; WAM 1701",
+  "desc": "뤽 베송 영화 '그랑블루'의 사운드트랙으로, 에릭 세라의 몽환적인 신스 음악이 특징이다.",
+  "discogs_id": "11006321",
+  "db_url": "https://www.discogs.com/release/11006321",
+  "label_cat": "Virgin Records Ltd; YRPL-0097/V 2541",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-L05-01",
+  "genre": "OST·경음악",
+  "artist": "Remedios",
+  "album": "Love Letter - Original Soundtrack",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 '러브레터'의 정서를 담은 사운드트랙으로 추정되며, 잔잔하고 서정적인 곡들로 구성됐다.",
+  "discogs_id": "21528025",
+  "db_url": "https://www.discogs.com/release/21528025",
+  "label_cat": "NAS-2079",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP우측선반2층",
+   "LP좌측선반1층"
+  ],
+  "copies": 2,
+  "digital": false
+ },
+ {
+  "code": "LP-O-L06-01",
+  "genre": "OST·경음악",
+  "artist": "Various",
+  "album": "Love Story - Original Motion Picture Soundtrack",
+  "rep": "Where Do I Begin (Love Story Theme)",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 '러브 스토리'의 사운드트랙으로, 프란시스 레이의 애잔한 테마 선율이 유명하다.",
+  "discogs_id": "22065931",
+  "db_url": "https://www.discogs.com/release/22065931",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-L06-01",
+  "genre": "OST·경음악",
+  "artist": "Francis Lai",
+  "album": "Love Story - Original Motion Picture Soundtrack",
+  "rep": "Where Do I Begin (Love Story Theme)",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 '러브 스토리'의 사운드트랙으로, 작곡가 프랑시스 레이가 남긴 애잔한 테마 선율이 유명하다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-M04-01",
+  "genre": "OST·경음악",
+  "artist": "Ennio Morricone",
+  "album": "The Mission - Original Soundtrack",
+  "rep": "Gabriel's Oboe",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 '미션'의 사운드트랙으로, 엔니오 모리꼬네의 웅장하고 영적인 오보에 선율이 인상적인 명반이다.",
+  "discogs_id": "1315543",
+  "db_url": "https://www.discogs.com/release/1315543",
+  "label_cat": "YVPL 109/V 2402",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-M08-01",
+  "genre": "OST·경음악",
+  "artist": "Ryuichi Sakamoto",
+  "album": "Music For Film",
+  "rep": "Merry Christmas, Mr. Lawrence",
+  "composer": "",
+  "performer": "",
+  "desc": "영화음악의 거장 류이치 사카모토의 곡들을 오케스트라로 재해석한 음반으로, 서정적이고 웅장한 선율이 인상적이다.",
+  "discogs_id": "27380010",
+  "db_url": "https://musicbrainz.org/release-group/7c976e20-f96f-4406-95fd-4fb8663fda2f",
+  "label_cat": "SILLP1524",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반2열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-O04-01",
+  "genre": "OST·경음악",
+  "artist": "Ennio Morricone",
+  "album": "Once Upon a Time in America - Original Motion Picture Soundtrack",
+  "rep": "Deborah's Theme",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 '원스 어폰 어 타임 인 아메리카'의 사운드트랙으로, 엔니오 모리꼬네 특유의 애수 어린 선율이 돋보인다.",
+  "discogs_id": "1414259",
+  "db_url": "https://www.discogs.com/release/1414259",
+  "label_cat": "Mercury 838 697-1",
   "media": [
    "LP"
   ],
@@ -14763,49 +14911,6 @@
   "digital": false
  },
  {
-  "code": "LP-O-P05-01",
-  "genre": "OST·경음악",
-  "artist": "Pete Moore Pops Orchestra",
-  "album": "Great Screen Music Vol. I",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "영화음악의 명장면들을 오케스트라 연주로 재현한 경음악 컴필레이션 음반이다.",
-  "discogs_id": "11580692",
-  "db_url": "https://www.discogs.com/release/11580692",
-  "label_cat": "STEREO/SEP-303",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP보관박스1"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-R01-01",
-  "genre": "OST·경음악",
-  "artist": "Remedios",
-  "album": "Love Letter - Original Soundtrack",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "영화 '러브레터'의 정서를 담은 사운드트랙으로 추정되며, 잔잔하고 서정적인 곡들로 구성됐다.",
-  "discogs_id": "21528025",
-  "db_url": "https://www.discogs.com/release/21528025",
-  "label_cat": "NAS-2079",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반2층",
-   "LP좌측선반1층"
-  ],
-  "copies": 2,
-  "digital": false
- },
- {
   "code": "LP-O-R09-01",
   "genre": "OST·경음악",
   "artist": "Risë Stevens, Brian Sullivan And The Columbus Boychoir With The Firestone Orchestra And Chorus",
@@ -14817,48 +14922,6 @@
   "discogs_id": "2033947",
   "db_url": "https://www.discogs.com/release/2033947",
   "label_cat": "STEREO 8215041 / 0602567988724",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반2열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-R13-01",
-  "genre": "OST·경음악",
-  "artist": "Rodgers And Hammerstein",
-  "album": "The Sound of Music - Original Soundtrack Recording",
-  "rep": "Do-Re-Mi, Edelweiss",
-  "composer": "",
-  "performer": "",
-  "desc": "뮤지컬 영화 '사운드 오브 뮤직'의 오리지널 사운드트랙으로, 널리 사랑받은 뮤지컬 넘버들이 수록됐다.",
-  "discogs_id": "653078",
-  "db_url": "https://www.discogs.com/release/653078",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-R17-01",
-  "genre": "OST·경음악",
-  "artist": "Ryuichi Sakamoto",
-  "album": "Music For Film",
-  "rep": "Merry Christmas, Mr. Lawrence",
-  "composer": "",
-  "performer": "",
-  "desc": "영화음악의 거장 류이치 사카모토의 곡들을 오케스트라로 재해석한 음반으로, 서정적이고 웅장한 선율이 인상적이다.",
-  "discogs_id": "27380010",
-  "db_url": "https://musicbrainz.org/release-group/7c976e20-f96f-4406-95fd-4fb8663fda2f",
-  "label_cat": "SILLP1524",
   "media": [
    "LP"
   ],
@@ -14890,17 +14953,17 @@
   "digital": false
  },
  {
-  "code": "LP-O-S01-01",
+  "code": "LP-O-S02-01",
   "genre": "OST·경음악",
-  "artist": "Simon and Garfunkel",
-  "album": "The Graduate - Original Sound Track Recording",
-  "rep": "The Sound of Silence, Mrs. Robinson",
+  "artist": "Rodgers And Hammerstein",
+  "album": "The Sound of Music - Original Soundtrack Recording",
+  "rep": "Do-Re-Mi, Edelweiss",
   "composer": "",
   "performer": "",
-  "desc": "영화 '졸업'의 사운드트랙으로, 사이먼 앤 가펑클의 명곡들이 담긴 포크팝 고전이다.",
-  "discogs_id": "1811374",
-  "db_url": "https://www.discogs.com/release/1811374",
-  "label_cat": "SOPM 104",
+  "desc": "뮤지컬 영화 '사운드 오브 뮤직'의 오리지널 사운드트랙으로, 널리 사랑받은 뮤지컬 넘버들이 수록됐다.",
+  "discogs_id": "653078",
+  "db_url": "https://www.discogs.com/release/653078",
+  "label_cat": "",
   "media": [
    "LP"
   ],
@@ -14953,90 +15016,6 @@
   "digital": false
  },
  {
-  "code": "LP-O-V01-02",
-  "genre": "OST·경음악",
-  "artist": "Various",
-  "album": "Great Screen Music Vol. 3",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "영화음악 명곡들을 오케스트라로 편곡해 모은 경음악 컴필레이션이다.",
-  "discogs_id": "10550227",
-  "db_url": "https://www.discogs.com/release/10550227",
-  "label_cat": "STEREO/SEP-30A",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP보관박스1"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-V01-03",
-  "genre": "OST·경음악",
-  "artist": "Various",
-  "album": "Happy Together - Original Motion Picture Soundtrack",
-  "rep": "Cucurrucucú Paloma",
-  "composer": "",
-  "performer": "",
-  "desc": "왕가위 감독 영화 '해피 투게더'의 사운드트랙으로, 라틴 재즈풍의 감각적인 곡들이 담겼다.",
-  "discogs_id": "3200911",
-  "db_url": "https://www.discogs.com/release/3200911",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-V01-04",
-  "genre": "OST·경음악",
-  "artist": "Various",
-  "album": "Hospital Playlist Season 2 (슬기로운 의사생활 시즌2) - Original Sound Track",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "드라마 '슬기로운 의사생활' 시즌2의 배경음악을 모은 OST로, 잔잔한 어쿠스틱 감성이 돋보인다.",
-  "discogs_id": "20779840",
-  "db_url": "https://www.discogs.com/release/20779840",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-V01-05",
-  "genre": "OST·경음악",
-  "artist": "Various",
-  "album": "Hospital Playlist (슬기로운 의사생활) - Original Sound Track",
-  "rep": "아로하 (Aloha)",
-  "composer": "",
-  "performer": "",
-  "desc": "드라마 '슬기로운 의사생활'의 오리지널 사운드트랙으로, 따뜻하고 편안한 곡들이 중심을 이룬다.",
-  "discogs_id": "20779840",
-  "db_url": "https://www.discogs.com/release/20779840",
-  "label_cat": "S+ONE",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-O-V01-08",
   "genre": "OST·경음악",
   "artist": "Various",
@@ -15058,27 +15037,6 @@
   "digital": false
  },
  {
-  "code": "LP-O-V01-09",
-  "genre": "OST·경음악",
-  "artist": "Various",
-  "album": "Love Story - Original Motion Picture Soundtrack",
-  "rep": "Where Do I Begin (Love Story Theme)",
-  "composer": "",
-  "performer": "",
-  "desc": "영화 '러브 스토리'의 사운드트랙으로, 프란시스 레이의 애잔한 테마 선율이 유명하다.",
-  "discogs_id": "22065931",
-  "db_url": "https://www.discogs.com/release/22065931",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-O-V01-10",
   "genre": "OST·경음악",
   "artist": "Various",
@@ -15095,48 +15053,6 @@
   ],
   "locations": [
    "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-V01-12",
-  "genre": "OST·경음악",
-  "artist": "Various",
-  "album": "갯마을 차차차 OST",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "드라마 《갯마을 차차차》의 오리지널 사운드트랙으로, 다양한 아티스트들이 참여해 따뜻하고 잔잔한 감성을 담아낸 OST 음반이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-V01-13",
-  "genre": "OST·경음악",
-  "artist": "Various",
-  "album": "알고있지만 OST",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "드라마 《알고 있지만,》의 오리지널 사운드트랙으로, 청춘의 섬세한 감정선을 담은 곡들로 구성되어 있다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반1층"
   ],
   "copies": 1,
   "digital": false
@@ -15182,6 +15098,27 @@
   ],
   "copies": 1,
   "digital": true
+ },
+ {
+  "code": "LP-O-W04-01",
+  "genre": "OST·경음악",
+  "artist": "Justin Hurwitz",
+  "album": "Whiplash",
+  "rep": "Caravan",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 '위플래쉬'의 음악을 맡은 저스틴 허위츠의 사운드트랙으로, 긴장감 넘치는 드럼과 빅밴드 재즈가 극의 몰입도를 높인다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
  },
  {
   "code": "LP-O-Y01-02",
@@ -15312,6 +15249,27 @@
   "digital": false
  },
  {
+  "code": "LP-O-ㄱ10-01",
+  "genre": "OST·경음악",
+  "artist": "Various",
+  "album": "갯마을 차차차 OST",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "드라마 《갯마을 차차차》의 오리지널 사운드트랙으로, 다양한 아티스트들이 참여해 따뜻하고 잔잔한 감성을 담아낸 OST 음반이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP우측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-O-ㄴ01-01",
   "genre": "OST·경음악",
   "artist": "느낌",
@@ -15333,6 +15291,27 @@
   "digital": false
  },
  {
+  "code": "LP-O-ㅂ04-01",
+  "genre": "OST·경음악",
+  "artist": "조성우",
+  "album": "봄날은 간다 OST",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 《봄날은 간다》의 오리지널 스코어로, 봄날의 정서를 담은 잔잔하고 서정적인 선율이 인상적인 음반이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "SPLP 0055; Sail Music",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP우측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-O-ㅅ01-01",
   "genre": "OST·경음악",
   "artist": "스물다섯 스물하나",
@@ -15349,6 +15328,48 @@
   ],
   "locations": [
    "LP중앙선반1열2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-ㅅ05-01",
+  "genre": "OST·경음악",
+  "artist": "Various",
+  "album": "Hospital Playlist (슬기로운 의사생활) - Original Sound Track",
+  "rep": "아로하 (Aloha)",
+  "composer": "",
+  "performer": "",
+  "desc": "드라마 '슬기로운 의사생활'의 오리지널 사운드트랙으로, 따뜻하고 편안한 곡들이 중심을 이룬다.",
+  "discogs_id": "20779840",
+  "db_url": "https://www.discogs.com/release/20779840",
+  "label_cat": "S+ONE",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-O-ㅅ09-01",
+  "genre": "OST·경음악",
+  "artist": "Various",
+  "album": "Hospital Playlist Season 2 (슬기로운 의사생활 시즌2) - Original Sound Track",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "드라마 '슬기로운 의사생활' 시즌2의 배경음악을 모은 OST로, 잔잔한 어쿠스틱 감성이 돋보인다.",
+  "discogs_id": "20779840",
+  "db_url": "https://www.discogs.com/release/20779840",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
   ],
   "copies": 1,
   "digital": false
@@ -15396,27 +15417,6 @@
   "digital": false
  },
  {
-  "code": "LP-O-ㅇ05-01",
-  "genre": "OST·경음악",
-  "artist": "왕가위",
-  "album": "Happy Together",
-  "rep": "Cucurrucucu Paloma, Happy Together",
-  "composer": "",
-  "performer": "",
-  "desc": "왕가위 감독 영화 '해피 투게더'의 사운드트랙으로 추정되며, 라틴풍 재즈 선율이 인상적인 음반이다.",
-  "discogs_id": "1745230",
-  "db_url": "https://www.discogs.com/release/1745230",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-O-ㅇ09-01",
   "genre": "OST·경음악",
   "artist": "이주원",
@@ -15438,6 +15438,27 @@
   "digital": false
  },
  {
+  "code": "LP-O-ㅇ10-01",
+  "genre": "OST·경음악",
+  "artist": "Various",
+  "album": "알고있지만 OST",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "드라마 《알고 있지만,》의 오리지널 사운드트랙으로, 청춘의 섬세한 감정선을 담은 곡들로 구성되어 있다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP우측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-O-ㅈ01-01",
   "genre": "OST·경음악",
   "artist": "장동건",
@@ -15449,27 +15470,6 @@
   "discogs_id": "15884856",
   "db_url": "https://www.discogs.com/release/15884856",
   "label_cat": "KAL-3040A(?)",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-ㅈ05-01",
-  "genre": "OST·경음악",
-  "artist": "조성우",
-  "album": "봄날은 간다 OST",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "영화 《봄날은 간다》의 오리지널 스코어로, 봄날의 정서를 담은 잔잔하고 서정적인 선율이 인상적인 음반이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "SPLP 0055; Sail Music",
   "media": [
    "LP"
   ],

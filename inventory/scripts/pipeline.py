@@ -74,6 +74,16 @@ def initial(name):
     return "X"
 
 
+def sort_source(r) -> str:
+    """분류코드의 '아티스트 자리'에 쓸 이름.
+
+    OST 는 작곡가가 아니라 작품(영화·드라마) 제목으로 찾는 게 자연스럽다.
+    엑셀 '정렬명' 열이 채워져 있으면 그것을, 비어 있으면 아티스트를 쓴다.
+    """
+    s = str(r.get("sort_name") or "").strip()
+    return s or str(r.get("artist") or "")
+
+
 def artist_key(name):
     """관사 제거 정렬형: The Beatles→Beatles, El/Los 제거(Los Angeles·I Musici 예외)."""
     s = str(name or "")
@@ -103,7 +113,7 @@ def surname_initial(name):
 
 # ── 1. 엑셀 추출 ──────────────────────────────────────────────────────────
 KEYMAP = [("order", "순번"), ("medium", "매체"), ("genre", "장르"), ("artist", "아티스트"),
-          ("album", "앨범제목"), ("rep", "대표곡"), ("composer", "작곡가"), ("performer", "연주자"),
+          ("album", "앨범제목"), ("sort_name", "정렬명"), ("rep", "대표곡"), ("composer", "작곡가"), ("performer", "연주자"),
           ("label_cat", "레이블/카탈로그번호"), ("discogs_id", "Discogs ID"),
           ("mbid", "MusicBrainz MBID"), ("db_url", "DB링크"), ("desc", "해설"), ("notes", "비고")]
 
@@ -198,7 +208,8 @@ def assign_codes(rows, reg, warnings):
                     "비매품" in (str(rows[j].get("album") or "") + str(rows[j].get("artist") or "")
                                + str(rows[j].get("notes") or "")) for j in idxs):
                 letter = "KN"
-            meta[key] = ("N", letter, norm(artist_key(r.get("artist"))), str(r.get("artist")))
+            nm = sort_source(r)
+            meta[key] = ("N", letter, norm(artist_key(nm)), nm)
 
     album_code = {}
     # 일반(비클래식)
@@ -316,13 +327,13 @@ def seed_registry_from_existing(rows, reg):
 
 
 # ── 3. 워크북 생성 ────────────────────────────────────────────────────────
-HDR = ["순번", "분류코드", "매체", "장르", "아티스트", "앨범제목", "대표곡",
+HDR = ["순번", "분류코드", "매체", "장르", "아티스트", "앨범제목", "정렬명", "대표곡",
        "작곡가", "연주자", "레이블/카탈로그번호", "Discogs ID", "MusicBrainz MBID",
        "DB링크", "디지털", "중복/이동", "해설", "비고"]
-KEYS = ["order", "code", "medium", "genre", "artist", "album", "rep",
+KEYS = ["order", "code", "medium", "genre", "artist", "album", "sort_name", "rep",
         "composer", "performer", "label_cat", "discogs_id", "mbid",
         "db_url", "digital", "dup", "desc", "notes"]
-WID = [6, 14, 6, 10, 24, 32, 26, 14, 16, 20, 12, 26, 38, 8, 22, 44, 22]
+WID = [6, 18, 6, 10, 24, 32, 26, 26, 14, 16, 20, 12, 26, 38, 8, 22, 44, 22]
 CENTER = {"순번", "분류코드", "매체", "장르", "Discogs ID", "디지털", "매수", "엑셀행"}
 HF, HFo = PatternFill("solid", fgColor="305496"), Font(bold=True, color="FFFFFF")
 
