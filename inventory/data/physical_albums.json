@@ -21,6 +21,27 @@
   "digital": false
  },
  {
+  "code": "CD-C-A1-B04-01",
+  "genre": "클래식",
+  "artist": "New Philharmonia / Frühbeck de Burgos",
+  "album": "Albéniz / Frühbeck de Burgos: Suite Española, etc.",
+  "rep": "스페인 조곡 - 그라나다, 아스투리아스",
+  "composer": "Albéniz",
+  "performer": "New Philharmonia Orchestra, Rafael Frühbeck de Burgos",
+  "desc": "스페인 정취가 물씬 풍기는 알베니스의 관현악 작품을 담은 음반으로, 프뤼베크 데 부르고스의 정열적인 지휘가 돋보인다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "DD 4371 / 448 601-2",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "CD-C-B0-M01-01",
   "genre": "클래식",
   "artist": "The Academy of Ancient Music / Christopher Hogwood",
@@ -347,27 +368,6 @@
   "discogs_id": "11753829",
   "db_url": "https://www.discogs.com/release/11753829",
   "label_cat": "CD 200620",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-C-N0-B01-01",
-  "genre": "클래식",
-  "artist": "New Philharmonia / Frühbeck de Burgos",
-  "album": "Albéniz / Frühbeck de Burgos: Suite Española, etc.",
-  "rep": "스페인 조곡 - 그라나다, 아스투리아스",
-  "composer": "Albéniz",
-  "performer": "New Philharmonia Orchestra, Rafael Frühbeck de Burgos",
-  "desc": "스페인 정취가 물씬 풍기는 알베니스의 관현악 작품을 담은 음반으로, 프뤼베크 데 부르고스의 정열적인 지휘가 돋보인다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "DD 4371 / 448 601-2",
   "media": [
    "CD"
   ],
@@ -3990,7 +3990,7 @@
   "digital": false
  },
  {
-  "code": "LP-C-B0-L01-01",
+  "code": "LP-C-B0-K05-01",
   "genre": "클래식",
   "artist": "Musica Antiqua Köln",
   "album": "J.S. Bach: 4 Ouvertüren BWV 1066-1069",
@@ -4347,6 +4347,27 @@
   "digital": false
  },
  {
+  "code": "LP-C-B4-P04-01",
+  "genre": "클래식",
+  "artist": "Maiden's prayer",
+  "album": "Maiden's prayer",
+  "rep": "The Maiden's Prayer",
+  "composer": "Bądarzewska",
+  "performer": "",
+  "desc": "'소녀의 기도'를 주제로 한 편집 음반으로 추정되며, 감상적이고 향수를 자아내는 살롱풍 피아노 소품들을 담고 있다.",
+  "discogs_id": "1962532",
+  "db_url": "https://www.discogs.com/release/1962532",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-C-C0-A01-01",
   "genre": "클래식",
   "artist": "Martha Argerich",
@@ -4557,7 +4578,7 @@
   "digital": false
  },
  {
-  "code": "LP-C-C0-R05-01",
+  "code": "LP-C-C0-V04-01",
   "genre": "클래식",
   "artist": "Tamás Vásáry",
   "album": "Chopin: Études Op. 10 & 25 / Ballades",
@@ -4589,27 +4610,6 @@
   "discogs_id": "1396624",
   "db_url": "https://www.discogs.com/release/1396624",
   "label_cat": "4867 (catalog cut off/partial)",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-C-D0-P01-01",
-  "genre": "클래식",
-  "artist": "Maiden's prayer",
-  "album": "Maiden's prayer",
-  "rep": "The Maiden's Prayer",
-  "composer": "Bądarzewska",
-  "performer": "",
-  "desc": "'소녀의 기도'를 주제로 한 편집 음반으로 추정되며, 감상적이고 향수를 자아내는 살롱풍 피아노 소품들을 담고 있다.",
-  "discogs_id": "1962532",
-  "db_url": "https://www.discogs.com/release/1962532",
-  "label_cat": "",
   "media": [
    "LP"
   ],
@@ -5145,7 +5145,7 @@
   "digital": false
  },
  {
-  "code": "LP-C-S1-L01-01",
+  "code": "LP-C-S1-Q04-01",
   "genre": "클래식",
   "artist": "Anne Queffélec",
   "album": "Satie: Gnossiennes, Gymnopédies & Other Piano Works",
@@ -6301,7 +6301,7 @@
   "digital": false
  },
  {
-  "code": "LP-CG-B1-H01-01",
+  "code": "LP-CG-B1-B05-01",
   "genre": "클래식",
   "artist": "Karl Böhm",
   "album": "Beethoven: Symphony No.6 Op.68 \"Pastorale\"",
@@ -6556,7 +6556,7 @@
   "digital": false
  },
  {
-  "code": "LP-CG-C0-R01-01",
+  "code": "LP-CG-C0-V04-01",
   "genre": "클래식",
   "artist": "Tamás Vásáry",
   "album": "Chopio : Nocturne Nr. 1-10",
@@ -6588,6 +6588,48 @@
   "discogs_id": "31031788",
   "db_url": "https://www.discogs.com/release/31031788",
   "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-D0-K04-01",
+  "genre": "클래식",
+  "artist": "Herbert von Karajan",
+  "album": "Dvořák: Symphony No.9 Op.95 \"From the New World\"",
+  "rep": "교향곡 9번 '신세계로부터'",
+  "composer": "Antonín Dvořák",
+  "performer": "Herbert von Karajan",
+  "desc": "카라얀이 지휘한 드보르작 교향곡 9번 '신세계로부터'로, 웅장하면서도 서정적인 선율이 돋보인다.",
+  "discogs_id": "24947806",
+  "db_url": "https://www.discogs.com/release/24947806",
+  "label_cat": "2864 070 10",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-D0-S04-01",
+  "genre": "클래식",
+  "artist": "Fournier / Szell",
+  "album": "Dvořák: Cello Concerto Op.104",
+  "rep": "첼로 협주곡",
+  "composer": "Antonín Dvořák",
+  "performer": "Pierre Fournier / George Szell",
+  "desc": "피에르 푸르니에가 연주한 드보르작 첼로 협주곡으로, 노래하듯 유려하고 품격 있는 첼로 톤이 특징이다.",
+  "discogs_id": "24428540",
+  "db_url": "https://www.discogs.com/release/24428540",
+  "label_cat": "2864 071 20",
   "media": [
    "LP"
   ],
@@ -6682,48 +6724,6 @@
   "digital": false
  },
  {
-  "code": "LP-CG-K0-K01-01",
-  "genre": "클래식",
-  "artist": "Herbert von Karajan",
-  "album": "Dvořák: Symphony No.9 Op.95 \"From the New World\"",
-  "rep": "교향곡 9번 '신세계로부터'",
-  "composer": "Antonín Dvořák",
-  "performer": "Herbert von Karajan",
-  "desc": "카라얀이 지휘한 드보르작 교향곡 9번 '신세계로부터'로, 웅장하면서도 서정적인 선율이 돋보인다.",
-  "discogs_id": "24947806",
-  "db_url": "https://www.discogs.com/release/24947806",
-  "label_cat": "2864 070 10",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-CG-K0-S01-01",
-  "genre": "클래식",
-  "artist": "Fournier / Szell",
-  "album": "Dvořák: Cello Concerto Op.104",
-  "rep": "첼로 협주곡",
-  "composer": "Antonín Dvořák",
-  "performer": "Pierre Fournier / George Szell",
-  "desc": "피에르 푸르니에가 연주한 드보르작 첼로 협주곡으로, 노래하듯 유려하고 품격 있는 첼로 톤이 특징이다.",
-  "discogs_id": "24428540",
-  "db_url": "https://www.discogs.com/release/24428540",
-  "label_cat": "2864 071 20",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-CG-L0-K01-01",
   "genre": "클래식",
   "artist": "Berliner Philharmoniker / Karajan",
@@ -6745,7 +6745,7 @@
   "digital": false
  },
  {
-  "code": "LP-CG-M0-H01-01",
+  "code": "LP-CG-M0-B04-01",
   "genre": "클래식",
   "artist": "Karl Böhm",
   "album": "Mozart: \"Le Nozze di Figaro\" K.492",
@@ -6766,28 +6766,7 @@
   "digital": false
  },
  {
-  "code": "LP-CG-M0-H01-02",
-  "genre": "클래식",
-  "artist": "Karl Böhm",
-  "album": "Mozart: Requiem K.626",
-  "rep": "레퀴엠",
-  "composer": "Wolfgang Amadeus Mozart",
-  "performer": "Karl Böhm",
-  "desc": "카를 뵘이 지휘한 모차르트 '레퀴엠'으로, 장엄하고 애도적인 정서가 깊게 배어있는 명반이다.",
-  "discogs_id": "24560567",
-  "db_url": "https://www.discogs.com/release/24560567",
-  "label_cat": "2864 074 42",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-CG-M0-H01-03",
+  "code": "LP-CG-M0-B04-02",
   "genre": "클래식",
   "artist": "Karl Böhm",
   "album": "Mozart: Symphonies No.40 K.550 & No.41 K.551 \"Jupiter\"",
@@ -6798,6 +6777,27 @@
   "discogs_id": "24643100",
   "db_url": "https://www.discogs.com/release/24643100",
   "label_cat": "2864 070 02",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-M0-B04-03",
+  "genre": "클래식",
+  "artist": "Karl Böhm",
+  "album": "Mozart: Requiem K.626",
+  "rep": "레퀴엠",
+  "composer": "Wolfgang Amadeus Mozart",
+  "performer": "Karl Böhm",
+  "desc": "카를 뵘이 지휘한 모차르트 '레퀴엠'으로, 장엄하고 애도적인 정서가 깊게 배어있는 명반이다.",
+  "discogs_id": "24560567",
+  "db_url": "https://www.discogs.com/release/24560567",
+  "label_cat": "2864 074 42",
   "media": [
    "LP"
   ],
@@ -6955,7 +6955,7 @@
   "digital": false
  },
  {
-  "code": "LP-CG-R0-R01-01",
+  "code": "LP-CG-R0-V04-01",
   "genre": "클래식",
   "artist": "Tamás Vásáry",
   "album": "Rachmaninov: Klavierkonzerte Nr.1 und Nr.2",
@@ -7123,7 +7123,7 @@
   "digital": false
  },
  {
-  "code": "LP-CG-S3-K01-01",
+  "code": "LP-CG-S4-K04-01",
   "genre": "클래식",
   "artist": "Herbert von Karajan",
   "album": "Suppé: Overtures",

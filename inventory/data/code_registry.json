@@ -2149,7 +2149,8 @@
    "beethoven": 1,
    "brahms": 3,
    "bach": 0,
-   "bizet": 2
+   "bizet": 2,
+   "badarzewska": 4
   },
   "C|M": {
    "mozart": 2,
@@ -2180,7 +2181,8 @@
    "chopin": 0
   },
   "C|A": {
-   "albinoni": 0
+   "albinoni": 0,
+   "albeniz": 1
   },
   "C|C": {
    "chopin": 0
@@ -2201,7 +2203,8 @@
    "schubert": 0,
    "supp": 3,
    "stravinsky": 2,
-   "schumann": 1
+   "schumann": 1,
+   "suppe": 4
   },
   "C|D": {
    "darzewska": 0
@@ -2244,6 +2247,9 @@
   },
   "C|G": {
    "glinka": 0
+  },
+  "CG|D": {
+   "dvorak": 0
   }
  },
  "performers": {
@@ -2573,7 +2579,8 @@
    "karlrichter": 1
   },
   "CG|beethoven|B": {
-   "beethoven": 1
+   "beethoven": 1,
+   "karlbhm": 5
   },
   "CG|va|S": {
    "mozartschumann": 1
@@ -2639,7 +2646,8 @@
    "franzliszt": 1
   },
   "C|bach|K": {
-   "herbertvonkarajan": 1
+   "herbertvonkarajan": 1,
+   "musicaantiquakln": 5
   },
   "C|bach|B": {
    "johannsebastianbach": 1
@@ -2702,6 +2710,36 @@
   },
   "C|khachaturian|M": {
    "landowskamonitor": 1
+  },
+  "C|albeniz|B": {
+   "newphilharmoniaorchestrarafaelfrhbeckdeburgos": 4
+  },
+  "C|satie|Q": {
+   "annequefflec": 4
+  },
+  "C|badarzewska|P": {
+   "maidensprayer": 4
+  },
+  "CG|mozart|B": {
+   "karlbhm": 4
+  },
+  "CG|rachmaninoff|V": {
+   "tamsvsry": 4
+  },
+  "CG|suppe|K": {
+   "herbertvonkarajan": 4
+  },
+  "CG|dvorak|S": {
+   "pierrefourniergeorgeszell": 4
+  },
+  "CG|dvorak|K": {
+   "herbertvonkarajan": 4
+  },
+  "CG|chopin|V": {
+   "tamsvsry": 4
+  },
+  "C|chopin|V": {
+   "tamsvsry": 4
   }
  },
  "perf_albums": {
@@ -3272,6 +3310,44 @@
   },
   "C|bach|L|wandalandowska": {
    "jsbachthewelltemperedclavierbook1preludesandfuguesnos18": 1
+  },
+  "C|albeniz|B|newphilharmoniaorchestrarafaelfrhbeckdeburgos": {
+   "albnizfrhbeckdeburgossuiteespaolaetc": 1
+  },
+  "C|satie|Q|annequefflec": {
+   "satiegnossiennesgymnopdiesotherpianoworks": 1
+  },
+  "C|badarzewska|P|maidensprayer": {
+   "maidensprayer": 1
+  },
+  "CG|beethoven|B|karlbhm": {
+   "beethovensymphonyno6op68pastorale": 1
+  },
+  "CG|mozart|B|karlbhm": {
+   "mozartlenozzedifigarok492": 1,
+   "mozartsymphoniesno40k550no41k551jupiter": 2,
+   "mozartrequiemk626": 3
+  },
+  "CG|rachmaninoff|V|tamsvsry": {
+   "rachmaninovklavierkonzertenr1undnr2": 1
+  },
+  "CG|suppe|K|herbertvonkarajan": {
+   "suppovertures": 1
+  },
+  "CG|dvorak|S|pierrefourniergeorgeszell": {
+   "dvokcelloconcertoop104": 1
+  },
+  "CG|dvorak|K|herbertvonkarajan": {
+   "dvoksymphonyno9op95fromthenewworld": 1
+  },
+  "CG|chopin|V|tamsvsry": {
+   "chopionocturnenr110": 1
+  },
+  "C|chopin|V|tamsvsry": {
+   "chopintudesop1025ballades": 1
+  },
+  "C|bach|K|musicaantiquakln": {
+   "jsbach4ouvertrenbwv10661069": 1
   }
  }
 }

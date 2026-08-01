@@ -15,6 +15,7 @@ import argparse
 import json
 import os
 import re
+import unicodedata
 from collections import defaultdict
 from copy import copy
 
@@ -62,8 +63,29 @@ CHO = "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ"
 CHO_BASE = {"ㄲ": "ㄱ", "ㄸ": "ㄷ", "ㅃ": "ㅂ", "ㅆ": "ㅅ", "ㅉ": "ㅈ"}
 
 
+# 귀족 전치사·연결어는 성으로 보지 않는다 (von Karajan → Karajan)
+_PARTICLES = {"von", "van", "de", "del", "della", "di", "da", "der", "den",
+              "du", "la", "le", "los", "dos", "ten", "ter"}
+
+
+def deaccent(s: str) -> str:
+    """Dvořák → Dvorak. 악센트를 떼지 않으면 단어 분리가 깨져 성을 잘못 잡는다
+    (예전 버그: 'Dvořák' → ['Dvo','k'] → 이니셜 K)."""
+    # NFD 는 한글 음절도 자모로 분해하므로 반드시 NFC 로 되돌린다
+    # (안 그러면 '조성우' 가 자모열이 되어 초성 판정이 X 로 떨어진다)
+    stripped = "".join(c for c in unicodedata.normalize("NFD", str(s or ""))
+                       if not unicodedata.combining(c))
+    return unicodedata.normalize("NFC", stripped)
+
+
+def name_words(name) -> list:
+    """이름을 성 판정용 단어로 쪼갠다(악센트 제거 + 전치사 제외)."""
+    return [w for w in re.findall(r"[A-Za-z가-힣]+", deaccent(name))
+            if w.lower() not in _PARTICLES]
+
+
 def initial(name):
-    for ch in str(name or "").strip():
+    for ch in deaccent(name).strip():
         if "가" <= ch <= "힣":
             c = CHO[(ord(ch) - 0xAC00) // 588]
             return CHO_BASE.get(c, c)
@@ -99,7 +121,7 @@ def norm(s):
 
 
 def surname_key(composer):
-    words = re.findall(r"[A-Za-z가-힣]+", str(composer or ""))
+    words = name_words(composer)
     return words[-1].lower() if words else norm(composer)
 
 
@@ -107,7 +129,7 @@ def surname_initial(name):
     s = str(name or "").strip()
     if any("가" <= ch <= "힣" for ch in s):
         return initial(s)
-    words = [w for w in re.findall(r"[A-Za-z]+", s) if w.lower() != "von"]
+    words = name_words(s)
     return words[-1][0].upper() if words else initial(s)
 
 
