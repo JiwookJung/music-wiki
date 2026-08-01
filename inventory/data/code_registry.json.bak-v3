@@ -30,8 +30,7 @@
    "leviparty": 1
   },
   "T|ㄱ": {
-   "고마쓰료타": 1,
-   "고상지": 5
+   "고마쓰료타": 1
   },
   "P|J": {
    "jackieevancho": 1,
@@ -675,37 +674,6 @@
   },
   "O|ㅂ": {
    "봄날은간다": 4
-  },
-  "I|J": {
-   "johnnyharris": 4
-  },
-  "I|Y": {
-   "yiruma": 4
-  },
-  "I|P": {
-   "paulmauriat": 4,
-   "pesadelo": 8
-  },
-  "I|T": {
-   "tarohakase": 4
-  },
-  "I|G": {
-   "georgewinston": 4
-  },
-  "I|H": {
-   "henrymancini": 4
-  },
-  "I|B": {
-   "burtbacharach": 4
-  },
-  "I|ㄱ": {
-   "김광민": 4
-  },
-  "I|ㅍ": {
-   "푸딩": 4
-  },
-  "I|A": {
-   "andregagnon": 4
   }
  },
  "albums": {
@@ -1688,8 +1656,7 @@
    "aartedetomjobim": 1,
    "edutom": 2,
    "lovestringsandjobim": 3,
-   "thecomposerofdesafinado": 5,
-   "wave": 6
+   "thecomposerofdesafinado": 5
   },
   "J|G|gerrymulligan": {
    "nightlights": 1
@@ -2171,47 +2138,6 @@
   },
   "O|F|fiddlerontheroof": {
    "fiddlerontherooforiginalmotionpicturesoundtrack": 1
-  },
-  "I|J|johnnyharris": {
-   "steppingstones": 1
-  },
-  "I|Y|yiruma": {
-   "atmosferaspecialalbum": 1,
-   "firstlove": 2
-  },
-  "I|P|pesadelo": {
-   "newnatureofsoundspudding": 1
-  },
-  "I|T|tarohakase": {
-   "thebestoftarohakase": 1
-  },
-  "I|G|georgewinston": {
-   "december": 1
-  },
-  "I|H|henrymancini": {
-   "romantic": 1
-  },
-  "I|B|burtbacharach": {
-   "burtbacharach": 1,
-   "burtbacharachsgreatesthits": 2
-  },
-  "I|ㄱ|김광민": {
-   "지구에서온편지": 1
-  },
-  "I|ㅍ|푸딩": {
-   "pudding": 1,
-   "pudditorium": 2
-  },
-  "I|A|andregagnon": {
-   "lesaint": 1,
-   "neiges": 2
-  },
-  "I|P|paulmauriat": {
-   "legrandorchestredepaulmauriat": 1,
-   "feelings": 2
-  },
-  "T|ㄱ|고상지": {
-   "maycgre10": 1
   }
  },
  "composers": {

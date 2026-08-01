@@ -1050,6 +1050,132 @@
   "digital": false
  },
  {
+  "code": "CD-I-B04-01",
+  "genre": "경음악",
+  "artist": "Burt Bacharach",
+  "album": "Burt Bacharach",
+  "rep": "Raindrops Keep Fallin' on My Head",
+  "composer": "",
+  "performer": "",
+  "desc": "버트 바카락의 골든 시리즈 음반으로, 그의 대표곡들을 세련된 편곡으로 다시 만날 수 있다.",
+  "discogs_id": "8706833",
+  "db_url": "https://www.discogs.com/release/8706833",
+  "label_cat": "A&M Gold Series",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-I-H04-01",
+  "genre": "경음악",
+  "artist": "Henry Mancini",
+  "album": "Romantic...",
+  "rep": "Moon River",
+  "composer": "",
+  "performer": "",
+  "desc": "헨리 맨시니의 로맨틱한 영화음악을 모은 경음악 음반으로, 우아한 오케스트라 편곡이 돋보인다.",
+  "discogs_id": "6861471",
+  "db_url": "https://musicbrainz.org/release-group/87bd7f7d-f9ea-3c96-8e7d-c53161ff558e",
+  "label_cat": "RD 1087",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD아래층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-I-J04-01",
+  "genre": "경음악",
+  "artist": "Johnny Harris",
+  "album": "Stepping Stones",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "경음악풍의 오케스트라 편곡이 돋보이는 음반으로, 부드럽고 서정적인 분위기의 이지리스닝 성격이 강하다.",
+  "discogs_id": "5219828",
+  "db_url": "https://www.discogs.com/release/5219828",
+  "label_cat": "",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-I-P08-01",
+  "genre": "경음악",
+  "artist": "PESADELO",
+  "album": "New Nature of Sounds / Pudding",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "STOMP 시리즈 태그로 미루어 국내 인디/얼터너티브 성향의 음반으로 추정되며, 실험적인 사운드를 담았을 가능성이 있다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-I-T04-01",
+  "genre": "경음악",
+  "artist": "Taro Hakase",
+  "album": "The Best of Taro Hakase",
+  "rep": "情熱大陸(정열대륙)",
+  "composer": "",
+  "performer": "",
+  "desc": "일본 바이올리니스트 하카세 타로의 베스트 앨범으로, 대중적이고 서정적인 크로스오버 바이올린 연주를 담았다.",
+  "discogs_id": "30727403",
+  "db_url": "https://www.discogs.com/release/30727403",
+  "label_cat": "CMDC 10189",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-I-Y04-01",
+  "genre": "경음악",
+  "artist": "Yiruma",
+  "album": "Atmosfera (Special Album)",
+  "rep": "River Flows in You, Kiss the Rain",
+  "composer": "",
+  "performer": "",
+  "desc": "서정적인 피아노 선율로 잘 알려진 이루마의 스페셜 앨범으로, 잔잔하고 감성적인 뉴에이지풍 피아노곡들을 담고 있다.",
+  "discogs_id": "7959352",
+  "db_url": "https://www.discogs.com/release/7959352",
+  "label_cat": "",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "CD-J-B05-01",
   "genre": "재즈",
   "artist": "Bobby McFerrin",
@@ -2499,48 +2625,6 @@
   "digital": false
  },
  {
-  "code": "CD-O-H05-01",
-  "genre": "OST·경음악",
-  "artist": "Henry Mancini",
-  "album": "Romantic...",
-  "rep": "Moon River",
-  "composer": "",
-  "performer": "",
-  "desc": "헨리 맨시니의 로맨틱한 영화음악을 모은 경음악 음반으로, 우아한 오케스트라 편곡이 돋보인다.",
-  "discogs_id": "6861471",
-  "db_url": "https://musicbrainz.org/release-group/87bd7f7d-f9ea-3c96-8e7d-c53161ff558e",
-  "label_cat": "RD 1087",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-O-J09-01",
-  "genre": "OST·경음악",
-  "artist": "Johnny Harris",
-  "album": "Stepping Stones",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "경음악풍의 오케스트라 편곡이 돋보이는 음반으로, 부드럽고 서정적인 분위기의 이지리스닝 성격이 강하다.",
-  "discogs_id": "5219828",
-  "db_url": "https://www.discogs.com/release/5219828",
-  "label_cat": "",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "CD-O-M12-01",
   "genre": "OST·경음악",
   "artist": "Joe Hisaishi",
@@ -2552,27 +2636,6 @@
   "discogs_id": "11710125",
   "db_url": "https://www.discogs.com/release/11710125",
   "label_cat": "JVC RJVD-002",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-O-T01-01",
-  "genre": "OST·경음악",
-  "artist": "Taro Hakase",
-  "album": "The Best of Taro Hakase",
-  "rep": "情熱大陸(정열대륙)",
-  "composer": "",
-  "performer": "",
-  "desc": "일본 바이올리니스트 하카세 타로의 베스트 앨범으로, 대중적이고 서정적인 크로스오버 바이올린 연주를 담았다.",
-  "discogs_id": "30727403",
-  "db_url": "https://www.discogs.com/release/30727403",
-  "label_cat": "CMDC 10189",
   "media": [
    "CD"
   ],
@@ -2646,27 +2709,6 @@
   "digital": false
  },
  {
-  "code": "CD-O-Y01-01",
-  "genre": "OST·경음악",
-  "artist": "Yiruma",
-  "album": "Atmosfera (Special Album)",
-  "rep": "River Flows in You, Kiss the Rain",
-  "composer": "",
-  "performer": "",
-  "desc": "서정적인 피아노 선율로 잘 알려진 이루마의 스페셜 앨범으로, 잔잔하고 감성적인 뉴에이지풍 피아노곡들을 담고 있다.",
-  "discogs_id": "7959352",
-  "db_url": "https://www.discogs.com/release/7959352",
-  "label_cat": "",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "CD-P-A05-01",
   "genre": "팝",
   "artist": "Alphaville",
@@ -2678,27 +2720,6 @@
   "discogs_id": "31847975",
   "db_url": "https://www.discogs.com/release/31847975",
   "label_cat": "",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-P-B13-01",
-  "genre": "팝",
-  "artist": "Burt Bacharach",
-  "album": "Burt Bacharach",
-  "rep": "Raindrops Keep Fallin' on My Head",
-  "composer": "",
-  "performer": "",
-  "desc": "버트 바카락의 골든 시리즈 음반으로, 그의 대표곡들을 세련된 편곡으로 다시 만날 수 있다.",
-  "discogs_id": "8706833",
-  "db_url": "https://www.discogs.com/release/8706833",
-  "label_cat": "A&M Gold Series",
   "media": [
    "CD"
   ],
@@ -3673,27 +3694,6 @@
   ],
   "copies": 1,
   "digital": true
- },
- {
-  "code": "CD-W-P06-01",
-  "genre": "월드",
-  "artist": "PESADELO",
-  "album": "New Nature of Sounds / Pudding",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "STOMP 시리즈 태그로 미루어 국내 인디/얼터너티브 성향의 음반으로 추정되며, 실험적인 사운드를 담았을 가능성이 있다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
  },
  {
   "code": "CD-W-P09-01",
@@ -8509,6 +8509,218 @@
   "digital": false
  },
  {
+  "code": "LP-I-A04-01",
+  "genre": "경음악",
+  "artist": "Andre Gagnon",
+  "album": "Le Saint",
+  "rep": "Le Saint-Laurent",
+  "composer": "",
+  "performer": "",
+  "desc": "앙드레 가뇽의 음반으로, 서정적이고 우아한 피아노 선율의 이지 리스닝 작품이다.",
+  "discogs_id": "4921081",
+  "db_url": "https://www.discogs.com/release/4921081",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반2열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-I-A04-02",
+  "genre": "경음악",
+  "artist": "Andre Gagnon",
+  "album": "Neiges",
+  "rep": "Neiges",
+  "composer": "",
+  "performer": "",
+  "desc": "캐나다 피아니스트 앙드레 가뇽의 대표작 '네주(Neiges)'가 수록된 음반으로, 눈 내리는 풍경을 연상시키는 서정적인 피아노 선율이 특징이다.",
+  "discogs_id": "12146029",
+  "db_url": "https://musicbrainz.org/release-group/e239fff5-aef9-45db-ab7c-3588086b16c6",
+  "label_cat": "XSP-44252",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반2열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-I-B04-02",
+  "genre": "경음악",
+  "artist": "Burt Bacharach",
+  "album": "Burt Bacharach's Greatest Hits",
+  "rep": "Raindrops Keep Fallin' on My Head, Walk On By",
+  "composer": "",
+  "performer": "",
+  "desc": "작곡가 버트 배커랙의 히트곡 모음집으로, 세련된 멜로디와 오케스트레이션이 돋보이는 이지 리스닝 명곡들을 담고 있다.",
+  "discogs_id": "15632742",
+  "db_url": "https://musicbrainz.org/release-group/8fab0770-01f2-334f-b102-f5f8b0264555",
+  "label_cat": "AMLS 63661 (A&M)",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반2열2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-I-G04-01",
+  "genre": "경음악",
+  "artist": "George Winston",
+  "album": "December",
+  "rep": "Thanksgiving",
+  "composer": "",
+  "performer": "",
+  "desc": "조지 윈스턴의 피아노 솔로 음반 'December'로, 겨울의 정취를 담은 서정적인 뉴에이지 피아노곡들로 구성되어 있다.",
+  "discogs_id": "10112536",
+  "db_url": "https://musicbrainz.org/release-group/96c6980a-b804-33eb-b065-eb20f81e38c5",
+  "label_cat": "Windham Hill Records",
+  "media": [
+   "CD",
+   "LP"
+  ],
+  "locations": [
+   "CD아래층",
+   "LP중앙선반2열1층"
+  ],
+  "copies": 3,
+  "digital": false
+ },
+ {
+  "code": "LP-I-P04-01",
+  "genre": "경음악",
+  "artist": "Paul Mauriat",
+  "album": "Le Grand Orchestre de Paul Mauriat",
+  "rep": "Love Is Blue (L'Amour Est Bleu)",
+  "composer": "",
+  "performer": "",
+  "desc": "폴 모리아 악단 특유의 감미로운 이지리스닝 오케스트라 사운드를 담은 음반으로 추정된다.",
+  "discogs_id": "6408715",
+  "db_url": "https://musicbrainz.org/release-group/e8bf849b-64d4-41a0-9ff7-de930dc94bd6",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-I-P04-02",
+  "genre": "경음악",
+  "artist": "Paul Mauriat",
+  "album": "FEELINGS",
+  "rep": "Feelings",
+  "composer": "",
+  "performer": "",
+  "desc": "폴 모리아 악단의 감미로운 경음악 편곡을 담은 음반으로, 로맨틱하고 부드러운 오케스트레이션이 특징이다.",
+  "discogs_id": "7755337",
+  "db_url": "https://www.discogs.com/release/7755337",
+  "label_cat": "PHILIPS",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP보관박스1"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-I-Y04-02",
+  "genre": "경음악",
+  "artist": "Yiruma",
+  "album": "First Love",
+  "rep": "River Flows in You",
+  "composer": "",
+  "performer": "",
+  "desc": "이루마의 데뷔 음반 'First Love'로, 훗날 대표곡이 된 'River Flows in You' 등 감성적인 피아노 선율이 담겨 있다.",
+  "discogs_id": "23354738",
+  "db_url": "https://musicbrainz.org/release-group/f575969c-1560-44e4-ad26-42a9f04a13e2",
+  "label_cat": "VDCD-6813",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반2열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-I-ㄱ04-01",
+  "genre": "경음악",
+  "artist": "김광민",
+  "album": "지구에서 온 편지",
+  "rep": "지구에서 온 편지",
+  "composer": "",
+  "performer": "",
+  "desc": "재즈 피아니스트 김광민의 음반으로, 서정적이고 사색적인 연주곡들이 담긴 인스트루멘탈 작품이다.",
+  "discogs_id": "20636002",
+  "db_url": "https://www.discogs.com/release/20636002",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-I-ㅍ04-01",
+  "genre": "경음악",
+  "artist": "푸딩",
+  "album": "Pudding",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "'푸딩(Pudding)' 관련 음반으로, 잔잔하고 아기자기한 감성의 곡들을 담고 있는 것으로 보인다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "VOCD-6049",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-I-ㅍ04-02",
+  "genre": "경음악",
+  "artist": "푸딩",
+  "album": "PUDDITORIUM",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "스위트 펌킨의 앨범 'PUDDITORIUM'으로 추정되며, 몽환적이고 실험적인 사운드가 특징인 인디 팝 음반이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "STOMP",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP우측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-J-A01-01",
   "genre": "재즈",
   "artist": "André Manoukian",
@@ -8653,6 +8865,29 @@
    "LP중앙선반2열2층"
   ],
   "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-J-A09-06",
+  "genre": "재즈",
+  "artist": "Antonio Carlos Jobim",
+  "album": "Wave",
+  "rep": "Wave",
+  "composer": "",
+  "performer": "",
+  "desc": "보사노바의 거장 안토니오 카를로스 조빙의 음반으로, 우아하고 세련된 보사노바 명곡들을 담고 있다.",
+  "discogs_id": "12136719",
+  "db_url": "https://musicbrainz.org/release-group/935fccc4-064a-339c-ba4c-b0acee6ff5eb",
+  "label_cat": "A&M",
+  "media": [
+   "CD",
+   "LP"
+  ],
+  "locations": [
+   "CD아래층",
+   "LP중앙선반2열2층"
+  ],
+  "copies": 2,
   "digital": false
  },
  {
@@ -10088,27 +10323,6 @@
   ],
   "locations": [
    "LP우측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-ㄱ13-01",
-  "genre": "가요",
-  "artist": "김광민",
-  "album": "지구에서 온 편지",
-  "rep": "지구에서 온 편지",
-  "composer": "",
-  "performer": "",
-  "desc": "재즈 피아니스트 김광민의 음반으로, 서정적이고 사색적인 연주곡들이 담긴 인스트루멘탈 작품이다.",
-  "discogs_id": "20636002",
-  "db_url": "https://www.discogs.com/release/20636002",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
   ],
   "copies": 1,
   "digital": false
@@ -14005,27 +14219,6 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅍ05-01",
-  "genre": "가요",
-  "artist": "푸딩",
-  "album": "PUDDITORIUM",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "스위트 펌킨의 앨범 'PUDDITORIUM'으로 추정되며, 몽환적이고 실험적인 사운드가 특징인 인디 팝 음반이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "STOMP",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-K-ㅍ09-01",
   "genre": "가요",
   "artist": "푸른하늘",
@@ -14278,48 +14471,6 @@
   "digital": false
  },
  {
-  "code": "LP-O-A05-01",
-  "genre": "OST·경음악",
-  "artist": "Andre Gagnon",
-  "album": "Le Saint",
-  "rep": "Le Saint-Laurent",
-  "composer": "",
-  "performer": "",
-  "desc": "앙드레 가뇽의 음반으로, 서정적이고 우아한 피아노 선율의 이지 리스닝 작품이다.",
-  "discogs_id": "4921081",
-  "db_url": "https://www.discogs.com/release/4921081",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반2열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-A05-02",
-  "genre": "OST·경음악",
-  "artist": "Andre Gagnon",
-  "album": "Neiges",
-  "rep": "Neiges",
-  "composer": "",
-  "performer": "",
-  "desc": "캐나다 피아니스트 앙드레 가뇽의 대표작 '네주(Neiges)'가 수록된 음반으로, 눈 내리는 풍경을 연상시키는 서정적인 피아노 선율이 특징이다.",
-  "discogs_id": "12146029",
-  "db_url": "https://musicbrainz.org/release-group/e239fff5-aef9-45db-ab7c-3588086b16c6",
-  "label_cat": "XSP-44252",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반2열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-O-B01-01",
   "genre": "OST·경음악",
   "artist": "Bill Lee (Branford Marsalis Quartet)",
@@ -14336,27 +14487,6 @@
   ],
   "locations": [
    "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-B09-01",
-  "genre": "OST·경음악",
-  "artist": "Burt Bacharach",
-  "album": "Burt Bacharach's Greatest Hits",
-  "rep": "Raindrops Keep Fallin' on My Head, Walk On By",
-  "composer": "",
-  "performer": "",
-  "desc": "작곡가 버트 배커랙의 히트곡 모음집으로, 세련된 멜로디와 오케스트레이션이 돋보이는 이지 리스닝 명곡들을 담고 있다.",
-  "discogs_id": "15632742",
-  "db_url": "https://musicbrainz.org/release-group/8fab0770-01f2-334f-b102-f5f8b0264555",
-  "label_cat": "AMLS 63661 (A&M)",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반2열2층"
   ],
   "copies": 1,
   "digital": false
@@ -14422,29 +14552,6 @@
    "LP침대옆"
   ],
   "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-G01-01",
-  "genre": "OST·경음악",
-  "artist": "George Winston",
-  "album": "December",
-  "rep": "Thanksgiving",
-  "composer": "",
-  "performer": "",
-  "desc": "조지 윈스턴의 피아노 솔로 음반 'December'로, 겨울의 정취를 담은 서정적인 뉴에이지 피아노곡들로 구성되어 있다.",
-  "discogs_id": "10112536",
-  "db_url": "https://musicbrainz.org/release-group/96c6980a-b804-33eb-b065-eb20f81e38c5",
-  "label_cat": "Windham Hill Records",
-  "media": [
-   "CD",
-   "LP"
-  ],
-  "locations": [
-   "CD아래층",
-   "LP중앙선반2열1층"
-  ],
-  "copies": 3,
   "digital": false
  },
  {
@@ -14869,48 +14976,6 @@
   "digital": false
  },
  {
-  "code": "LP-O-P01-01",
-  "genre": "OST·경음악",
-  "artist": "Paul Mauriat",
-  "album": "Le Grand Orchestre de Paul Mauriat",
-  "rep": "Love Is Blue (L'Amour Est Bleu)",
-  "composer": "",
-  "performer": "",
-  "desc": "폴 모리아 악단 특유의 감미로운 이지리스닝 오케스트라 사운드를 담은 음반으로 추정된다.",
-  "discogs_id": "6408715",
-  "db_url": "https://musicbrainz.org/release-group/e8bf849b-64d4-41a0-9ff7-de930dc94bd6",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-P01-02",
-  "genre": "OST·경음악",
-  "artist": "Paul Mauriat",
-  "album": "FEELINGS",
-  "rep": "Feelings",
-  "composer": "",
-  "performer": "",
-  "desc": "폴 모리아 악단의 감미로운 경음악 편곡을 담은 음반으로, 로맨틱하고 부드러운 오케스트레이션이 특징이다.",
-  "discogs_id": "7755337",
-  "db_url": "https://www.discogs.com/release/7755337",
-  "label_cat": "PHILIPS",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP보관박스1"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-O-R09-01",
   "genre": "OST·경음악",
   "artist": "Risë Stevens, Brian Sullivan And The Columbus Boychoir With The Firestone Orchestra And Chorus",
@@ -15121,27 +15186,6 @@
   "digital": false
  },
  {
-  "code": "LP-O-Y01-02",
-  "genre": "OST·경음악",
-  "artist": "Yiruma",
-  "album": "First Love",
-  "rep": "River Flows in You",
-  "composer": "",
-  "performer": "",
-  "desc": "이루마의 데뷔 음반 'First Love'로, 훗날 대표곡이 된 'River Flows in You' 등 감성적인 피아노 선율이 담겨 있다.",
-  "discogs_id": "23354738",
-  "db_url": "https://musicbrainz.org/release-group/f575969c-1560-44e4-ad26-42a9f04a13e2",
-  "label_cat": "VDCD-6813",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반2열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-O-Y05-01",
   "genre": "OST·경음악",
   "artist": "Yoko Takahashi, Megumi Hayashibara",
@@ -15182,29 +15226,6 @@
   ],
   "copies": 2,
   "digital": false
- },
- {
-  "code": "LP-O-ㄱ01-01",
-  "genre": "OST·경음악",
-  "artist": "고상지",
-  "album": "MAYCGRE 1.0",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "고상지의 음반으로 짐작되며, 국악기와 현대적 사운드를 접목한 경음악/크로스오버 성격의 음반으로 보인다.",
-  "discogs_id": "15783723",
-  "db_url": "https://www.discogs.com/release/15783723",
-  "label_cat": "Warner Music VDCD-6504",
-  "media": [
-   "CD",
-   "LP"
-  ],
-  "locations": [
-   "CD아래층",
-   "LP우측선반1층"
-  ],
-  "copies": 2,
-  "digital": true
  },
  {
   "code": "LP-O-ㄱ05-01",
@@ -15517,27 +15538,6 @@
   ],
   "locations": [
    "LP우측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-ㅍ05-01",
-  "genre": "OST·경음악",
-  "artist": "푸딩",
-  "album": "Pudding",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "'푸딩(Pudding)' 관련 음반으로, 잔잔하고 아기자기한 감성의 곡들을 담고 있는 것으로 보인다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "VOCD-6049",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열3층"
   ],
   "copies": 1,
   "digital": false
@@ -16573,6 +16573,29 @@
   "digital": false
  },
  {
+  "code": "LP-T-ㄱ05-01",
+  "genre": "탱고",
+  "artist": "고상지",
+  "album": "MAYCGRE 1.0",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "고상지의 음반으로 짐작되며, 국악기와 현대적 사운드를 접목한 경음악/크로스오버 성격의 음반으로 보인다.",
+  "discogs_id": "15783723",
+  "db_url": "https://www.discogs.com/release/15783723",
+  "label_cat": "Warner Music VDCD-6504",
+  "media": [
+   "CD",
+   "LP"
+  ],
+  "locations": [
+   "CD아래층",
+   "LP우측선반1층"
+  ],
+  "copies": 2,
+  "digital": true
+ },
+ {
   "code": "LP-T-ㅅ01-01",
   "genre": "탱고",
   "artist": "송영훈",
@@ -16633,29 +16656,6 @@
    "LP중앙선반2열3층"
   ],
   "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-W-A09-01",
-  "genre": "월드",
-  "artist": "Antonio Carlos Jobim",
-  "album": "Wave",
-  "rep": "Wave",
-  "composer": "",
-  "performer": "",
-  "desc": "보사노바의 거장 안토니오 카를로스 조빙의 음반으로, 우아하고 세련된 보사노바 명곡들을 담고 있다.",
-  "discogs_id": "12136719",
-  "db_url": "https://musicbrainz.org/release-group/935fccc4-064a-339c-ba4c-b0acee6ff5eb",
-  "label_cat": "A&M",
-  "media": [
-   "CD",
-   "LP"
-  ],
-  "locations": [
-   "CD아래층",
-   "LP중앙선반2열2층"
-  ],
-  "copies": 2,
   "digital": false
  },
  {
