@@ -120,6 +120,84 @@ def norm(s):
     return re.sub(r"[^a-z0-9가-힣]", "", str(s or "").lower())
 
 
+# 뒤에 붙으면 버리는 단체·악기 표기. 앞자리(대표 아티스트)에는 적용하지 않는다.
+_ENS_WORDS = (r"orchestra|orchestre|orkest|orchester|philharmoni\w*|symphon\w*|sinfoni\w*|"
+              r"ensemble|academy|camerata|kapelle|orquesta|collegium|consort|choir|chorus|"
+              r"chamber\s+\w+|his\s+\w+|오케스트라|필하모\w*|교향악단|합창단|앙상블")
+_ENS = re.compile(rf"^(the\s+)?[\w\s'’.·&-]*\b({_ENS_WORDS})\b", re.I)
+_INSTR = re.compile(r"^\(?\s*(guitare?|piano|cello|violin|flute|vocal|"
+                    r"기타|피아노|첼로|바이올린)\s*\)?$", re.I)
+
+
+def _has_han(s):
+    return bool(re.search(r"[가-힣]", s))
+
+
+def _has_lat(s):
+    return bool(re.search(r"[A-Za-z]", s))
+
+
+def _pick(a, b, korean):
+    """병기된 두 표기 중 정본을 고른다. 가요는 한글, 그 밖의 장르는 로마자."""
+    if not (a and b):
+        return a or b
+    return (a if _has_han(a) else b) if korean else (a if _has_lat(a) else b)
+
+
+def lead_artist(name, genre="") -> str:
+    """분류코드에 쓸 '대표 아티스트' 표기.
+
+    ① 뒤따르는 단체명·악기표기는 버린다 — 'Andre Previn and the LSO' → 'Andre Previn'.
+       뒤가 사람이면 동격 연주자로 보고 남긴다 — 'Julian Bream, John Williams' 는 그대로.
+    ② 괄호 병기와 '이름 = Romanized' 를 한쪽으로 정리한다. 가요는 한글이 정본이고
+       ('조용필(Cho Yong Pil)' → '조용필'), 그 밖의 장르는 로마자가 정본이다
+       ('임윤찬(Yunchan Lim)' → 'Yunchan Lim'). 표기가 갈리면 같은 사람이 코드를
+       두 개 받아 선반 두 곳으로 흩어진다.
+    """
+    s = str(name or "").strip()
+    if not s:
+        return s
+    korean = str(genre or "").startswith("가요")
+    parts = [p.strip() for p in re.split(r"\s*[,/;]\s*|\s*&\s*|\s+and\s+|\s+with\s+", s)
+             if p.strip()]
+    keep = []
+    for p in parts:
+        if keep and (_ENS.match(p) or _INSTR.match(p)):
+            continue
+        keep.append(p)
+    # '이승환, Lee Seung-Hwan' 처럼 한글 이름과 그 로마자가 나란히 온 경우도 병기다
+    if len(keep) == 2 and _has_han(keep[0]) and not _has_lat(keep[0]) \
+            and _has_lat(keep[1]) and not _has_han(keep[1]):
+        keep = [_pick(keep[0], keep[1], korean)]
+    head = keep[0]
+    m = re.match(r"^(.*?)\s*[\(（]([^)）]*)[\)）]\s*(.*)$", head)
+    if m:
+        head = (_pick(m.group(1).strip(), m.group(2).strip(), korean)
+                + (" " + m.group(3).strip() if m.group(3).strip() else "")).strip()
+    if "=" in head:
+        a, b = (x.strip() for x in head.split("=", 1))
+        head = _pick(a, b, korean)
+    keep[0] = head
+    return ", ".join(keep)
+
+
+def primary(name) -> str:
+    """공동 크레딧 중 맨 앞(대표) 한 사람만. 클래식 연주자 이니셜용."""
+    return str(name or "").split(",")[0].strip()
+
+
+def is_location_sheet(name: str) -> bool:
+    """데이터 시트 = 실제 선반뿐. 파생·수작업 시트(배치·라벨·정리)는 읽지 않는다.
+    이 가드가 없으면 배치-* 시트가 실물 재고로 두 번 계산돼 라벨 수가 틀어진다."""
+    return name not in SUMMARY_SHEETS and re.match(r"^(LP|CD)", name) is not None
+
+
+def album_key(r):
+    """앨범 동일성 판정 키. 대표 아티스트 기준이라 표기가 갈려도 한 앨범으로 모인다.
+    assign_codes 와 build 가 반드시 같은 키를 써야 한다(다르면 코드를 못 찾아 행이 샌다)."""
+    return (norm(lead_artist(r.get("artist"), r.get("genre"))), norm(r.get("album")))
+
+
 def surname_key(composer):
     words = name_words(composer)
     return words[-1].lower() if words else norm(composer)
@@ -144,7 +222,7 @@ def extract(path):
     wb = openpyxl.load_workbook(path)
     rows = []
     for name in wb.sheetnames:
-        if name in SUMMARY_SHEETS:
+        if not is_location_sheet(name):
             continue
         ws = wb[name]
         hdr = [str(c.value) if c.value is not None else "" for c in ws[1]]
@@ -209,9 +287,8 @@ def media_prefix(idxs, rows) -> str:
 def assign_codes(rows, reg, warnings):
     albums = defaultdict(list)
     for i, r in enumerate(rows):
-        a, al = str(r.get("artist") or "").strip(), str(r.get("album") or "").strip()
-        if a and al:
-            albums[(norm(a), norm(al))].append(i)
+        if str(r.get("artist") or "").strip() and str(r.get("album") or "").strip():
+            albums[album_key(r)].append(i)
 
     # 분류 대상 구조화
     meta = {}          # key -> ("N", letter, artist_norm, disp) | ("C", pref, ck, perf_norm, ...)
@@ -223,14 +300,15 @@ def assign_codes(rows, reg, warnings):
             pref = "CG" if any("2864" in str(rows[j].get("label_cat") or "")
                                or rows[j]["sheet"] == "LP좌측선반3층" for j in idxs) else "C"
             comp = str(r.get("composer") or "VA").strip() or "VA"
-            perf = str(r.get("performer") or r.get("artist") or "").strip()
+            perf = lead_artist(r.get("performer") or r.get("artist"), g)
             meta[key] = ("C", pref, comp, perf)
         else:
             if letter == "K" and any(
                     "비매품" in (str(rows[j].get("album") or "") + str(rows[j].get("artist") or "")
                                + str(rows[j].get("notes") or "")) for j in idxs):
                 letter = "KN"
-            nm = sort_source(r)
+            # OST 는 정렬명(작품 제목)이 우선. 비어 있을 때만 대표 아티스트를 쓴다.
+            nm = str(r.get("sort_name") or "").strip() or lead_artist(r.get("artist"), g)
             meta[key] = ("N", letter, norm(artist_key(nm)), nm)
 
     album_code = {}
@@ -289,10 +367,12 @@ def assign_codes(rows, reg, warnings):
         cinit = "V" if comp == "VA" else surname_initial(comp)
         ck = surname_key(comp) or "va"
         cno = reg["composers"][f"{pref}|{cinit}"][ck]
-        pinit = surname_initial(perf)
+        pinit = surname_initial(primary(perf))   # 공동 크레딧은 맨 앞 사람 기준
         pgkey = f"{pref}|{ck}|{pinit}"
         stored_p = reg["performers"].setdefault(pgkey, {})
-        pn = norm(perf) or "unknown"
+        # 협연 지휘자·오케스트라가 붙었다고 별도 연주자가 되면 안 된다.
+        # 코드 이니셜이 대표 연주자 기준이므로 번호도 대표 연주자로 묶는다.
+        pn = norm(primary(perf)) or "unknown"
         if pn not in stored_p:
             peers = sorted(set(list(stored_p) + [pn]))
             no, ok = insert_number(stored_p, pn, peers)
@@ -398,7 +478,7 @@ def build(rows, albums, album_code, digital):
         ws = wb.create_sheet(name[:31])
         head(ws, HDR, WID)
         for seq, (i, r) in enumerate(by_sheet[name], start=1):
-            key = (norm(r.get("artist")), norm(r.get("album")))
+            key = album_key(r)
             code = album_code.get(key, "")
             # 같은 앨범을 LP·CD 둘 다 소장하면 실물(행)의 매체로 접두를 맞춘다
             med = str(r.get("medium") or "").strip().upper()
@@ -501,7 +581,7 @@ def build(rows, albums, album_code, digital):
     label_sets = {"라벨인쇄-LP": [], "라벨인쇄-CD": []}
     for name in SHEET_ORDER:
         for i, r in by_sheet.get(name, []):
-            c = album_code.get((norm(r.get("artist")), norm(r.get("album"))), "")
+            c = album_code.get(album_key(r), "")
             if not c:
                 continue
             med = str(r.get("medium") or "").strip().upper()

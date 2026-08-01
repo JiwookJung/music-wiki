@@ -21,7 +21,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-A1-B04-01",
+  "code": "CD-C-A1-O04-01",
   "genre": "클래식",
   "artist": "New Philharmonia / Frühbeck de Burgos",
   "album": "Albéniz / Frühbeck de Burgos: Suite Española, etc.",
@@ -42,7 +42,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-B0-M01-01",
+  "code": "CD-C-B0-H04-01",
   "genre": "클래식",
   "artist": "The Academy of Ancient Music / Christopher Hogwood",
   "album": "J.S. Bach: Brandenburg Concertos 1-6",
@@ -84,7 +84,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-B2-B01-01",
+  "code": "CD-C-B2-P04-01",
   "genre": "클래식",
   "artist": "Bizet",
   "album": "Bizet: Carmen - L'Arlésienne (Suites)",
@@ -189,7 +189,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-E0-M01-01",
+  "code": "CD-C-E0-O04-01",
   "genre": "클래식",
   "artist": "Royal Philharmonic Orchestra / Del Mar",
   "album": "Elgar: Enigma Variations, Pomp & Circumstance",
@@ -231,7 +231,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-I0-O01-01",
+  "code": "CD-C-I0-O02-01",
   "genre": "클래식",
   "artist": "Eugene Ormandy",
   "album": "Strauss: Viennese Waltzes and Polkas",
@@ -252,7 +252,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-K1-N01-01",
+  "code": "CD-C-K1-K05-01",
   "genre": "클래식",
   "artist": "Leonidas Kavakos / Péter Nagy",
   "album": "Viennese Rhapsody: Music by Fritz Kreisler",
@@ -294,7 +294,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-M04-01",
+  "code": "CD-C-M05-01",
   "genre": "클래식",
   "artist": "Min Kim (김민)",
   "album": "Letter From The Earth",
@@ -315,30 +315,9 @@
   "digital": false
  },
  {
-  "code": "CD-C-M2-L01-01",
-  "genre": "클래식",
-  "artist": "Wolfgang Amadeus Mozart",
-  "album": "Mozart: Die großen Klavierkonzerte / Great Piano Concertos",
-  "rep": "피아노 협주곡 23번, 대관식 협주곡 26번",
-  "composer": "Mozart",
-  "performer": "Svetlana Stanceva, Alberto Lizzio",
-  "desc": "모차르트의 우아하고 서정적인 피아노 협주곡 23번과 대관식 협주곡 26번을 담은 음반으로, 고전주의 특유의 균형미를 느낄 수 있다.",
-  "discogs_id": "8520194",
-  "db_url": "https://www.discogs.com/release/8520194",
-  "label_cat": "506.2144-2",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "CD-C-M2-M01-01",
   "genre": "클래식",
-  "artist": "Marriner",
+  "artist": "Neville Marriner",
   "album": "Mozart: 마지막 5개의 교향곡 (Last 5 Symphonies)",
   "rep": "교향곡 40번, 41번 '주피터'",
   "composer": "Mozart",
@@ -378,7 +357,28 @@
   "digital": false
  },
  {
-  "code": "CD-C-R0-S01-01",
+  "code": "CD-C-M2-S02-01",
+  "genre": "클래식",
+  "artist": "Wolfgang Amadeus Mozart",
+  "album": "Mozart: Die großen Klavierkonzerte / Great Piano Concertos",
+  "rep": "피아노 협주곡 23번, 대관식 협주곡 26번",
+  "composer": "Mozart",
+  "performer": "Svetlana Stanceva, Alberto Lizzio",
+  "desc": "모차르트의 우아하고 서정적인 피아노 협주곡 23번과 대관식 협주곡 26번을 담은 음반으로, 고전주의 특유의 균형미를 느낄 수 있다.",
+  "discogs_id": "8520194",
+  "db_url": "https://www.discogs.com/release/8520194",
+  "label_cat": "506.2144-2",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-C-R0-R02-01",
   "genre": "클래식",
   "artist": "Rachmaninoff",
   "album": "Concerto No. 2 in C minor, Op. 18",
@@ -399,7 +399,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-S3-D01-01",
+  "code": "CD-C-S3-C04-01",
   "genre": "클래식",
   "artist": "Orchestre Philharmonique de Monte-Carlo / James DePreist",
   "album": "Carmen (Bizet/Shchedrin)",
@@ -420,7 +420,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-S4-O01-02",
+  "code": "CD-C-S4-C04-01",
   "genre": "클래식",
   "artist": "Shostakovich | Royal Concertgebouw Orchestra / Riccardo Chailly",
   "album": "The Jazz Album",
@@ -441,28 +441,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-T0-L01-01",
-  "genre": "클래식",
-  "artist": "Lobanov",
-  "album": "Tchaikovsky",
-  "rep": "멜랑콜리 세레나데, 왈츠-스케르초",
-  "composer": "Tchaikovsky",
-  "performer": "Oleg Kagan, Vasily Lobanov",
-  "desc": "차이콥스키의 바이올린과 피아노를 위한 작품 전곡을 담은 음반으로, 서정적이고 애수 어린 러시아 낭만주의 선율이 흐른다.",
-  "discogs_id": "12833091",
-  "db_url": "https://www.discogs.com/release/12833091",
-  "label_cat": "TUDOR 783",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-C-T0-P01-01",
+  "code": "CD-C-T0-B04-01",
   "genre": "클래식",
   "artist": "New York Philharmonic / Leonard Bernstein",
   "album": "Tchaikovsky: Excerpts from Nutcracker & Swan Lake",
@@ -483,17 +462,38 @@
   "digital": false
  },
  {
-  "code": "CD-C-V0-G01-01",
+  "code": "CD-C-T0-K04-01",
   "genre": "클래식",
-  "artist": "Mischa Maisky / Pavel Gililov",
-  "album": "Meditation",
+  "artist": "Lobanov",
+  "album": "Tchaikovsky",
+  "rep": "멜랑콜리 세레나데, 왈츠-스케르초",
+  "composer": "Tchaikovsky",
+  "performer": "Oleg Kagan, Vasily Lobanov",
+  "desc": "차이콥스키의 바이올린과 피아노를 위한 작품 전곡을 담은 음반으로, 서정적이고 애수 어린 러시아 낭만주의 선율이 흐른다.",
+  "discogs_id": "12833091",
+  "db_url": "https://www.discogs.com/release/12833091",
+  "label_cat": "TUDOR 783",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-C-V0-A01-02",
+  "genre": "클래식",
+  "artist": "Mischa Maisky",
+  "album": "Martha Argerich y Mischa Maisky",
   "rep": "",
   "composer": "VA",
-  "performer": "Mischa Maisky, Pavel Gililov",
-  "desc": "첼리스트 미샤 마이스키가 명상적이고 서정적인 소품들을 모아 연주한 음반으로, 잔잔하고 사색적인 분위기가 감돈다.",
-  "discogs_id": "6298800",
-  "db_url": "https://www.discogs.com/release/6298800",
-  "label_cat": "431 544-2",
+  "performer": "Martha Argerich & Mischa Maisky",
+  "desc": "첼리스트 미샤 마이스키와 마르타 아르헤리치가 함께한 실내악 음반으로, 두 거장의 깊은 호흡과 표현력이 돋보인다.",
+  "discogs_id": "11347241",
+  "db_url": "https://www.discogs.com/release/11347241",
+  "label_cat": "",
   "media": [
    "CD"
   ],
@@ -506,7 +506,7 @@
  {
   "code": "CD-C-V0-K01-04",
   "genre": "클래식",
-  "artist": "Karajan",
+  "artist": "Herbert von Karajan",
   "album": "Karajan Forever - The Greatest Classical Hits",
   "rep": "베토벤 교향곡 5번 '운명', 라벨 볼레로",
   "composer": "VA",
@@ -567,17 +567,17 @@
   "digital": false
  },
  {
-  "code": "CD-C-V0-M09-01",
+  "code": "CD-C-V0-M10-01",
   "genre": "클래식",
-  "artist": "Mischa Maisky",
-  "album": "Martha Argerich y Mischa Maisky",
+  "artist": "Mischa Maisky / Pavel Gililov",
+  "album": "Meditation",
   "rep": "",
   "composer": "VA",
-  "performer": "Martha Argerich & Mischa Maisky",
-  "desc": "첼리스트 미샤 마이스키와 마르타 아르헤리치가 함께한 실내악 음반으로, 두 거장의 깊은 호흡과 표현력이 돋보인다.",
-  "discogs_id": "11347241",
-  "db_url": "https://www.discogs.com/release/11347241",
-  "label_cat": "",
+  "performer": "Mischa Maisky, Pavel Gililov",
+  "desc": "첼리스트 미샤 마이스키가 명상적이고 서정적인 소품들을 모아 연주한 음반으로, 잔잔하고 사색적인 분위기가 감돈다.",
+  "discogs_id": "6298800",
+  "db_url": "https://www.discogs.com/release/6298800",
+  "label_cat": "431 544-2",
   "media": [
    "CD"
   ],
@@ -630,7 +630,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-V1-P01-01",
+  "code": "CD-C-V1-S04-01",
   "genre": "클래식",
   "artist": "Sinopoli",
   "album": "Verdi: Overtures",
@@ -651,17 +651,17 @@
   "digital": false
  },
  {
-  "code": "CD-C-V2-P01-01",
+  "code": "CD-C-V2-C04-01",
   "genre": "클래식",
-  "artist": "Nigel Kennedy / Berliner Philharmoniker",
-  "album": "Vivaldi",
-  "rep": "사계",
+  "artist": "The English Concert",
+  "album": "Vivaldi: L'Estro Armonico",
+  "rep": "",
   "composer": "Vivaldi",
-  "performer": "Nigel Kennedy, Berliner Philharmoniker",
-  "desc": "나이젤 케네디가 베를린 필하모닉과 함께한 비발디 음반으로, 파격적이면서도 생기 넘치는 해석으로 화제를 모은 연주다.",
-  "discogs_id": "6960404",
-  "db_url": "https://www.discogs.com/release/6960404",
-  "label_cat": "TELARC DSD CD-80593 / EMI 7243 5 57648 2 0",
+  "performer": "The English Concert, Trevor Pinnock",
+  "desc": "비발디의 합주협주곡집 '조화의 영감'을 원전연주로 담은 음반으로, 트레버 피노크가 이끄는 잉글리시 콘서트의 생동감 있는 연주가 돋보인다.",
+  "discogs_id": "6886089",
+  "db_url": "https://www.discogs.com/release/6886089",
+  "label_cat": "Archiv Produktion 423 094-2",
   "media": [
    "CD"
   ],
@@ -672,7 +672,7 @@
   "digital": false
  },
  {
-  "code": "CD-C-V2-P05-01",
+  "code": "CD-C-V2-C04-02",
   "genre": "클래식",
   "artist": "The English Concert",
   "album": "The English Concert",
@@ -693,17 +693,17 @@
   "digital": false
  },
  {
-  "code": "CD-C-V2-P05-02",
+  "code": "CD-C-V2-K01-02",
   "genre": "클래식",
-  "artist": "The English Concert",
-  "album": "Vivaldi: L'Estro Armonico",
-  "rep": "",
+  "artist": "Nigel Kennedy / Berliner Philharmoniker",
+  "album": "Vivaldi",
+  "rep": "사계",
   "composer": "Vivaldi",
-  "performer": "The English Concert, Trevor Pinnock",
-  "desc": "비발디의 합주협주곡집 '조화의 영감'을 원전연주로 담은 음반으로, 트레버 피노크가 이끄는 잉글리시 콘서트의 생동감 있는 연주가 돋보인다.",
-  "discogs_id": "6886089",
-  "db_url": "https://www.discogs.com/release/6886089",
-  "label_cat": "Archiv Produktion 423 094-2",
+  "performer": "Nigel Kennedy, Berliner Philharmoniker",
+  "desc": "나이젤 케네디가 베를린 필하모닉과 함께한 비발디 음반으로, 파격적이면서도 생기 넘치는 해석으로 화제를 모은 연주다.",
+  "discogs_id": "6960404",
+  "db_url": "https://www.discogs.com/release/6960404",
+  "label_cat": "TELARC DSD CD-80593 / EMI 7243 5 57648 2 0",
   "media": [
    "CD"
   ],
@@ -966,7 +966,7 @@
   "digital": false
  },
  {
-  "code": "CD-G-L09-01",
+  "code": "CD-G-L10-01",
   "genre": "클래식기타",
   "artist": "Los Angeles Guitar Quartet (LAGQ)",
   "album": "Air & Ground",
@@ -1029,7 +1029,7 @@
   "digital": true
  },
  {
-  "code": "CD-G-R09-01",
+  "code": "CD-G-R05-02",
   "genre": "클래식기타",
   "artist": "Roland Dyens (guitare)",
   "album": "Chants d'aura",
@@ -1953,27 +1953,6 @@
   "digital": false
  },
  {
-  "code": "CD-K-ㄱ25-02",
-  "genre": "가요",
-  "artist": "김동률",
-  "album": "5th",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "김동률의 5번째 정규앨범으로, 웅장한 편곡과 섬세한 보컬이 어우러진 가요 명반이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "CD-K-ㄱ25-03",
   "genre": "가요",
   "artist": "김동률",
@@ -2287,27 +2266,6 @@
   ],
   "copies": 1,
   "digital": true
- },
- {
-  "code": "CD-K-ㅇ34-02",
-  "genre": "가요",
-  "artist": "이문세",
-  "album": "New Direction",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "이문세의 15집으로, 관록 있는 보컬과 세련된 편곡이 어우러진 중년 발라드 감성의 가요 음반이다.",
-  "discogs_id": "23839391",
-  "db_url": "https://musicbrainz.org/release-group/1b526772-f144-4532-9d35-c42c722c0284",
-  "label_cat": "LOEN L200001097",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD아래층"
-  ],
-  "copies": 1,
-  "digital": false
  },
  {
   "code": "CD-K-ㅇ34-06",
@@ -2940,27 +2898,6 @@
   "digital": false
  },
  {
-  "code": "CD-T-A05-01",
-  "genre": "탱고",
-  "artist": "A. Piazzolla",
-  "album": "María de Buenos Aires",
-  "rep": "Fuga y Misterio, Yo Soy María",
-  "composer": "",
-  "performer": "",
-  "desc": "피아졸라의 탱고 오페리타 '부에노스아이레스의 마리아'로, 극적인 구성과 반도네온의 애수가 어우러진 이색적인 작품이다.",
-  "discogs_id": "4854480",
-  "db_url": "https://www.discogs.com/release/4854480",
-  "label_cat": "CDS 185/1-2",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "CD-T-A09-02",
   "genre": "탱고",
   "artist": "Astor Piazzolla",
@@ -3045,6 +2982,48 @@
   "digital": false
  },
  {
+  "code": "CD-T-A09-19",
+  "genre": "탱고",
+  "artist": "Astor Piazzolla",
+  "album": "Piazzolla: Music for Flute and Guitar",
+  "rep": "탱고의 역사",
+  "composer": "",
+  "performer": "",
+  "desc": "피아졸라의 작품을 플루트와 기타 이중주로 편곡한 음반으로, 원곡의 열정을 실내악적으로 섬세하게 풀어낸다.",
+  "discogs_id": "3332368",
+  "db_url": "https://www.discogs.com/release/3332368",
+  "label_cat": "NAXOS 8.554760",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-T-A09-20",
+  "genre": "탱고",
+  "artist": "Astor Piazzolla",
+  "album": "María de Buenos Aires",
+  "rep": "Fuga y Misterio, Yo Soy María",
+  "composer": "",
+  "performer": "",
+  "desc": "피아졸라의 탱고 오페리타 '부에노스아이레스의 마리아'로, 극적인 구성과 반도네온의 애수가 어우러진 이색적인 작품이다.",
+  "discogs_id": "4854480",
+  "db_url": "https://www.discogs.com/release/4854480",
+  "label_cat": "CDS 185/1-2",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "CD-T-B05-01",
   "genre": "탱고",
   "artist": "Baltazar Benitez",
@@ -3066,9 +3045,9 @@
   "digital": false
  },
  {
-  "code": "CD-T-B09-01",
+  "code": "CD-T-D01-02",
   "genre": "탱고",
-  "artist": "Barenboim",
+  "artist": "Daniel Barenboim",
   "album": "Tangos Among Friends",
   "rep": "",
   "composer": "",
@@ -3234,7 +3213,7 @@
   "digital": false
  },
  {
-  "code": "CD-T-J01-01",
+  "code": "CD-T-J02-01",
   "genre": "탱고",
   "artist": "José Carli, Orquesta Estable Del Teatro Colón",
   "album": "Piazzolla: Classic Tracks from Argentina",
@@ -3318,7 +3297,7 @@
   "digital": false
  },
  {
-  "code": "CD-T-M09-01",
+  "code": "CD-T-M10-01",
   "genre": "탱고",
   "artist": "Mondelci / Moscow Chamber Orchestra / Orbelian",
   "album": "Piazzolla: Tangos arranged for saxophone and orchestra",
@@ -3350,27 +3329,6 @@
   "discogs_id": "12520326",
   "db_url": "https://www.discogs.com/release/12520326",
   "label_cat": "GOOD3078",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-T-P01-01",
-  "genre": "탱고",
-  "artist": "Piazzolla",
-  "album": "Piazzolla: Music for Flute and Guitar",
-  "rep": "탱고의 역사",
-  "composer": "",
-  "performer": "",
-  "desc": "피아졸라의 작품을 플루트와 기타 이중주로 편곡한 음반으로, 원곡의 열정을 실내악적으로 섬세하게 풀어낸다.",
-  "discogs_id": "3332368",
-  "db_url": "https://www.discogs.com/release/3332368",
-  "label_cat": "NAXOS 8.554760",
   "media": [
    "CD"
   ],
@@ -3444,6 +3402,27 @@
   "digital": false
  },
  {
+  "code": "CD-T-R01-03",
+  "genre": "탱고",
+  "artist": "小松亮太 (Ryota Komatsu)",
+  "album": "ザ・ベスト (The Best)",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "일본을 대표하는 반도네온 연주자 고마쓰 료타의 베스트 음반으로, 탱고 특유의 애수와 정열이 담긴 연주를 모았다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "SICC-180",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "CD-T-T01-01",
   "genre": "탱고",
   "artist": "Trio Assai",
@@ -3455,27 +3434,6 @@
   "discogs_id": "",
   "db_url": "",
   "label_cat": "SRD-304",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "CD-T-ㄱ01-01",
-  "genre": "탱고",
-  "artist": "小松亮太(고마쓰 료타)",
-  "album": "ザ・ベスト (The Best)",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "일본을 대표하는 반도네온 연주자 고마쓰 료타의 베스트 음반으로, 탱고 특유의 애수와 정열이 담긴 연주를 모았다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "SICC-180",
   "media": [
    "CD"
   ],
@@ -3560,27 +3518,6 @@
   "discogs_id": "12923718",
   "db_url": "https://www.discogs.com/release/12923718",
   "label_cat": "HNCD 1336",
-  "media": [
-   "CD"
-  ],
-  "locations": [
-   "CD윗층"
-  ],
-  "copies": 1,
-  "digital": true
- },
- {
-  "code": "CD-W-L01-01",
-  "genre": "월드",
-  "artist": "Lakatos",
-  "album": "Lakatos",
-  "rep": "차르다시",
-  "composer": "",
-  "performer": "",
-  "desc": "로비 라카토슈 앙상블의 음반으로, 집시 음악 특유의 즉흥성과 현란한 바이올린 기교를 담고 있을 것으로 보인다.",
-  "discogs_id": "20903245",
-  "db_url": "https://www.discogs.com/release/20903245",
-  "label_cat": "457 879-2",
   "media": [
    "CD"
   ],
@@ -3738,7 +3675,7 @@
   "digital": false
  },
  {
-  "code": "CD-W-R05-01",
+  "code": "CD-W-R01-02",
   "genre": "월드",
   "artist": "Roby Lakatos and His Ensemble",
   "album": "Live From Budapest",
@@ -3756,10 +3693,10 @@
    "CD윗층"
   ],
   "copies": 1,
-  "digital": true
+  "digital": false
  },
  {
-  "code": "CD-W-R09-01",
+  "code": "CD-W-R01-03",
   "genre": "월드",
   "artist": "Roby Lakatos & Ensemble",
   "album": "Fire Dance",
@@ -3770,6 +3707,27 @@
   "discogs_id": "6626917",
   "db_url": "https://www.discogs.com/release/6626917",
   "label_cat": "",
+  "media": [
+   "CD"
+  ],
+  "locations": [
+   "CD윗층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "CD-W-R01-04",
+  "genre": "월드",
+  "artist": "Roby Lakatos",
+  "album": "Lakatos",
+  "rep": "차르다시",
+  "composer": "",
+  "performer": "",
+  "desc": "로비 라카토슈 앙상블의 음반으로, 집시 음악 특유의 즉흥성과 현란한 바이올린 기교를 담고 있을 것으로 보인다.",
+  "discogs_id": "20903245",
+  "db_url": "https://www.discogs.com/release/20903245",
+  "label_cat": "457 879-2",
   "media": [
    "CD"
   ],
@@ -3843,14 +3801,14 @@
   "digital": true
  },
  {
-  "code": "CD-W-ㅇ01-01",
+  "code": "CD-W-Y04-01",
   "genre": "월드",
   "artist": "윤상(Yoon Sang) 외",
-  "album": "운상의 월드뮤직",
+  "album": "운상의 월드뮤직 (selected by Yoon Sang)",
   "rep": "",
   "composer": "",
   "performer": "",
-  "desc": "윤상이 선곡한 월드뮤직 컴필레이션으로, 다양한 나라의 이색적인 음악을 소개하는 앨범이다.",
+  "desc": "작곡가 겸 프로듀서 윤상이 직접 고른 월드뮤직 모음집으로, 다양한 지역의 이색적인 사운드를 큐레이션한 컴필레이션이다.",
   "discogs_id": "",
   "db_url": "",
   "label_cat": "DZ2652",
@@ -3864,14 +3822,14 @@
   "digital": false
  },
  {
-  "code": "CD-W-ㅇ01-02",
+  "code": "CD-W-Y04-02",
   "genre": "월드",
   "artist": "윤상(Yoon Sang) 외",
-  "album": "운상의 월드뮤직 (selected by Yoon Sang)",
+  "album": "운상의 월드뮤직",
   "rep": "",
   "composer": "",
   "performer": "",
-  "desc": "작곡가 겸 프로듀서 윤상이 직접 고른 월드뮤직 모음집으로, 다양한 지역의 이색적인 사운드를 큐레이션한 컴필레이션이다.",
+  "desc": "윤상이 선곡한 월드뮤직 컴필레이션으로, 다양한 나라의 이색적인 음악을 소개하는 앨범이다.",
   "discogs_id": "",
   "db_url": "",
   "label_cat": "DZ2652",
@@ -3969,6 +3927,27 @@
   "digital": false
  },
  {
+  "code": "LP-C-B0-H08-01",
+  "genre": "클래식",
+  "artist": "Concentus Musicus Wien / Nikolaus Harnoncourt",
+  "album": "Bach: The Brandenburg Concertos",
+  "rep": "Brandenburg Concerto No. 3",
+  "composer": "Bach",
+  "performer": "Nikolaus Harnoncourt, Concentus Musicus Wien",
+  "desc": "아르농쿠르와 콘첸투스 무지쿠스 빈이 시대악기로 연주한 브란덴부르크 협주곡으로, 정갈하고 생동감 있는 원전연주가 특징이다.",
+  "discogs_id": "4587681",
+  "db_url": "https://www.discogs.com/release/4587681",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-C-B0-K01-01",
   "genre": "클래식",
   "artist": "J.S. Bach / Herbert von Karajan",
@@ -4022,6 +4001,27 @@
   "discogs_id": "2810590",
   "db_url": "https://www.discogs.com/release/2810590",
   "label_cat": "LM 1017",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP침대옆"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-C-B0-L09-01",
+  "genre": "클래식",
+  "artist": "Yunchan Lim",
+  "album": "Bach: Goldberg Variations (Live at Carnegie Hall)",
+  "rep": "골드베르크 변주곡",
+  "composer": "Johann Sebastian Bach",
+  "performer": "Yunchan Lim (임윤찬)",
+  "desc": "임윤찬이 카네기홀에서 라이브로 연주한 바흐 골드베르크 변주곡으로, 사색적이면서도 활력 넘치는 해석을 담고 있다.",
+  "discogs_id": "36599506",
+  "db_url": "https://www.discogs.com/release/36599506",
+  "label_cat": "DYL101 / 2LP 487 1596",
   "media": [
    "LP"
   ],
@@ -4158,48 +4158,6 @@
   "digital": false
  },
  {
-  "code": "LP-C-B0-W01-01",
-  "genre": "클래식",
-  "artist": "Concentus Musicus Wien / Nikolaus Harnoncourt",
-  "album": "Bach: The Brandenburg Concertos",
-  "rep": "Brandenburg Concerto No. 3",
-  "composer": "Bach",
-  "performer": "Nikolaus Harnoncourt, Concentus Musicus Wien",
-  "desc": "아르농쿠르와 콘첸투스 무지쿠스 빈이 시대악기로 연주한 브란덴부르크 협주곡으로, 정갈하고 생동감 있는 원전연주가 특징이다.",
-  "discogs_id": "4587681",
-  "db_url": "https://www.discogs.com/release/4587681",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-C-B0-Y01-01",
-  "genre": "클래식",
-  "artist": "Yunchan Lim",
-  "album": "Bach: Goldberg Variations (Live at Carnegie Hall)",
-  "rep": "골드베르크 변주곡",
-  "composer": "Johann Sebastian Bach",
-  "performer": "Yunchan Lim (임윤찬)",
-  "desc": "임윤찬이 카네기홀에서 라이브로 연주한 바흐 골드베르크 변주곡으로, 사색적이면서도 활력 넘치는 해석을 담고 있다.",
-  "discogs_id": "36599506",
-  "db_url": "https://www.discogs.com/release/36599506",
-  "label_cat": "DYL101 / 2LP 487 1596",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP침대옆"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-C-B1-A01-01",
   "genre": "클래식",
   "artist": "Ansermet",
@@ -4326,7 +4284,7 @@
   "digital": false
  },
  {
-  "code": "LP-C-B3-B01-01",
+  "code": "LP-C-B3-B02-01",
   "genre": "클래식",
   "artist": "Brahms, Gino Cioffi, Samuel Mayes, Ralph Berkowitz",
   "album": "Brahms: Clarinet Sonata No. 2 / Clarinet Trio",
@@ -4421,6 +4379,27 @@
   "discogs_id": "7984435",
   "db_url": "https://www.discogs.com/release/7984435",
   "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-C-C0-C09-01",
+  "genre": "클래식",
+  "artist": "Seong-Jin Cho",
+  "album": "Winner of the 17th International Fryderyk Chopin Piano Competition, Warsaw 2015 (10 Years Anniversary Edition)",
+  "rep": "Piano Concerto No. 1",
+  "composer": "Chopin",
+  "performer": "조성진 (Seong-Jin Cho)",
+  "desc": "조성진의 2015년 쇼팽 콩쿠르 우승 실황을 담은 기념반으로, 섬세하고 시적인 쇼팽 해석이 돋보인다.",
+  "discogs_id": "1396624",
+  "db_url": "https://www.discogs.com/release/1396624",
+  "label_cat": "4867 (catalog cut off/partial)",
   "media": [
    "LP"
   ],
@@ -4599,27 +4578,6 @@
   "digital": false
  },
  {
-  "code": "LP-C-C0-ㅈ01-01",
-  "genre": "클래식",
-  "artist": "Seong-Jin Cho",
-  "album": "Winner of the 17th International Fryderyk Chopin Piano Competition, Warsaw 2015 (10 Years Anniversary Edition)",
-  "rep": "Piano Concerto No. 1",
-  "composer": "Chopin",
-  "performer": "조성진 (Seong-Jin Cho)",
-  "desc": "조성진의 2015년 쇼팽 콩쿠르 우승 실황을 담은 기념반으로, 섬세하고 시적인 쇼팽 해석이 돋보인다.",
-  "discogs_id": "1396624",
-  "db_url": "https://www.discogs.com/release/1396624",
-  "label_cat": "4867 (catalog cut off/partial)",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-C-G0-H01-01",
   "genre": "클래식",
   "artist": "Jascha Heifetz",
@@ -4641,7 +4599,7 @@
   "digital": false
  },
  {
-  "code": "LP-C-K0-M01-01",
+  "code": "LP-C-K0-L04-01",
   "genre": "클래식",
   "artist": "Landowska(?)/Monitor",
   "album": "Khachaturian: Spartacus",
@@ -4769,7 +4727,7 @@
  {
   "code": "LP-C-L0-H01-01",
   "genre": "클래식",
-  "artist": "Horowitz",
+  "artist": "Vladimir Horowitz",
   "album": "Horowitz Collection Vol. 6 - Liszt",
   "rep": "헝가리 랩소디 2번",
   "composer": "Franz Liszt",
@@ -4806,6 +4764,27 @@
    "LP보관박스2"
   ],
   "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-C-L0-L05-01",
+  "genre": "클래식",
+  "artist": "Yunchan Lim",
+  "album": "Liszt: Transcendental Etudes",
+  "rep": "초절기교 연습곡 4번 '마제파'",
+  "composer": "Franz Liszt",
+  "performer": "Yunchan Lim (임윤찬)",
+  "desc": "임윤찬이 선보인 리스트 초절기교 연습곡 전곡 실황으로, 압도적인 기교와 몰입감 넘치는 연주가 인상적인 음반이다.",
+  "discogs_id": "29740270",
+  "db_url": "https://www.discogs.com/release/29740270",
+  "label_cat": "AMLP3-005C / Aulos Media",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP침대옆"
+  ],
+  "copies": 2,
   "digital": false
  },
  {
@@ -4851,27 +4830,6 @@
   "digital": false
  },
  {
-  "code": "LP-C-L0-Y01-01",
-  "genre": "클래식",
-  "artist": "Yunchan Lim",
-  "album": "Liszt: Transcendental Etudes",
-  "rep": "초절기교 연습곡 4번 '마제파'",
-  "composer": "Franz Liszt",
-  "performer": "Yunchan Lim (임윤찬)",
-  "desc": "임윤찬이 선보인 리스트 초절기교 연습곡 전곡 실황으로, 압도적인 기교와 몰입감 넘치는 연주가 인상적인 음반이다.",
-  "discogs_id": "29740270",
-  "db_url": "https://www.discogs.com/release/29740270",
-  "label_cat": "AMLP3-005C / Aulos Media",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP침대옆"
-  ],
-  "copies": 2,
-  "digital": false
- },
- {
   "code": "LP-C-M0-B01-01",
   "genre": "클래식",
   "artist": "Barbriolli",
@@ -4893,13 +4851,13 @@
   "digital": false
  },
  {
-  "code": "LP-C-M0-K01-01",
+  "code": "LP-C-M0-K02-01",
   "genre": "클래식",
-  "artist": "Karajan",
+  "artist": "Herbert von Karajan",
   "album": "Mahler: 5. Symphonie · Kindertotenlieder",
   "rep": "교향곡 5번 중 아다지에토",
   "composer": "Gustav Mahler",
-  "performer": "Karajan",
+  "performer": "Herbert von Karajan",
   "desc": "카라얀이 베를린 필하모닉과 함께한 말러 교향곡 5번으로, 장중하면서도 서정적인 아다지에토 악장이 특히 인상적인 음반이다.",
   "discogs_id": "17204908",
   "db_url": "https://www.discogs.com/release/17204908",
@@ -4958,7 +4916,7 @@
  {
   "code": "LP-C-R0-A01-01",
   "genre": "클래식",
-  "artist": "Ashkenazy",
+  "artist": "Vladimir Ashkenazy",
   "album": "Rachmaninoff: Concerto No.1, 2",
   "rep": "Piano Concerto No. 2",
   "composer": "Rachmaninoff",
@@ -4977,9 +4935,30 @@
   "digital": false
  },
  {
+  "code": "LP-C-R0-A01-02",
+  "genre": "클래식",
+  "artist": "Ashkenazy / Ormandy / Philadelphia Orchestra",
+  "album": "Rachmaninoff: Concerto No. 3",
+  "rep": "피아노 협주곡 3번",
+  "composer": "Sergei Rachmaninoff",
+  "performer": "Vladimir Ashkenazy / Eugene Ormandy",
+  "desc": "블라디미르 아쉬케나지가 오먼디와 필라델피아 오케스트라와 함께한 라흐마니노프 피아노 협주곡 3번으로, 낭만적이고 서정적인 선율을 유려하게 들려준다.",
+  "discogs_id": "5854217",
+  "db_url": "https://www.discogs.com/release/5854217",
+  "label_cat": "\"Grands Interprètes\" International series",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP침대옆"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-C-R0-H01-01",
   "genre": "클래식",
-  "artist": "Vladmir Horowitz",
+  "artist": "Vladimir Horowitz",
   "album": "Rachmaninoff: Concerto No.3",
   "rep": "Piano Concerto No. 3",
   "composer": "Rachmaninoff",
@@ -4998,24 +4977,24 @@
   "digital": false
  },
  {
-  "code": "LP-C-R0-O01-01",
+  "code": "LP-C-R0-L04-01",
   "genre": "클래식",
-  "artist": "Ashkenazy / Ormandy / Philadelphia Orchestra",
-  "album": "Rachmaninoff: Concerto No. 3",
-  "rep": "피아노 협주곡 3번",
-  "composer": "Sergei Rachmaninoff",
-  "performer": "Vladimir Ashkenazy / Eugene Ormandy",
-  "desc": "블라디미르 아쉬케나지가 오먼디와 필라델피아 오케스트라와 함께한 라흐마니노프 피아노 협주곡 3번으로, 낭만적이고 서정적인 선율을 유려하게 들려준다.",
-  "discogs_id": "5854217",
-  "db_url": "https://www.discogs.com/release/5854217",
-  "label_cat": "\"Grands Interprètes\" International series",
+  "artist": "Yunchan Lim / Marin Alsop, Fort Worth Symphony",
+  "album": "Rachmaninoff: Concerto No.3",
+  "rep": "Piano Concerto No. 3",
+  "composer": "Rachmaninoff",
+  "performer": "임윤찬(Yunchan Lim), Marin Alsop, Fort Worth Symphony Orchestra",
+  "desc": "임윤찬이 반 클라이번 콩쿠르 실황으로 남긴 라흐마니노프 협주곡 3번으로, 폭발적인 기교와 서사적인 해석이 화제가 된 연주다.",
+  "discogs_id": "34093363",
+  "db_url": "https://www.discogs.com/release/34093363",
+  "label_cat": "487 1024",
   "media": [
    "LP"
   ],
   "locations": [
-   "LP침대옆"
+   "LP좌측선반2층"
   ],
-  "copies": 1,
+  "copies": 2,
   "digital": false
  },
  {
@@ -5061,28 +5040,7 @@
   "digital": false
  },
  {
-  "code": "LP-C-R0-ㅇ01-01",
-  "genre": "클래식",
-  "artist": "Yunchan Lim / Marin Alsop, Fort Worth Symphony",
-  "album": "Rachmaninoff: Concerto No.3",
-  "rep": "Piano Concerto No. 3",
-  "composer": "Rachmaninoff",
-  "performer": "임윤찬(Yunchan Lim), Marin Alsop, Fort Worth Symphony Orchestra",
-  "desc": "임윤찬이 반 클라이번 콩쿠르 실황으로 남긴 라흐마니노프 협주곡 3번으로, 폭발적인 기교와 서사적인 해석이 화제가 된 연주다.",
-  "discogs_id": "34093363",
-  "db_url": "https://www.discogs.com/release/34093363",
-  "label_cat": "487 1024",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반2층"
-  ],
-  "copies": 2,
-  "digital": false
- },
- {
-  "code": "LP-C-R1-F01-01",
+  "code": "LP-C-R1-B04-01",
   "genre": "클래식",
   "artist": "L'Orchestre National de France",
   "album": "Ravel: Boléro",
@@ -5187,27 +5145,6 @@
   "digital": false
  },
  {
-  "code": "LP-C-S2-I01-01",
-  "genre": "클래식",
-  "artist": "Schubert, Eugene Istomin",
-  "album": "Sonata in D major, Op. 53",
-  "rep": "Piano Sonata in D major, D.850",
-  "composer": "Schubert",
-  "performer": "",
-  "desc": "슈베르트 피아노 소나타 D장조(Op.53)를 담은 음반으로, 서정적이고 목가적인 악상이 돋보인다.",
-  "discogs_id": "6018083",
-  "db_url": "https://www.discogs.com/release/6018083",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-C-S2-S01-01",
   "genre": "클래식",
   "artist": "Schubert",
@@ -5229,6 +5166,48 @@
   "digital": false
  },
  {
+  "code": "LP-C-S2-S01-02",
+  "genre": "클래식",
+  "artist": "Schubert, Eugene Istomin",
+  "album": "Sonata in D major, Op. 53",
+  "rep": "Piano Sonata in D major, D.850",
+  "composer": "Schubert",
+  "performer": "",
+  "desc": "슈베르트 피아노 소나타 D장조(Op.53)를 담은 음반으로, 서정적이고 목가적인 악상이 돋보인다.",
+  "discogs_id": "6018083",
+  "db_url": "https://www.discogs.com/release/6018083",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-C-S4-C04-02",
+  "genre": "클래식",
+  "artist": "Royal Concertgebouw Orchestra / Riccardo Chailly",
+  "album": "Shostakovich: The Jazz Album",
+  "rep": "Waltz No. 2 (Jazz Suite No. 2)",
+  "composer": "Shostakovich",
+  "performer": "Riccardo Chailly, Royal Concertgebouw Orchestra",
+  "desc": "쇼스타코비치의 재즈 모음곡을 담은 음반으로, 리카르도 샤이의 경쾌하고 풍자적인 지휘가 소비에트 시대 재즈의 색채를 살린다.",
+  "discogs_id": "9484261",
+  "db_url": "https://www.discogs.com/release/9484261",
+  "label_cat": "485 0500",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-C-S4-K01-01",
   "genre": "클래식",
   "artist": "Theodore Kuchar, National Symphony Orchestra of Ukraine",
@@ -5245,27 +5224,6 @@
   ],
   "locations": [
    "LP침대옆"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-C-S4-O01-01",
-  "genre": "클래식",
-  "artist": "Royal Concertgebouw Orchestra / Riccardo Chailly",
-  "album": "Shostakovich: The Jazz Album",
-  "rep": "Waltz No. 2 (Jazz Suite No. 2)",
-  "composer": "Shostakovich",
-  "performer": "Riccardo Chailly, Royal Concertgebouw Orchestra",
-  "desc": "쇼스타코비치의 재즈 모음곡을 담은 음반으로, 리카르도 샤이의 경쾌하고 풍자적인 지휘가 소비에트 시대 재즈의 색채를 살린다.",
-  "discogs_id": "9484261",
-  "db_url": "https://www.discogs.com/release/9484261",
-  "label_cat": "485 0500",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
   ],
   "copies": 1,
   "digital": false
@@ -5313,6 +5271,27 @@
   "digital": false
  },
  {
+  "code": "LP-C-T0-L05-01",
+  "genre": "클래식",
+  "artist": "Yunchan Lim",
+  "album": "Tchaikovsky: The Seasons",
+  "rep": "사계 중 '6월 뱃노래'",
+  "composer": "Pyotr Ilyich Tchaikovsky",
+  "performer": "Yunchan Lim (임윤찬)",
+  "desc": "임윤찬이 연주하는 차이콥스키 '사계'로, 계절의 정취를 섬세하고 시적으로 그려낸 피아노 소품집이다.",
+  "discogs_id": "34891799",
+  "db_url": "https://www.discogs.com/release/34891799",
+  "label_cat": "487 1022 / Aulos Media",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP침대옆"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-C-T0-M01-01",
   "genre": "클래식",
   "artist": "Erica Morini",
@@ -5336,7 +5315,7 @@
  {
   "code": "LP-C-T0-M05-01",
   "genre": "클래식",
-  "artist": "Maazel",
+  "artist": "Lorin Maazel",
   "album": "Tchaikovsky: Symphony No6",
   "rep": "Symphony No. 6 'Pathétique'",
   "composer": "Tchaikovsky",
@@ -5350,27 +5329,6 @@
   ],
   "locations": [
    "LP좌측선반2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-C-T0-Y01-01",
-  "genre": "클래식",
-  "artist": "Yunchan Lim",
-  "album": "Tchaikovsky: The Seasons",
-  "rep": "사계 중 '6월 뱃노래'",
-  "composer": "Pyotr Ilyich Tchaikovsky",
-  "performer": "Yunchan Lim (임윤찬)",
-  "desc": "임윤찬이 연주하는 차이콥스키 '사계'로, 계절의 정취를 섬세하고 시적으로 그려낸 피아노 소품집이다.",
-  "discogs_id": "34891799",
-  "db_url": "https://www.discogs.com/release/34891799",
-  "label_cat": "487 1022 / Aulos Media",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP침대옆"
   ],
   "copies": 1,
   "digital": false
@@ -5437,27 +5395,6 @@
    "LP침대옆"
   ],
   "copies": 2,
-  "digital": false
- },
- {
-  "code": "LP-C-V0-B09-01",
-  "genre": "클래식",
-  "artist": "Rostropovich / Britten",
-  "album": "Schubert, Bridge: Chamber Music",
-  "rep": "Arpeggione Sonata",
-  "composer": "VA",
-  "performer": "Mstislav Rostropovich, Benjamin Britten",
-  "desc": "로스트로포비치와 브리튼이 함께한 첼로·피아노 실내악반으로, 깊이 있고 절제된 해석이 돋보인다.",
-  "discogs_id": "8364848",
-  "db_url": "https://www.discogs.com/release/8364848",
-  "label_cat": "Analogphonic",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
   "digital": false
  },
  {
@@ -5587,6 +5524,69 @@
   "digital": false
  },
  {
+  "code": "LP-C-V0-K01-05",
+  "genre": "클래식",
+  "artist": "Philharmonia Orchestra / Herbert von Karajan",
+  "album": "The Essential Karajan",
+  "rep": "",
+  "composer": "VA",
+  "performer": "Herbert von Karajan, Philharmonia Orchestra",
+  "desc": "카라얀의 대표 관현악 명연들을 모은 편집반으로, 매끄럽고 웅장한 카라얀 사운드를 감상할 수 있다.",
+  "discogs_id": "10072324",
+  "db_url": "https://www.discogs.com/release/10072324",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-C-V0-K01-06",
+  "genre": "클래식",
+  "artist": "Philharmonia Orchestra / Herbert von Karajan",
+  "album": "Ballet Music from the Operas",
+  "rep": "Dance of the Hours",
+  "composer": "VA",
+  "performer": "Herbert von Karajan, Philharmonia Orchestra",
+  "desc": "오페라 속 발레 음악들을 카라얀이 필하모니아 오케스트라와 함께 우아하고 화려하게 엮은 음반이다.",
+  "discogs_id": "10155513",
+  "db_url": "https://www.discogs.com/release/10155513",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-C-V0-K01-07",
+  "genre": "클래식",
+  "artist": "Herbert von Karajan, Wiener Philharmoniker",
+  "album": "Tchaikovsky: Nutcracker Suite / Grieg: Peer Gynt Music",
+  "rep": "Nutcracker Suite - Dance of the Sugar Plum Fairy, In the Hall of the Mountain King",
+  "composer": "VA",
+  "performer": "Herbert von Karajan, Wiener Philharmoniker",
+  "desc": "카라얀이 빈 필하모닉과 함께한 차이콥스키 '호두까기 인형'과 그리그 '페르귄트' 모음곡으로, 화려하고 서정적인 관현악을 들려준다.",
+  "discogs_id": "8112778",
+  "db_url": "https://www.discogs.com/release/8112778",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-C-V0-K05-02",
   "genre": "클래식",
   "artist": "Nigel Kennedy",
@@ -5629,27 +5629,6 @@
   "digital": false
  },
  {
-  "code": "LP-C-V0-L01-01",
-  "genre": "클래식",
-  "artist": "English Chamber Orchestra, Raymond Leppard",
-  "album": "Alla Barocca",
-  "rep": "",
-  "composer": "VA",
-  "performer": "",
-  "desc": "바로크 시대 관현악 소품들을 모은 편집반으로, 우아하고 경쾌한 앙상블 연주를 들려준다.",
-  "discogs_id": "3027891",
-  "db_url": "https://www.discogs.com/release/3027891",
-  "label_cat": "5254 ...-372 (partial)",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-C-V0-L05-01",
   "genre": "클래식",
   "artist": "Lang Lang",
@@ -5673,7 +5652,7 @@
  {
   "code": "LP-C-V0-M01-01",
   "genre": "클래식",
-  "artist": "Anne Sophie Mutter",
+  "artist": "Anne-Sophie Mutter",
   "album": "Ouverturen und Intermezzi",
   "rep": "",
   "composer": "VA",
@@ -5736,7 +5715,7 @@
  {
   "code": "LP-C-V0-O01-01",
   "genre": "클래식",
-  "artist": "Ormandy",
+  "artist": "Eugene Ormandy",
   "album": "Ormandy's Greatest Hits",
   "rep": "",
   "composer": "VA",
@@ -5776,48 +5755,6 @@
   "digital": false
  },
  {
-  "code": "LP-C-V0-O09-01",
-  "genre": "클래식",
-  "artist": "Philharmonia Orchestra / Herbert von Karajan",
-  "album": "Ballet Music from the Operas",
-  "rep": "Dance of the Hours",
-  "composer": "VA",
-  "performer": "Herbert von Karajan, Philharmonia Orchestra",
-  "desc": "오페라 속 발레 음악들을 카라얀이 필하모니아 오케스트라와 함께 우아하고 화려하게 엮은 음반이다.",
-  "discogs_id": "10155513",
-  "db_url": "https://www.discogs.com/release/10155513",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-C-V0-O09-02",
-  "genre": "클래식",
-  "artist": "Philharmonia Orchestra / Herbert von Karajan",
-  "album": "The Essential Karajan",
-  "rep": "",
-  "composer": "VA",
-  "performer": "Herbert von Karajan, Philharmonia Orchestra",
-  "desc": "카라얀의 대표 관현악 명연들을 모은 편집반으로, 매끄럽고 웅장한 카라얀 사운드를 감상할 수 있다.",
-  "discogs_id": "10072324",
-  "db_url": "https://www.discogs.com/release/10072324",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-C-V0-O13-01",
   "genre": "클래식",
   "artist": "London Philharmonic",
@@ -5829,6 +5766,27 @@
   "discogs_id": "4756045",
   "db_url": "https://www.discogs.com/release/4756045",
   "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-C-V0-O14-01",
+  "genre": "클래식",
+  "artist": "English Chamber Orchestra, Raymond Leppard",
+  "album": "Alla Barocca",
+  "rep": "",
+  "composer": "VA",
+  "performer": "",
+  "desc": "바로크 시대 관현악 소품들을 모은 편집반으로, 우아하고 경쾌한 앙상블 연주를 들려준다.",
+  "discogs_id": "3027891",
+  "db_url": "https://www.discogs.com/release/3027891",
+  "label_cat": "5254 ...-372 (partial)",
   "media": [
    "LP"
   ],
@@ -5860,27 +5818,6 @@
   "digital": false
  },
  {
-  "code": "LP-C-V0-P05-01",
-  "genre": "클래식",
-  "artist": "Herbert von Karajan, Wiener Philharmoniker",
-  "album": "Tchaikovsky: Nutcracker Suite / Grieg: Peer Gynt Music",
-  "rep": "Nutcracker Suite - Dance of the Sugar Plum Fairy, In the Hall of the Mountain King",
-  "composer": "VA",
-  "performer": "Herbert von Karajan, Wiener Philharmoniker",
-  "desc": "카라얀이 빈 필하모닉과 함께한 차이콥스키 '호두까기 인형'과 그리그 '페르귄트' 모음곡으로, 화려하고 서정적인 관현악을 들려준다.",
-  "discogs_id": "8112778",
-  "db_url": "https://www.discogs.com/release/8112778",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-C-V0-P09-01",
   "genre": "클래식",
   "artist": "Itzhak Perlman",
@@ -5904,7 +5841,7 @@
  {
   "code": "LP-C-V0-P13-01",
   "genre": "클래식",
-  "artist": "Pavarotti",
+  "artist": "Luciano Pavarotti",
   "album": "Passione",
   "rep": "오 솔레 미오, 돌아오라 소렌토로",
   "composer": "VA",
@@ -5986,9 +5923,30 @@
   "digital": false
  },
  {
+  "code": "LP-C-V0-R02-01",
+  "genre": "클래식",
+  "artist": "Rostropovich / Britten",
+  "album": "Schubert, Bridge: Chamber Music",
+  "rep": "Arpeggione Sonata",
+  "composer": "VA",
+  "performer": "Mstislav Rostropovich, Benjamin Britten",
+  "desc": "로스트로포비치와 브리튼이 함께한 첼로·피아노 실내악반으로, 깊이 있고 절제된 해석이 돋보인다.",
+  "discogs_id": "8364848",
+  "db_url": "https://www.discogs.com/release/8364848",
+  "label_cat": "Analogphonic",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-C-V0-R05-01",
   "genre": "클래식",
-  "artist": "Richter",
+  "artist": "Sviatoslav Richter",
   "album": "Sonatas",
   "rep": "",
   "composer": "VA",
@@ -6322,7 +6280,7 @@
   "digital": false
  },
  {
-  "code": "LP-CG-B1-K01-01",
+  "code": "LP-CG-B1-F04-01",
   "genre": "클래식",
   "artist": "Ferras / Karajan",
   "album": "Beethoven: Violin Concerto Op.61",
@@ -6343,13 +6301,13 @@
   "digital": false
  },
  {
-  "code": "LP-CG-B1-K05-01",
+  "code": "LP-CG-B1-K02-01",
   "genre": "클래식",
-  "artist": "Karajan",
+  "artist": "Herbert von Karajan",
   "album": "Beethoven: Symphony No.3 Op.55 \"Eroica\"",
   "rep": "교향곡 3번 '영웅'",
   "composer": "Ludwig van Beethoven",
-  "performer": "Karajan",
+  "performer": "Herbert von Karajan",
   "desc": "카라얀의 베토벤 교향곡 3번 '영웅'으로, 웅장한 스케일과 단단한 구조미가 돋보인다.",
   "discogs_id": "24937135",
   "db_url": "https://www.discogs.com/release/24937135",
@@ -6364,7 +6322,7 @@
   "digital": false
  },
  {
-  "code": "LP-CG-B1-L01-01",
+  "code": "LP-CG-B1-K09-01",
   "genre": "클래식",
   "artist": "Kempff / Leitner",
   "album": "Beethoven: Piano Concerto No.5 \"Emperor\"",
@@ -6406,7 +6364,7 @@
   "digital": false
  },
  {
-  "code": "LP-CG-B3-K01-01",
+  "code": "LP-CG-B3-F04-01",
   "genre": "클래식",
   "artist": "Ferras / Karajan",
   "album": "Brahms: Violin Concerto Op.77",
@@ -6598,6 +6556,27 @@
   "digital": false
  },
  {
+  "code": "LP-CG-D0-F04-01",
+  "genre": "클래식",
+  "artist": "Fournier / Szell",
+  "album": "Dvořák: Cello Concerto Op.104",
+  "rep": "첼로 협주곡",
+  "composer": "Antonín Dvořák",
+  "performer": "Pierre Fournier / George Szell",
+  "desc": "피에르 푸르니에가 연주한 드보르작 첼로 협주곡으로, 노래하듯 유려하고 품격 있는 첼로 톤이 특징이다.",
+  "discogs_id": "24428540",
+  "db_url": "https://www.discogs.com/release/24428540",
+  "label_cat": "2864 071 20",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-CG-D0-K04-01",
   "genre": "클래식",
   "artist": "Herbert von Karajan",
@@ -6609,27 +6588,6 @@
   "discogs_id": "24947806",
   "db_url": "https://www.discogs.com/release/24947806",
   "label_cat": "2864 070 10",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-CG-D0-S04-01",
-  "genre": "클래식",
-  "artist": "Fournier / Szell",
-  "album": "Dvořák: Cello Concerto Op.104",
-  "rep": "첼로 협주곡",
-  "composer": "Antonín Dvořák",
-  "performer": "Pierre Fournier / George Szell",
-  "desc": "피에르 푸르니에가 연주한 드보르작 첼로 협주곡으로, 노래하듯 유려하고 품격 있는 첼로 톤이 특징이다.",
-  "discogs_id": "24428540",
-  "db_url": "https://www.discogs.com/release/24428540",
-  "label_cat": "2864 071 20",
   "media": [
    "LP"
   ],
@@ -6661,13 +6619,13 @@
   "digital": false
  },
  {
-  "code": "LP-CG-G0-K05-01",
+  "code": "LP-CG-G0-K01-02",
   "genre": "클래식",
-  "artist": "Karajan",
+  "artist": "Herbert von Karajan",
   "album": "Grieg: \"Peer Gynt\" Suite Nos.1 & 2 / \"Sigurd Jorsalfar\"",
   "rep": "페르귄트 모음곡",
   "composer": "Edvard Grieg",
-  "performer": "Karajan",
+  "performer": "Herbert von Karajan",
   "desc": "그리그의 '페르귄트' 모음곡과 '시구르 요르살파르'를 담은 카라얀의 지휘반으로, 북유럽 특유의 서정적 색채가 인상적이다.",
   "discogs_id": "24796613",
   "db_url": "https://www.discogs.com/release/24796613",
@@ -6808,28 +6766,7 @@
   "digital": false
  },
  {
-  "code": "LP-CG-M0-K01-01",
-  "genre": "클래식",
-  "artist": "Karajan",
-  "album": "Mozart: Eine Kleine Nachtmusik / Divertimento KV.287",
-  "rep": "아이네 클라이네 나흐트무지크",
-  "composer": "Wolfgang Amadeus Mozart",
-  "performer": "Karajan",
-  "desc": "모차르트의 대표 세레나데 '아이네 클라이네 나흐트무지크'를 담은 음반으로, 밝고 경쾌한 앙상블이 특징이다.",
-  "discogs_id": "1850747",
-  "db_url": "https://www.discogs.com/release/1850747",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-CG-M0-K05-01",
+  "code": "LP-CG-M0-B04-04",
   "genre": "클래식",
   "artist": "Karl Böhm / Karajan",
   "album": "Mozart: Clarinet Quintet K.581, Oboe Quartet K.370",
@@ -6852,12 +6789,33 @@
  {
   "code": "LP-CG-M0-K09-01",
   "genre": "클래식",
-  "artist": "Wilheml Kempff",
+  "artist": "Wilhelm Kempff",
   "album": "Mozart: Sonata KV. 331",
   "rep": "터키 행진곡",
   "composer": "Wolfgang Amadeus Mozart",
   "performer": "Wilhelm Kempff",
   "desc": "빌헬름 켐프가 연주하는 모차르트 피아노 소나타 K.331로, 특히 3악장 '터키 행진곡'으로 널리 알려진 작품을 우아하게 들려준다.",
+  "discogs_id": "1850747",
+  "db_url": "https://www.discogs.com/release/1850747",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-M0-K10-01",
+  "genre": "클래식",
+  "artist": "Herbert von Karajan",
+  "album": "Mozart: Eine Kleine Nachtmusik / Divertimento KV.287",
+  "rep": "아이네 클라이네 나흐트무지크",
+  "composer": "Wolfgang Amadeus Mozart",
+  "performer": "Herbert von Karajan",
+  "desc": "모차르트의 대표 세레나데 '아이네 클라이네 나흐트무지크'를 담은 음반으로, 밝고 경쾌한 앙상블이 특징이다.",
   "discogs_id": "1850747",
   "db_url": "https://www.discogs.com/release/1850747",
   "label_cat": "",
@@ -7102,13 +7060,13 @@
   "digital": false
  },
  {
-  "code": "LP-CG-S2-K01-01",
+  "code": "LP-CG-S2-K02-01",
   "genre": "클래식",
-  "artist": "Karajan",
+  "artist": "Herbert von Karajan",
   "album": "Stravinsky: Ballet Music \"The Rite of Spring\"",
   "rep": "봄의 제전",
   "composer": "Igor Stravinsky",
-  "performer": "Karajan",
+  "performer": "Herbert von Karajan",
   "desc": "카라얀이 지휘한 스트라빈스키 '봄의 제전'으로, 원시적 리듬감과 정교한 관현악 조율이 공존하는 연주다.",
   "discogs_id": "5747995",
   "db_url": "https://www.discogs.com/release/5747995",
@@ -7165,59 +7123,38 @@
   "digital": false
  },
  {
-  "code": "LP-CG-T0-K05-01",
+  "code": "LP-CG-T0-K01-02",
   "genre": "클래식",
-  "artist": "Karajan",
+  "artist": "Herbert von Karajan",
+  "album": "Tchaikovsky: Symphony No.6 \"Pathétique\"",
+  "rep": "Symphony No. 6 'Pathétique' - Adagio lamentoso",
+  "composer": "Tchaikovsky",
+  "performer": "Herbert von Karajan, Berliner Philharmoniker",
+  "desc": "카라얀이 베를린 필과 함께한 차이콥스키 교향곡 6번 '비창'으로, 격정과 비극적 서정이 짙게 밴 연주다.",
+  "discogs_id": "8922086",
+  "db_url": "https://www.discogs.com/release/8922086",
+  "label_cat": "2864 070 09",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-T0-K01-03",
+  "genre": "클래식",
+  "artist": "Herbert von Karajan",
   "album": "Tchaikovsky: Various",
   "rep": "",
   "composer": "Pyotr Ilyich Tchaikovsky",
-  "performer": "Karajan",
+  "performer": "Herbert von Karajan",
   "desc": "차이콥스키의 다양한 관현악 명곡들을 카라얀이 지휘한 음반으로 보이며, 화려하고 낭만적인 사운드가 특징이다.",
   "discogs_id": "2323519",
   "db_url": "https://www.discogs.com/release/2323519",
   "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-CG-T0-K09-01",
-  "genre": "클래식",
-  "artist": "Richter / Karajan",
-  "album": "Tchaikovsky: Pianco Concerto No1",
-  "rep": "피아노 협주곡 1번",
-  "composer": "Pyotr Ilyich Tchaikovsky",
-  "performer": "Sviatoslav Richter / Karajan",
-  "desc": "리흐테르가 카라얀과 함께한 차이콥스키 피아노 협주곡 1번으로, 폭발적인 타건과 낭만적 스케일감이 돋보이는 명연으로 꼽힌다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-CG-T0-K13-01",
-  "genre": "클래식",
-  "artist": "Tchaikovsky, Yehudi Menuhin, Philharmonia Orchestra, Efrem Kurtz",
-  "album": "Tchaikovsky: Swan Lake Op.20 / The Nutcracker Op.71a (highlights)",
-  "rep": "백조의 호수, 호두까기 인형 (하이라이트)",
-  "composer": "Pyotr Ilyich Tchaikovsky",
-  "performer": "",
-  "desc": "차이콥스키 발레음악 '백조의 호수'와 '호두까기 인형' 하이라이트를 담은 관현악 모음반이다.",
-  "discogs_id": "10329688",
-  "db_url": "https://www.discogs.com/release/10329688",
-  "label_cat": "2864 071 13",
   "media": [
    "LP"
   ],
@@ -7291,17 +7228,38 @@
   "digital": false
  },
  {
-  "code": "LP-CG-T0-P05-01",
+  "code": "LP-CG-T0-R04-01",
   "genre": "클래식",
-  "artist": "Herbert von Karajan",
-  "album": "Tchaikovsky: Symphony No.6 \"Pathétique\"",
-  "rep": "Symphony No. 6 'Pathétique' - Adagio lamentoso",
-  "composer": "Tchaikovsky",
-  "performer": "Herbert von Karajan, Berliner Philharmoniker",
-  "desc": "카라얀이 베를린 필과 함께한 차이콥스키 교향곡 6번 '비창'으로, 격정과 비극적 서정이 짙게 밴 연주다.",
-  "discogs_id": "8922086",
-  "db_url": "https://www.discogs.com/release/8922086",
-  "label_cat": "2864 070 09",
+  "artist": "Richter / Karajan",
+  "album": "Tchaikovsky: Pianco Concerto No1",
+  "rep": "피아노 협주곡 1번",
+  "composer": "Pyotr Ilyich Tchaikovsky",
+  "performer": "Sviatoslav Richter / Karajan",
+  "desc": "리흐테르가 카라얀과 함께한 차이콥스키 피아노 협주곡 1번으로, 폭발적인 타건과 낭만적 스케일감이 돋보이는 명연으로 꼽힌다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-T0-T04-01",
+  "genre": "클래식",
+  "artist": "Tchaikovsky, Yehudi Menuhin, Philharmonia Orchestra, Efrem Kurtz",
+  "album": "Tchaikovsky: Swan Lake Op.20 / The Nutcracker Op.71a (highlights)",
+  "rep": "백조의 호수, 호두까기 인형 (하이라이트)",
+  "composer": "Pyotr Ilyich Tchaikovsky",
+  "performer": "",
+  "desc": "차이콥스키 발레음악 '백조의 호수'와 '호두까기 인형' 하이라이트를 담은 관현악 모음반이다.",
+  "discogs_id": "10329688",
+  "db_url": "https://www.discogs.com/release/10329688",
+  "label_cat": "2864 071 13",
   "media": [
    "LP"
   ],
@@ -7333,17 +7291,17 @@
   "digital": false
  },
  {
-  "code": "LP-CG-V0-B05-01",
+  "code": "LP-CG-V0-B02-01",
   "genre": "클래식",
-  "artist": "Herbert Von Karajan, Orchestre Philharmonique De Berlin",
-  "album": "Debussy: La Mer, Prélude à l'Après-midi d'un Faune / Ravel (Boléro?)",
-  "rep": "바다, 목신의 오후 전주곡",
+  "artist": "Beethoven / Schubert, Herbert von Karajan, Berlin Philharmonic Orchestra",
+  "album": "Beethoven: Symphony No.5 / Schubert: Symphony No.8 \"Unfinished\"",
+  "rep": "운명 교향곡, 미완성 교향곡",
   "composer": "VA",
   "performer": "",
-  "desc": "드뷔시 '바다'와 라벨 '볼레로'를 담은 인상주의 관현악 명곡집으로, 색채감 넘치는 관현악 표현이 인상적이다.",
-  "discogs_id": "4251596",
-  "db_url": "https://www.discogs.com/release/4251596",
-  "label_cat": "2864 073 33",
+  "desc": "베토벤 교향곡 5번 '운명'과 슈베르트 '미완성' 교향곡을 담은 관현악 명곡집이다.",
+  "discogs_id": "24904103",
+  "db_url": "https://www.discogs.com/release/24904103",
+  "label_cat": "2864 070 04",
   "media": [
    "LP"
   ],
@@ -7375,7 +7333,133 @@
   "digital": false
  },
  {
-  "code": "LP-CG-V0-G01-01",
+  "code": "LP-CG-V0-K02-01",
+  "genre": "클래식",
+  "artist": "Herbert von Karajan",
+  "album": "Mussorgsky: Pictures at an Exhibition / Ravel: Boléro",
+  "rep": "전람회의 그림, 볼레로",
+  "composer": "VA",
+  "performer": "Herbert von Karajan",
+  "desc": "카라얀의 무소륵스키 '전람회의 그림'(라벨 편곡)과 '볼레로'를 담은 음반으로, 색채감 넘치는 관현악 편곡의 진수를 보여준다.",
+  "discogs_id": "25070398",
+  "db_url": "https://www.discogs.com/release/25070398",
+  "label_cat": "2864 072 26",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-V0-K02-02",
+  "genre": "클래식",
+  "artist": "Herbert von Karajan",
+  "album": "Strauss: Concert / Bizet: Suites",
+  "rep": "아름답고 푸른 도나우, 라데츠키 행진곡",
+  "composer": "VA",
+  "performer": "Herbert von Karajan",
+  "desc": "요한 슈트라우스의 왈츠·폴카와 비제 오페라 모음곡을 카라얀이 화려하고 경쾌하게 지휘한 인기 관현악 모음반이다.",
+  "discogs_id": "24786260",
+  "db_url": "https://www.discogs.com/release/24786260",
+  "label_cat": "2864 072 25",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-V0-K02-03",
+  "genre": "클래식",
+  "artist": "Herbert von Karajan",
+  "album": "Beethoven: Symphony No.9 \"Choral\" / Weber: \"Der Freischütz\" Overture",
+  "rep": "합창 교향곡",
+  "composer": "VA",
+  "performer": "Herbert von Karajan",
+  "desc": "베토벤 교향곡 9번 '합창'을 중심으로 한 카라얀의 지휘반으로, 장대한 합창과 오케스트라의 균형이 인상적이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "2864 072 22",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-V0-K02-04",
+  "genre": "클래식",
+  "artist": "Herbert von Karajan",
+  "album": "Orchestral Concert: Moldau / Finlandia / Hungarian Dances (compilation)",
+  "rep": "몰다우, 핀란디아, 헝가리 무곡",
+  "composer": "VA",
+  "performer": "",
+  "desc": "스메타나 '몰다우', 시벨리우스 '핀란디아' 등 국민악파 관현악 명곡을 모은 편집 음반으로 추정된다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "2864 071 17",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-V0-K02-05",
+  "genre": "클래식",
+  "artist": "Herbert Von Karajan, Orchestre Philharmonique De Berlin",
+  "album": "Debussy: La Mer, Prélude à l'Après-midi d'un Faune / Ravel (Boléro?)",
+  "rep": "바다, 목신의 오후 전주곡",
+  "composer": "VA",
+  "performer": "",
+  "desc": "드뷔시 '바다'와 라벨 '볼레로'를 담은 인상주의 관현악 명곡집으로, 색채감 넘치는 관현악 표현이 인상적이다.",
+  "discogs_id": "4251596",
+  "db_url": "https://www.discogs.com/release/4251596",
+  "label_cat": "2864 073 33",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-V0-K02-06",
+  "genre": "클래식",
+  "artist": "Herbert von Karajan",
+  "album": "Dances by Brahms and Dvořák",
+  "rep": "헝가리 무곡, 슬라브 무곡",
+  "composer": "VA",
+  "performer": "Herbert von Karajan",
+  "desc": "브람스와 드보르작의 무곡들을 카라얀이 경쾌하고 화려하게 지휘한 관현악 모음반이다.",
+  "discogs_id": "7083453",
+  "db_url": "https://www.discogs.com/release/7083453",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP좌측선반3층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-CG-V0-M01-01",
   "genre": "클래식",
   "artist": "Mischa Maisky (cello) / Pavel Gililov (piano)",
   "album": "Meditation",
@@ -7396,122 +7480,17 @@
   "digital": false
  },
  {
-  "code": "LP-CG-V0-K01-01",
+  "code": "LP-CG-V0-M04-01",
   "genre": "클래식",
-  "artist": "Karajan",
-  "album": "Beethoven: Symphony No.9 \"Choral\" / Weber: \"Der Freischütz\" Overture",
-  "rep": "합창 교향곡",
-  "composer": "VA",
-  "performer": "Karajan",
-  "desc": "베토벤 교향곡 9번 '합창'을 중심으로 한 카라얀의 지휘반으로, 장대한 합창과 오케스트라의 균형이 인상적이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "2864 072 22",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-CG-V0-K01-02",
-  "genre": "클래식",
-  "artist": "Karajan",
-  "album": "Dances by Brahms and Dvořák",
-  "rep": "헝가리 무곡, 슬라브 무곡",
-  "composer": "VA",
-  "performer": "Karajan",
-  "desc": "브람스와 드보르작의 무곡들을 카라얀이 경쾌하고 화려하게 지휘한 관현악 모음반이다.",
-  "discogs_id": "7083453",
-  "db_url": "https://www.discogs.com/release/7083453",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-CG-V0-K01-03",
-  "genre": "클래식",
-  "artist": "Karajan",
-  "album": "Mussorgsky: Pictures at an Exhibition / Ravel: Boléro",
-  "rep": "전람회의 그림, 볼레로",
-  "composer": "VA",
-  "performer": "Karajan",
-  "desc": "카라얀의 무소륵스키 '전람회의 그림'(라벨 편곡)과 '볼레로'를 담은 음반으로, 색채감 넘치는 관현악 편곡의 진수를 보여준다.",
-  "discogs_id": "25070398",
-  "db_url": "https://www.discogs.com/release/25070398",
-  "label_cat": "2864 072 26",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-CG-V0-K01-04",
-  "genre": "클래식",
-  "artist": "Karajan",
-  "album": "Orchestral Concert: Moldau / Finlandia / Hungarian Dances (compilation)",
-  "rep": "몰다우, 핀란디아, 헝가리 무곡",
+  "artist": "Mozart / Schumann",
+  "album": "Mozart: Piano Sonata K.331, Rondo K.485 / Schumann (Kinderszenen?)",
+  "rep": "터키 행진곡, 어린이 정경",
   "composer": "VA",
   "performer": "",
-  "desc": "스메타나 '몰다우', 시벨리우스 '핀란디아' 등 국민악파 관현악 명곡을 모은 편집 음반으로 추정된다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "2864 071 17",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-CG-V0-K01-05",
-  "genre": "클래식",
-  "artist": "Karajan",
-  "album": "Strauss: Concert / Bizet: Suites",
-  "rep": "아름답고 푸른 도나우, 라데츠키 행진곡",
-  "composer": "VA",
-  "performer": "Karajan",
-  "desc": "요한 슈트라우스의 왈츠·폴카와 비제 오페라 모음곡을 카라얀이 화려하고 경쾌하게 지휘한 인기 관현악 모음반이다.",
-  "discogs_id": "24786260",
-  "db_url": "https://www.discogs.com/release/24786260",
-  "label_cat": "2864 072 25",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-CG-V0-O01-01",
-  "genre": "클래식",
-  "artist": "Beethoven / Schubert, Herbert von Karajan, Berlin Philharmonic Orchestra",
-  "album": "Beethoven: Symphony No.5 / Schubert: Symphony No.8 \"Unfinished\"",
-  "rep": "운명 교향곡, 미완성 교향곡",
-  "composer": "VA",
-  "performer": "",
-  "desc": "베토벤 교향곡 5번 '운명'과 슈베르트 '미완성' 교향곡을 담은 관현악 명곡집이다.",
-  "discogs_id": "24904103",
-  "db_url": "https://www.discogs.com/release/24904103",
-  "label_cat": "2864 070 04",
+  "desc": "모차르트 피아노 소나타 K.331과 슈만 '어린이 정경'을 담은 음반으로, 단정하고 시적인 피아니즘이 느껴진다.",
+  "discogs_id": "24508073",
+  "db_url": "https://www.discogs.com/release/24508073",
+  "label_cat": "2864 072 29",
   "media": [
    "LP"
   ],
@@ -7543,27 +7522,6 @@
   "digital": false
  },
  {
-  "code": "LP-CG-V0-S01-01",
-  "genre": "클래식",
-  "artist": "Mozart / Schumann",
-  "album": "Mozart: Piano Sonata K.331, Rondo K.485 / Schumann (Kinderszenen?)",
-  "rep": "터키 행진곡, 어린이 정경",
-  "composer": "VA",
-  "performer": "",
-  "desc": "모차르트 피아노 소나타 K.331과 슈만 '어린이 정경'을 담은 음반으로, 단정하고 시적인 피아니즘이 느껴진다.",
-  "discogs_id": "24508073",
-  "db_url": "https://www.discogs.com/release/24508073",
-  "label_cat": "2864 072 29",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP좌측선반3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-CG-V1-V01-01",
   "genre": "클래식",
   "artist": "Antonio Votto",
@@ -7585,13 +7543,13 @@
   "digital": false
  },
  {
-  "code": "LP-CG-V2-K01-01",
+  "code": "LP-CG-V2-K02-01",
   "genre": "클래식",
   "artist": "Karajan / Schwalbe (violin)",
   "album": "Vivaldi: The Four Seasons",
   "rep": "사계",
   "composer": "Antonio Vivaldi",
-  "performer": "Karajan",
+  "performer": "Herbert von Karajan",
   "desc": "카라얀이 베를린 필 콘서트마스터 슈발베와 함께한 비발디 '사계'로, 대편성 오케스트라 특유의 웅장한 사운드가 특징이다.",
   "discogs_id": "24925640",
   "db_url": "https://www.discogs.com/release/24925640",
@@ -8152,7 +8110,7 @@
   "digital": false
  },
  {
-  "code": "LP-G-J05-01",
+  "code": "LP-G-J02-01",
   "genre": "클래식기타",
   "artist": "John Williams, Daniel Barenboim, English Chamber Orchestra",
   "album": "Rodrigo: Concierto de Aranjuez / Villa-Lobos: Guitar Concerto",
@@ -8427,7 +8385,7 @@
  {
   "code": "LP-G-S01-01",
   "genre": "클래식기타",
-  "artist": "Sharon isbin",
+  "artist": "Sharon Isbin",
   "album": "Brazil, with love",
   "rep": "",
   "composer": "VA",
@@ -8595,6 +8553,27 @@
   "digital": false
  },
  {
+  "code": "LP-I-K04-01",
+  "genre": "경음악",
+  "artist": "김광민 (Kim Kwang-min)",
+  "album": "지구에서 온 편지",
+  "rep": "지구에서 온 편지",
+  "composer": "",
+  "performer": "",
+  "desc": "재즈 피아니스트 김광민의 음반으로, 서정적이고 사색적인 연주곡들이 담긴 인스트루멘탈 작품이다.",
+  "discogs_id": "20636002",
+  "db_url": "https://www.discogs.com/release/20636002",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-I-P04-01",
   "genre": "경음악",
   "artist": "Paul Mauriat",
@@ -8637,51 +8616,9 @@
   "digital": false
  },
  {
-  "code": "LP-I-Y04-02",
+  "code": "LP-I-P12-01",
   "genre": "경음악",
-  "artist": "Yiruma",
-  "album": "First Love",
-  "rep": "River Flows in You",
-  "composer": "",
-  "performer": "",
-  "desc": "이루마의 데뷔 음반 'First Love'로, 훗날 대표곡이 된 'River Flows in You' 등 감성적인 피아노 선율이 담겨 있다.",
-  "discogs_id": "23354738",
-  "db_url": "https://musicbrainz.org/release-group/f575969c-1560-44e4-ad26-42a9f04a13e2",
-  "label_cat": "VDCD-6813",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반2열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-I-ㄱ04-01",
-  "genre": "경음악",
-  "artist": "김광민",
-  "album": "지구에서 온 편지",
-  "rep": "지구에서 온 편지",
-  "composer": "",
-  "performer": "",
-  "desc": "재즈 피아니스트 김광민의 음반으로, 서정적이고 사색적인 연주곡들이 담긴 인스트루멘탈 작품이다.",
-  "discogs_id": "20636002",
-  "db_url": "https://www.discogs.com/release/20636002",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-I-ㅍ04-01",
-  "genre": "경음악",
-  "artist": "푸딩",
+  "artist": "푸딩 (Pudding)",
   "album": "Pudding",
   "rep": "",
   "composer": "",
@@ -8700,9 +8637,9 @@
   "digital": false
  },
  {
-  "code": "LP-I-ㅍ04-02",
+  "code": "LP-I-P12-02",
   "genre": "경음악",
-  "artist": "푸딩",
+  "artist": "푸딩 (Pudding)",
   "album": "PUDDITORIUM",
   "rep": "",
   "composer": "",
@@ -8716,6 +8653,27 @@
   ],
   "locations": [
    "LP우측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-I-Y04-02",
+  "genre": "경음악",
+  "artist": "Yiruma",
+  "album": "First Love",
+  "rep": "River Flows in You",
+  "composer": "",
+  "performer": "",
+  "desc": "이루마의 데뷔 음반 'First Love'로, 훗날 대표곡이 된 'River Flows in You' 등 감성적인 피아노 선율이 담겨 있다.",
+  "discogs_id": "23354738",
+  "db_url": "https://musicbrainz.org/release-group/f575969c-1560-44e4-ad26-42a9f04a13e2",
+  "label_cat": "VDCD-6813",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반2열1층"
   ],
   "copies": 1,
   "digital": false
@@ -8742,7 +8700,7 @@
   "digital": false
  },
  {
-  "code": "LP-J-A05-01",
+  "code": "LP-J-A02-01",
   "genre": "재즈",
   "artist": "André Previn and His Pals",
   "album": "West Side Story",
@@ -8935,27 +8893,6 @@
   "digital": true
  },
  {
-  "code": "LP-J-B09-01",
-  "genre": "재즈",
-  "artist": "Bolling",
-  "album": "Bolling ; Suite for cello and Jazz Piano Trio",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "클로드 볼링의 첼로와 재즈 피아노 트리오를 위한 모음곡으로, 클래식의 우아함과 재즈의 스윙이 교차한다. 크로스오버 특유의 경쾌하고 세련된 대화가 매력적이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "CBS Stereo",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반2열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-J-C01-01",
   "genre": "재즈",
   "artist": "Cannonball Adderley",
@@ -8977,27 +8914,6 @@
   "digital": false
  },
  {
-  "code": "LP-J-C17-01",
-  "genre": "재즈",
-  "artist": "Chalie Byrd",
-  "album": "Bossa Nova Pelos Passaros",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "재즈 기타리스트 찰리 버드의 음반으로, 보사노바 특유의 경쾌하고 로맨틱한 기타 선율이 돋보이는 작품이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반2열2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
   "code": "LP-J-C21-01",
   "genre": "재즈",
   "artist": "Charlie Byrd",
@@ -9014,6 +8930,27 @@
   ],
   "locations": [
    "LP침대옆"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-J-C21-02",
+  "genre": "재즈",
+  "artist": "Charlie Byrd",
+  "album": "Bossa Nova Pelos Passaros",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "재즈 기타리스트 찰리 버드의 음반으로, 보사노바 특유의 경쾌하고 로맨틱한 기타 선율이 돋보이는 작품이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반2열2층"
   ],
   "copies": 1,
   "digital": false
@@ -9098,6 +9035,27 @@
   ],
   "locations": [
    "LP중앙선반2열2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-J-C41-02",
+  "genre": "재즈",
+  "artist": "Claude Bolling",
+  "album": "Bolling ; Suite for cello and Jazz Piano Trio",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "클로드 볼링의 첼로와 재즈 피아노 트리오를 위한 모음곡으로, 클래식의 우아함과 재즈의 스윙이 교차한다. 크로스오버 특유의 경쾌하고 세련된 대화가 매력적이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "CBS Stereo",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반2열1층"
   ],
   "copies": 1,
   "digital": false
@@ -9291,6 +9249,27 @@
    "LP중앙선반2열2층"
   ],
   "copies": 2,
+  "digital": false
+ },
+ {
+  "code": "LP-J-J02-01",
+  "genre": "재즈",
+  "artist": "장기호 (Jang Ki-ho)",
+  "album": "Chagall out of Town",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "재즈 베이시스트 장기호의 리더작으로 추정되며, 세련되고 감각적인 국내 재즈 연주를 들려준다.",
+  "discogs_id": "23505191",
+  "db_url": "https://www.discogs.com/release/23505191",
+  "label_cat": "STKL1009; SOUNDTREE",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP우측선반1층"
+  ],
+  "copies": 1,
   "digital": false
  },
  {
@@ -9653,9 +9632,9 @@
   "digital": false
  },
  {
-  "code": "LP-J-M25-01",
+  "code": "LP-J-M21-02",
   "genre": "재즈",
-  "artist": "Micheal Franks",
+  "artist": "Michael Franks",
   "album": "Burchfield Nines",
   "rep": "",
   "composer": "",
@@ -9865,7 +9844,7 @@
   "digital": true
  },
  {
-  "code": "LP-J-R01-01",
+  "code": "LP-J-R02-01",
   "genre": "재즈",
   "artist": "Rampal (flute), Lagoya (guitar)",
   "album": "Bolling: Picnic Suite",
@@ -10049,27 +10028,6 @@
   ],
   "locations": [
    "LP중앙선반2열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-J-ㅈ01-01",
-  "genre": "재즈",
-  "artist": "장기호",
-  "album": "Chagall out of Town",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "재즈 베이시스트 장기호의 리더작으로 추정되며, 세련되고 감각적인 국내 재즈 연주를 들려준다.",
-  "discogs_id": "23505191",
-  "db_url": "https://www.discogs.com/release/23505191",
-  "label_cat": "STKL1009; SOUNDTREE",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반1층"
   ],
   "copies": 1,
   "digital": false
@@ -10476,7 +10434,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ21-01",
+  "code": "LP-K-ㄱ17-08",
   "genre": "가요",
   "artist": "김광석 (Kim Kwang-seok)",
   "album": 1,
@@ -10497,7 +10455,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ21-02",
+  "code": "LP-K-ㄱ17-09",
   "genre": "가요",
   "artist": "김광석 (Kim Kwang-seok)",
   "album": 2,
@@ -10518,7 +10476,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ21-03",
+  "code": "LP-K-ㄱ17-10",
   "genre": "가요",
   "artist": "김광석 (Kim Kwang-seok)",
   "album": "다시부르기 1",
@@ -10581,49 +10539,30 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ29-01",
+  "code": "LP-K-ㄱ25-02",
   "genre": "가요",
-  "artist": "김동률 (Kim Dong-ryul)",
+  "artist": "김동률",
   "album": "5th",
   "rep": "",
   "composer": "",
   "performer": "",
-  "desc": "김동률의 정규 5집 음반으로, 원숙해진 음악적 색채와 서정적인 발라드가 담긴 앨범이다.",
+  "desc": "김동률의 5번째 정규앨범으로, 웅장한 편곡과 섬세한 보컬이 어우러진 가요 명반이다.",
   "discogs_id": "",
   "db_url": "",
-  "label_cat": "Music Farm (Remastered)",
+  "label_cat": "",
   "media": [
+   "CD",
    "LP"
   ],
   "locations": [
+   "CD아래층",
    "LP보관박스1"
   ],
-  "copies": 1,
+  "copies": 2,
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ29-02",
-  "genre": "가요",
-  "artist": "김동률 (Kim Dong-ryul)",
-  "album": "LIVE 2019 (오래된 노래)",
-  "rep": "그중에 그대를 만나, 출발",
-  "composer": "",
-  "performer": "",
-  "desc": "김동률의 라이브 앨범으로, 세련된 멜로디 감각과 섬세한 가창력이 돋보이는 히트곡들을 현장의 생생함과 함께 담았다.",
-  "discogs_id": "16512162",
-  "db_url": "https://www.discogs.com/release/16512162",
-  "label_cat": "Music Farm",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP보관박스1"
-  ],
-  "copies": 3,
-  "digital": false
- },
- {
-  "code": "LP-K-ㄱ29-03",
+  "code": "LP-K-ㄱ25-05",
   "genre": "가요",
   "artist": "김동률 (Kim Dong Ryul)",
   "album": "monologue (5th, Remastered)",
@@ -10644,7 +10583,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ29-04",
+  "code": "LP-K-ㄱ25-06",
   "genre": "가요",
   "artist": "김동률 (Kim Dong Ryul)",
   "album": "the shadow of forgetfulness",
@@ -10665,7 +10604,28 @@
   "digital": true
  },
  {
-  "code": "LP-K-ㄱ29-05",
+  "code": "LP-K-ㄱ25-07",
+  "genre": "가요",
+  "artist": "김동률 (Kim Dong-ryul)",
+  "album": "LIVE 2019 (오래된 노래)",
+  "rep": "그중에 그대를 만나, 출발",
+  "composer": "",
+  "performer": "",
+  "desc": "김동률의 라이브 앨범으로, 세련된 멜로디 감각과 섬세한 가창력이 돋보이는 히트곡들을 현장의 생생함과 함께 담았다.",
+  "discogs_id": "16512162",
+  "db_url": "https://www.discogs.com/release/16512162",
+  "label_cat": "Music Farm",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP보관박스1"
+  ],
+  "copies": 3,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㄱ25-08",
   "genre": "가요",
   "artist": "김동률 (Kim Dong-ryul)",
   "album": "Yule",
@@ -10686,7 +10646,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ29-06",
+  "code": "LP-K-ㄱ25-09",
   "genre": "가요",
   "artist": "김동률 (Kim Dong-ryul)",
   "album": "답장",
@@ -10707,7 +10667,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ29-07",
+  "code": "LP-K-ㄱ25-10",
   "genre": "가요",
   "artist": "김동률 (Kim Dong-ryul)",
   "album": "동행 LP+CD",
@@ -10728,7 +10688,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ29-08",
+  "code": "LP-K-ㄱ25-11",
   "genre": "가요",
   "artist": "김동률 (Kim Dong-ryul)",
   "album": "동행 LP only",
@@ -10854,7 +10814,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ41-01",
+  "code": "LP-K-ㄱ37-04",
   "genre": "가요",
   "artist": "김현식 = Kim Hyun Sik",
   "album": "Kim Hyun Sik Vol.6",
@@ -11127,7 +11087,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ57-01",
+  "code": "LP-K-ㄱ53-10",
   "genre": "가요",
   "artist": "김현철 (Kim Hyun Chul)",
   "album": "10",
@@ -11148,7 +11108,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄱ57-02",
+  "code": "LP-K-ㄱ53-11",
   "genre": "가요",
   "artist": "김현철 (Kim Hyun Chul)",
   "album": "네온속으로 노을지다(판이 없음)",
@@ -11337,7 +11297,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㄷ05-01",
+  "code": "LP-K-ㄷ01-02",
   "genre": "가요",
   "artist": "다섯손가락 (Dasot Songarak)",
   "album": "2집",
@@ -11845,7 +11805,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅂ29-01",
+  "code": "LP-K-ㅂ25-02",
   "genre": "가요",
   "artist": "봄여름가을겨울 (Bom Yeoreum Gaeul Gyeoul)",
   "album": "Live",
@@ -11866,28 +11826,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅂ33-01",
-  "genre": "가요",
-  "artist": "블루스카이 (Blue Sky)",
-  "album": "THE BLUE SKY \"FINAL SOUND\"",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "블루스카이의 마지막 음반으로, 웅장한 오케스트레이션과 완결편 성격의 콘셉트가 돋보이는 작품이다.",
-  "discogs_id": "19382167",
-  "db_url": "https://www.discogs.com/release/19382167",
-  "label_cat": "STEREO VIP-20161",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-ㅂ33-02",
+  "code": "LP-K-ㅂ26-01",
   "genre": "가요",
   "artist": "블루스카이 (Blue Sky)",
   "album": "Vol. 5",
@@ -11898,6 +11837,27 @@
   "discogs_id": "14965806",
   "db_url": "https://www.discogs.com/release/14965806",
   "label_cat": "DDL-004 / STEREO VIP-2014B",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅂ26-02",
+  "genre": "가요",
+  "artist": "블루스카이 (Blue Sky)",
+  "album": "THE BLUE SKY \"FINAL SOUND\"",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "블루스카이의 마지막 음반으로, 웅장한 오케스트레이션과 완결편 성격의 콘셉트가 돋보이는 작품이다.",
+  "discogs_id": "19382167",
+  "db_url": "https://www.discogs.com/release/19382167",
+  "label_cat": "STEREO VIP-20161",
   "media": [
    "LP"
   ],
@@ -12182,7 +12142,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅅ09-01",
+  "code": "LP-K-ㅅ07-01",
   "genre": "가요",
   "artist": "서태지와 아이들 (Seo Taiji and Boys)",
   "album": "서태지와 아이들",
@@ -12329,28 +12289,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅅ17-01",
-  "genre": "가요",
-  "artist": "신승훈 (Shin Seung Hun)",
-  "album": "1집",
-  "rep": "미소 속에 비친 그대",
-  "composer": "",
-  "performer": "",
-  "desc": "신승훈의 데뷔 음반으로, 밀리언셀러를 기록한 타이틀곡 '미소 속에 비친 그대'가 수록된 발라드 명반이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "STEREO/DYL-1004",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-ㅅ17-02",
+  "code": "LP-K-ㅅ13-05",
   "genre": "가요",
   "artist": "신승훈 (Shin Seung Hun)",
   "album": "2집",
@@ -12371,7 +12310,28 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅅ17-03",
+  "code": "LP-K-ㅅ13-06",
+  "genre": "가요",
+  "artist": "신승훈 (Shin Seung Hun)",
+  "album": "1집",
+  "rep": "미소 속에 비친 그대",
+  "composer": "",
+  "performer": "",
+  "desc": "신승훈의 데뷔 음반으로, 밀리언셀러를 기록한 타이틀곡 '미소 속에 비친 그대'가 수록된 발라드 명반이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "STEREO/DYL-1004",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅅ13-07",
   "genre": "가요",
   "artist": "신승훈 (Shin Seung Hun)",
   "album": "3집",
@@ -12392,7 +12352,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅅ17-04",
+  "code": "LP-K-ㅅ13-08",
   "genre": "가요",
   "artist": "신승훈 (Shin Seung Hun)",
   "album": "The Shin Seung Hun / I Believe",
@@ -12428,9 +12388,10 @@
    "LP"
   ],
   "locations": [
+   "LP우측선반2층",
    "LP중앙선반1열1층"
   ],
-  "copies": 1,
+  "copies": 2,
   "digital": false
  },
  {
@@ -12455,7 +12416,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅅ25-01",
+  "code": "LP-K-ㅅ21-03",
   "genre": "가요",
   "artist": "신해철 (Shin Hae Chul)",
   "album": 1,
@@ -12466,27 +12427,6 @@
   "discogs_id": "24400745",
   "db_url": "https://www.discogs.com/release/24400745",
   "label_cat": "DYL-043",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반2층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-ㅅ25-02",
-  "genre": "가요",
-  "artist": "신해철 (Shin Hae Chul)",
-  "album": "MY SELF",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "신해철의 솔로 시절 대표작 중 하나로 알려진 음반으로, 서정적인 멜로디와 사색적인 가사가 어우러진 발라드록 색채를 띤다.",
-  "discogs_id": "24379445",
-  "db_url": "https://www.discogs.com/release/24379445",
-  "label_cat": "DYL-045",
   "media": [
    "LP"
   ],
@@ -12796,7 +12736,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅇ19-01",
+  "code": "LP-K-ㅇ16-02",
   "genre": "가요",
   "artist": "유재하 (Yoo Jae-ha)",
   "album": "사랑하기 때문에 (Because I Love You)",
@@ -13069,6 +13009,29 @@
   "digital": false
  },
  {
+  "code": "LP-K-ㅇ34-02",
+  "genre": "가요",
+  "artist": "이문세",
+  "album": "New Direction",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "이문세의 15집으로, 관록 있는 보컬과 세련된 편곡이 어우러진 중년 발라드 감성의 가요 음반이다.",
+  "discogs_id": "23839391",
+  "db_url": "https://musicbrainz.org/release-group/1b526772-f144-4532-9d35-c42c722c0284",
+  "label_cat": "LOEN L200001097",
+  "media": [
+   "CD",
+   "LP"
+  ],
+  "locations": [
+   "CD아래층",
+   "LP중앙선반1열2층"
+  ],
+  "copies": 2,
+  "digital": false
+ },
+ {
   "code": "LP-K-ㅇ34-03",
   "genre": "가요",
   "artist": "이문세",
@@ -13127,27 +13090,6 @@
   ],
   "locations": [
    "LP중앙선반1열3층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-K-ㅇ37-01",
-  "genre": "가요",
-  "artist": "이문세 (Lee Moon Se)",
-  "album": "New Direction",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "이문세의 New Direction으로, 특유의 부드러운 보이스와 서정적인 발라드 색채를 유지한 음반으로 보인다.",
-  "discogs_id": "23839391",
-  "db_url": "https://www.discogs.com/release/23839391",
-  "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열2층"
   ],
   "copies": 1,
   "digital": false
@@ -13239,22 +13181,24 @@
  {
   "code": "LP-K-ㅇ46-03",
   "genre": "가요",
-  "artist": "이소라",
-  "album": "BEST",
+  "artist": "이소라 (Lee So Ra)",
+  "album": "Best",
   "rep": "바람이 분다, 제발",
   "composer": "",
   "performer": "",
-  "desc": "이소라의 베스트 음반으로, 짙은 감성과 호소력 짙은 보컬이 담긴 대표곡 모음이다.",
+  "desc": "이소라의 베스트 음반으로, 짙은 감성과 호소력 짙은 보컬이 돋보이는 대표곡들을 모았다.",
   "discogs_id": "12220656",
-  "db_url": "https://musicbrainz.org/release-group/8dccdb30-b25e-396d-9b1b-1851195ec496",
-  "label_cat": "CSKLP001; C SHARP KOREA",
+  "db_url": "https://www.discogs.com/release/12220656",
+  "label_cat": "J2102",
   "media": [
    "LP"
   ],
   "locations": [
-   "LP우측선반1층"
+   "LP보관박스1",
+   "LP우측선반1층",
+   "LP중앙선반1열2층"
   ],
-  "copies": 1,
+  "copies": 3,
   "digital": false
  },
  {
@@ -13300,7 +13244,7 @@
   "digital": true
  },
  {
-  "code": "LP-K-ㅇ49-01",
+  "code": "LP-K-ㅇ46-06",
   "genre": "가요",
   "artist": "이소라 (Lee So Ra)",
   "album": 2,
@@ -13321,71 +13265,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅇ49-02",
-  "genre": "가요",
-  "artist": "이소라 (Lee So-ra)",
-  "album": "2 (Remastered)",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "이소라의 초기작으로 보이는 음반으로, 재즈와 발라드가 어우러진 감성적인 색채를 띤다.",
-  "discogs_id": "17700934",
-  "db_url": "https://www.discogs.com/release/17700934",
-  "label_cat": "JEL-0104",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP보관박스1"
-  ],
-  "copies": 2,
-  "digital": false
- },
- {
-  "code": "LP-K-ㅇ49-03",
-  "genre": "가요",
-  "artist": "이소라 (Lee So Ra)",
-  "album": "Best",
-  "rep": "바람이 분다, 제발",
-  "composer": "",
-  "performer": "",
-  "desc": "이소라의 베스트 음반으로, 짙은 감성과 호소력 짙은 보컬이 돋보이는 대표곡들을 모았다.",
-  "discogs_id": "12220656",
-  "db_url": "https://www.discogs.com/release/12220656",
-  "label_cat": "J2102",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP보관박스1",
-   "LP중앙선반1열2층"
-  ],
-  "copies": 2,
-  "digital": false
- },
- {
-  "code": "LP-K-ㅇ49-04",
-  "genre": "가요",
-  "artist": "이소라 (Lee So Ra)",
-  "album": "My One and Only Love",
-  "rep": "My One and Only Love",
-  "composer": "",
-  "performer": "",
-  "desc": "이소라가 재즈 스탠더드를 자신만의 색깔로 소화한 음반으로 보이며, 나른하고 감성적인 보컬이 매력적이다.",
-  "discogs_id": "24022046",
-  "db_url": "https://www.discogs.com/release/24022046",
-  "label_cat": "GTMLP026",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP침대옆"
-  ],
-  "copies": 1,
-  "digital": true
- },
- {
-  "code": "LP-K-ㅇ49-05",
+  "code": "LP-K-ㅇ46-07",
   "genre": "가요",
   "artist": "이소라 (Lee So Ra)",
   "album": "Vol. 1",
@@ -13407,7 +13287,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅇ49-06",
+  "code": "LP-K-ㅇ46-08",
   "genre": "가요",
   "artist": "이소라 (Lee So-ra)",
   "album": "눈썹달",
@@ -13425,6 +13305,48 @@
    "LP보관박스1"
   ],
   "copies": 2,
+  "digital": true
+ },
+ {
+  "code": "LP-K-ㅇ46-09",
+  "genre": "가요",
+  "artist": "이소라 (Lee So-ra)",
+  "album": "2 (Remastered)",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "이소라의 초기작으로 보이는 음반으로, 재즈와 발라드가 어우러진 감성적인 색채를 띤다.",
+  "discogs_id": "17700934",
+  "db_url": "https://www.discogs.com/release/17700934",
+  "label_cat": "JEL-0104",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP보관박스1"
+  ],
+  "copies": 2,
+  "digital": false
+ },
+ {
+  "code": "LP-K-ㅇ46-10",
+  "genre": "가요",
+  "artist": "이소라 (Lee So Ra)",
+  "album": "My One and Only Love",
+  "rep": "My One and Only Love",
+  "composer": "",
+  "performer": "",
+  "desc": "이소라가 재즈 스탠더드를 자신만의 색깔로 소화한 음반으로 보이며, 나른하고 감성적인 보컬이 매력적이다.",
+  "discogs_id": "24022046",
+  "db_url": "https://www.discogs.com/release/24022046",
+  "label_cat": "GTMLP026",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP침대옆"
+  ],
+  "copies": 1,
   "digital": true
  },
  {
@@ -13449,7 +13371,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅇ55-01",
+  "code": "LP-K-ㅇ52-02",
   "genre": "가요",
   "artist": "이승환, Lee Seung-Hwan",
   "album": "이승환 2집 Always",
@@ -13470,7 +13392,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅇ58-01",
+  "code": "LP-K-ㅇ53-01",
   "genre": "가요",
   "artist": "이영훈 (Lee Young Hoon)",
   "album": "The Origin, Part I",
@@ -13491,7 +13413,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅇ58-02",
+  "code": "LP-K-ㅇ53-02",
   "genre": "가요",
   "artist": "이영훈 (Lee Young Hoon)",
   "album": "The Origin, Part II",
@@ -13619,7 +13541,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅇ73-01",
+  "code": "LP-K-ㅇ70-02",
   "genre": "가요",
   "artist": "임재범 (Yim Jae Beum)",
   "album": "30주년 기념 (30th Anniversary)",
@@ -13771,24 +13693,27 @@
  {
   "code": "LP-K-ㅈ13-01",
   "genre": "가요",
-  "artist": "전람회",
-  "album": "EXHIBITION",
-  "rep": "기억의 습작",
+  "artist": "전람회 (Exhibition)",
+  "album": "Exhibition",
+  "rep": "",
   "composer": "",
   "performer": "",
-  "desc": "김동률이 주축이 된 전람회의 데뷔 음반으로, 서정적이고 감성적인 멜로디의 포크·발라드가 인상적인 앨범이다.",
-  "discogs_id": "10830178",
-  "db_url": "https://www.discogs.com/release/10830178",
-  "label_cat": "DYL-032 / 지구레코드",
+  "desc": "듀오 전람회의 음반으로, 아련한 가사와 편안한 멜로디가 특징인 90년대 가요 감성을 담고 있다.",
+  "discogs_id": "10830300",
+  "db_url": "https://www.discogs.com/release/10830300",
+  "label_cat": "대영에이브이 DYCD-1026",
   "media": [
+   "CD",
    "LP"
   ],
   "locations": [
+   "CD아래층",
+   "LP보관박스1",
    "LP우측선반1층",
    "LP중앙선반1열1층",
    "LP중앙선반1열3층"
   ],
-  "copies": 3,
+  "copies": 5,
   "digital": false
  },
  {
@@ -13836,30 +13761,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅈ17-01",
-  "genre": "가요",
-  "artist": "전람회 (Exhibition)",
-  "album": "Exhibition",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "듀오 전람회의 음반으로, 아련한 가사와 편안한 멜로디가 특징인 90년대 가요 감성을 담고 있다.",
-  "discogs_id": "10830300",
-  "db_url": "https://www.discogs.com/release/10830300",
-  "label_cat": "대영에이브이 DYCD-1026",
-  "media": [
-   "CD",
-   "LP"
-  ],
-  "locations": [
-   "CD아래층",
-   "LP보관박스1"
-  ],
-  "copies": 2,
-  "digital": false
- },
- {
-  "code": "LP-K-ㅈ17-02",
+  "code": "LP-K-ㅈ13-04",
   "genre": "가요",
   "artist": "전람회 (Exhibition)",
   "album": "EXHIBITION 2 (졸업)",
@@ -13880,7 +13782,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅈ17-03",
+  "code": "LP-K-ㅈ13-05",
   "genre": "가요",
   "artist": "전람회 (Exhibition)",
   "album": "졸업 (Graduation)",
@@ -14007,7 +13909,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅈ41-01",
+  "code": "LP-K-ㅈ42-01",
   "genre": "가요",
   "artist": "조용필(Cho Yong Pil)",
   "album": "12집 Sailing Sound",
@@ -14028,7 +13930,7 @@
   "digital": false
  },
  {
-  "code": "LP-K-ㅈ41-02",
+  "code": "LP-K-ㅈ42-02",
   "genre": "가요",
   "artist": "조용필(Cho Yong Pil)",
   "album": "돌아와요 부산항에",
@@ -14471,7 +14373,7 @@
   "digital": false
  },
  {
-  "code": "LP-O-B01-01",
+  "code": "LP-O-B02-01",
   "genre": "OST·경음악",
   "artist": "Bill Lee (Branford Marsalis Quartet)",
   "album": "mo' better blues",
@@ -14976,7 +14878,7 @@
   "digital": false
  },
  {
-  "code": "LP-O-R09-01",
+  "code": "LP-O-R02-01",
   "genre": "OST·경음악",
   "artist": "Risë Stevens, Brian Sullivan And The Columbus Boychoir With The Firestone Orchestra And Chorus",
   "album": "Firestone Presents Your Favorite Christmas Carols, Volume 5",
@@ -15291,6 +15193,27 @@
   "digital": false
  },
  {
+  "code": "LP-O-ㄱ11-01",
+  "genre": "OST·경음악",
+  "artist": "오장박",
+  "album": "굿모닝 대통령",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "영화 '굿모닝 대통령'과 관련된 음반으로 짐작되며, 정치 풍자 코미디의 분위기에 어울리는 경쾌한 사운드트랙 성격을 띠었을 것으로 보인다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "JLS-1202266(추정, 필기체)",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP중앙선반1열1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-O-ㄴ01-01",
   "genre": "OST·경음악",
   "artist": "느낌",
@@ -15417,28 +15340,7 @@
   "digital": false
  },
  {
-  "code": "LP-O-ㅇ02-01",
-  "genre": "OST·경음악",
-  "artist": "오장박",
-  "album": "굿모닝 대통령",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "영화 '굿모닝 대통령'과 관련된 음반으로 짐작되며, 정치 풍자 코미디의 분위기에 어울리는 경쾌한 사운드트랙 성격을 띠었을 것으로 보인다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "JLS-1202266(추정, 필기체)",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP중앙선반1열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-ㅇ09-01",
+  "code": "LP-O-ㅇ06-01",
   "genre": "OST·경음악",
   "artist": "이주원",
   "album": "우리들의 천국",
@@ -15459,6 +15361,27 @@
   "digital": false
  },
  {
+  "code": "LP-O-ㅇ06-01",
+  "genre": "OST·경음악",
+  "artist": "장동건",
+  "album": "우리들의 천국",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "1990년대 인기 드라마 《우리들의 천국》의 사운드트랙으로, 청춘 드라마 특유의 서정적인 멜로디를 담고 있다.",
+  "discogs_id": "15884856",
+  "db_url": "https://www.discogs.com/release/15884856",
+  "label_cat": "KAL-3040A(?)",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP우측선반1층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-O-ㅇ10-01",
   "genre": "OST·경음악",
   "artist": "Various",
@@ -15470,27 +15393,6 @@
   "discogs_id": "",
   "db_url": "",
   "label_cat": "",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-O-ㅈ01-01",
-  "genre": "OST·경음악",
-  "artist": "장동건",
-  "album": "우리들의 천국",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "1990년대 인기 드라마 《우리들의 천국》의 사운드트랙으로, 청춘 드라마 특유의 서정적인 멜로디를 담고 있다.",
-  "discogs_id": "15884856",
-  "db_url": "https://www.discogs.com/release/15884856",
-  "label_cat": "KAL-3040A(?)",
   "media": [
    "LP"
   ],
@@ -16006,7 +15908,7 @@
   "digital": true
  },
  {
-  "code": "LP-P-S01-01",
+  "code": "LP-P-S04-01",
   "genre": "팝",
   "artist": "Simon and Garfunkel",
   "album": "best of Simon and Garfunkel",
@@ -16510,7 +16412,7 @@
   "digital": false
  },
  {
-  "code": "LP-T-K01-01",
+  "code": "LP-T-K04-01",
   "genre": "탱고",
   "artist": "Koh Sangji (고상지)",
   "album": "El Gran Astor Piazzolla",
@@ -16528,6 +16430,29 @@
    "LP우측선반1층"
   ],
   "copies": 1,
+  "digital": false
+ },
+ {
+  "code": "LP-T-K08-01",
+  "genre": "탱고",
+  "artist": "고상지 (Ko Sang-ji)",
+  "album": "MAYCGRE 1.0",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "고상지의 음반으로 짐작되며, 국악기와 현대적 사운드를 접목한 경음악/크로스오버 성격의 음반으로 보인다.",
+  "discogs_id": "15783723",
+  "db_url": "https://www.discogs.com/release/15783723",
+  "label_cat": "Warner Music VDCD-6504",
+  "media": [
+   "CD",
+   "LP"
+  ],
+  "locations": [
+   "CD아래층",
+   "LP우측선반1층"
+  ],
+  "copies": 2,
   "digital": false
  },
  {
@@ -16552,16 +16477,16 @@
   "digital": false
  },
  {
-  "code": "LP-T-V01-01",
+  "code": "LP-T-S04-01",
   "genre": "탱고",
-  "artist": "Various",
-  "album": "The Tango Project",
-  "rep": "La Cumparsita",
+  "artist": "송영훈 (Song Young-hoon)",
+  "album": "Young song plays piazzolla",
+  "rep": "Libertango, Oblivion",
   "composer": "",
   "performer": "",
-  "desc": "1980년대 탱고 리바이벌을 이끈 컴필레이션 음반으로, 클래식 연주자들이 아르헨티나 탱고를 정교하게 재해석했다.",
-  "discogs_id": "157655",
-  "db_url": "https://www.discogs.com/release/157655",
+  "desc": "첼리스트 송영훈이 피아졸라의 곡들을 첼로로 연주한 음반으로, 현악기 특유의 노래하는 듯한 음색으로 탱고를 재해석했다.",
+  "discogs_id": "",
+  "db_url": "",
   "label_cat": "",
   "media": [
    "LP"
@@ -16573,39 +16498,16 @@
   "digital": false
  },
  {
-  "code": "LP-T-ㄱ05-01",
+  "code": "LP-T-V01-01",
   "genre": "탱고",
-  "artist": "고상지",
-  "album": "MAYCGRE 1.0",
-  "rep": "",
+  "artist": "Various",
+  "album": "The Tango Project",
+  "rep": "La Cumparsita",
   "composer": "",
   "performer": "",
-  "desc": "고상지의 음반으로 짐작되며, 국악기와 현대적 사운드를 접목한 경음악/크로스오버 성격의 음반으로 보인다.",
-  "discogs_id": "15783723",
-  "db_url": "https://www.discogs.com/release/15783723",
-  "label_cat": "Warner Music VDCD-6504",
-  "media": [
-   "CD",
-   "LP"
-  ],
-  "locations": [
-   "CD아래층",
-   "LP우측선반1층"
-  ],
-  "copies": 2,
-  "digital": true
- },
- {
-  "code": "LP-T-ㅅ01-01",
-  "genre": "탱고",
-  "artist": "송영훈",
-  "album": "Young song plays piazzolla",
-  "rep": "Libertango, Oblivion",
-  "composer": "",
-  "performer": "",
-  "desc": "첼리스트 송영훈이 피아졸라의 곡들을 첼로로 연주한 음반으로, 현악기 특유의 노래하는 듯한 음색으로 탱고를 재해석했다.",
-  "discogs_id": "",
-  "db_url": "",
+  "desc": "1980년대 탱고 리바이벌을 이끈 컴필레이션 음반으로, 클래식 연주자들이 아르헨티나 탱고를 정교하게 재해석했다.",
+  "discogs_id": "157655",
+  "db_url": "https://www.discogs.com/release/157655",
   "label_cat": "",
   "media": [
    "LP"
@@ -17058,6 +16960,27 @@
   "digital": false
  },
  {
+  "code": "LP-W-S10-01",
+  "genre": "월드",
+  "artist": "두번째 달 (Second Moon)",
+  "album": "2nd Moon",
+  "rep": "",
+  "composer": "",
+  "performer": "",
+  "desc": "두번째 달 특유의 몽환적이고 서정적인 월드뮤직 색채가 담긴 음반으로, 켈틱·발칸 등 다양한 정서가 어우러진 연주가 인상적이다.",
+  "discogs_id": "",
+  "db_url": "",
+  "label_cat": "GTMLP012",
+  "media": [
+   "LP"
+  ],
+  "locations": [
+   "LP우측선반2층"
+  ],
+  "copies": 1,
+  "digital": false
+ },
+ {
   "code": "LP-W-V01-01",
   "genre": "월드",
   "artist": "Various",
@@ -17095,27 +17018,6 @@
   ],
   "locations": [
    "LP중앙선반2열1층"
-  ],
-  "copies": 1,
-  "digital": false
- },
- {
-  "code": "LP-W-ㄷ01-01",
-  "genre": "월드",
-  "artist": "두번째 달",
-  "album": "2nd Moon",
-  "rep": "",
-  "composer": "",
-  "performer": "",
-  "desc": "두번째 달 특유의 몽환적이고 서정적인 월드뮤직 색채가 담긴 음반으로, 켈틱·발칸 등 다양한 정서가 어우러진 연주가 인상적이다.",
-  "discogs_id": "",
-  "db_url": "",
-  "label_cat": "GTMLP012",
-  "media": [
-   "LP"
-  ],
-  "locations": [
-   "LP우측선반2층"
   ],
   "copies": 1,
   "digital": false
