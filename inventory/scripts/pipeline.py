@@ -636,7 +636,6 @@ def build(rows, albums, album_code, digital):
 
     # 라벨인쇄: 매체별 시트 분리(LP 먼저 작업 예정) — 열당 136행, 위치 순서
     ROWS = 136
-    big_perf = big_performers(rows, albums, album_code)
     label_sets = {"라벨인쇄-LP": [], "라벨인쇄-CD": []}
     for name in SHEET_ORDER:
         for i, r in by_sheet.get(name, []):
@@ -646,21 +645,16 @@ def build(rows, albums, album_code, digital):
             med = str(r.get("medium") or "").strip().upper()
             tab = "라벨인쇄-LP" if med == "LP" else ("라벨인쇄-CD" if med == "CD" else None)
             if tab:
-                sec = section_of(r, c, "이동" in dup_moves.get(i, ""), big_perf)
-                code = f"{med}-" + re.sub(r"^(?:LP|CD)-", "", c)
-                label_sets[tab].append(f"{sec}\n{code}")
+                label_sets[tab].append(f"{med}-" + re.sub(r"^(?:LP|CD)-", "", c))
     label_sets["라벨인쇄-전체"] = (label_sets["라벨인쇄-LP"]
                                  + label_sets["라벨인쇄-CD"])   # LP 먼저, 이어서 CD
     for tab, codes in label_sets.items():
         ws = wb.create_sheet(tab)
         for idx, code in enumerate(codes):
             cell = ws.cell(row=idx % ROWS + 1, column=idx // ROWS + 1, value=code)
-            cell.alignment = Alignment(horizontal="center", vertical="center",
-                                       wrap_text=True)      # 섹션명 + 코드 두 줄
+            cell.alignment = Alignment(horizontal="center", vertical="center")
         for c in range(1, max(1, (len(codes) + ROWS - 1) // ROWS) + 1):
-            ws.column_dimensions[get_column_letter(c)].width = 22
-        for rrow in range(1, min(len(codes), ROWS) + 1):
-            ws.row_dimensions[rrow].height = 28
+            ws.column_dimensions[get_column_letter(c)].width = 16
 
     # 파이프라인이 만들지 않는 사용자 시트(정리작업·라벨재발급N 등)는 그대로 옮겨온다.
     # (워크북을 새로 만들기 때문에 명시적으로 복사하지 않으면 사라진다)

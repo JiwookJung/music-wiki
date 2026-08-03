@@ -242,6 +242,53 @@ def mk(title, rows, hdr, widths, notes, color, idx):
     w.freeze_panes = "A3"
 
 
+# ── 선반에 붙일 구분판 라벨 ─────────────────────────────────────────────
+# 음반 라벨과 달리 선반 라벨은 손으로 세우는 것이라 20장 안쪽이어야 쓸모가 있다.
+# 규칙: 선반마다 최소 1장. 그 안에서 10장 이상인 섹션은 따로 1장 더.
+DIVIDER_MIN = 10
+shelf_secs = defaultdict(list)
+for shelf, cap, name, n, mark, lo, hi in shelfsec:
+    shelf_secs[shelf].append((name, n, lo, hi))
+SHELF_TITLE = {  # 선반 전체를 가리키는 문구
+    "좌측3층": "클래식 · 그라모폰 (DG 2864)",
+    "중앙좌3층": "가요 ①", "중앙좌2층": "가요 ②", "중앙좌1층": "가요 ③",
+    "침대옆": "클래식 ① (바흐부터)", "우측1층": "클래식 ②", "우측2층": "클래식 ③ (비발디까지)",
+    "보관함": "중복 가요",
+}
+divs = []
+for shelf, secs in shelf_secs.items():
+    total = sum(x[1] for x in secs)
+    big = [x for x in secs if x[1] >= DIVIDER_MIN]
+    covered = sum(x[1] for x in big)
+    lo, hi = min(x[2] for x in secs), max(x[3] for x in secs)
+    # 큰 섹션 하나가 선반을 거의 다 채우면 선반 라벨 한 장으로 충분하다.
+    if len(big) <= 1 and covered >= total * 0.9:
+        title = SHELF_TITLE.get(shelf) or (big[0][0] if big else secs[0][0])
+        divs.append((shelf, title, total, lo, hi, "선반 전체"))
+        continue
+    if covered < total:
+        divs.append((shelf, SHELF_TITLE.get(shelf) or secs[0][0],
+                     total, lo, hi, "선반 전체"))
+    for name, n, slo, shi in sorted(big, key=lambda x: -x[1]):
+        divs.append((shelf, name, n, slo, shi, "구분판"))
+order = {n: i for i, n in enumerate(
+    ["좌측1층", "좌측2층", "좌측3층", "중앙좌3층", "중앙좌2층", "중앙좌1층",
+     "중앙우3층", "중앙우2층", "중앙우1층", "침대옆", "우측1층", "우측2층", "보관함"])}
+divs.sort(key=lambda x: (order.get(x[0], 99), -x[2]))
+divs = [(i,) + d for i, d in enumerate(divs, 1)]
+mk(
+    "선반라벨",
+    divs,
+    ["순번", "선반", "라벨 문구 (구분판에 인쇄)", "장수", "시작 코드", "끝 코드", "종류"],
+    [5, 12, 34, 6, 18, 18, 10],
+    [f"선반 구분판 라벨 — 총 {len(divs)}장",
+     "※ 음반에 붙이는 라벨(라벨인쇄-LP)은 분류코드만 찍는다. 이 시트는 선반에 세울 구분판이다.",
+     "※ '선반 전체'는 그 선반 맨 앞에, '구분판'은 해당 섹션이 시작하는 자리에 세운다.",
+     f"※ {DIVIDER_MIN}장 미만인 작은 섹션은 구분판을 만들지 않는다(섹션표에서 코드 범위로 찾는다).",
+     "※ 전체 섹션 목록은 '섹션표' 시트 참고."],
+    "1F6F42",
+    2,
+)
 mk(
     "섹션표",
     shelfsec,
