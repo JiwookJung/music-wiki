@@ -33,10 +33,13 @@ REGISTRY = os.path.join(INV, "data", "code_registry.json")
 DIGITAL = os.path.join(INV, "data", "digital_links.json")
 
 GENRE_LETTER = {"클래식": "C", "클래식기타": "G", "재즈": "J", "탱고": "T",
-                "월드": "W", "팝": "P", "가요": "K", "OST·경음악": "O"}
+                "월드": "W", "팝": "P", "가요": "K", "OST·경음악": "O",
+                "경음악": "I"}          # I = instrumental. OST 와 분리된 독립 장르
 # 엑셀 표기 흔들림 흡수 → 정규 장르명 (X 코드 방지)
-GENRE_ALIAS = {"OST": "OST·경음악", "경음악": "OST·경음악", "OST/경음악": "OST·경음악",
+# 주의: '경음악' 은 더 이상 OST 로 접지 않는다(독립 장르 I)
+GENRE_ALIAS = {"OST": "OST·경음악", "OST/경음악": "OST·경음악",
                "OST,경음악": "OST·경음악", "사운드트랙": "OST·경음악",
+               "이지리스닝": "경음악", "뉴에이지": "경음악",
                "클래식 기타": "클래식기타", "월드뮤직": "월드", "제3세계": "월드",
                "가요(한국)": "가요", "케이팝": "가요", "팝송": "팝"}
 
@@ -455,6 +458,61 @@ def blankv(v):
     return not str(v or "").strip()
 
 
+# ── 라벨 섹션 ────────────────────────────────────────────────────────────
+# 섹션 = 선반 위에서 칸막이로 나뉘는 묶음. 라벨 윗줄에 찍어 어디에 꽂을지 바로 안다.
+SECTION_NAME = {"클래식": "클래식", "클래식기타": "클래식기타", "경음악": "경음악",
+                "재즈": "재즈", "가요": "가요", "OST·경음악": "OST", "팝": "팝",
+                "탱고": "탱고", "월드": "월드"}
+BIG_PERF_MIN = 3          # 이 장수 이상인 연주자는 작곡가와 별도 섹션을 갖는다
+# 연주자 칸에 작곡가명·모음집이 들어간 행은 연주자 섹션 대상이 아니다
+_NOT_PERF = {"various", "va", "bach", "beethoven", "mozart", "schubert", "chopin",
+             "brahms", "vivaldi", "handel", "haydn", "verdi", "schumann"}
+
+
+def big_performers(rows, albums, album_code, minimum=BIG_PERF_MIN):
+    """작곡가와 따로 모을 만한 클래식 연주자를 C/CG 계열별로 센다.
+
+    C(일반 클래식)와 CG(그라모폰)는 서로 다른 선반에 있으므로 기준을 함께 세면
+    한쪽 선반에 그 연주자 음반이 한 장뿐인데도 혼자 한 섹션을 차지하게 된다.
+    """
+    cnt = {"C": defaultdict(int), "CG": defaultdict(int)}
+    for key, idxs in albums.items():
+        r = rows[idxs[0]]
+        if canon_genre(r.get("genre")) != "클래식":
+            continue
+        # 섹션은 LP 선반을 나누는 구분판이다. CD 만 있는 음반은 세지 않는다.
+        if not any(str(rows[i].get("medium") or "").strip().upper() == "LP" for i in idxs):
+            continue
+        pref = "CG" if re.sub(r"^(?:LP|CD)-", "",
+                              album_code.get(key, "")).startswith("CG") else "C"
+        pn = primary(lead_artist(r.get("performer") or r.get("artist"), "클래식"))
+        if norm(pn) and norm(pn) not in _NOT_PERF:
+            cnt[pref][pn] += 1
+    return {k: {n for n, v in c.items() if v >= minimum} for k, c in cnt.items()}
+
+
+def section_of(r, code, is_dup=False, big_perf=()):
+    """라벨 윗줄에 찍을 섹션명."""
+    if is_dup:
+        return "중복음반"
+    g = canon_genre(r.get("genre"))
+    if g != "클래식":
+        return SECTION_NAME.get(g, g or "미분류")
+    if "박스앨범" in str(r.get("notes") or ""):
+        return "클래식 · 박스앨범"      # 부피가 커서 따로 세우는 묶음
+    is_cg = re.sub(r"^(?:LP|CD)-", "", str(code or "")).startswith("CG")
+    head = "그라모폰" if is_cg else "클래식"
+    perf = primary(lead_artist(r.get("performer") or r.get("artist"), g))
+    if isinstance(big_perf, dict):
+        big_perf = big_perf.get("CG" if is_cg else "C", ())
+    if perf in big_perf:
+        return f"{head} · {perf}"
+    comp = str(r.get("composer") or "").strip()
+    words = name_words(comp)
+    name = words[-1] if words else ""
+    return f"{head} · {'모음집' if not name or name.upper() == 'VA' else name}"
+
+
 def build(rows, albums, album_code, digital):
     dup_moves = {}
     for key, idxs in albums.items():
@@ -578,6 +636,7 @@ def build(rows, albums, album_code, digital):
 
     # 라벨인쇄: 매체별 시트 분리(LP 먼저 작업 예정) — 열당 136행, 위치 순서
     ROWS = 136
+    big_perf = big_performers(rows, albums, album_code)
     label_sets = {"라벨인쇄-LP": [], "라벨인쇄-CD": []}
     for name in SHEET_ORDER:
         for i, r in by_sheet.get(name, []):
@@ -587,16 +646,21 @@ def build(rows, albums, album_code, digital):
             med = str(r.get("medium") or "").strip().upper()
             tab = "라벨인쇄-LP" if med == "LP" else ("라벨인쇄-CD" if med == "CD" else None)
             if tab:
-                label_sets[tab].append(f"{med}-" + re.sub(r"^(?:LP|CD)-", "", c))
+                sec = section_of(r, c, "이동" in dup_moves.get(i, ""), big_perf)
+                code = f"{med}-" + re.sub(r"^(?:LP|CD)-", "", c)
+                label_sets[tab].append(f"{sec}\n{code}")
     label_sets["라벨인쇄-전체"] = (label_sets["라벨인쇄-LP"]
                                  + label_sets["라벨인쇄-CD"])   # LP 먼저, 이어서 CD
     for tab, codes in label_sets.items():
         ws = wb.create_sheet(tab)
         for idx, code in enumerate(codes):
             cell = ws.cell(row=idx % ROWS + 1, column=idx // ROWS + 1, value=code)
-            cell.alignment = Alignment(horizontal="center", vertical="center")
+            cell.alignment = Alignment(horizontal="center", vertical="center",
+                                       wrap_text=True)      # 섹션명 + 코드 두 줄
         for c in range(1, max(1, (len(codes) + ROWS - 1) // ROWS) + 1):
-            ws.column_dimensions[get_column_letter(c)].width = 16
+            ws.column_dimensions[get_column_letter(c)].width = 22
+        for rrow in range(1, min(len(codes), ROWS) + 1):
+            ws.row_dimensions[rrow].height = 28
 
     # 파이프라인이 만들지 않는 사용자 시트(정리작업·라벨재발급N 등)는 그대로 옮겨온다.
     # (워크북을 새로 만들기 때문에 명시적으로 복사하지 않으면 사라진다)
